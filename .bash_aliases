@@ -5,35 +5,18 @@ alias cdga="cd ~/.config/i3/"
 alias aptdate="sudo apt-get update"
 alias aptgrade="sudo apt-get upgrade"
 
-# vim bundles
-alias vindle="~/.vim/bundle"
-
 # Edit vimrc
-alias vimrc="vim ~/.vimrc"
-
-# Edit rc.lua
-alias luarc="vim ~/.config/awesome/rc.lua"
+alias vimrc="vim ~/dotfiles/.vimrc"
+alias nvimrc="nvim ~/dotfiles/.config/nvim/init.vim"
 
 # Edit .Xresources
-alias xres="vim ~/.Xresources"
-
-# Go to projects
-alias proj="cd ~/projects/2016/"
-
-## Current Project
-alias curPr="cd ~/projects/2016/python/rp_course_2/flask-bdd"
-
-# Doc Aliases
-alias ba="cd ~/Dokumente/BA/5.Semester"
+alias xres="nvim ~/.Xresources"
 
 # Watch processes
 alias watchproc="watch 'ps aux | sort -rk 3,3 | head -n 12'"
 
 # Show network channels
 alias netchannel="sudo iwlist wlan0 scan | grep Frequency | sort | uniq -c | sort -n"
-
-# Softwarearchitektur
-#alias sa16="~/projects/2016/python/softwareArchitektur"
 
 # python
 alias python="/usr/bin/python3"
