@@ -1,0 +1,426 @@
+snippet texbase "Basic tex Structure"
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+% Space between lines
+\usepackage[onehalfspacing]{setspace}
+
+% Vector graphics
+\usepackage{tikz}
+\usepackage{amsmath}
+% Graphic support
+\usepackage{graphicx}
+
+\pagestyle{headings}
+
+\begin{document}
+
+\graphicspath{{img/}}
+
+\tableofcontents
+\newpage
+
+\end{document}
+
+endsnippet
+
+snippet texScience "For scientific documents"
+%-------------------------------------------------------------------------------
+% Preamble
+%-------------------------------------------------------------------------------
+
+\documentclass[
+    a4paper,
+    12pt,
+    oneside,
+    toc=listof,
+    toc=bibliography,
+]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+% Space between lines
+\usepackage{setspace}
+\makeatletter
+\newcommand{\MSonehalfspacing}{
+    \setstretch{1.44} % default
+    \ifcase \@ptsize \relax % 10pt
+        \setstretch {1.448} %
+    \or % 11pt
+        \setstretch {1.399} %
+    \or % 12pt
+        \setstretch {1.433} %
+    \fi
+}
+\makeatother
+\MSonehalfspacing
+
+% Vector graphics
+\usepackage{tikz}
+\usepackage{amsmath}
+% Graphic support
+\usepackage{graphicx}
+\graphicspath{./img/}
+% Rahmen
+\usepackage{mdframed}
+% Titelreferenzen
+\usepackage{nameref}
+
+% Literaturpackage
+\usepackage[
+    backend=biber,
+    style=authoryear-icomp,
+    sorting=nyt,
+    firstinits=true,
+    uniquename=false,
+    abbreviate=true,
+    maxnames=3,
+    isbn=false,
+    doi=false
+]{biblatex}
+% Nachname zuerst anzeigen
+\DeclareNameAlias{sortname}{last-first}
+\DeclareNameAlias{default}{last-first}
+
+\addbibresource{literatur.bib}
+
+\usepackage{csquotes} % Babel fix für Biblatex
+% Slash-Trennung zwischen Buchautoren
+\renewcommand*{\multinamedelim}{\addslash}
+\renewcommand*{\finalnamedelim}{\addslash}
+\DefineBibliographyStrings{ngerman}{
+    andothers = {{et\,al\adddot}},
+}
+
+% Overfull bibliography fix
+\usepackage[expansion, final]{microtype}
+% Space between bib entries
+% \setlength{\bibitemsep}{\baselineskip}
+
+% Weitere Formatierung
+\usepackage[a4paper, lmargin={3cm}, rmargin={2cm}, tmargin={2cm}, bmargin={3cm}]{geometry}
+\usepackage[bottom, multiple]{footmisc} % position footnotes in the footer, divide multiple footnotes with comma
+\usepackage{fancyhdr} % style header and footer
+\usepackage{tabularx}
+
+% Abkürzungsverzeichnis
+\usepackage[printonlyused]{acronym}
+
+% Pagenumber footer right
+\pagestyle{fancy}
+\rhead{}
+\fancyfoot[R]{\thepage}
+\cfoot{}
+\setlength{\headheight}{1cm}
+
+% Header with chapter titles
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[L]{\leftmark}
+
+% Redefine plain style for pages and section beginnings
+% Containing footer and header
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{\slshape\nouppercase\leftmark}
+    \fancyfoot[R]{\thepage}
+}
+
+% Color definitions
+\definecolor{bg}{rgb}{0.95, 0.95, 0.95}
+
+%-------------------------------------------------------------------------------
+% Macros
+%-------------------------------------------------------------------------------
+
+% German "Anfuehrungszeichen"
+\newcommand{\quotes}[1]{\glqq{}#1\grqq{}}
+
+% Quotations
+\newcommand{\MyCite}[3]{#1 \citeauthor{#3} (\citeyear{#3}), S. #2.}
+\newcommand{\WebCite}[2]{\footnote{#1 \textcite[][]{#2}}}
+\newcommand{\Focite}[3]{\footnote{\MyCite{#1}{#2}{#3}}}
+\newcommand*{\quelle}[1]{\par\raggedleft\footnotesize Quelle:~#1}
+
+%-------------------------------------------------------------------------------
+% Begin document
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\graphicspath{{img/}}
+
+\begin{titlepage}
+
+%-------------------------------------------------------------------------------
+%   Heading Section
+%-------------------------------------------------------------------------------
+
+    \begin{minipage}[t]{0.62\textwidth}
+    \begin{flushleft}
+    Berufsakademie Sachsen -- \\\
+    Staatliche Studienakademie Dresden \\\
+    Hans-Grundig-Straße 25 \\\
+    01307 Dresden \\\
+
+    Seminargruppe: 3MI14-1
+    \end{flushleft}
+    \end{minipage}
+~
+    \begin{minipage}[t]{0.3\textwidth}
+    \begin{flushleft}
+    fourseasons GmbH \\\
+    Theo Salzmann \\\
+    Könneritzstraße 31 \\\
+    01067 Dresden \\\
+    \end{flushleft}
+    \end{minipage}
+
+%-------------------------------------------------------------------------------
+%   Title Section
+%-------------------------------------------------------------------------------
+
+    \centering
+    \vspace{3cm}
+    {\huge\bfseries Praxistransferbeleg\par}
+    \vspace{3mm}
+    {\large\bfseries 5. Semester\par}
+    \vspace{1.5cm}
+    {\Large \textbf{Konzeption einer Mailing-Kampagne zur Durchf\"uhrung einer Kundenveranstaltung}\par}
+    \vspace{4cm}
+    {eingereicht von\par}
+    \vspace{3mm}
+    {Salzmann, Theo\par}
+    {28.04.1989\par}
+
+%-------------------------------------------------------------------------------
+%   Footer Section
+%-------------------------------------------------------------------------------
+
+    \vspace{3cm}
+    \begin{flushleft}
+        \textbf{Betreuer:}
+    \end{flushleft}
+
+    \vspace{5mm}
+    \begin{flushleft}
+        \begin{tabularx}{\textwidth}[b]{l X l X l} \cline{1-1} \cline{3-3} \cline{5-5}
+            Datum, Stempel, Unterschrift & & Abgabedatum & & Unterschrift Student
+        \end{tabularx}
+    \end{flushleft}
+
+\end{titlepage}
+
+%-------------------------------------------------------------------------------
+%   Sperrvermerk
+%-------------------------------------------------------------------------------
+
+\newpage
+
+% Remove headrule for this page
+\renewcommand{\headrulewidth}{0pt}
+
+% Clear page number
+\pagenumbering{gobble}
+
+\begin{flushleft}
+    {\huge\bfseries Sperrvermerk\par}
+    % \markright{Sperrvermerk}
+\end{flushleft}
+
+\vspace{7,5cm}
+
+\begin{mdframed}
+Der vorgelegte Praxistransferbeleg basiert auf internen, vertraulichen Daten und Informationen des Unternehmens \textit{fourseasons GmbH}.
+In diese Arbeit dürfen Dritte, mit Ausnahme der Gutachter und befugten Mitgliedern des Prüfungsausschusses, ohne ausdrückliche Zustimmung des Unternehmens und des Verfassers keine Einsicht nehmen.
+Eine Vervielfältigung und Veröffentlichung des Praxistransferbelegs ohne ausdrückliche Genehmigung – auch auszugsweise – ist nicht erlaubt.
+\end{mdframed}
+
+% Add headrule back
+\clearpage
+\renewcommand{\headrulewidth}{0.5pt}
+
+
+%-------------------------------------------------------------------------------
+%   Registers
+%-------------------------------------------------------------------------------
+
+\newpage
+
+% Römische Bezifferung
+\pagenumbering{Roman}
+% Seitenzahlmanipulation:
+\setcounter{page}{3}
+
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+
+\newpage
+
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+\newpage
+
+% Abbildungsverzeichnis
+\listoffigures
+
+\newpage
+
+% Abkürzungsverzeichnis
+\addchap{Abk\"urzungsverzeichnis}
+
+\begin{acronym}[SCIPO]
+    \acro{SaaS}{Software as a Service}
+\end{acronym}
+
+
+\newpage
+
+
+% Listings
+\renewcommand{\listoflistingscaption}{Auflistungs-Verzeichnis}
+\listoflistings
+
+
+\newpage
+
+
+% Arabische Bezifferung
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%-------------------------------------------------------------------------------
+%   Content
+%-------------------------------------------------------------------------------
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\newpage
+
+\chapter{Einleitung}
+\ac{SaaS}
+\Focit{vgl.}{23}{kreuz06}
+
+\chapter{Fazit}
+
+%-------------------------------------------------------------------------------
+%   Bibliography
+%-------------------------------------------------------------------------------
+
+\newpage
+
+
+\printbibliography[
+    title={Literaturverzeichnis},
+    ]
+
+
+%-------------------------------------------------------------------------------
+%   Eidesstattliche Erklaerung
+%-------------------------------------------------------------------------------
+
+\newpage
+
+\pagenumbering{gobble}
+
+\thispagestyle{empty}
+
+\begin{flushleft}
+    {\huge\bfseries Eidesstattliche Erkl"arung}
+    % \markright{EIDESSTATTLICHE ERKL"ARUNG}
+
+    \vspace{2cm}
+
+    Ich erkl"are an Eides statt, dass ich die vorliegende Arbeit selbstst"andig und ohne erlaubte fremde Hilfe angefertigt und andere als die angegebenen Quellen und Hilfsmittel nicht benutzt habe.
+    Die aus fremden Quellen direkt oder indirekt "ubernommenen Stellen sind als solche kenntlich gemacht.
+    Die Zustimmung des Partnerunternehmens in der Praxis zur Verwendung betrieblicher Unterlagen habe ich eingeholt.
+    Die Arbeit wurde bisher in gleicher oder "ahnlicher Form keiner anderen Pr"ufungsbeh"orde vorgelegt und auch nicht ver"offentlicht.
+
+\end{flushleft}
+
+\vspace{2cm}
+\begin{flushleft}
+    \begin{tabularx}{\textwidth}[b]{l X l} \cline{1-1} \cline{3-3}
+        Ort, Abgabetermin   &&  Unterschrift des Verfassers
+    \end{tabularx}
+\end{flushleft}
+
+\end{document}
+endsnippet
+
+
+snippet baTitle "Titlepage layout for BA docs"
+begin{titlepage}
+
+%-------------------------------------------------------------------------------
+%   Heading Section
+%-------------------------------------------------------------------------------
+
+    \begin{minipage}[t]{0.62\textwidth}
+    \begin{flushleft}
+        Berufsakademie Sachsen -- \\
+        Staatliche Studienakademie Dresden \\
+        Hans-Grundig-Straße 25 \\
+        01307 Dresden \\
+
+        Seminargruppe: 3MI14-1
+    \end{flushleft}
+    \end{minipage}
+~
+    \begin{minipage}[t]{0.3\textwidth}
+    \begin{flushleft}
+        fourseasons GmbH \\
+        Theo Salzmann \\
+        Könneritzstraße 31 \\
+        01067 Dresden \\
+    \end{flushleft}
+    \end{minipage}
+
+%-------------------------------------------------------------------------------
+%   Title Section
+%-------------------------------------------------------------------------------
+
+    \centering
+    \vspace{3cm}
+    {\huge\bfseries Praxistransferbeleg\par}
+    \vspace{3mm}
+    {\large\bfseries 3. Semester\par}
+    \vspace{1.5cm}
+    {\Large \textbf{Konzeption des SCIPO TeamDrives - einer Cloud-Speicherl"osung auf Basis SCIPO}\par}
+    \vspace{4cm}
+    {eingereicht von\par}
+    \vspace{3mm}
+    {Salzmann, Theo\par}
+    {28.04.1989\par}
+
+%-------------------------------------------------------------------------------
+%   Footer Section
+%-------------------------------------------------------------------------------
+
+    \vspace{4cm}
+    \begin{flushleft}
+        \textbf{Betreuer:}
+    \end{flushleft}
+
+    \vspace{5mm}
+    \begin{flushleft}
+        \begin{tabularx}{\textwidth}[b]{l X l X l} \cline{1-1} \cline{3-3} \cline{5-5}
+            Datum, Stempel, Unterschrift & & Abgabedatum & & Unterschrift Student
+        \end{tabularx}
+    \end{flushleft}
+
+\end{titlepage}
+endsnippet
+
+snippet framedFig "Creates a figure env, with an integrated frame"
+\begin{figure}
+    \begin{mdframed}
+       \centering
+       \includegraphics[width=\textwidth{}]{$1}
+   \end{mdframed}
+   \caption{$2}
+   \label{$3}
+\end{figure}
+endsnippet

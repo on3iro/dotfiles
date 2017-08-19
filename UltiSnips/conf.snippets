@@ -1,0 +1,41 @@
+snippet pyIgnore "Creates basic .gitignore for python projects"
+## python sepcific
+*.pyc
+__pycache__
+env
+venv
+.coverage
+htmlcov
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## Sass
+**/.sass-cache/*
+
+## Databases
+*.db
+endsnippet
+
+snippet vimIngore "Creates a basic .gitignore for vim projects"
+#######
+# Vim #
+#######
+
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+endsnippet

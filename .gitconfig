@@ -1,0 +1,7 @@
+# Das ist Git's benutzerspezifische Konfiguraionsdatei.
+[user]
+# Bitte passen Sie die folgenden Zeilen an und kommentieren Sie diese aus:
+name = Theo Salzmann
+email = dev@on3iro.de
+[push]
+	default = simple
