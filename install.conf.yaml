@@ -1,0 +1,28 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/dotfiles: ''
+    ~/.autorandr: .autorandr
+    ~/.config/i3: .config/i3
+    ~/.config/nvim: .config/nvim
+    ~/.urxvt/ext: .urxvt/ext
+    ~/UltiSnips:
+    ~/.bash_aliases: .bash_aliases
+    ~/.bashrc: .bashrc
+    ~/.dir_colors: .dir_colors
+    ~/.editorconfig: .editorconfig
+    ~/.gitconfig: .gitconfig
+    ~/.my_keyboard: .my_keyboard
+    ~/.tmux.conf: .tmux.conf
+    ~/.vimrc: .vimrc
+    ~/.zshrc: .zshrc
+    ~/.Xmodmap: .Xmodmap
+    ~/.Xresources: .Xresources
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
