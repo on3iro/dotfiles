@@ -11,7 +11,7 @@
     ~/.config/i3: .config/i3
     ~/.config/nvim: .config/nvim
     ~/.urxvt/ext: .urxvt/ext
-    ~/UltiSnips:
+    ~/.vim/mySnippets: mySnippets
     ~/.bash_aliases: .bash_aliases
     ~/.bashrc: .bashrc
     ~/.dir_colors: .dir_colors

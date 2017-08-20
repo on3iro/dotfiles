@@ -188,8 +188,9 @@ let g:vimtex_latexmk_continuous = 1
 let g:vimtex_view_method = 'zathura'
 
 " Snippets
-" let g:UltiSnipsSnippetsDir = ['~/UltiSnips']
-" let g:UltiSnipsSnippetDirectories = ['~/UltiSnips', 'UltiSnips']
+" set runtimepath+="~/.vim/mySnippets"
+let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
+let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-a>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
