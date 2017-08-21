@@ -13,9 +13,6 @@ Plug 'chriskempson/base16-vim'
 " NERDtree Browser
 Plug  'scrooloose/nerdtree'
 
-" Vimtex
-Plug 'lervag/vimtex'
-
 " Snippet engine
 Plug 'SirVer/ultisnips'
 " Snippets
@@ -180,13 +177,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=zsh']
 let g:markdown_syntax_conceal = 0
 
-" Standard latex extension
-let g:tex_flavor = "latex"
-
-" Vimtex
-let g:vimtex_latexmk_continuous = 1
-let g:vimtex_view_method = 'zathura'
-
 " Snippets
 " set runtimepath+="~/.vim/mySnippets"
 let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
@@ -232,9 +222,6 @@ set nospell
 " Matchit vim for tag jumping
 filetype detect
 runtime macros/matchit.vim
-
-" Disable conceal
-let g:tex_conceal = ""
 
 " NERDtree settings
 let NERDTreeIgnore = ['\.pyc$']
