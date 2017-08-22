@@ -13,9 +13,6 @@ Plug 'chriskempson/base16-vim'
 " NERDtree Browser
 Plug  'scrooloose/nerdtree'
 
-" Vimtex
-Plug 'lervag/vimtex'
-
 " Snippet engine
 Plug 'SirVer/ultisnips'
 " Snippets
@@ -91,6 +88,7 @@ Plug 'neovimhaskell/haskell-vim'
 " -------------------------------------------------------------------
 
 call plug#end()
+filetype plugin indent on
 " End vim-plug """""
 
 " Resize window with arrow keys
@@ -180,17 +178,11 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=zsh']
 let g:markdown_syntax_conceal = 0
 
-" Standard latex extension
-let g:tex_flavor = "latex"
-
-" Vimtex
-let g:vimtex_latexmk_continuous = 1
-let g:vimtex_view_method = 'zathura'
-
-" Snippets
+ Snippets
+<<<<<<< HEAD
 set runtimepath+=~/.vim
 " let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
-let g:UltiSnipsSnippetsDirectories = ['mySnippets', 'UltiSnips']
+" let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-a>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -232,9 +224,6 @@ set nospell
 " Matchit vim for tag jumping
 filetype detect
 runtime macros/matchit.vim
-
-" Disable conceal
-let g:tex_conceal = ""
 
 " NERDtree settings
 let NERDTreeIgnore = ['\.pyc$']
