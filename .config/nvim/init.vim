@@ -178,9 +178,8 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=zsh']
 let g:markdown_syntax_conceal = 0
 
- Snippets
-<<<<<<< HEAD
-set runtimepath+=~/.vim
+" Snippets
+" set runtimepath+=~/.vim
 " let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
 " let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
 let g:UltiSnipsExpandTrigger="<tab>"
