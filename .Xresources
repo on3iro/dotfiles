@@ -33,7 +33,7 @@
 
 
 !! Font
-URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=13
+URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=16
 !URxvt*.font: xft:Hack:Regular:pixelsize=10
 ! URxvt*.font: xft:Anonymice Powerline:pixelsize=12
 ! URxvt*.font: xft:DejaVu Sans Mono for Powerline:pixelsize=14
