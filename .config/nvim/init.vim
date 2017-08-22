@@ -88,6 +88,7 @@ Plug 'neovimhaskell/haskell-vim'
 " -------------------------------------------------------------------
 
 call plug#end()
+filetype plugin indent on
 " End vim-plug """""
 
 " Resize window with arrow keys
@@ -179,8 +180,8 @@ let g:markdown_syntax_conceal = 0
 
 " Snippets
 " set runtimepath+="~/.vim/mySnippets"
-let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
-let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
+" let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
+" let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-a>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
