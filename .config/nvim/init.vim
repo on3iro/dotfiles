@@ -383,3 +383,6 @@ let g:ale_linters = {
 
 """ zfz default command to include dot files
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
+
+""" Remove search highlight on esc
+nnoremap <silent> <esc> :noh<cr><esc>
