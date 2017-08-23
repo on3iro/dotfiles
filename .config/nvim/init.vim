@@ -189,7 +189,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Keyboard Settings
-nmap <leader>ne :NERDTreeToggle<cr>
+" Toggle fzf files
+nmap <leader>ne :Files<cr>
 
 set encoding=utf-8
 
