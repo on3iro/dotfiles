@@ -126,10 +126,16 @@ export TERM=xterm-256color
 eval `dircolors ~/.dir_colors`
 alias ls="ls --color=auto"
 
-bindkey -v
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Activate vim bindings
+bindkey -v
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+    zle reset-prompt
+}
 
-# change fzf default command to also include dot files
-# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -f -g ""'
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
