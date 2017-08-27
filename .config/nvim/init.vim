@@ -52,16 +52,24 @@ Plug 'mattn/emmet-vim'
 " Css colors
 Plug 'ap/vim-css-color'
 
-" Elm
+" ----- Elm -----
 " Plugin 'lambdatoast/elm.vim'
 Plug 'ElmCast/elm-vim'
 
+" ----- Elixir --
+Plug 'slashmili/alchemist.vim'
+
 " ------ JavaScript specific -----------
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'fleischie/vim-styled-components'
 
 "------------- Dev --------------------
+
+" General language support
+Plug 'sheerun/vim-polyglot'
+
+" Autocompletion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " Linting
 Plug 'w0rp/ale'
 
@@ -78,12 +86,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'editorconfig/editorconfig-vim'
 
 " ------- Python specific --------------
-" Python indent
-Plug 'hynek/vim-python-pep8-indent'
 Plug 'jmcantrell/vim-virtualenv'
-
-" ------- Haskell specific -------------
-Plug 'neovimhaskell/haskell-vim'
 
 " -------------------------------------------------------------------
 
@@ -386,3 +389,10 @@ let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 
 """ Remove search highlight on esc
 nnoremap <silent> <esc> :noh<cr><esc>
+
+""" Autocompletion
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" Elixir alchemist
+let g:alchemist_tag_disable = 1
