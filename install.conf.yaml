@@ -19,6 +19,7 @@
     ~/.my_keyboard: .my_keyboard
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
+    ~/.vifm/vifmrc: vifmrc
     ~/.zshrc: .zshrc
     ~/.Xmodmap: .Xmodmap
     ~/.Xresources: .Xresources
