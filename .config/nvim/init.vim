@@ -381,11 +381,13 @@ set list lcs=tab:>-,trail:·,extends:>,precedes:<
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
 let g:ale_linters = {
-            \ 'javascript': ['standard'],
+            \ 'javascript': ['standard', 'flow'],
             \}
 let g:ale_fixers = {
             \ 'javascript': ['standard'],
             \}
+nmap <silent> ]l <Plug>(ale_next_wrap)
+nmap <silent> [l <Plug>(ale_previous_wrap)
 
 """ zfz default command to include dot files
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
