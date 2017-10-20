@@ -359,7 +359,7 @@ set statusline +=%4*\ %<%F%*     "full path
 set statusline +=%6*%r             "Readonly flag
 set statusline +=%2*%m%*        "modified flag
 set statusline +=%9*%=             " left/right separator
-set statusline +=%8*%{fugitive#statusline()} " Git Hotness
+" set statusline +=%8*%{fugitive#statusline()} " Git Hotness
 "set statusline +=\ %P           "Percen through file
 set statusline +=%9*\ \ %l       "curr line
 set statusline +=%7*/
