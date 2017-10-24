@@ -7,8 +7,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
 
 "---------- Vim behavior/appearance --------------------------------
+
+" [ COLORS ]
+"
 " Base 16 Colors
 Plug 'chriskempson/base16-vim'
+
+Plug 'beigebrucewayne/hacked_ayu.vim'
+
+
+" [ BEHAVIOR ]
 
 " NERDtree Browser
 Plug  'scrooloose/nerdtree'
@@ -154,15 +162,16 @@ set wildmenu
 set pastetoggle=<F2>
 
  "Use 256 colors
-set t_Co=256
-let base16colorspace=256
+set termguicolors
+" set t_Co=256
+" let base16colorspace=256
 
 " Color theme
 colorscheme base16-monokai
 "colorscheme colorsbox-material
 
 " Line Number BG
-highlight LineNr ctermbg=black
+" highlight LineNr ctermbg=white
 
 " All numbers are treated as decimal
 set nrformats=
@@ -176,12 +185,118 @@ set laststatus=2
 " Faster escape
 set timeoutlen=1000 ttimeoutlen=0
 
+" No autoresizing on split windows
+set noea
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/node_modules/**
+
+" Copy to clipboard
+vnoremap <C-c> "+y
+
+" Fugitive
+set diffopt+=vertical
+
+" Disable spell checker
+set nospell
+
+" Remove search highlight on esc
+nnoremap <silent> <esc> :noh<cr><esc>
+
+
+" [ COLORS/STATUS ]
+
+""""" Status line """"""""""""
+hi User1 guibg=DodgerBlue4 guifg=ivory1
+hi User2 guifg=aquamarine2
+hi User3 guifg=orange
+hi User4 guifg=snow2
+hi User5 guifg=DeepSkyBlue2
+hi User6 guifg=red3
+hi User7 guifg=red1 " currently not in use
+hi User8 guifg=DeepSkyBlue2
+hi User9 guibg=gray15
+hi User10 guifg=178
+
+" Change statusline in insert mode
+function! EnterInsert()
+    hi User1 guibg=IndianRed3
+endfunction
+
+function! LeaveInsert()
+    hi User1 guibg=DodgerBlue4
+endfunction
+
+au InsertEnter * call EnterInsert()
+au InsertLeave * call LeaveInsert()
+
+" Mode aliases
+let g:currentmode={
+    \ 'n'  : 'Normal',
+    \ 'no' : 'N·Operator Pending',
+    \ 'v'  : 'Visual',
+    \ 'V'  : 'V Line',
+    \ '' : 'V Block',
+    \ 's'  : 'Select',
+    \ 'S'  : 'S·Line',
+    \ '' : 'S·Block',
+    \ 'i'  : 'Insert',
+    \ 'R'  : 'R',
+    \ 'Rv' : 'V·Replace',
+    \ 'c'  : 'Command',
+    \ 'cv' : 'Vim Ex',
+    \ 'ce' : 'Ex',
+    \ 'r'  : 'Prompt',
+    \ 'rm' : 'More',
+    \ 'r?' : 'Confirm',
+    \ '!'  : 'Shell',
+    \ 't'  : 'Terminal'
+    \}
+
+" Show paste indicator
+function! ShowPaste()
+    if &paste
+        return "  (Paste)"
+    else
+        return ""
+    endif
+endfunction
+
+set statusline=                 "Clear status line for when vimrc is reloaded
+set statusline +=%1*\ B%n\,\ %{g:currentmode[mode()]}%{ShowPaste()}\ %*    "buffer number
+set statusline +=%5*\ %{&ff}%*    "file format
+set statusline +=%3*%y%*         "file type
+set statusline +=%4*\ %<%F%*     "full path
+set statusline +=%6*%r             "Readonly flag
+set statusline +=%2*%m%*        "modified flag
+set statusline +=%9*%=             " left/right separator
+" set statusline +=%8*%{fugitive#statusline()} " Git Hotness
+"set statusline +=\ %P           "Percen through file
+set statusline +=%9*\ \ %l       "curr line
+set statusline +=%7*/
+set statusline +=%6*%L         "total lines
+set statusline +=%4*[%2*%c%4*]\          "current column
+set statusline +=%8*[%4*%{strlen(&fenc)?&fenc:'none'}%8*] "file encoding"
+
+" Hide status message
+set noshowmode
+
+"""" Other highlights """"
+hi jsonStringSQError guifg=red2
+hi jsonNoQuotesError guifg=red2
+hi jsonTripleQuotesError guifg=red2
+
+"""" Show special characters """"
+set list lcs=tab:>-,trail:·,extends:>,precedes:<
+
+
+" [ PLUGIN RELATED ]
+
 " Markdown support
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=zsh']
 let g:markdown_syntax_conceal = 0
 
-" Snippets
+" UltiSnips
 " set runtimepath+=~/.vim
 " let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
 " let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
@@ -191,13 +306,17 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
-" Keyboard Settings
+" FZF
 " Toggle fzf Files
 nmap <leader>ne :Files<cr>
 " Toggle fzf Buffers
 nmap <leader>nb :Buffers<cr>
 " Toggle fzf Ag
 nmap <leader>na :Ag<cr>
+
+""" zfz default command to include dot files
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
+
 
 set encoding=utf-8
 
@@ -213,20 +332,6 @@ if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
 endif
-
-" No autoresizing on split windows
-set noea
-
-set wildignore+=*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/node_modules/**
-
-" Copy to clipboard
-vnoremap <C-c> "+y
-
-" Fugitive
-set diffopt+=vertical
-
-" Disable spell checker
-set nospell
 
 " Matchit vim for tag jumping
 filetype detect
@@ -294,94 +399,6 @@ au BufNewFile,BufRead *.hs set
 """"" Vimwiki """""""""""""""""
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
-
-""""" Status line """"""""""""
-hi User1 ctermbg=24 ctermfg=254
-hi User2 ctermfg=117
-hi User3 ctermfg=178
-hi User4 ctermfg=38
-hi User5 ctermfg=252
-hi User6 ctermfg=red
-hi User7 ctermfg=white
-hi User8 ctermfg=green
-hi User9 ctermbg=black
-hi User10 ctermfg=178
-
-" Change statusline in insert mode
-function! EnterInsert()
-    hi User1 ctermbg=88
-    hi User5 ctermbg=24
-    hi User3 ctermbg=24
-endfunction
-
-function! LeaveInsert()
-    hi User1 ctermbg=24
-    hi User5 ctermbg=black
-    hi User3 ctermbg=black
-endfunction
-
-au InsertEnter * call EnterInsert()
-au InsertLeave * call LeaveInsert()
-
-" Mode aliases
-let g:currentmode={
-    \ 'n'  : 'Normal',
-    \ 'no' : 'N·Operator Pending',
-    \ 'v'  : 'Visual',
-    \ 'V'  : 'V Line',
-    \ '' : 'V Block',
-    \ 's'  : 'Select',
-    \ 'S'  : 'S·Line',
-    \ '' : 'S·Block',
-    \ 'i'  : 'Insert',
-    \ 'R'  : 'R',
-    \ 'Rv' : 'V·Replace',
-    \ 'c'  : 'Command',
-    \ 'cv' : 'Vim Ex',
-    \ 'ce' : 'Ex',
-    \ 'r'  : 'Prompt',
-    \ 'rm' : 'More',
-    \ 'r?' : 'Confirm',
-    \ '!'  : 'Shell',
-    \ 't'  : 'Terminal'
-    \}
-
-" Show paste indicator
-function! ShowPaste()
-    if &paste
-        return "  (Paste)"
-    else
-        return ""
-    endif
-endfunction
-
-set statusline=                 "Clear status line for when vimrc is reloaded
-set statusline +=%1*\ B%n\,\ %{g:currentmode[mode()]}%{ShowPaste()}\ %*    "buffer number
-set statusline +=%5*\ %{&ff}%*    "file format
-set statusline +=%3*%y%*         "file type
-set statusline +=%4*\ %<%F%*     "full path
-set statusline +=%6*%r             "Readonly flag
-set statusline +=%2*%m%*        "modified flag
-set statusline +=%9*%=             " left/right separator
-" set statusline +=%8*%{fugitive#statusline()} " Git Hotness
-"set statusline +=\ %P           "Percen through file
-set statusline +=%9*\ \ %l       "curr line
-set statusline +=%7*/
-set statusline +=%6*%L         "total lines
-set statusline +=%4*[%2*%c%4*]\          "current column
-set statusline +=%8*[%4*%{strlen(&fenc)?&fenc:'none'}%8*] "file encoding"
-
-" Hide status message
-set noshowmode
-
-"""" Other highlights """"
-hi jsonStringSQError ctermfg=red
-hi jsonNoQuotesError ctermfg=red
-hi jsonTripleQuotesError ctermfg=red
-
-"""" Show special characters """"
-set list lcs=tab:>-,trail:·,extends:>,precedes:<
-
 """ Linters ale """
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
@@ -397,12 +414,6 @@ let g:ale_fixers = {
             \}
 nmap <silent> ]l <Plug>(ale_next_wrap)
 nmap <silent> [l <Plug>(ale_previous_wrap)
-
-""" zfz default command to include dot files
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
-
-""" Remove search highlight on esc
-nnoremap <silent> <esc> :noh<cr><esc>
 
 """ Autocompletion
 " Use deoplete.
