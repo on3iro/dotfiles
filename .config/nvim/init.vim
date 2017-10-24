@@ -192,8 +192,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Keyboard Settings
-" Toggle fzf files
+" Toggle fzf Files
 nmap <leader>ne :Files<cr>
+" Toggle fzf Buffers
+nmap <leader>nb :Buffers<cr>
+" Toggle fzf Ag
+nmap <leader>na :Ag<cr>
 
 set encoding=utf-8
 
