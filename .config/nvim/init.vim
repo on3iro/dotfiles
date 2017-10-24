@@ -14,6 +14,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'chriskempson/base16-vim'
 
 Plug 'beigebrucewayne/hacked_ayu.vim'
+Plug 'hzchirs/vim-material'
 
 
 " [ BEHAVIOR ]
@@ -168,10 +169,11 @@ set termguicolors
 
 " Color theme
 colorscheme base16-monokai
+" colorscheme vim-material
 "colorscheme colorsbox-material
 
 " Line Number BG
-" highlight LineNr ctermbg=white
+highlight LineNr guifg=gray35 guibg=NONE
 
 " All numbers are treated as decimal
 set nrformats=
@@ -207,15 +209,15 @@ nnoremap <silent> <esc> :noh<cr><esc>
 
 """"" Status line """"""""""""
 hi User1 guibg=DodgerBlue4 guifg=ivory1
-hi User2 guifg=aquamarine2
-hi User3 guifg=orange
-hi User4 guifg=snow2
-hi User5 guifg=DeepSkyBlue2
-hi User6 guifg=red3
-hi User7 guifg=red1 " currently not in use
-hi User8 guifg=DeepSkyBlue2
-hi User9 guibg=gray15
-hi User10 guifg=178
+hi User2 guibg=gray15 guifg=orange
+hi User3 guibg=gray15 guifg=orange
+hi User4 guibg=gray15 guifg=ivory3
+hi User5 guibg=gray15 guifg=DeepSkyBlue2
+hi User6 guibg=gray15 guifg=SteelBlue3
+hi User7 guibg=gray15 guifg=gray40
+hi User8 guibg=gray15 guifg=DeepSkyBlue2
+hi User9 guibg=gray15 guifg=SteelBlue1
+hi User10 guibg=gray15 guifg=178
 
 " Change statusline in insert mode
 function! EnterInsert()
