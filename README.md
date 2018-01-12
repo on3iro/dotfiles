@@ -20,3 +20,4 @@
 * ssh
 * node + npm + ncu (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * base16-colors
+* fzf + ag silver_searcher
