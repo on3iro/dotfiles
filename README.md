@@ -19,3 +19,4 @@
 * cookiecutter
 * ssh
 * node + npm + ncu
+* base16-colors
