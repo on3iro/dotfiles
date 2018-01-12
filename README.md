@@ -8,10 +8,10 @@
 
 ## Memo: Things I need to install on new machines (minimal setup)
 
-* nvim
+* nvim + vimplug
 * tmux
 * vifm
-* zsh (might want to switch to fish in the future...)
+* zsh + oh-my-zsh (might want to switch to fish in the future...)
 * htop
 * cookiecutter
 * ssh
