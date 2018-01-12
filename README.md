@@ -8,6 +8,7 @@
 
 ## Memo: Things I need to install on new machines (minimal setup)
 
+* i3
 * nvim + vimplug
 * tmux
 * vifm
