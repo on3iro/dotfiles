@@ -9,6 +9,7 @@
 ## Memo: Things I need to install on new machines (minimal setup)
 
 * i3
+* urxvt
 * nvim + vimplug
 * tmux
 * vifm
