@@ -12,6 +12,7 @@
 * urxvt
 * nvim + vimplug
 * tmux
+* git
 * vifm
 * zsh + oh-my-zsh (might want to switch to fish in the future...)
 * htop
