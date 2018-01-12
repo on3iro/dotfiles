@@ -18,5 +18,5 @@
 * htop
 * cookiecutter
 * ssh
-* node + npm + ncu
+* node + npm + ncu (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * base16-colors
