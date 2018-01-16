@@ -22,7 +22,7 @@ alias netchannel="sudo iwlist wlan0 scan | grep Frequency | sort | uniq -c | sor
 alias python="/usr/bin/python3"
 
 # pip
-#alias pip="/usr/bin/pip3"
+alias pip="/usr/bin/pip3"
 
 # Flask cookiecutter
 alias flaskcookie="cookiecutter git@github.com:on3iro/cookiecutter-flask.git"

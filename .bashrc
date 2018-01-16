@@ -133,3 +133,4 @@ fi
 TERM=screen-256color
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export PATH="/home/on3iro/.local/bin:$PATH"
