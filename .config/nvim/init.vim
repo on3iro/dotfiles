@@ -76,8 +76,11 @@ Plug 'fleischie/vim-styled-components'
 " General language support
 Plug 'sheerun/vim-polyglot'
 
+" Plug 'ternjs/tern_for_vim'
+
 " Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'sudo npm install -g tern'}
 
 " Linting
 Plug 'w0rp/ale'
