@@ -203,8 +203,7 @@ bar {
 
         # Tray
         tray_output primary
-        tray_output VGA1
-        tray_output LVDS1
+        tray_output LVDS-1
         tray_padding 2px
 
         # Font

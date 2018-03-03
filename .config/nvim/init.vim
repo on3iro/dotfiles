@@ -291,7 +291,7 @@ hi jsonNoQuotesError guifg=red2
 hi jsonTripleQuotesError guifg=red2
 
 """" Show special characters """"
-set list lcs=eol:λ,tab:>-,trail:·,extends:>,precedes:<
+set list lcs=tab:>-,trail:·,extends:>,precedes:<
 
 
 
