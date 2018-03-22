@@ -51,6 +51,10 @@ Plug 'junegunn/fzf.vim'
 "------------ Web related -------------
 " JS/HTML-Beautify
 Plug 'Chiel92/vim-autoformat'
+" Prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
 
 " Close html tags
 Plug 'tpope/vim-ragtag'
@@ -291,7 +295,7 @@ hi jsonNoQuotesError guifg=red2
 hi jsonTripleQuotesError guifg=red2
 
 """" Show special characters """"
-set list lcs=eol:λ,tab:>-,trail:·,extends:>,precedes:<
+set list lcs=tab:>-,trail:·,extends:>,precedes:<
 
 
 
@@ -424,6 +428,7 @@ nmap <silent> [l <Plug>(ale_previous_wrap)
 """ Autocompletion
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = "complete"
 
 " Elixir alchemist
 let g:alchemist_tag_disable = 1
