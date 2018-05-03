@@ -7,23 +7,13 @@
 
 - link:
     ~/dotfiles: ''
-    ~/.autorandr: .autorandr
-    ~/.config/i3: .config/i3
     ~/.config/nvim: .config/nvim
-    ~/.urxvt/ext: .urxvt/ext
-    ~/.bash_aliases: .bash_aliases
-    ~/.bashrc: .bashrc
-    ~/.dir_colors: .dir_colors
     ~/.editorconfig: .editorconfig
     ~/.gitconfig: .gitconfig
     ~/.oh-my-zsh/themes/on3iro.zsh-theme: on3iro.zsh-theme
-    ~/.my_keyboard: .my_keyboard
     ~/.tmux.conf: .tmux.conf
-    ~/.vimrc: .vimrc
     ~/.vifm/vifmrc: vifmrc
     ~/.zshrc: .zshrc
-    ~/.Xmodmap: .Xmodmap
-    ~/.Xresources: .Xresources
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

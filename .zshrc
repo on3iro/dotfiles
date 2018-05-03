@@ -1,11 +1,20 @@
-# Path to your oh-my-zsh installation.
-  export ZSH=/home/on3iro/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/theo/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="on3iro"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -21,7 +30,7 @@ ZSH_THEME="on3iro"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
-DISABLE_LS_COLORS="true"
+# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -30,7 +39,7 @@ DISABLE_LS_COLORS="true"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
- COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -49,13 +58,16 @@ DISABLE_LS_COLORS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-# User configuration
-export PATH="/home/on3iro/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/on3iro/bin"
-export MANPATH="/usr/local/man:$MANPATH"
+plugins=(
+  git
+  history-substring-search
+)
 
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -71,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
- export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -81,65 +93,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $HOME/.bash_aliases
 
-# Make caps lock another ctrl
-#setxkbmap -layout us -option ctrl:nocaps
-
-## Paths
-export PATH=$PATH:$HOME/bin
-export PATH=$PATH:/home/on3iro/.scripts
-export PATH=$PATH:/home/on3iro/geckodriver
-
-## Disable C-s
+# Disable C-s
 stty -ixon
-
-# Vifm script
-#vifm()
-#{
-    #if [ -f ~/.vifm/lastdir ]; then
-        #rm ~/.vifm/lastdir
-    #fi
-     #"command" prevents recursiv call
-    #command vifm "$@"
-    #if [ -f ~/.vifm/lastdir ]; then
-        #cd `cat ~/.vifm/lastdir`
-    #fi
-#}
-
-# English terminal
-# export LC_ALL=C
-
-# BASE16 colors
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1"  ] && [ -s $BASE16_SHELL/profile_helper.sh  ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-# virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3.5' # This needs to be placed before the virtualenvwrapper command
-VIRTUALENVWRAPPER_VIRTUALENV='/usr/bin/pyvenv'
-source /usr/local/bin/virtualenvwrapper.sh
-
-export TERM=xterm-256color
-
-eval `dircolors ~/.dir_colors`
-alias ls="ls --color=auto"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Activate vim bindings
 bindkey -v
 function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
-    zle reset-prompt
+	VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+	RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+	zle reset-prompt
 }
 
 zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# history-substring-search keys
+bindkey '^[' history-substring-search-up
+bindkey '^]' history-substring-search-down
