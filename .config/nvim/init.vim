@@ -2,10 +2,6 @@
 "
 call plug#begin('~/.vim/plugged')
 
-" ------------- {{ PLUGINS }} --------------------------------------
-" let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
-
 "---------- Vim behavior/appearance --------------------------------
 
 " [ COLORS ]
@@ -13,7 +9,6 @@ Plug 'VundleVim/Vundle.vim'
 " Base 16 Colors
 Plug 'chriskempson/base16-vim'
 
-Plug 'beigebrucewayne/hacked_ayu.vim'
 Plug 'hzchirs/vim-material'
 
 
@@ -83,8 +78,8 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'ternjs/tern_for_vim'
 
 " Autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'sudo npm install -g tern'}
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'sudo npm install -g tern'}
 
 " Linting
 Plug 'w0rp/ale'
