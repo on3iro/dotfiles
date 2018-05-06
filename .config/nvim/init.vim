@@ -404,6 +404,8 @@ au BufNewFile,BufRead *.hs set
 """"" Vimwiki """""""""""""""""
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+nmap <leader>tt <Plug>VimwikiToggleListItem
+
 """ Linters ale """
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_save = 1
