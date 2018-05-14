@@ -5,3 +5,5 @@ name = Theo Salzmann
 email = theo.salzmann@sandstorm.de
 [push]
 	default = simple
+[core]
+	editor = nvim

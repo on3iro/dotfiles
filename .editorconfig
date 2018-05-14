@@ -3,6 +3,8 @@ root = true
 
 # Unix-style newlines with a newline ending every file
 [*]
+indent_style = space
+indent-size = 2
 end_of_line = lf
 insert_final_newline = true
 
@@ -17,16 +19,5 @@ indent_style = space
 indent_size = 4
 
 # Indentation override for all JS under lib directory
-[*.js, *.css, *.sass, *.scss, *.html]
-indent_style = space
-indent_size = 2
+[*.js, *.css, *.sass, *.scss, *.html, *.md]
 trim_trailing_whitespace = true
-
-[*.md]
-trim_trailing_whitespace = false
-
-[{.travis.yml,package.json}]
-# The indent size used in the `package.json` file cannot be changed
-# https://github.com/npm/npm/pull/3180#issuecomment-16336516
-indent_size = 2
-indent_style = space
