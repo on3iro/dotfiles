@@ -112,3 +112,4 @@ export KEYTIMEOUT=1
 # history-substring-search keys
 # bindkey '^[' history-substring-search-up
 # bindkey '^]' history-substring-search-down
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_172`
