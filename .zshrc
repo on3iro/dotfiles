@@ -110,6 +110,9 @@ zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
 # history-substring-search keys
-# bindkey '^[' history-substring-search-up
-# bindkey '^]' history-substring-search-down
+bindkey '^O' history-substring-search-up
+bindkey '^P' history-substring-search-down
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_172`
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

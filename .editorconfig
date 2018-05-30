@@ -21,3 +21,6 @@ indent_size = 4
 # Indentation override for all JS under lib directory
 [*.js, *.css, *.sass, *.scss, *.html, *.md]
 trim_trailing_whitespace = true
+
+[*.md]
+indent_style = space
