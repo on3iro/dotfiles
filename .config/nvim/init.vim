@@ -21,6 +21,8 @@ Plug  'scrooloose/nerdtree'
 Plug 'SirVer/ultisnips'
 " Snippets
 Plug 'honza/vim-snippets'
+Plug 'epilande/vim-react-snippets'
+Plug 'epilande/vim-es2015-snippets'
 
 " Bracket completion
 Plug 'Raimondi/delimitMate'

@@ -5,6 +5,7 @@
     default = simple
 [core]
     editor = nvim
+	excludesfile = /Users/theo/.gitignore
 [alias]
 	co = checkout
 	ct = commit
