@@ -51,7 +51,7 @@ Plug 'Chiel92/vim-autoformat'
 " Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'for': ['css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
+  \ 'for': ['js', 'jsx', 'css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
 
 " Close html tags
 Plug 'tpope/vim-ragtag'

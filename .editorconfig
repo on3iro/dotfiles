@@ -4,7 +4,7 @@ root = true
 # Unix-style newlines with a newline ending every file
 [*]
 indent_style = space
-indent-size = 2
+indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 
@@ -19,7 +19,7 @@ indent_style = space
 indent_size = 4
 
 # Indentation override for all JS under lib directory
-[*.js, *.css, *.sass, *.scss, *.html, *.md]
+[*.{js,jsx,css,sass,scss,html,md]
 trim_trailing_whitespace = true
 
 [*.md]
