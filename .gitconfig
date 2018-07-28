@@ -27,3 +27,4 @@
 	po = push -u origin HEAD
 	all = add -A .
 	amend = commit --amend<Paste>
+  tree = diff-tree --no-commit-id --name-only -r
