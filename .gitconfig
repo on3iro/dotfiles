@@ -8,6 +8,7 @@
 	excludesfile = /Users/theo/.gitignore
 [alias]
 	co = checkout
+  cb = checkout -b
 	ct = commit
 	cp = cherry-pick
 	st = status
