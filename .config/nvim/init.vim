@@ -300,7 +300,7 @@ set list lcs=tab:>-,trail:·,extends:>,precedes:<
 
 " Markdown support
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-let g:markdown_fenced_languages = ['html', 'python', 'bash=zsh']
+let g:markdown_fenced_languages = ['html=html', 'python=py', 'bash=zsh', 'javascript=js', 'java=java']
 let g:markdown_syntax_conceal = 0
 
 " UltiSnips

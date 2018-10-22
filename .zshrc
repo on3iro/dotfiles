@@ -94,6 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias pls='sudo $(fc -ln -1)'
+alias dc='docker-compose'
+
 # Disable C-s
 stty -ixon
 
