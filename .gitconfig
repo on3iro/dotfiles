@@ -5,27 +5,28 @@
     default = simple
 [core]
     editor = nvim
-	excludesfile = /Users/theo/.gitignore
+  excludesfile = /Users/theo/.gitignore
 [alias]
-	co = checkout
+  co = checkout
   cb = checkout -b
-	ct = commit
-	cp = cherry-pick
-	st = status
-	bh = branch
-	bl = branch -l
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	lg-release = log --pretty=format:'%Cred%h%Creset - %s' --abbrev-commit
-	names = show --name-only
-	sg = commit -am stage
-	rt = reset
-	ph = push
-	fph = push --force-with-lease
-	pl = pull -p --rebase
-	rb = rebase
-	ri = rebase -i
-	ad = commit -a --amend --no-edit
-	po = push -u origin HEAD
-	all = add -A .
-	amend = commit --amend<Paste>
+  ct = commit
+  cp = cherry-pick
+  st = status
+  bh = branch
+  bl = branch -l
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg-release = log --pretty=format:'%Cred%h%Creset - %s' --abbrev-commit
+  names = show --name-only
+  sg = commit -am stage
+  rt = reset
+  ph = push
+  fph = push --force-with-lease
+  pl = pull -p --rebase
+  rb = rebase
+  ri = rebase -i
+  ad = commit -a --amend --no-edit
+  po = push -u origin HEAD
+  all = add -A .
+  amend = commit --amend<Paste>
   tree = diff-tree --no-commit-id --name-only -r
+  sd = diff --name-only --diff-filter=U
