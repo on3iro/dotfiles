@@ -124,3 +124,6 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND="fd . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
+
+# Date for history backups
+alias DATE="date '+%Y%m%d'"
