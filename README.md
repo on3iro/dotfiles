@@ -16,3 +16,4 @@
 * htop
 * base16-colors
 * fzf + ag silver_searcher
+* fd
