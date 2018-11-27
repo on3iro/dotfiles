@@ -440,4 +440,4 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = "complete"
 
 " Elixir alchemist
-let g:alchemist_tag_disable = 1
+" let g:alchemist_tag_disable = 1
