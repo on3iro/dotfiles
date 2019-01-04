@@ -130,7 +130,7 @@ let mapleader = ","
 syntax enable
 
 " Save more than 8 commands
-set history=50
+set history=1000
 
 " set tabs to have 4 spaces
 set ts=4
