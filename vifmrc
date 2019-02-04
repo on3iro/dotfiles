@@ -70,7 +70,9 @@ set fusehome=/tmp/vifm_FUSE
 " set timefmt=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=\ %m/%d\ %H:%M
+" time format
+set timefmt=%d/%m/%y\ %H:%M
+
 
 " :mark mark /full/directory/path [filename]
 
@@ -99,10 +101,10 @@ set timefmt=\ %m/%d\ %H:%M
 " The %a macro is ignored.  To use a % you must put %%.
 
 " Images
-filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp gthumb 
+filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp gthumb
 
 " PDF
-filetype *.pdf zathura
+filetype *.pdf open
 
 " For automated FUSE mounts, you must register an extension with FILETYPE=..
 " in one of following formats:
@@ -127,9 +129,6 @@ filetype *.pdf zathura
 " set vifminfo=options,filetypes,commands,bookmarks,tui,state,cs,chistory,shistory,dirstack,registers,phistory
 " Like in vi
 set vifminfo=bookmarks,chistory,shistory,phistory
-
-" time format
-set timefmt=%d/%m/%y\ %H:%M
 
 " show time in columns
 set viewcolumns=*{name}..,16{mtime},7{}.
