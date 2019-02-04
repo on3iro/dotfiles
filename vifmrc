@@ -128,5 +128,11 @@ filetype *.pdf zathura
 " Like in vi
 set vifminfo=bookmarks,chistory,shistory,phistory
 
+" time format
+set timefmt=%d/%m/%y\ %H:%M
+
+" show time in columns
+set viewcolumns=*{name}..,16{mtime},7{}.
+
 " Quit into directory
 command! Q :execute '!echo $d > ~/.vifm/lastdir' | quit
