@@ -101,7 +101,7 @@ set timefmt=%d/%m/%y\ %H:%M
 " The %a macro is ignored.  To use a % you must put %%.
 
 " Images
-filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp gthumb
+filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp open
 
 " PDF
 filetype *.pdf open
