@@ -51,7 +51,7 @@ Plug 'Chiel92/vim-autoformat'
 " Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'for': ['js', 'jsx', 'css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
+  \ 'for': ['js', 'jsx', 'ts', 'tsx', 'css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
 
 " Close html tags
 Plug 'tpope/vim-ragtag'
@@ -71,6 +71,9 @@ Plug 'slashmili/alchemist.vim'
 
 " ------ JavaScript specific -----------
 Plug 'fleischie/vim-styled-components'
+
+" ------ TypeScript -----------------
+Plug 'ianks/vim-tsx'
 
 "------------- Dev --------------------
 
@@ -320,6 +323,7 @@ nmap <leader>ne :Files<cr>
 nmap <leader>nb :Buffers<cr>
 " Toggle fzf Ag
 nmap <leader>na :Ag<cr>
+nmap <leader>nl :BLines<cr>
 
 """ zfz default command to include dot files
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
@@ -351,7 +355,9 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = {
             \ 'javascript': { 'left': '//', 'leftAlt': '/**','rightAlt': '*/' },
-            \ 'javascript.jsx': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/'}
+            \ 'javascript.jsx': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/'},
+            \ 'typescript': { 'left': '//', 'leftAlt': '/**','rightAlt': '*/' },
+            \ 'typescript.tsx': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/'}
             \ }
 
 """""" PYTHON """""""
@@ -388,6 +394,14 @@ au BufNewFile,BufRead *.elm set
     \ autoindent
     \ expandtab
 let g:elm_format_autosave = 1
+
+" typescript
+au BufNewFile,BufRead *.ts,*.tsx set
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
+    \ autoindent
+    \ expandtab
 
 " vim-jsx
 let g:jsx_ext_required = 1
@@ -426,7 +440,10 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters = {
-            \ 'javascript': ['standard', 'flow'],
+            \ 'javascript': ['standard'],
+            \}
+let g:ale_linters = {
+            \ 'typescript': ['tsserver'],
             \}
 let g:ale_fixers = {
             \ 'javascript': ['standard'],

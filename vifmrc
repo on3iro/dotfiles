@@ -99,9 +99,10 @@ set timefmt=%d/%m/%y\ %H:%M
 " The other programs for the file type can be accessed with the :file command
 " The command macros %f, %F, %d, %F may be used in the commands.
 " The %a macro is ignored.  To use a % you must put %%.
+filetype *.js,*.jsx,*.json,*.md,*.yaml,*.ts,*.* nvim
 
 " Images
-filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp open
+" filetype *.jpg,*.jpeg,*.gif,*.png,*.bmp open
 
 " PDF
 filetype *.pdf open

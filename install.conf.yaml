@@ -8,6 +8,7 @@
 - link:
     ~/dotfiles: ''
     ~/.config/nvim: .config/nvim
+    ~/.gitmessage.txt: .gitmessage.txt
     ~/.editorconfig: .editorconfig
     ~/.gitconfig: .gitconfig
     ~/.oh-my-zsh/themes/on3iro.zsh-theme: on3iro.zsh-theme
