@@ -245,17 +245,13 @@ nmap <leader>nb :Buffers<cr>
 nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
 
-""" zfz default command to include dot files
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
-
-
 set encoding=utf-8
-
-" Freemarker syntax
-au BufRead,BufNewFile *.vm set filetype=ftl
 
 " closetag.vim config
 let g:closetag_filenames = "*.html, *.xhtml, *.phtml, *.vm"
+
+""" zfz default command to include dot files
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 
 " Silver Searcher as default
 " The Silver Searcher
