@@ -8,9 +8,7 @@ call plug#begin('~/.vim/plugged')
 "
 " Base 16 Colors
 Plug 'chriskempson/base16-vim'
-
 Plug 'hzchirs/vim-material'
-
 
 " [ BEHAVIOR ]
 
@@ -80,11 +78,8 @@ Plug 'ianks/vim-tsx'
 " General language support
 Plug 'sheerun/vim-polyglot'
 
-" Plug 'ternjs/tern_for_vim'
-
 " Autocompletion
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'carlitux/deoplete-ternjs', { 'do': 'sudo npm install -g tern'}
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Linting
 Plug 'w0rp/ale'
@@ -169,10 +164,8 @@ set wildmenu
 " switch to paste mode via F2
 set pastetoggle=<F2>
 
- "Use 256 colors
+"Use 256 colors
 set termguicolors
-" set t_Co=256
-" let base16colorspace=256
 
 " Color theme
 colorscheme base16-monokai
@@ -212,79 +205,7 @@ set nospell
 nnoremap <silent> <esc> :noh<cr><esc>
 
 
-" [ COLORS/STATUS ]
-
-""""" Status line """"""""""""
-hi User1 guibg=DodgerBlue4 guifg=ivory1
-hi User2 guibg=gray15 guifg=orange
-hi User3 guibg=gray15 guifg=orange
-hi User4 guibg=gray15 guifg=ivory3
-hi User5 guibg=gray15 guifg=DeepSkyBlue2
-hi User6 guibg=gray15 guifg=SteelBlue3
-hi User7 guibg=gray15 guifg=gray40
-hi User8 guibg=gray15 guifg=DeepSkyBlue2
-hi User9 guibg=gray15 guifg=SteelBlue1
-hi User10 guibg=gray15 guifg=178
-
-" Change statusline in insert mode
-function! EnterInsert()
-    hi User1 guibg=IndianRed3
-endfunction
-
-function! LeaveInsert()
-    hi User1 guibg=DodgerBlue4
-endfunction
-
-au InsertEnter * call EnterInsert()
-au InsertLeave * call LeaveInsert()
-
-" Mode aliases
-let g:currentmode={
-    \ 'n'  : 'Normal',
-    \ 'no' : 'N·Operator Pending',
-    \ 'v'  : 'Visual',
-    \ 'V'  : 'V Line',
-    \ '' : 'V Block',
-    \ 's'  : 'Select',
-    \ 'S'  : 'S·Line',
-    \ '' : 'S·Block',
-    \ 'i'  : 'Insert',
-    \ 'R'  : 'R',
-    \ 'Rv' : 'V·Replace',
-    \ 'c'  : 'Command',
-    \ 'cv' : 'Vim Ex',
-    \ 'ce' : 'Ex',
-    \ 'r'  : 'Prompt',
-    \ 'rm' : 'More',
-    \ 'r?' : 'Confirm',
-    \ '!'  : 'Shell',
-    \ 't'  : 'Terminal'
-    \}
-
-" Show paste indicator
-function! ShowPaste()
-    if &paste
-        return "  (Paste)"
-    else
-        return ""
-    endif
-endfunction
-
-set statusline=                 "Clear status line for when vimrc is reloaded
-set statusline +=%1*\ B%n\,\ %{g:currentmode[mode()]}%{ShowPaste()}\ %*    "buffer number
-set statusline +=%5*\ %{&ff}%*    "file format
-set statusline +=%3*%y%*         "file type
-set statusline +=%4*\ %<%F%*     "full path
-set statusline +=%6*%r             "Readonly flag
-set statusline +=%2*%m%*        "modified flag
-set statusline +=%9*%=             " left/right separator
-" set statusline +=%8*%{fugitive#statusline()} " Git Hotness
-"set statusline +=\ %P           "Percen through file
-set statusline +=%9*\ \ %l       "curr line
-set statusline +=%7*/
-set statusline +=%6*%L         "total lines
-set statusline +=%4*[%2*%c%4*]\          "current column
-set statusline +=%8*[%4*%{strlen(&fenc)?&fenc:'none'}%8*] "file encoding"
+" [ VISUAL ]
 
 " Hide status message
 set noshowmode
@@ -296,7 +217,6 @@ hi jsonTripleQuotesError guifg=red2
 
 """" Show special characters """"
 set list lcs=tab:>-,trail:·,extends:>,precedes:<
-
 
 
 " [ PLUGIN RELATED ]
@@ -351,110 +271,11 @@ runtime macros/matchit.vim
 " NERDtree settings
 let NERDTreeIgnore = ['\.pyc$']
 
-" NERDcommenter settings
-let g:NERDSpaceDelims = 1
-let g:NERDCustomDelimiters = {
-            \ 'javascript': { 'left': '//', 'leftAlt': '/**','rightAlt': '*/' },
-            \ 'javascript.jsx': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/'},
-            \ 'typescript': { 'left': '//', 'leftAlt': '/**','rightAlt': '*/' },
-            \ 'typescript.tsx': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/'}
-            \ }
-
-"""""" PYTHON """""""
-
-au BufNewFile,BufRead *.py set
-    \ tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
-    \ textwidth=79
-    \ expandtab
-    \ autoindent
-    \ fileformat=unix
-
-set encoding=utf-8
-
-" enable python synthax highlighting
-let python_highlight_all = 1
-
-""""""" HTML / CSS / JavaScript """"""""""
-au BufNewFile,BufRead *.js,*.html,*.scss set
-    \ tabstop=2
-    \ softtabstop=2
-    \ shiftwidth=2
-    \ autoindent
-    \ expandtab
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_flow = 1
-
-" elm
-au BufNewFile,BufRead *.elm set
-    \ tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
-    \ autoindent
-    \ expandtab
-let g:elm_format_autosave = 1
-
-" typescript
-au BufNewFile,BufRead *.ts,*.tsx set
-    \ tabstop=2
-    \ softtabstop=2
-    \ shiftwidth=2
-    \ autoindent
-    \ expandtab
-
-" vim-jsx
-let g:jsx_ext_required = 1
-
-" JSON
-au BufNewFile,BufRead *.json set ft=json
-
-"""""""" Haskell """""""""""""
-au BufNewFile,BufRead *.hs set
-    \ tabstop=2
-    \ softtabstop=2
-    \ shiftwidth=2
-    \ autoindent
-    \ expandtab
-
-""""" Vimwiki """""""""""""""""
-let personal_wiki = {}
-let personal_wiki.path = '~/vimwiki/'
-let personal_wiki.syntax = 'markdown'
-let personal_wiki.ext = '.md'
-
-let sandstorm_wiki = {}
-let sandstorm_wiki.path = '~/vw_sandstorm'
-let sandstorm_wiki.syntax = 'markdown'
-let sandstorm_wiki.ext = '.md'
-
-let g:vimwiki_list = [personal_wiki, sandstorm_wiki]
-
-nmap <leader>tt <Plug>VimwikiToggleListItem
-
-""" Linters ale """
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_save = 1
-let g:ale_set_highlights = 1
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_linters = {
-            \ 'javascript': ['standard'],
-            \}
-let g:ale_linters = {
-            \ 'typescript': ['tsserver'],
-            \}
-let g:ale_fixers = {
-            \ 'javascript': ['standard'],
-            \}
-nmap <silent> ]l <Plug>(ale_next_wrap)
-nmap <silent> [l <Plug>(ale_previous_wrap)
-
 """ Autocompletion
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#complete_method = "complete"
 
-" Elixir alchemist
-" let g:alchemist_tag_disable = 1
+source $HOME/.config/nvim/status.vimrc
+source $HOME/.config/nvim/vimwiki.vimrc
+source $HOME/.config/nvim/languages.vimrc
