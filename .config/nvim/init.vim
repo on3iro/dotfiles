@@ -168,7 +168,8 @@ set pastetoggle=<F2>
 set termguicolors
 
 " Color theme
-colorscheme base16-monokai
+" colorscheme base16-monokai
+colorscheme base16-gruvbox-dark-hard
 " colorscheme vim-material
 "colorscheme colorsbox-material
 
