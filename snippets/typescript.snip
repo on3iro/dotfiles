@@ -1,0 +1,41 @@
+snippet     duck
+  ///////////
+  // STATE //
+  ///////////
+
+  export type State = undefined
+  export const initialState: State = undefined
+
+  /////////////
+  // ACTIONS //
+  /////////////
+
+  export enum ActionTypes {
+  }
+
+  export const actions = {
+  }
+
+  export type Action = ActionsUnion<typeof actions>
+
+  /////////////
+  // REDUCER //
+  /////////////
+
+  export const Reducer: LoopReducer<State, Action> = (
+    state: State = initialState,
+    action: Action
+  ) => {
+    switch (action.type) {
+      default: {
+        return state
+      }
+    }
+  }
+
+  ///////////////
+  // SELECTORS //
+  ///////////////
+
+  export const selectors = {
+  }

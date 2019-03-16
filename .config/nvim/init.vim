@@ -15,13 +15,6 @@ Plug 'hzchirs/vim-material'
 " NERDtree Browser
 Plug  'scrooloose/nerdtree'
 
-" Snippet engine
-Plug 'SirVer/ultisnips'
-" Snippets
-Plug 'honza/vim-snippets'
-Plug 'epilande/vim-react-snippets'
-Plug 'epilande/vim-es2015-snippets'
-
 " Bracket completion
 Plug 'Raimondi/delimitMate'
 
@@ -81,6 +74,10 @@ Plug 'sheerun/vim-polyglot'
 " Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
+" Snippets
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+
 " Linting
 Plug 'w0rp/ale'
 
@@ -131,7 +128,7 @@ syntax enable
 set history=1000
 
 " set tabs to have 4 spaces
-set ts=4
+set ts=2
 
 " tabs to spaces
 set expandtab
@@ -140,7 +137,7 @@ set expandtab
 set autoindent
 
 " manual tab indent << or >>
-set shiftwidth=4
+set shiftwidth=2
 
 " visual line under current cursor line
 set cursorline
@@ -276,3 +273,26 @@ let g:deoplete#complete_method = "complete"
 source $HOME/.config/nvim/status.vimrc
 source $HOME/.config/nvim/vimwiki.vimrc
 source $HOME/.config/nvim/languages.vimrc
+
+""" Snippets """
+" Plugin key-mappings.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+let g:neosnippet#snippets_directory = '~/.vim/snippets'

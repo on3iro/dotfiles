@@ -8,6 +8,7 @@
 - link:
     ~/dotfiles: ''
     ~/.config/nvim: .config/nvim
+    ~/.vim/snippets: snippets
     ~/.gitmessage.txt: .gitmessage.txt
     ~/.editorconfig: .editorconfig
     ~/.gitconfig: .gitconfig
