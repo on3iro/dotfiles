@@ -1,0 +1,7 @@
+snippet     props
+  type Props = {
+  }
+
+snippet     xProps
+  type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps & {
+  }

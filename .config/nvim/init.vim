@@ -199,6 +199,9 @@ set diffopt+=vertical
 " Disable spell checker
 set nospell
 
+" Enable basic mouse support
+set mouse=a
+
 " Remove search highlight on esc
 nnoremap <silent> <esc> :noh<cr><esc>
 

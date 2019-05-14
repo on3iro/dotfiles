@@ -78,7 +78,8 @@ let g:ale_linters = {
             \ 'typescript': ['tsserver'],
             \}
 let g:ale_fixers = {
-            \ 'javascript': ['standard'],
+            \ 'javascript': ['prettier'],
+            \ 'typescript': ['prettier'],
             \}
 nmap <silent> ]l <Plug>(ale_next_wrap)
 nmap <silent> [l <Plug>(ale_previous_wrap)
