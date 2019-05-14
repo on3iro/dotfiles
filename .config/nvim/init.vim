@@ -246,6 +246,9 @@ nmap <leader>nb :Buffers<cr>
 nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
 
+" NerdTree
+nmap <leader>nt :NERDTree<cr>
+
 set encoding=utf-8
 
 " closetag.vim config
