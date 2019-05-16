@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
 
 "---------- Vim behavior/appearance --------------------------------
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 " [ COLORS ]
 "
@@ -65,6 +66,7 @@ Plug 'fleischie/vim-styled-components'
 
 " ------ TypeScript -----------------
 Plug 'ianks/vim-tsx'
+Plug 'Quramy/tsuquyomi'
 
 "------------- Dev --------------------
 
