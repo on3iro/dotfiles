@@ -249,7 +249,7 @@ nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
 
 " NerdTree
-nmap <leader>nt :NERDTree<cr>
+nmap <leader>nt :NERDTreeToggle<cr>
 
 set encoding=utf-8
 
