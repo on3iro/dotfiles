@@ -126,6 +126,9 @@ alias DATE="date '+%Y%m%d'"
 # Alias for project volume on OSX
 alias cdpr="cd /Volumes/projects"
 
+# Alias for reaper dir
+alias cpreaper="/Users/theo/Library/Application Support/REAPER"
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
