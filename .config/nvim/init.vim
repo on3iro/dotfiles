@@ -74,7 +74,8 @@ Plug 'Quramy/tsuquyomi'
 Plug 'sheerun/vim-polyglot'
 
 " Autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" COC vim
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 " Snippets
 Plug 'Shougo/neosnippet.vim'
@@ -250,6 +251,7 @@ nmap <leader>nl :BLines<cr>
 
 " NerdTree
 nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>nf :NERDTreeFind<cr>
 
 set encoding=utf-8
 
@@ -274,10 +276,8 @@ runtime macros/matchit.vim
 let NERDTreeIgnore = ['\.pyc$']
 
 """ Autocompletion
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#complete_method = "complete"
 
+""" VIMRC Imports
 source $HOME/.config/nvim/status.vimrc
 source $HOME/.config/nvim/vimwiki.vimrc
 source $HOME/.config/nvim/languages.vimrc
