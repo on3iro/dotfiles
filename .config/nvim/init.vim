@@ -230,16 +230,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html=html', 'python=py', 'bash=zsh', 'javascript=js', 'java=java']
 let g:markdown_syntax_conceal = 0
 
-" UltiSnips
-" set runtimepath+=~/.vim
-" let g:UltiSnipsSnippetsDir="~/.vim/mySnippets"
-" let g:UltiSnipsSnippetsDirectories = ['UltiSnips', 'mySnippets']
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-a>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
-
 " FZF
 " Toggle fzf Files
 nmap <leader>ne :Files<cr>
