@@ -5,20 +5,20 @@ set -e
 
 helpFunction()
 {
-   echo ""
-   echo "Usage: $0 -n Name -t target"
+   echo "Creates a file prepended by a specified Date (default: <TODAY>)"
+   echo "Usage: $0 -n Name -t target -a adjustment"
    echo -e "\t-n File name to be appended"
-   echo -e "\t-t Target Path"
+   echo -e "\t-t Target Path (default: ~/tmp/)"
+   echo -e "\t-a Date adjustment (see shell $(date) function for reference)"
    exit 1 # Exit script after printing help
 }
 
-TODAY=$(date +%Y-%m-%d)
-
-while getopts :n:t: option
+while getopts :n:t:a: option
 do
   case "${option}" in
     n ) NAME=${OPTARG};;
     t ) TARGET=${OPTARG};;
+    a ) ADJUST=${OPTARG};;
     ? ) helpFunction ;; # Print help function in case flag is not available
   esac
 done
@@ -30,13 +30,23 @@ then
    helpFunction
 fi
 
-# Create file
+# Set target directory
 if [ -n "$TARGET" ]
   then
-    FILENAME="${TARGET}/${TODAY}_${NAME}.md"
+    TARGETDIR="${TARGET}"
   else
-    FILENAME="${HOME}/tmp/${TODAY}_${NAME}.md"
+    TARGETDIR="${HOME}/tmp"
 fi
 
+# Set date
+DATEFORMAT="+%Y-%m-%d"
+if [ -n "$ADJUST" ]
+  then
+    DATE=$(date -v${ADJUST} ${DATEFORMAT}) # Today adjusted
+  else
+    DATE=$(date ${DATEFORMAT}) # today
+fi
+
+FILENAME="${TARGETDIR}/${DATE}_${NAME}.md"
 echo "Creating file $FILENAME"
 touch $FILENAME
