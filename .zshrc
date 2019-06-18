@@ -129,10 +129,6 @@ alias cdpr="cd /Volumes/projects"
 # Alias for reaper dir
 alias cpreaper="/Users/theo/Library/Application Support/REAPER"
 
-# Alias for creating daily markdown files
-alias daily="touch /Users/theo/tmp/$(date +%Y-%m-%d)_Daily.md"
-alias dailytom="touch /Users/theo/tmp/$(date -v+1d +%Y-%m-%d)_Daily.md"
-
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
