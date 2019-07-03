@@ -148,3 +148,7 @@ chk() {
   branch=$(echo "$branches" | fzf +s +m -e) &&
   git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
 }
+
+export GOPATH=$HOME/src/go
+
+source <(kubectl completion zsh)
