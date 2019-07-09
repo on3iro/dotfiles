@@ -26,20 +26,27 @@ Plug 'tpope/vim-repeat'
 " Vim-Surround
 Plug 'tpope/vim-surround'
 
-" Markdown Table formatting
-Plug 'godlygeek/tabular'
-
-" Vimwiki
-Plug 'vimwiki/vimwiki'
-
-Plug 'mzlogin/vim-markdown-toc'
-
 " Vim-easygrep
 Plug 'mileszs/ack.vim'
 
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" [ MARKDOWN ]
+
+" Vimwiki
+Plug 'vimwiki/vimwiki'
+
+" Table of contents
+Plug 'mzlogin/vim-markdown-toc'
+
+" Markdown Table formatting
+Plug 'godlygeek/tabular'
+
+" Instant markdown preview
+Plug 'suan/vim-instant-markdown', {
+  \ 'for': 'markdown'}
 
 "------------ Web related -------------
 " JS/HTML-Beautify
@@ -239,6 +246,15 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html=html', 'python=py', 'bash=zsh', 'javascript=js', 'java=java']
 let g:markdown_syntax_conceal = 0
 au FileType markdown setl conceallevel=0
+
+" Mardown preview
+" "Uncomment to override defaults:
+let g:instant_markdown_slow = 1
+let g:instant_markdown_autostart = 0
+"let g:instant_markdown_open_to_the_world = 1 
+"let g:instant_markdown_allow_unsafe_content = 1
+"let g:instant_markdown_allow_external_content = 0
+"let g:instant_markdown_mathjax = 1
 
 " FZF
 " Toggle fzf Files

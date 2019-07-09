@@ -8,7 +8,8 @@
 
 ## Memo: Things I need to install on new machines (minimal setup)
 
-* nvim + vimplug
+* nvim + vimplug:
+  * `[sudo] npm -g install instant-markdown-d`
 * tmux
 * git
 * ranger
