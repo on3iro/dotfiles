@@ -10,6 +10,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 " Base 16 Colors
 Plug 'chriskempson/base16-vim'
 Plug 'hzchirs/vim-material'
+Plug 'flrnprz/plastic.vim'
 
 " [ BEHAVIOR ]
 
@@ -24,6 +25,9 @@ Plug 'tpope/vim-repeat'
 
 " Vim-Surround
 Plug 'tpope/vim-surround'
+
+" Markdown Table formatting
+Plug 'godlygeek/tabular'
 
 " Vimwiki
 Plug 'vimwiki/vimwiki'
@@ -170,7 +174,12 @@ set termguicolors
 " Color theme
 " colorscheme base16-monokai
 colorscheme base16-gruvbox-dark-hard
+" colorscheme base16-bespin
 " colorscheme vim-material
+" set background=dark
+" colorscheme plastic
+" let g:lightline = {'colorscheme': 'plastic'}
+
 "colorscheme colorsbox-material
 
 " Line Number BG
@@ -229,6 +238,7 @@ set list lcs=tab:>-,trail:·,extends:>,precedes:<
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html=html', 'python=py', 'bash=zsh', 'javascript=js', 'java=java']
 let g:markdown_syntax_conceal = 0
+au FileType markdown setl conceallevel=0
 
 " FZF
 " Toggle fzf Files
@@ -289,8 +299,8 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
+" if has('conceal')
+  " set conceallevel=2 concealcursor=niv
+" endif
 
 let g:neosnippet#snippets_directory = '~/.vim/snippets'
