@@ -9,7 +9,7 @@ helpFunction()
    echo "Usage: $0 -n Name -t target -a adjustment"
    echo -e "\t-n File name to be appended"
    echo -e "\t-t Target Path (default: ~/tmp/)"
-   echo -e "\t-a Date adjustment (see shell $(date) function for reference)"
+   echo -e "\t-a Date adjustment (see shell \$(date) function for reference)"
    exit 1 # Exit script after printing help
 }
 
