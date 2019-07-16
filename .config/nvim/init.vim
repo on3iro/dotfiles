@@ -297,6 +297,7 @@ let NERDTreeIgnore = ['\.pyc$']
 source $HOME/.config/nvim/status.vimrc
 source $HOME/.config/nvim/vimwiki.vimrc
 source $HOME/.config/nvim/languages.vimrc
+source $HOME/.config/nvim/commands.vimrc
 
 """ Snippets """
 " Plugin key-mappings.
