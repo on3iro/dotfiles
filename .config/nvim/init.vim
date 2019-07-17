@@ -129,7 +129,7 @@ nmap <C-h> <C-w><C-h>
 nmap <C-l> <C-w><C-l>
 
 " show line numbers
-set relativenumber
+" set relativenumber
 set number
 
 " Leader key
