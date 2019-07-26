@@ -86,7 +86,12 @@ Plug 'sheerun/vim-polyglot'
 
 " Autocompletion
 " COC vim
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+" Use release branch
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Or latest tag
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+" Or build from source code by use yarn: https://yarnpkg.com
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " Snippets
 Plug 'Shougo/neosnippet.vim'

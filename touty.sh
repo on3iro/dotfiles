@@ -6,17 +6,19 @@ set -e
 helpFunction()
 {
    echo "Creates a file prepended by a specified Date (default: <TODAY>)"
-   echo "Usage: $0 -n Name -t target -a adjustment"
+   echo "Usage: $0 -n Name -e filetype -t target -a adjustment"
    echo -e "\t-n File name to be appended"
-   echo -e "\t-t Target Path (default: ~/tmp/)"
+   echo -e "\t-e File type (e.g. .md, .sql) [default: .md]"
+   echo -e "\t-t Target Path [default: ~/tmp/]"
    echo -e "\t-a Date adjustment (see shell \$(date) function for reference)"
    exit 1 # Exit script after printing help
 }
 
-while getopts :n:t:a: option
+while getopts :n:e:t:a: option
 do
   case "${option}" in
     n ) NAME=${OPTARG};;
+    e ) FILETYPE=${OPTARG};;
     t ) TARGET=${OPTARG};;
     a ) ADJUST=${OPTARG};;
     ? ) helpFunction ;; # Print help function in case flag is not available
@@ -28,6 +30,14 @@ if [ -z "$NAME" ]
 then
    echo "Name parameter has to be set";
    helpFunction
+fi
+
+# Set file type
+if [ -n "$FILETYPE" ]
+  then
+    FILETYPE="${FILETYPE}"
+  else
+    FILETYPE=".md"
 fi
 
 # Set target directory
@@ -47,6 +57,6 @@ if [ -n "$ADJUST" ]
     DATE=$(date ${DATEFORMAT}) # today
 fi
 
-FILENAME="${TARGETDIR}/${DATE}_${NAME}.md"
+FILENAME="${TARGETDIR}/${DATE}_${NAME}${FILETYPE}"
 echo "Creating file $FILENAME"
 touch $FILENAME
