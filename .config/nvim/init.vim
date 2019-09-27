@@ -12,6 +12,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'hzchirs/vim-material'
 Plug 'flrnprz/plastic.vim'
 
+Plug 'on3iro/vim-neos-fusion-syntax'
+
 " [ BEHAVIOR ]
 
 " NERDtree Browser
@@ -77,7 +79,7 @@ Plug 'fleischie/vim-styled-components'
 
 " ------ TypeScript -----------------
 Plug 'ianks/vim-tsx'
-Plug 'Quramy/tsuquyomi'
+" Plug 'Quramy/tsuquyomi'
 
 "------------- Dev --------------------
 
@@ -98,7 +100,7 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 
 " Linting
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'

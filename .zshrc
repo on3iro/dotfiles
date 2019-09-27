@@ -129,6 +129,9 @@ alias cdpr="cd /Volumes/projects"
 # Alias for reaper dir
 alias cpreaper="/Users/theo/Library/Application Support/REAPER"
 
+# Alias for docker compose
+alias dc="docker-compose"
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
