@@ -12,7 +12,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'hzchirs/vim-material'
 Plug 'flrnprz/plastic.vim'
 
-Plug 'on3iro/vim-neos-fusion-syntax'
+" Plug 'on3iro/vim-neos-fusion-syntax'
+Plug '~/src/theo/fusion-syntax/'
 
 " [ BEHAVIOR ]
 
