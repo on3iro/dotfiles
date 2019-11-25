@@ -218,6 +218,7 @@ set noea
 set wildignore+=*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/node_modules/**
 
 " Copy to clipboard
+set clipboard=unnamedplus
 vnoremap <C-c> "+y
 
 " Fugitive
@@ -329,3 +330,7 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 " endif
 
 let g:neosnippet#snippets_directory = '~/.vim/snippets'
+
+" Important, because somewhere lang isn't set to UTF8 and this causes Umlauts
+" to behave incorrect
+let $LANG='en_US.UTF-8'
