@@ -273,6 +273,7 @@ nmap <leader>nb :Buffers<cr>
 " Toggle fzf Ag
 nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
+nmap <leader>nh :History<cr>
 
 " NerdTree
 nmap <leader>nt :NERDTreeToggle<cr>
