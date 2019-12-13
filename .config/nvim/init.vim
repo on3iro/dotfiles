@@ -17,17 +17,17 @@ Plug '~/src/theo/fusion-syntax/'
 
 " [ BEHAVIOR ]
 
-" NERDtree Browser
-Plug  'scrooloose/nerdtree'
-
-" Bracket completion
-Plug 'Raimondi/delimitMate'
+" Vinegar netrw enhancements
+Plug  'tpope/vim-vinegar'
 
 " repeat-vim
 Plug 'tpope/vim-repeat'
 
 " Vim-Surround
 Plug 'tpope/vim-surround'
+
+" Bracket completion
+Plug 'Raimondi/delimitMate'
 
 " Vim-easygrep
 Plug 'mileszs/ack.vim'
@@ -275,9 +275,9 @@ nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
 nmap <leader>nh :History<cr>
 
-" NerdTree
-nmap <leader>nt :NERDTreeToggle<cr>
-nmap <leader>nf :NERDTreeFind<cr>
+" netrw / vinegar
+nmap <leader>nt :Vex<cr>
+let g:netrw_liststyle=3
 
 set encoding=utf-8
 
@@ -335,3 +335,6 @@ let g:neosnippet#snippets_directory = '~/.vim/snippets'
 " Important, because somewhere lang isn't set to UTF8 and this causes Umlauts
 " to behave incorrect
 let $LANG='en_US.UTF-8'
+
+" don't continue comments on cr
+nnoremap <silent> <cr> :set paste<cr>o<esc>:set nopaste<cr>
