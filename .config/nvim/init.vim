@@ -17,9 +17,6 @@ Plug '~/src/theo/fusion-syntax/'
 
 " [ BEHAVIOR ]
 
-" Vinegar netrw enhancements
-Plug  'tpope/vim-vinegar'
-
 " repeat-vim
 Plug 'tpope/vim-repeat'
 
@@ -35,6 +32,10 @@ Plug 'mileszs/ack.vim'
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" NERDtree
+Plug 'preservim / nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " [ MARKDOWN ]
 
@@ -54,6 +55,7 @@ Plug 'suan/vim-instant-markdown', {
 "------------ Web related -------------
 " JS/HTML-Beautify
 Plug 'Chiel92/vim-autoformat'
+
 " Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
@@ -91,10 +93,6 @@ Plug 'sheerun/vim-polyglot'
 " COC vim
 " Use release branch
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Or latest tag
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-" Or build from source code by use yarn: https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " Snippets
 Plug 'Shougo/neosnippet.vim'
@@ -275,9 +273,9 @@ nmap <leader>na :Ag<cr>
 nmap <leader>nl :BLines<cr>
 nmap <leader>nh :History<cr>
 
-" netrw / vinegar
-nmap <leader>nt :Vex<cr>
-let g:netrw_liststyle=3
+" NerdTree
+nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>nf :NERDTreeFind<cr>
 
 set encoding=utf-8
 

@@ -196,21 +196,21 @@ au BufNewFile,BufRead *.hs set
     \ expandtab
 
 """ Linters ale """
-let g:ale_lint_on_text_changed = 0
-let g:ale_lint_on_save = 1
-let g:ale_set_highlights = 1
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_linters = {
-            \ 'javascript': ['standard'],
-            \}
-let g:ale_linters = {
-            \ 'typescript': ['tsserver'],
-            \}
-let g:ale_fixers = {
-            \ 'javascript': ['prettier'],
-            \ 'typescript': ['prettier'],
-            \}
-nmap <silent> ]l <Plug>(ale_next_wrap)
-nmap <silent> [l <Plug>(ale_previous_wrap)
+" let g:ale_lint_on_text_changed = 0
+" let g:ale_lint_on_save = 1
+" let g:ale_set_highlights = 1
+" let g:ale_echo_msg_error_str = 'E'
+" let g:ale_echo_msg_warning_str = 'W'
+" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" let g:ale_linters = {
+            " \ 'javascript': ['standard'],
+            " \}
+" let g:ale_linters = {
+            " \ 'typescript': ['tsserver'],
+            " \}
+" let g:ale_fixers = {
+            " \ 'javascript': ['prettier'],
+            " \ 'typescript': ['prettier'],
+            " \}
+" nmap <silent> ]l <Plug>(ale_next_wrap)
+" nmap <silent> [l <Plug>(ale_previous_wrap)
