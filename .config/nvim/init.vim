@@ -11,6 +11,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'chriskempson/base16-vim'
 Plug 'hzchirs/vim-material'
 Plug 'flrnprz/plastic.vim'
+Plug 'ayu-theme/ayu-vim'
 
 " Plug 'on3iro/vim-neos-fusion-syntax'
 Plug '~/src/theo/fusion-syntax/'
@@ -185,8 +186,12 @@ set pastetoggle=<F2>
 set termguicolors
 
 " Color theme
+" let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 " colorscheme base16-monokai
-colorscheme base16-gruvbox-dark-hard
+" colorscheme base16-gruvbox-dark-hard
 " colorscheme base16-bespin
 " colorscheme vim-material
 " set background=dark
