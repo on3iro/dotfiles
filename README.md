@@ -21,3 +21,4 @@
 * install coc-extensions:
   * tsserver
   * neo-snippet
+* ctags

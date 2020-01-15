@@ -38,6 +38,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Outlining
+Plug 'majutsushi/tagbar'
+
 " [ MARKDOWN ]
 
 " Vimwiki
@@ -341,3 +344,6 @@ let $LANG='en_US.UTF-8'
 
 " don't continue comments on cr
 nnoremap <silent> <cr> :set paste<cr>o<esc>:set nopaste<cr>
+
+" Tagbar settings
+nmap <leader>tb :TagbarToggle<cr>
