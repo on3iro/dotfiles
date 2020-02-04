@@ -132,6 +132,9 @@ alias cdreaper="/Users/theo/Library/Application\ Support/REAPER"
 # Alias for docker compose
 alias dc="docker-compose"
 
+# Alias to restart ssh agent for yubikey
+alias yubi-reload="ykpiv-ssh-agent-helper -r"
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
