@@ -21,9 +21,9 @@ snippet     cComponent
 
   type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps & OwnProps
 
-  const Component = React.memo(({}: Props) => {
+  const Component = ({}: Props) => {
     return ()
-  })
+  }
 
-  export default connect(mapStateToProps, mapDispatchToProps)(Component)
+  export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Component))
 
