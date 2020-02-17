@@ -27,3 +27,16 @@ snippet     cComponent
 
   export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Component))
 
+snippet simple-component
+abbr simco
+  import React from 'react'
+
+  type Props = {
+  }
+
+  const ${1} = ({}: Props) => {
+    return (
+    )
+  }
+
+  export default React.memo(${1})
