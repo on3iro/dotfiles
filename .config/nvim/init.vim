@@ -282,12 +282,17 @@ let g:instant_markdown_autostart = 0
 " FZF
 " Toggle fzf Files
 nmap <leader>ne :Files<cr>
+nmap <leader>new :Files <C-R><C-W><CR>
 " Toggle fzf Buffers
 nmap <leader>nb :Buffers<cr>
+nmap <leader>nbw :Buffers <C-R><C-W><CR>
 " Toggle fzf Ag
 nmap <leader>na :Ag<cr>
+nmap <leader>naw :Ag <C-R><C-W><CR>
 nmap <leader>nl :BLines<cr>
+nmap <leader>nlw :BLines <C-R><C-W><CR>
 nmap <leader>nh :History<cr>
+nmap <leader>nhw :History <C-R><C-W><CR>
 
 " NerdTree
 nmap <leader>nt :NERDTreeToggle<cr>
