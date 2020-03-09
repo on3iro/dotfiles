@@ -120,6 +120,8 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_172`
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+export PATH=/Users/theo/.local/bin/:$PATH
+
 # Date for history backups
 alias DATE="date '+%Y%m%d'"
 

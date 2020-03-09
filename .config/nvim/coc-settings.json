@@ -2,16 +2,25 @@
   "languageserver": {
     "haskell": {
       "command": "hie-wrapper",
-      "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
-      "filetypes": ["hs", "lhs", "haskell"],
-      "initializationOptions": {},
-      "settings": {
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
         "languageServerHaskell": {
-          "hlintOn": false,
-          "maxNumberOfProblems": 10,
-          "completionSnippetsOn": true
         }
       }
     }
-  }
+  },
+   "tsserver.log": "verbose",
+   "tsserver.npm": "/usr/local/bin/npm",
+   "intelephense.licenceKey": "00LEADKM87LYWHE"
 }

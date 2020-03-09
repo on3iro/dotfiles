@@ -9,12 +9,17 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 "
 " Base 16 Colors
 Plug 'chriskempson/base16-vim'
+
+" Other
 Plug 'hzchirs/vim-material'
 Plug 'flrnprz/plastic.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'artanikin/vim-synthwave84'
 Plug 'arzg/vim-colors-xcode'
 Plug 'Gavinok/SpaceWay.vim'
+Plug 'mcmartelle/vim-monokai-bold'
+Plug 'sainnhe/sonokai'
+Plug 'flrnd/candid.vim'
 
 " Plug 'on3iro/vim-neos-fusion-syntax'
 Plug '~/src/theo/fusion-syntax/'
@@ -64,9 +69,7 @@ Plug 'suan/vim-instant-markdown', {
 Plug 'Chiel92/vim-autoformat'
 
 " Prettier
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['js', 'jsx', 'ts', 'tsx', 'css', 'sass', 'scss', 'json', 'graphql', 'markdown']}
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " Close html tags
 Plug 'tpope/vim-ragtag'
@@ -90,6 +93,9 @@ Plug 'fleischie/vim-styled-components'
 " ------ TypeScript -----------------
 Plug 'ianks/vim-tsx'
 " Plug 'Quramy/tsuquyomi'
+
+" ------ PHP -----------------
+Plug 'adoy/vim-php-refactoring-toolbox'
 
 "------------- Dev --------------------
 
@@ -195,8 +201,9 @@ set termguicolors
 " let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
 " let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
-
+" colorscheme ayu
+colorscheme monokai-bold
+" colorscheme candid
 " colorscheme synthwave84
 " colorscheme xcodedark
 " colorscheme spaceway
@@ -274,7 +281,7 @@ au FileType markdown setl conceallevel=0
 " "Uncomment to override defaults:
 let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
-"let g:instant_markdown_open_to_the_world = 1 
+"let g:instant_markdown_open_to_the_world = 1
 "let g:instant_markdown_allow_unsafe_content = 1
 "let g:instant_markdown_allow_external_content = 0
 "let g:instant_markdown_mathjax = 1
