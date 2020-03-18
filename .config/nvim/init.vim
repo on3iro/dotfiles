@@ -49,6 +49,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Outlining
 Plug 'majutsushi/tagbar'
 
+" Re-numbering
+Plug 'clarke/vim-renumber'
+
 " [ MARKDOWN ]
 
 " Vimwiki
