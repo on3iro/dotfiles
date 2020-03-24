@@ -216,4 +216,3 @@ au BufNewFile,BufRead *.hs set
 " nmap <silent> [l <Plug>(ale_previous_wrap)
 
 "--------- PHP ------------"
-

@@ -1,3 +1,14 @@
+" Markdown-composer
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release --locked
+    else
+      !cargo build --release --locked --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+
 " Vim-plug
 "
 call plug#begin('~/.vim/plugged')
@@ -64,8 +75,7 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'godlygeek/tabular'
 
 " Instant markdown preview
-Plug 'suan/vim-instant-markdown', {
-  \ 'for': 'markdown'}
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 "------------ Web related -------------
 " JS/HTML-Beautify
@@ -280,15 +290,6 @@ let g:markdown_fenced_languages = ['html=html', 'python=py', 'bash=zsh', 'javasc
 let g:markdown_syntax_conceal = 0
 au FileType markdown setl conceallevel=0
 
-" Mardown preview
-" "Uncomment to override defaults:
-let g:instant_markdown_slow = 1
-let g:instant_markdown_autostart = 0
-"let g:instant_markdown_open_to_the_world = 1
-"let g:instant_markdown_allow_unsafe_content = 1
-"let g:instant_markdown_allow_external_content = 0
-"let g:instant_markdown_mathjax = 1
-
 " FZF
 " Toggle fzf Files
 nmap <leader>ne :Files<cr>
@@ -370,3 +371,7 @@ nnoremap <silent> <cr> :set paste<cr>o<esc>:set nopaste<cr>
 
 " Tagbar settings
 nmap <leader>tb :TagbarToggle<cr>
+
+" Markdown-composer theme
+let g:markdown_composer_syntax_theme = 'atelier-estuary-dark'
+let g:markdown_composer_autostart = 0
