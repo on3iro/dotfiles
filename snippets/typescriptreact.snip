@@ -40,3 +40,29 @@ abbr simco
   }
 
   export default React.memo(${1})
+
+snippet spectacle-code-stepper
+abbr scodestepper
+    <Markdown>
+      {\`
+        ## ${1}
+      \`}
+    </Markdown>
+    <Stepper defaultValue={[1, 1]} values={[
+    ]}>
+      {(value, step) => (
+        <Box position="relative">
+          <CodePane
+            language="tsx"
+            autoFillHeight
+            highlightStart={value[0]}
+            highlightEnd={value[1]}
+          >
+            {indentNormalizer(
+  \`
+  \`
+            )}
+          </CodePane>
+        </Box>
+      )}
+    </Stepper>

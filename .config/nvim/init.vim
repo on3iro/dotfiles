@@ -93,6 +93,9 @@ Plug 'mattn/emmet-vim'
 " Css colors
 Plug 'ap/vim-css-color'
 
+" ----- Haskell -------
+Plug  'meck/vim-brittany'
+
 " ----- Elm -----
 " Plugin 'lambdatoast/elm.vim'
 Plug 'ElmCast/elm-vim'

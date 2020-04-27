@@ -1,23 +1,22 @@
 {
   "languageserver": {
     "haskell": {
-      "command": "hie-wrapper",
-      "args": ["--lsp"],
+      "command": "ghcide",
+      "args": [
+        "--lsp"
+      ],
       "rootPatterns": [
-        "*.cabal",
-        "stack.yaml",
-        "cabal.project",
+        ".stack.yaml",
+        ".hie-bios",
+        "BUILD.bazel",
+        "cabal.config",
         "package.yaml"
       ],
       "filetypes": [
         "hs",
         "lhs",
         "haskell"
-      ],
-      "initializationOptions": {
-        "languageServerHaskell": {
-        }
-      }
+      ]
     }
   },
    "tsserver.log": "verbose",
