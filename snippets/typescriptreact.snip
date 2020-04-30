@@ -48,12 +48,12 @@ abbr scodestepper
         ## ${1}
       \`}
     </Markdown>
-    <Stepper defaultValue={[1, 1]} values={[
+    <Stepper defaultValue={[]} values={[
     ]}>
       {(value, step) => (
         <Box position="relative">
           <CodePane
-            language="tsx"
+            language="jsx"
             autoFillHeight
             highlightStart={value[0]}
             highlightEnd={value[1]}
@@ -66,3 +66,12 @@ abbr scodestepper
         </Box>
       )}
     </Stepper>
+
+snippet spectacle-markdown-slide
+abbr smarkdownslide
+  <Slide>
+    <Markdown>
+      {\`
+      \`}
+    </Markdown>
+  </Slide>
