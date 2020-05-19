@@ -72,6 +72,20 @@ abbr smarkdownslide
   <Slide>
     <Markdown>
       {\`
+        ${1}
       \`}
     </Markdown>
+  </Slide>
+
+snippet spectacle-heading-slide
+abbr sheadingslide
+  <Slide>
+    <FlexBox height="100%" flexDirection="column">
+      <Heading margin="0px" fontSize="150px">
+        ${1}
+      </Heading>
+    </FlexBox>
+    <Notes>
+        ${2}
+    </Notes>
   </Slide>

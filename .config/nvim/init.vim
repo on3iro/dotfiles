@@ -112,6 +112,7 @@ Plug 'ianks/vim-tsx'
 
 " ------ PHP -----------------
 Plug 'adoy/vim-php-refactoring-toolbox'
+Plug 'docteurklein/php-getter-setter.vim'
 
 "------------- Dev --------------------
 
@@ -339,8 +340,8 @@ let NERDTreeIgnore = ['\.pyc$']
 """ VIMRC Imports
 source $HOME/.config/nvim/status.vimrc
 source $HOME/.config/nvim/vimwiki.vimrc
-source $HOME/.config/nvim/languages.vimrc
 source $HOME/.config/nvim/commands.vimrc
+source $HOME/.config/nvim/languages.vimrc
 
 """ Snippets """
 " Plugin key-mappings.
