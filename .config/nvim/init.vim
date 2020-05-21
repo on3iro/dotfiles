@@ -113,6 +113,8 @@ Plug 'ianks/vim-tsx'
 " ------ PHP -----------------
 Plug 'adoy/vim-php-refactoring-toolbox'
 Plug 'docteurklein/php-getter-setter.vim'
+Plug 'tobyS/vmustache'
+Plug 'tobyS/pdv'
 
 "------------- Dev --------------------
 

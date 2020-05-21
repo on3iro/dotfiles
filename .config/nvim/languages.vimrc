@@ -217,3 +217,5 @@ au BufNewFile,BufRead *.hs set
 
 "--------- PHP ------------"
 nmap <buffer> <localleader>p <Plug>PhpgetsetInsertGetterSetter
+let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
+nnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>

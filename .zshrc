@@ -129,7 +129,7 @@ alias DATE="date '+%Y%m%d'"
 alias cdpr="cd /Volumes/projects"
 
 # Alias for reaper dir
-alias cdreaper="/Users/theo/Library/Application\ Support/REAPER"
+alias cdreaper="/Users/theo/Documents/audio/Reaper-Portable"
 
 # Alias for docker compose
 alias dc="docker-compose"
