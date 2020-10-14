@@ -29,4 +29,6 @@
   all = add -A .
   amend = commit --amend<Paste>
   tree = diff-tree --no-commit-id --name-only -r
-  sd = diff --name-only --diff-filter=U
+  conflict = diff --name-only --diff-filter=U
+[remote "origin"]
+  fetch = +refs/pull/*/head:refs/pull/origin/*

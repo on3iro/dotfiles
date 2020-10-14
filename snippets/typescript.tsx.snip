@@ -6,6 +6,20 @@ snippet     xProps
   type OwnProps = { }
   type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps & OwnProps
 
+snippet simple-component
+abbr simco
+  import React from 'react'
+
+  type Props = {
+  }
+
+  const ${1} = ({}: Props) => {
+    return (
+    )
+  }
+
+  export default React.memo(${1})
+
 snippet     cComponent
   import React from 'react'
   import { connect } from 'react-redux'

@@ -297,6 +297,7 @@ let g:markdown_syntax_conceal = 0
 au FileType markdown setl conceallevel=0
 
 " FZF
+
 " Toggle fzf Files
 nmap <leader>ne :Files<cr>
 nmap <leader>fw :Files <C-R><C-W><CR>
