@@ -77,12 +77,16 @@ Plug 'godlygeek/tabular'
 " Instant markdown preview
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
+Plug 'jxnblk/vim-mdx-js'
+
 "------------ Web related -------------
 " JS/HTML-Beautify
 Plug 'Chiel92/vim-autoformat'
 
 " Prettier
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'php', 'yaml', 'jsx', 'tsx', 'html'] }
 
 " Close html tags
 Plug 'tpope/vim-ragtag'

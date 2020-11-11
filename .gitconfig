@@ -2,7 +2,7 @@
     name = Theo Salzmann
     email = theo.salzmann@sandstorm.de
 [push]
-    default = simple
+	default = current
 [core]
     editor = nvim
   excludesfile = /Users/theo/.gitignore
@@ -32,3 +32,8 @@
   conflict = diff --name-only --diff-filter=U
 [remote "origin"]
   fetch = +refs/pull/*/head:refs/pull/origin/*
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
