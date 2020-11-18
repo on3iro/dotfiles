@@ -21,4 +21,5 @@
 * install coc-extensions:
   * tsserver
   * neo-snippet
+  * php intelisense
 * ctags

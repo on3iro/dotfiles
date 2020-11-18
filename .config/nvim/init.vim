@@ -67,6 +67,7 @@ Plug 'clarke/vim-renumber'
 
 " Vimwiki
 Plug 'vimwiki/vimwiki'
+Plug 'alok/notational-fzf-vim'
 
 " Table of contents
 Plug 'mzlogin/vim-markdown-toc'
