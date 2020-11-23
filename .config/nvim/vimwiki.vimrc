@@ -1,4 +1,7 @@
 """"" Vimwiki """""""""""""""""
+" registered extensions (global)
+let g:vimwiki_ext2syntax = {'.vwmd': 'markdown'}
+
 let personal_wiki = {}
 let personal_wiki.path = '~/vimwiki/'
 let personal_wiki.syntax = 'markdown'
