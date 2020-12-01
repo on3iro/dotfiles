@@ -229,17 +229,17 @@ set termguicolors
 """""""""""""""""""""""
 
 " let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage vers#ion of theme
+" let ayucolor="mirage" " for mirage vers#ion of theme
 " let ayucolor="dark"   " for dark version of theme
 " colorscheme ayu
 
 " colorscheme one
-set background=dark " for the dark version
+" set background=dark " for the dark version
 " set background=light " for the light version
 
-colorscheme gruvbox
 let g:gruvbox_bold=1
 let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 
 " colorscheme monokai-bold
 " colorscheme base16-monokai
