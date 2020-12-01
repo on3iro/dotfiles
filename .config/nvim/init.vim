@@ -31,6 +31,8 @@ Plug 'Gavinok/SpaceWay.vim'
 Plug 'mcmartelle/vim-monokai-bold'
 Plug 'sainnhe/sonokai'
 Plug 'flrnd/candid.vim'
+Plug 'rakr/vim-one'
+Plug 'morhetz/gruvbox'
 
 " Plug 'on3iro/vim-neos-fusion-syntax'
 Plug '~/src/theo/fusion-syntax/'
@@ -221,29 +223,42 @@ set pastetoggle=<F2>
 "Use 256 colors
 set termguicolors
 
-" Color theme
+
+"""""""""""""""""""""""
+"""" Color theme """"""
+"""""""""""""""""""""""
+
 " let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
+let ayucolor="mirage" " for mirage vers#ion of theme
 " let ayucolor="dark"   " for dark version of theme
 " colorscheme ayu
-colorscheme monokai-bold
-" colorscheme candid
+
+" colorscheme one
+set background=dark " for the dark version
+" set background=light " for the light version
+
+colorscheme gruvbox
+let g:gruvbox_bold=1
+let g:gruvbox_contrast_dark = 'hard'
+
+" colorscheme monokai-bold
+" colorscheme base16-monokai
 " colorscheme synthwave84
 " colorscheme xcodedark
 " colorscheme spaceway
-" colorscheme base16-monokai
 " colorscheme base16-gruvbox-dark-hard
-" colorscheme base16-bespin
 " colorscheme vim-material
 
 " set background=dark
 " colorscheme plastic
 " let g:lightline = {'colorscheme': 'plastic'}
 
-"colorscheme colorsbox-material
-
 " Line Number BG
 highlight LineNr guifg=gray35 guibg=NONE
+
+""""""""""""""""""""""""
+"""" Color Theme end """
+""""""""""""""""""""""""
 
 " All numbers are treated as decimal
 set nrformats=
