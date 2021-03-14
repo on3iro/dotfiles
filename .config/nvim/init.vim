@@ -417,5 +417,9 @@ nnoremap <silent> <cr> :set paste<cr>o<esc>:set nopaste<cr>
 nmap <leader>tb :TagbarToggle<cr>
 
 " Markdown-composer theme
-let g:markdown_composer_syntax_theme = 'atelier-estuary-dark'
+let g:markdown_composer_syntax_theme = 'github-gist'
 let g:markdown_composer_autostart = 0
+
+" Prettier
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
