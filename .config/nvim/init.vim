@@ -89,7 +89,7 @@ Plug 'Chiel92/vim-autoformat'
 " Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'php', 'yaml', 'jsx', 'tsx', 'html'] }
+  \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'yaml', 'jsx', 'tsx', 'html'] }
 
 " Close html tags
 Plug 'tpope/vim-ragtag'
@@ -122,6 +122,9 @@ Plug 'adoy/vim-php-refactoring-toolbox'
 Plug 'docteurklein/php-getter-setter.vim'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
+
+" --------- Python --------------
+Plug 'psf/black', { 'branch': 'stable' }
 
 "------------- Dev --------------------
 
