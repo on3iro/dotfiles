@@ -158,6 +158,5 @@ chk() {
 }
 
 export GOPATH=$HOME/src/go
-. /Users/theo/.nix-profile/etc/profile.d/nix.sh
 source <(kubectl completion zsh)
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
