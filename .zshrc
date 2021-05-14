@@ -58,9 +58,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+# plugins=(
+  # git
+# )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,11 +98,11 @@ stty -ixon
 
 # Activate vim bindings
 bindkey -v
-function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
-    zle reset-prompt
-}
+# function zle-line-init zle-keymap-select {
+    # VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    # RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
+    # zle reset-prompt
+# }
 
 zle -N zle-line-init
 zle -N zle-keymap-select
