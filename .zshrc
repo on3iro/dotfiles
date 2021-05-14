@@ -149,3 +149,5 @@ chk() {
 }
 
 # source <(kubectl completion zsh)
+
+eval "$(starship init zsh)"
