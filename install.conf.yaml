@@ -9,6 +9,7 @@
     ~/dotfiles: ''
     ~/.config/nvim: .config/nvim
     ~/.config/ranger: .config/ranger
+    ~/.config/starship.toml: .config/starship.toml
     ~/.vim/snippets: snippets
     ~/.gitmessage.txt: .gitmessage.txt
     ~/.editorconfig: .editorconfig
