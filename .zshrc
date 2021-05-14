@@ -60,7 +60,6 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,9 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias pls='sudo $(fc -ln -1)'
-alias dc='docker-compose'
-
 # Disable C-s
 stty -ixon
 
@@ -112,15 +108,12 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
-# history-substring-search keys
-bindkey '^O' history-substring-search-up
-bindkey '^P' history-substring-search-down
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_172`
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 export PATH=/Users/theo/.local/bin/:$PATH
+
+alias pls='sudo $(fc -ln -1)'
 
 # Date for history backups
 alias DATE="date '+%Y%m%d'"
@@ -137,8 +130,6 @@ alias dc="docker-compose"
 # Alias to restart ssh agent for yubikey
 alias yubi-reload="ykpiv-ssh-agent-helper -r"
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 ###############
 # FZF Goodies #
@@ -157,6 +148,4 @@ chk() {
   git checkout $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
 }
 
-export GOPATH=$HOME/src/go
-source <(kubectl completion zsh)
-[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+# source <(kubectl completion zsh)

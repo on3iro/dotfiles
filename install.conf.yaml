@@ -15,7 +15,6 @@
     ~/.gitconfig: .gitconfig
     ~/.oh-my-zsh/themes/on3iro.zsh-theme: on3iro.zsh-theme
     ~/.tmux.conf: .tmux.conf
-    ~/.vifm/vifmrc: vifmrc
     ~/.zshrc: .zshrc
     /usr/local/bin/touty: touty.sh
     /usr/local/bin/trigen: trigen.sh
