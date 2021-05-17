@@ -113,6 +113,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=/Users/theo/.local/bin/:$PATH
 
+alias g='git'
+
 alias pls='sudo $(fc -ln -1)'
 
 # Date for history backups
