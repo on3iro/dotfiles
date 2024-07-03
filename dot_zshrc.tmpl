@@ -215,8 +215,10 @@ fpath=($ZSH/site-functions $fpath)
 
 fpath+=~/.zsh/completions
 
+{{ if eq .chezmoi.os "darwin" }}
 # Sandstorm dev script runner setup
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+{{ end }}
 
 # start zsh completion engine
 autoload -U compinit && compinit
