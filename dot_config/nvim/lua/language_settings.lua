@@ -1,0 +1,6 @@
+require("languages.json")
+require("languages.markdown")
+require("languages.rust")
+require("languages.python")
+require("languages.php")
+require("languages.templ")

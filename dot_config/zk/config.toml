@@ -1,0 +1,26 @@
+[notebook]
+
+dir = "/Home/theo/notes"
+
+[note]
+
+# Template used to generate a note's filename, without extension.
+filename = "{{slug title}}"
+
+[tool]
+
+editor = "nvim"
+
+# Pager used to scroll through long output.
+pager = "less -FIRX"
+
+# Command used to preview a note during interactive fzf mode.
+fzf-preview = "bat -p --color always {-1}"
+
+# [alias]
+# echo = 'echo $ZK_NOTEBOOK_DIR'
+# new = 'zk new --notebook-dir="$ZK_NOTEBOOK_DIR/" "$@"'
+# list = 'zk list --notebook-dir="$ZK_NOTEBOOK_DIR/" "$@"'
+# graph = 'zk graph --notebook-dir="$ZK_NOTEBOOK_DIR/" "$@"'
+# edit = 'zk edit --notebook-dir="$ZK_NOTEBOOK_DIR/" "$@"'
+# tag = 'zk tag --notebook-dir="$ZK_NOTEBOOK_DIR/" "$@"'

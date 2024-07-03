@@ -1,0 +1,32 @@
+[view]
+interface = 'minimal'
+
+[timers]
+# Timer length in seconds
+timer = 3000 # => 50 minutes
+
+# Minor break length in seconds
+minor_break = 600 # => 5 minutes
+
+# Major break length in seconds
+major_break = 900 # => 15 minutes
+
+# Number of intervals before major break
+intervals = 2
+
+postpone_limit = 1
+postpone_timer = 300
+
+[notifications]
+sound_file = '/Users/theo/dotfiles/.config/zentime/SFX_people_restore.mp3'
+break_suggestions = [
+  "Do some push ups\nLet your eyes focus something in the distance-Fold worward and relax",
+  "Do chair pose\nDo tree pose-Do the 'tripple-thumb'",
+  "Do up-dog\nWalk a bit around-Rotate shoulders and arms",
+  "Stretch your shoulders and arms-Do a posture exercise",
+  "Do a twist and stretch",
+  "Do a warrior two",
+  "Do a nadi shodana",
+  "Do pigeon pose",
+  "Do a plank\nRotate Head-Do a childs pose",
+]
