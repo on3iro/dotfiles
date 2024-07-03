@@ -1,0 +1,50 @@
+[user]
+    name = Theo Salzmann
+    email = theo.salzmann@sandstorm.de
+[push]
+	default = current
+[core]
+    editor = nvim
+  excludesfile = ~/.gitignore
+[alias]
+  wc = "!sh /usr/local/bin/worktree-clone"
+  wt = worktree
+  sw = switch
+  sc = switch -c
+  co = checkout
+  cb = checkout -b
+  ct = commit
+  ca = commit --amend --no-edit
+  cp = cherry-pick
+  st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg-release = log --pretty=format:'%Cred%h%Creset - %s' --abbrev-commit
+  names = show --name-only
+  ps = push
+  fps = push --force-with-lease
+  pl = pull -p --rebase
+  ad = commit -a --amend --no-edit
+  all = add -A 
+  tree = diff-tree --no-commit-id --name-only -r
+  conflict = diff --name-only --diff-filter=U
+  wip = ct -m 'wip'
+[remote "origin"]
+  fetch = +refs/pull/*/head:refs/pull/origin/*
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[maintenance]
+	repo = /Users/theo/src/theo/finfin
+	repo = /Users/theo/src/theo/radlands-digital/main

@@ -1,0 +1,234 @@
+### ZSH HOME
+export ZSH=$HOME/.zsh
+
+### ---- history config -------------------------------------
+export HISTFILE=$HOME/.zsh_history
+
+# How many commands zsh will load to memory.
+export HISTSIZE=10000
+
+# How many commands history will save on file.
+export SAVEHIST=10000
+
+# Don't save commands starting with a space to history
+setopt HIST_IGNORE_SPACE
+
+# History won't save duplicates.
+setopt HIST_IGNORE_ALL_DUPS
+
+# History won't show duplicates on search.
+setopt HIST_FIND_NO_DUPS
+
+#################
+# Other options #
+#################
+
+# Auto cd behavior
+setopt autocd
+
+setopt MENU_COMPLETE
+setopt AUTO_MENU
+zmodload -i zsh/complist
+
+# Do menu-driven completion.
+zstyle ':completion:*' menu select
+# Enable case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# Color completion for some things.
+# http://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html
+# between quotation marks is the tool output for LS_COLORS
+# https://geoff.greer.fm/lscolors/
+export LS_COLORS="di=36:ln=32:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+setopt AUTO_PUSHD           # Push the current directory visited on the stack.
+setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
+setopt PUSHD_SILENT
+
+export EDITOR=nvim
+export VISUAL="$EDITOR"
+
+
+###########
+# Plugins #
+###########
+
+# jeffreytse/zsh-vi-mode
+function zvm_config() {
+  ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+}
+source $ZSH/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# Append a command directly
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+# zsh-users/zsh-autosuggestions
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
+# zsh-users/zsh-syntax-highlighting
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+
+# /trystan2k/zsh-tab-title
+source $ZSH/plugins/zsh-tab-title/zsh-tab-title.plugin.zsh
+
+
+# Disable C-s
+stty -ixon
+
+# Node version manager
+eval "$(fnm env --use-on-cd)"
+
+export PATH=/Users/theo/.local/bin/:$PATH
+
+# zentime
+alias zt='zentime'
+alias ztt='zentime -s toggle-timer'
+alias zts='zentime -s skip'
+alias ztr='zentime -s reset'
+alias ztq='zentime server stop'
+alias ztp='zentime -s postpone'
+
+# git
+alias g='git'
+alias lg='lazygit'
+alias gwi='g all && g wip && g push'
+
+# ls
+alias ls='ls --color=auto'
+
+# fzf
+alias fz="fd -t f . | fzf --preview 'bat -n --color=always {}'"
+alias nfz="nvim \$(fz) && clear"
+fuzzyGrep() {
+  rg --files $1 . | fzf --preview 'bat -n --color=always {}'
+}
+alias fzg="fuzzyGrep"
+alias nfzg="nvim \$(fzg) && clear"
+
+# misc
+alias cd='z'
+alias vi='nvim'
+alias pn='pnpm'
+alias cz='chezmoi'
+alias j='just'
+alias mvi='NVIM_APPNAME=minimal-nvim nvim'
+
+
+# Date for history backups
+alias DATE="date '+%Y%m%d'"
+
+# Alias for reaper dir
+alias cdreaper="/Users/theo/Documents/audio/Reaper-Portable"
+
+# Alias for docker compose
+alias dc="docker-compose"
+
+# Alias to restart ssh agent for yubikey
+alias yubi-reload="ykpiv-ssh-agent-helper -r"
+
+# Copy/paste
+alias copy='xclip -selection clipboard'
+alias paste='xclip -selection clipboard -o'
+
+# Note aliases
+# Default daily note/todo list
+alias td='nvim ~/Nextcloud/Notes/todo.md'
+# Create named note for today inside inbox
+function nt() {
+  name=${1:-note}  # Use parameter expansion to set a default value
+  file=$(touty -t ~/Nextcloud/Notes/inbox -n "$name")  # Capture the output in a variable
+  nvim "$file"  # Pass the file directly to nvim
+}
+
+# tmp files
+alias tmp='nvim ~/tmp-theo/scratchpad'
+
+###############
+# FZF Goodies #
+###############
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_CTRL_T_OPTS="
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-p:change-preview-window(down|hidden|)'"
+export FZF_DEFAULT_COMMAND="fd --hidden . $HOME"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd -t d . $HOME"
+
+# Easy git branch checkout
+chk() {
+  local branches branch
+  branches=$(git branch -a) &&
+  branch=$(echo "$branches" | fzf +s +m -e) &&
+  git switch $(echo "$branch" | sed "s:.* remotes/origin/::" | sed "s:.* ::")
+}
+
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+# Nix
+# OSX location
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
+#
+# the location below did not work for me
+# Linux location
+if [ -e /home/oneiro/.nix-profile/etc/profile.d/nix.sh ]; then . /home/oneiro/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+
+# Check for sensitive information in history
+eval $(shellclear --init-shell)
+
+
+eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/theo/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+###############
+# Completions #
+###############
+
+
+# zsh-users/zsh-completions
+fpath=($ZSH/plugins/zsh-completions/src $fpath)
+
+# site functions
+fpath=($ZSH/site-functions $fpath)
+
+fpath+=~/.zsh/completions
+
+# Sandstorm dev script runner setup
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+# start zsh completion engine
+autoload -U compinit && compinit
+
+# Use the same colors as `ls` for completions
+if [[ -n "${LS_COLORS}" ]]; then
+  zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+fi
+
+# Initialize zoxide
+eval "$(zoxide init zsh)"
+
+
+##############
+# Lang paths #
+##############
+
+export GOPATH="$HOME/go"
+export PATH=$PATH:$GOPATH/bin
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
