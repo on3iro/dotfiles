@@ -360,7 +360,7 @@ scroll_buffer_size 20000
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "/Users/theo/.nix-profile/bin/nvim"
+scrollback_editor "~/.nix-profile/bin/nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -371,7 +371,7 @@ scrollback_editor "/Users/theo/.nix-profile/bin/nvim"
 
 // The folder in which Zellij will look for layouts
 //
-layout_dir "/Users/theo/.config/zellij/layouts"
+layout_dir "~/.config/zellij/layouts"
 
 pane_frames false
 

@@ -1,5 +1,4 @@
 #!/bin/bash
-./install_dotfiles.sh
 ./install_nix.sh
 ./install_nix_pkgs.sh
 

@@ -77,7 +77,7 @@ stty -ixon
 # Node version manager
 eval "$(fnm env --use-on-cd)"
 
-export PATH=/Users/theo/.local/bin/:$PATH
+export PATH=$HOME/.local/bin/:$PATH
 
 # zentime
 alias zt='zentime'
@@ -116,8 +116,10 @@ alias mvi='NVIM_APPNAME=minimal-nvim nvim'
 # Date for history backups
 alias DATE="date '+%Y%m%d'"
 
+{{ if eq .chezmoi.hostname "ssmnaut" }}
 # Alias for reaper dir
-alias cdreaper="/Users/theo/Documents/audio/Reaper-Portable"
+alias cdreaper="$HOME/Documents/audio/Reaper-Portable"
+{{ end }}
 
 # Alias for docker compose
 alias dc="docker-compose"
@@ -170,15 +172,20 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # Nix
+
+{{ if eq .chezmoi.os "darwin"}}
 # OSX location
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
 fi
-# End Nix
-#
-# the location below did not work for me
+{{ else }}
 # Linux location
-if [ -e /home/oneiro/.nix-profile/etc/profile.d/nix.sh ]; then . /home/oneiro/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
+  . $HOME/.nix-profile/etc/profile.d/nix.sh; 
+fi # added by Nix installer
+{{ end }}
+
+# End Nix
 
 
 # Check for sensitive information in history
@@ -188,7 +195,7 @@ eval $(shellclear --init-shell)
 eval "$(starship init zsh)"
 
 # pnpm
-export PNPM_HOME="/Users/theo/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
