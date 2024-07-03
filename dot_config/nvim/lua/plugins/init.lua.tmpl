@@ -8,7 +8,7 @@ return {
 		"LunarVim/bigfile.nvim",
 	},
 
-  {{- if en .install_mode "full" }}
+  {{- if eq .install_mode "full" }}
 	-- Git related plugins
 	{
 		"f-person/git-blame.nvim",
