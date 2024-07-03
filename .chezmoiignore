@@ -2,22 +2,22 @@ README.md
 chezmoi.example.toml
 **/lazy-lock.json
 
-{{- if ne .install_mode "full" }}
-.config/crow/**
-.config/i3/**
-.config/zentime/**
-{{- end }}
+{{ if ne .install_mode "full" }}
+dot_config/crow/**
+dot_config/i3/**
+dot_config/zentime/**
+{{ end }}
 
-{{- if eq .install_mode "server" }}
-.config/alacritty/**
-.config/nvim/lua/plugins/codeium.lua
-.config/nvim/lua/plugins/trouble.lua
-.config/nvim/lua/plugins/which_key.lua
-.config/nvim/lua/plugins/nvim-lint.lua
-.config/nvim/lua/plugins/indentline.lua
-.config/nvim/lua/plugins/harpoon.lua
-.config/nvim/lua/plugins/conform-nvim.lua
-.config/nvim/lua/plugins/auto-pairs.lua
-.config/nvim/lua/plugins/treesitter.lua
-{{- end }}
+{{ if eq .install_mode "server" }}
+dot_config/alacritty/**
+dot_config/nvim/lua/plugins/codeium.lua
+dot_config/nvim/lua/plugins/trouble.lua
+dot_config/nvim/lua/plugins/which_key.lua
+dot_config/nvim/lua/plugins/nvim-lint.lua
+dot_config/nvim/lua/plugins/indentline.lua
+dot_config/nvim/lua/plugins/harpoon.lua
+dot_config/nvim/lua/plugins/conform-nvim.lua
+dot_config/nvim/lua/plugins/auto-pairs.lua
+dot_config/nvim/lua/plugins/treesitter.lua
+{{ end }}
 
