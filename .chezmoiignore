@@ -1,0 +1,21 @@
+README.md
+chezmoi.example.toml
+
+{{- if ne .install_mode "full" }}
+.config/crow
+.config/i3
+.config/zentime
+{{- end }}
+
+{{- if eq .install_mode "server" }}
+.config/alacritty
+.config/nvim/lua/plugins/codeium.lua
+.config/nvim/lua/plugins/trouble.lua
+.config/nvim/lua/plugins/which_key.lua
+.config/nvim/lua/plugins/nvim-lint.lua
+.config/nvim/lua/plugins/indentline.lua
+.config/nvim/lua/plugins/harpoon.lua
+.config/nvim/lua/plugins/conform-nvim.lua
+.config/nvim/lua/plugins/auto-pairs.lua
+{{- end }}
+
