@@ -1,8 +1,14 @@
 return {
+
+	-- Icons
+	"nvim-tree/nvim-web-devicons",
+
+  -- Big file handling
 	{
 		"LunarVim/bigfile.nvim",
 	},
 
+  {{- if en .install_mode "full" }}
 	-- Git related plugins
 	{
 		"f-person/git-blame.nvim",
@@ -16,9 +22,6 @@ return {
 			require("gitsigns").setup()
 		end,
 	},
-
-	-- Icons
-	"nvim-tree/nvim-web-devicons",
 
 	------------------
 	-- [ MARKDOWN ] --
@@ -47,4 +50,5 @@ return {
 	"imsnif/kdl.vim",
 
 	"NoahTheDuke/vim-just",
+  {{- end }}
 }
