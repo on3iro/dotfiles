@@ -3,13 +3,13 @@ chezmoi.example.toml
 **/lazy-lock.json
 
 {{- if ne .install_mode "full" }}
-.config/crow
-.config/i3
-.config/zentime
+.config/crow/**
+.config/i3/**
+.config/zentime/**
 {{- end }}
 
 {{- if eq .install_mode "server" }}
-.config/alacritty
+.config/alacritty/**
 .config/nvim/lua/plugins/codeium.lua
 .config/nvim/lua/plugins/trouble.lua
 .config/nvim/lua/plugins/which_key.lua
