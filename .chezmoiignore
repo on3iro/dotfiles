@@ -3,21 +3,21 @@ chezmoi.example.toml
 **/lazy-lock.json
 
 {{ if ne .install_mode "full" }}
-dot_config/crow/**
-dot_config/i3/**
-dot_config/zentime/**
+./crow/**
+./i3/**
+./zentime/**
 {{ end }}
 
 {{ if eq .install_mode "server" }}
-dot_config/alacritty/**
-dot_config/nvim/lua/plugins/codeium.lua
-dot_config/nvim/lua/plugins/trouble.lua
-dot_config/nvim/lua/plugins/which_key.lua
-dot_config/nvim/lua/plugins/nvim-lint.lua
-dot_config/nvim/lua/plugins/indentline.lua
-dot_config/nvim/lua/plugins/harpoon.lua
-dot_config/nvim/lua/plugins/conform-nvim.lua
-dot_config/nvim/lua/plugins/auto-pairs.lua
-dot_config/nvim/lua/plugins/treesitter.lua
+./alacritty/**
+./nvim/lua/plugins/codeium.lua
+./nvim/lua/plugins/trouble.lua
+./nvim/lua/plugins/which_key.lua
+./nvim/lua/plugins/nvim-lint.lua
+./nvim/lua/plugins/indentline.lua
+./nvim/lua/plugins/harpoon.lua
+./nvim/lua/plugins/conform-nvim.lua
+./nvim/lua/plugins/auto-pairs.lua
+./nvim/lua/plugins/treesitter.lua
 {{ end }}
 
