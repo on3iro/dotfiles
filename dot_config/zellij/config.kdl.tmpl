@@ -360,7 +360,11 @@ scroll_buffer_size 20000
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "~/.nix-profile/bin/nvim"
+{{- if eq .chezmoi.os "darwin" }}
+scrollback_editor "/Users/{{- .chezmoi.username }}/.nix-profile/bin/nvim"
+{{ else }}
+scrollback_editor "/Home/{{- .chezmoi.username }}/.nix-profile/bin/nvim"
+{{- end}}
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -371,7 +375,11 @@ scrollback_editor "~/.nix-profile/bin/nvim"
 
 // The folder in which Zellij will look for layouts
 //
-layout_dir "~/.config/zellij/layouts"
+{{- if eq .chezmoi.os "darwin" }}
+layout_dir "/Users/{{- .chezmoi.username }}/.config/zellij/layouts"
+{{ else }}
+layout_dir "/Home/{{- .chezmoi.username }}/.config/zellij/layouts"
+{{- end}}
 
 pane_frames false
 
