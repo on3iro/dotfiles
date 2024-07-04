@@ -71,6 +71,12 @@ return {
 
 			require("lspconfig.configs").vtsls = require("vtsls").lspconfig -- set default server config, optional but recommended
 
+			require("flutter-tools").setup({
+				lsp = {
+					on_attach = on_attach,
+				},
+			}) -- use defaults
+
 			-- Turn on lsp status information
 			-- require("fidget").setup()
 
@@ -111,5 +117,15 @@ return {
 		config = function()
 			require("lsp_signature").setup({})
 		end,
+	},
+
+	{
+		"akinsho/flutter-tools.nvim",
+		lazy = false,
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		},
+		config = function() end,
 	},
 }
