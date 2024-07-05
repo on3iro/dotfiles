@@ -31,7 +31,7 @@ function mappings.init_lsp()
 	nmap("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
 	nmap("gI", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
 	nmap("<leader>D", require("telescope.builtin").lsp_type_definitions, "Type [D]efinition")
-	nmap("<leader>s", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
+	nmap("<leader>si", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
 	nmap("<leader>ws", require("telescope.builtin").lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
 
 	-- See `:help K` for why this keymap

@@ -75,10 +75,14 @@ return {
 				lsp = {
 					on_attach = on_attach,
 				},
-			}) -- use defaults
-
-			-- Turn on lsp status information
-			-- require("fidget").setup()
+				debugger = {
+					enabled = true,
+					register_configurations = function()
+						require("dap").configurations.dart = {}
+						require("dap.ext.vscode").load_launchjs()
+					end,
+				},
+			})
 
 			require("plugins.lsp.cmp").init()
 

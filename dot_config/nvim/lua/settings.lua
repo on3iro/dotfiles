@@ -34,6 +34,9 @@ o.cursorline = true
 -- show matching braces
 o.showmatch = true
 
+-- enable project configuration
+o.exrc = true
+
 -- Use 256 colors
 o.termguicolors = true
 
