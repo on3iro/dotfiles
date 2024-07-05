@@ -91,6 +91,10 @@ return {
 
 			require("telescope").load_extension("fzf")
 			require("telescope").load_extension("ui-select")
+      {{ if eq .chezmoi.os "darwin" }}
+        require("telescope").load_extension("flutter")
+        a.nvim_set_keymap("n", "<leader>;", "<cmd>Telescope flutter commands<cr>", { noremap = false })
+      {{ end }}
 
 			-- Files
 			a.nvim_set_keymap("n", "<leader>f", "<cmd>Telescope find_files hidden=true<cr>", { noremap = false })

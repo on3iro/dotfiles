@@ -19,6 +19,8 @@ chezmoi.example.toml
 .config/nvim/lua/plugins/conform-nvim.lua
 .config/nvim/lua/plugins/auto-pairs.lua
 .config/nvim/lua/plugins/treesitter.lua
+.config/nvim/lua/plugins/debugger.lua
+.config/nvim/lua/plugins/lazydev.lua
 .config/nvim/lua/plugins/lsp/**
 {{ end }}
 
