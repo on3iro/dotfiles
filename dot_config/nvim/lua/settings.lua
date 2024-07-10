@@ -87,10 +87,10 @@ o.showmode = false
 
 -- Show special characters
 o.lcs = {
-	tab = ">-",
-	trail = "·",
-	extends = ">",
-	precedes = "<",
+  tab = ">-",
+  trail = "·",
+  extends = ">",
+  precedes = "<",
 }
 
 --  r Automatically insert the current comment leader after hitting
@@ -104,20 +104,20 @@ o.autoread = true
 
 -- Autocommand for FocusGained, BufEnter, CursorHold, CursorHoldI
 a.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
-	pattern = "*",
-	callback = function()
-		if vim.fn.mode() ~= "c" then
-			c("checktime")
-		end
-	end,
+  pattern = "*",
+  callback = function()
+    if vim.fn.mode() ~= "c" then
+      c("checktime")
+    end
+  end,
 })
 
 -- Notification after file change
 a.nvim_create_autocmd("FileChangedShellPost", {
-	pattern = "*",
-	callback = function()
-		a.nvim_echo({ { "File changed on disk. Buffer reloaded.", "WarningMsg" } }, true, {})
-	end,
+  pattern = "*",
+  callback = function()
+    a.nvim_echo({ { "File changed on disk. Buffer reloaded.", "WarningMsg" } }, true, {})
+  end,
 })
 
 -- Important, because somewhere lang isn't set to UTF8 and this causes Umlauts
@@ -126,20 +126,20 @@ o.encoding = "utf-8"
 c("let $LANG='en_US.UTF-8'")
 
 vim.api.nvim_create_autocmd({ "FileType" }, {
-	desc = "Force commentstring to include spaces",
-	-- group = ...,
-	callback = function(event)
-		local cs = vim.bo[event.buf].commentstring
-		vim.bo[event.buf].commentstring = cs:gsub("(%S)%%s", "%1 %%s"):gsub("%%s(%S)", "%%s %1")
-	end,
+  desc = "Force commentstring to include spaces",
+  -- group = ...,
+  callback = function(event)
+    local cs = vim.bo[event.buf].commentstring
+    vim.bo[event.buf].commentstring = cs:gsub("(%S)%%s", "%1 %%s"):gsub("%%s(%S)", "%%s %1")
+  end,
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = "sh",
-	callback = function()
-		vim.lsp.start({
-			name = "bash-language-server",
-			cmd = { "bash-language-server", "start" },
-		})
-	end,
+  pattern = "sh",
+  callback = function()
+    vim.lsp.start({
+      name = "bash-language-server",
+      cmd = { "bash-language-server", "start" },
+    })
+  end,
 })
