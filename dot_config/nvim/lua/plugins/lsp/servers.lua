@@ -4,7 +4,6 @@
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 return {
-  {{- if ne .install_mode "server" }}
 	gopls = {
 		["gopls"] = {
 			hints = {
@@ -17,11 +16,6 @@ return {
 			},
 		},
 	},
-	templ = {},
-  marksman = {},
-  bash_language_server = {},
-  tailwind_css_language_server = {},
-  prettierd = {},
 	rust_analyzer = {
 		["rust-analyzer"] = {
 			-- enable clippy on save
@@ -48,7 +42,4 @@ return {
 			},
 		},
 	},
-	-- tsserver = {},
-	intelephense = {},
-  {{- end }}
 }

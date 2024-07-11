@@ -55,9 +55,15 @@ return {
 			-- Ensure the servers above are installed
 			local mason_lspconfig = require("mason-lspconfig")
 
+    {{- if ne .install_mode "server" }}
 			mason_lspconfig.setup({
-				ensure_installed = vim.tbl_keys(servers),
+				ensure_installed = {
+          "templ",
+          "marksman",
+          "intelephense" 
+        },
 			})
+    {{- end }}
 
 			mason_lspconfig.setup_handlers({
 				function(server_name)
