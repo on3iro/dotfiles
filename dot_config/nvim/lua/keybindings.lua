@@ -27,7 +27,7 @@ vim.api.nvim_set_keymap("n", "]q", ":cnext<CR>", { noremap = true, silent = true
 vim.api.nvim_set_keymap("n", "[q", ":cprev<CR>", { noremap = true, silent = true })
 
 -- Current iso date
-vim.keymap.set("n", "<leader>dt", ":r !date -u +%Y-%m-%dT<cr>")
+vim.keymap.set("n", "<leader>dt", ":r !date -u +\\%Y-\\%m-\\%d<cr>")
 
 -------------------------
 -- [ Buffer settings ] --
