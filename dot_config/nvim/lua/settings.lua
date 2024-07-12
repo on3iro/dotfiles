@@ -74,7 +74,8 @@ o.equalalways = false
 o.wildignore = o.wildignore + "*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/node_modules/**"
 
 -- Copy to clipboard
-o.clipboard = "unnamedplus"
+-- NOTE currently trying how it feels to explicitly use these registers
+-- o.clipboard = "unnamedplus"
 
 -- Disable spell checker
 o.spell = false
