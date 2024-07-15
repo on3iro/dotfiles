@@ -218,6 +218,19 @@ fpath+=~/.zsh/completions
 {{ if eq .chezmoi.os "darwin" }}
 # Sandstorm dev script runner setup
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+qwork() {
+  osascript -e 'quit app "Slack"'
+  osascript -e 'quit app "Mail"'
+  osascript -e 'quit app "Sanduhr"'
+}
+
+swork() {
+  osascript -e 'tell application "Slack" to activate'
+  osascript -e 'tell application "Mail" to activate'
+  osascript -e 'tell application "Sanduhr" to activate'
+}
+
 {{ end }}
 
 # start zsh completion engine
