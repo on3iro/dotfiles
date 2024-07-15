@@ -25,23 +25,22 @@ return {
 	},
 
   {{- if eq .install_mode "full" }}
-	-- Git related plugins
-	{
-		"f-person/git-blame.nvim",
-		opts = {
-			enabled = true,
-		},
-    config = function() 
-      vim.g.gitblame_display_virtual_text = 0 -- Disable virtual text
-      vim.g.gitblame_message_template = "<author> <sha> <date>"
-      vim.g.gitblame_date_format = "%r"
-      vim.g.gitblame_date_format = "%r"
-    end
-	},
+	-- Git related {
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
-			require("gitsigns").setup()
+			require("gitsigns").setup({
+        auto_attach = true,
+        current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`,
+          current_line_blame_opts = {
+          virt_text = true,
+          virt_text_pos = 'right_align', -- 'eol' | 'overlay' | 'right_align'
+          delay = 300,
+          ignore_whitespace = false,
+          virt_text_priority = 100,
+        },
+        current_line_blame_formatter = '<author>, <author_time:%R> - <abbrev_sha>',
+      })
 		end,
 	},
 

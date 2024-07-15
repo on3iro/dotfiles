@@ -3,7 +3,7 @@ return {
     -- Status bar
     "nvim-lualine/lualine.nvim", -- Fancier statusline
     config = function()          -- Lua
-      local git_blame = require("gitblame")
+      -- local git_blame = require("gitblame")
 
       -- Only ever show a single status line
       vim.opt.laststatus = 2
@@ -59,7 +59,7 @@ return {
               path = 2,             -- 0 = just filename, 1 = relative path, 3 = absolute path
               shorting_target = 40, -- Shortens path to leave 40 space in the window
             },
-            { git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available }
+            -- { git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available }
           },
 
           lualine_z = {
