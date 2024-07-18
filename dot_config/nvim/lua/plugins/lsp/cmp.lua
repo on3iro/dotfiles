@@ -58,10 +58,15 @@ function cmpMod.init()
 			["<C-Space>"] = cmp.mapping.complete(),
 			["<CR>"] = function(fallback)
 				if cmp.visible() then
+          if cmp.get_selected_entry() then
 					cmp.confirm({
 						behavior = cmp.ConfirmBehavior.Replace,
-						select = true,
+						select = false,
 					})
+          else
+            cmp.close()
+            fallback()
+          end
 				else
 					fallback()
 				end
