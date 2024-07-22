@@ -5,7 +5,6 @@
 --  the `settings` field of the server config. You must look up that documentation yourself.
 return {
 	gopls = {
-		["gopls"] = {
 			hints = {
 				assignVariableTypes = true,
 				compositeLiteralTypes = true,
@@ -14,7 +13,6 @@ return {
 				parameterNames = true,
 				rangeVariableTypes = true,
 			},
-		},
 	},
 	rust_analyzer = {
 		["rust-analyzer"] = {
