@@ -8,7 +8,7 @@ c("syntax on")
 
 -- show line numbers
 o.number = true
-o.relativenumber = true
+-- o.relativenumber = true
 
 -- Leader key
 g.mapleader = " "
@@ -35,7 +35,7 @@ o.cursorline = true
 o.showmatch = true
 
 -- enable project configuration
-o.exrc = true
+-- o.exrc = true
 
 -- Use 256 colors
 o.termguicolors = true
@@ -46,8 +46,6 @@ o.colorcolumn = "80"
 -- Line Number BG
 c("highlight LineNr guifg=gray35 guibg=NONE")
 
--- warn if there is trailing whitespace
-c("match ErrorMsg 's+$'")
 -- Search down into subfolders
 -- Provides tab-completion for all file-related tasks
 o.path = o.path + "**"
@@ -135,12 +133,3 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "sh",
-  callback = function()
-    vim.lsp.start({
-      name = "bash-language-server",
-      cmd = { "bash-language-server", "start" },
-    })
-  end,
-})
