@@ -8,7 +8,7 @@ c("syntax on")
 
 -- show line numbers
 o.number = true
--- o.relativenumber = true
+o.relativenumber = true
 
 -- Leader key
 g.mapleader = " "
