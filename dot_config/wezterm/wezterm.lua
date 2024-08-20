@@ -2,7 +2,14 @@ local wt = require 'wezterm'
 
 local config = {}
 
-config.color_scheme = 'Sea Shells (Gogh)'
+local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
+custom_color_scheme.background = "#05181f"
+
+config.color_schemes = {
+  ['Custom'] = custom_color_scheme
+}
+config.color_scheme = 'Custom'
+
 config.font_size = 18
 
 -- history scrollback 10000
