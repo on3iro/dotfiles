@@ -12,6 +12,9 @@ config.color_scheme = 'Custom'
 
 config.font_size = 18
 
+-- disable ligatures
+config.harfbuzz_features = {"calt=0", "clig=0", "liga=0"}
+
 -- history scrollback 10000
 config.scrollback_lines = 10000
 
@@ -30,8 +33,12 @@ config.window_padding = {
   bottom = 15,
 }
 
+-- Make sure that keys like '^' are being processed properly in vi etc.
+config.use_dead_keys = false
+
 config.keys = {
 }
 
+-- config.debug_key_events = true
 
 return config
