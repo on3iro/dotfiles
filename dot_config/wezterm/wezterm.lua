@@ -3,7 +3,8 @@ local wt = require 'wezterm'
 local config = {}
 
 local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
-custom_color_scheme.background = "#05181f"
+-- custom_color_scheme.background = "#05181f"
+custom_color_scheme.background = "#06212B"
 
 config.color_schemes = {
   ['Custom'] = custom_color_scheme
@@ -19,7 +20,10 @@ config.harfbuzz_features = {"calt=0", "clig=0", "liga=0"}
 config.scrollback_lines = 10000
 
 -- alt key handling to allow umlaute
+config.use_dead_keys = true
 config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
+
 
 -- remove title bar and tabs
 config.window_decorations = 'RESIZE'
@@ -32,9 +36,6 @@ config.window_padding = {
   top = 15,
   bottom = 15,
 }
-
--- Make sure that keys like '^' are being processed properly in vi etc.
-config.use_dead_keys = false
 
 config.keys = {
 }
