@@ -1,13 +1,20 @@
 [user]
-    name = Theo Salzmann
-    email = {{ .email }}
+  name = Theo Salzmann
+  email = {{ .email }}
 [diff]
-    tool = "nvim"
+  colorMoved = default
 [push]
 	default = current
 [core]
-    editor = nvim
+  editor = nvim
+  pager = delta
   excludesfile = ~/.gitignore
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+[merge]
+  conflictstyle = diff3
 [alias]
   wc = "!sh $HOME/bin/worktree-clone"
   wt = worktree
