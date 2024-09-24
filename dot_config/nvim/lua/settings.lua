@@ -77,8 +77,7 @@ o.wildignore = o.wildignore + "*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/no
 
 -- spell checker
 o.spell = true
-o.spelllang = "en_us"
-o.spellfile = "~/.config/nvim/spell/en.utf-8.add"
+o.spelllang = "en"
 
 -- Enable basic mouse support
 o.mouse = "a"
