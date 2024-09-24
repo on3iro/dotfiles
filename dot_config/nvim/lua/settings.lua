@@ -75,8 +75,10 @@ o.wildignore = o.wildignore + "*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/no
 -- NOTE currently trying how it feels to explicitly use these registers
 -- o.clipboard = "unnamedplus"
 
--- Disable spell checker
-o.spell = false
+-- spell checker
+o.spell = true
+o.spelllang = "en_us"
+o.spellfile = "~/.config/nvim/spell/en.utf-8.add"
 
 -- Enable basic mouse support
 o.mouse = "a"
@@ -132,4 +134,3 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.bo[event.buf].commentstring = cs:gsub("(%S)%%s", "%1 %%s"):gsub("%%s(%S)", "%%s %1")
   end,
 })
-
