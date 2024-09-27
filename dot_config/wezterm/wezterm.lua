@@ -14,7 +14,7 @@ config.color_scheme = 'Custom'
 config.font_size = 18
 
 -- disable ligatures
-config.harfbuzz_features = {"calt=0", "clig=0", "liga=0"}
+config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 
 -- history scrollback 10000
 config.scrollback_lines = 10000
