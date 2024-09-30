@@ -267,6 +267,12 @@ export PATH=$PATH:$GOPATH/bin
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+{{ if eq .chezmoi.os "darwin" }}
+
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+chruby ruby-3.3.0
+
 # START - ADDED_BY_SOLARWATT_HOME_APP_SETUP
 
 export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
@@ -278,3 +284,5 @@ export PATH=$PATH:/opt/homebrew/bin/sdkmanager
 export PATH=$PATH:$HOME/.pub-cache/bin
 
 # END - ADDED_BY_SOLARWATT_HOME_APP_SETUP
+
+{{ end }}
