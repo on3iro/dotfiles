@@ -15,14 +15,14 @@ layout {
               hide_frame_for_single_pane "false"
 
               mode_locked  "#[fg=#F45B69,bold] {name} "
-              mode_normal  "#[bg=#6D676E] "
-              mode_tmux    "#[bg=#FF9328] "
-              mode_tab     "#[bg=#F1D302] "
-              mode_pane    "#[bg=#36C9C6] "
-              mode_scroll  "#[bg=#EBF38B] "
-              mode_resize  "#[bg=#697A21] "
-              mode_move    "#[bg=#FFFCE8] "
-              mode_rename_tab  "#[bg=#FCF5C7] "
+              mode_normal  "#[bg=#6D676E,fg=#ffffff] "
+              mode_tmux    "#[bg=#FF9328,fg=#444444] "
+              mode_tab     "#[bg=#F1D302,fg=#444444] {name} "
+              mode_pane    "#[bg=#36C9C6,fg=#ffffff] {name} "
+              mode_scroll  "#[bg=#EBF38B,fg=#ffffff] {name} "
+              mode_resize  "#[bg=#697A21,fg=#ffffff] {name} "
+              mode_move    "#[bg=#FFFCE8,fg=#444444] {name} "
+              mode_rename_tab  "#[bg=#FCF5C7,fg=#444444] {name} "
 
               // Formatting for inactive tabs
               tab_normal   "#[fg=#6C7086] {name} "
