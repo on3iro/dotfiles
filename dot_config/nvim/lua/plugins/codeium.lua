@@ -4,7 +4,7 @@ return {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp",
   },
-  commit = "f6a2ef32a9e923cb0104a19d3e426b0e40e49505",
+  commit = "937667b2cadc7905e6b9ba18ecf84694cf227567",
   config = function()
     require("codeium").setup({
       enable_chat = true,
