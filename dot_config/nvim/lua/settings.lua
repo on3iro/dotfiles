@@ -77,7 +77,7 @@ o.wildignore = o.wildignore + "*/tmp/*,*.so,*.swp,*.exe,*.zip,**/vendor/**,**/no
 
 -- spell checker
 o.spell = true
-o.spelllang = "en"
+o.spelllang = "en,de"
 
 -- Enable basic mouse support
 o.mouse = "a"
