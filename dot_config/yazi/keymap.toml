@@ -4,10 +4,10 @@
 
 [manager]
 
-[[manager.prepend_keymap]]
-on   = "<C-s>"
-run  = 'shell "$SHELL" --block --confirm'
-desc = "Open shell here"
+prepend_keymap = [
+  # Drop to shell
+  { on   = "<C-s>", run  = 'shell "$SHELL" --block --confirm', desc = "Open shell here" }
+]
 
 keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
