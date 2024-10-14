@@ -7,6 +7,7 @@ local c = vim.cmd
 c("syntax on")
 
 -- search case sensitive if search contains uppercase letters and insensitive if not
+o.ignorecase = true -- necessary for smartcase to work
 o.smartcase = true
 
 -- show line numbers
