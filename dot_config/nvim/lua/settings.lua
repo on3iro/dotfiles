@@ -6,6 +6,9 @@ local c = vim.cmd
 -- enable syntax highlighting
 c("syntax on")
 
+-- search case sensitive if search contains uppercase letters and insensitive if not
+o.smartcase = true
+
 -- show line numbers
 o.number = true
 -- o.relativenumber = true
