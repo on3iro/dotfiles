@@ -102,7 +102,8 @@ alias lg='lazygit'
 alias gwi='g all && g wip && g push'
 
 # ls
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
+alias ls='exa --icons'
 
 # fzf
 alias fz="fd -t f . | fzf --preview 'bat -n --color=always {}'"
@@ -203,7 +204,6 @@ fi # added by Nix installer
 # Check for sensitive information in history
 eval $(shellclear --init-shell)
 
-
 eval "$(starship init zsh)"
 
 # pnpm
@@ -217,7 +217,6 @@ esac
 ###############
 # Completions #
 ###############
-
 
 # zsh-users/zsh-completions
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
@@ -249,7 +248,12 @@ swork() {
 {{ end }}
 
 # start zsh completion engine
-autoload -U compinit && compinit
+# Check if the cache file exists and is up-to-date before running compinit
+if [[ ! -f ~/.zcompdump || ~/.zcompdump -ot ~/.zshrc ]]; then
+autoload compinit -d ~/.zcompdump
+else
+  compinit -C
+fi
 
 # Use the same colors as `ls` for completions
 if [[ -n "${LS_COLORS}" ]]; then

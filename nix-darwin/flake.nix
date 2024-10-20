@@ -33,6 +33,7 @@
           pkgs.dbmate 
           pkgs.delta 
           pkgs.fd 
+          pkgs.fish
           pkgs.fnm 
           pkgs.fzf 
           pkgs.git 

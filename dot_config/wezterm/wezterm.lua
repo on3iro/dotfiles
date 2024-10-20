@@ -3,8 +3,9 @@ local wt = require 'wezterm'
 local config = {}
 
 local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
--- custom_color_scheme.background = "#05181f"
-custom_color_scheme.background = "#06212B"
+-- local custom_color_scheme = wt.color.get_builtin_schemes()['nightfox']
+custom_color_scheme.background = "#05181f"
+-- custom_color_scheme.background = "#06212B"
 
 config.color_schemes = {
   ['Custom'] = custom_color_scheme
