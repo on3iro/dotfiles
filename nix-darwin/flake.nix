@@ -40,12 +40,12 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Theos-MacBook-Pro
-    darwinConfigurations."Theos-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+    # $ darwin-rebuild build --flake .#ssmnaut
+    darwinConfigurations."ssmnaut" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."Theos-MacBook-Pro".pkgs;
+    darwinPackages = self.darwinConfigurations."ssmnaut".pkgs;
   };
 }
