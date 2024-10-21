@@ -17,9 +17,18 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+    homebrew-bundle = {
+      url = "github:homebrew/homebrew-bundle";
+      flake = false;
+    };
+
+    sandstorm-tap = {
+      url = "github:sandstorm/homebrew-tap";
+      flake = false;
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew,homebrew-core, homebrew-cask, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew,homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
   let
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -62,9 +71,10 @@
         homebrew = {
           enable = true;
           brews = [
-            "mysql"
             "mariadb"
+            "sandstorm/tap/dev-script-runner"
           ];
+           # onActivation.cleanup = "zap";
         };
 
         # Activation script to alias gui applications to the Nix Apps directory.
@@ -130,6 +140,14 @@
 
             # Automatically migrate existing Homebrew installations
             autoMigrate = true;
+
+            mutableTaps = true;
+            taps = {
+              "homebrew/homebrew-core" = inputs.homebrew-core;
+              "homebrew/homebrew-cask" = inputs.homebrew-cask;
+              "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
+              "sandstorm/tap" = inputs.sandstorm-tap;
+            };
           };
         }
       ];
