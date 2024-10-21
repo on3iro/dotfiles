@@ -35,7 +35,9 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [
+          pkgs.ack
           pkgs.alacritty
+          pkgs.ansible
           pkgs.bat 
           pkgs.bottom 
           pkgs.chezmoi 
@@ -47,6 +49,8 @@
           pkgs.fnm 
           pkgs.fzf 
           pkgs.git 
+          pkgs.git-lfs
+          pkgs.imagemagick
           pkgs.jq 
           pkgs.just 
           pkgs.lazygit 
@@ -79,6 +83,9 @@
           enable = true;
           brews = [
             "sandstorm/tap/dev-script-runner"
+            "sandstorm/tap/sandstorm-yubikey-agent"
+            "sandstorm/tap/sku"
+            "sandstorm/tap/synco"
           ];
           casks = [
             "android-commandlinetools"
