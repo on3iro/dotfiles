@@ -35,10 +35,12 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [
+          pkgs.alacritty
           pkgs.bat 
           pkgs.bottom 
           pkgs.chezmoi 
           pkgs.curl 
+          pkgs.pika
           pkgs.dbmate 
           pkgs.delta 
           pkgs.fd 
@@ -56,6 +58,7 @@
           pkgs.nmap 
           pkgs.ripgrep 
           pkgs.sd 
+          pkgs.mariadb
           pkgs.shellclear 
           pkgs.starship 
           pkgs.tealdeer 
@@ -66,15 +69,20 @@
           pkgs.zellij 
           pkgs.zoxide 
           pkgs.zsh 
+          pkgs.zsh-completions
+          pkgs.zsh-autosuggestions
+          pkgs.silver-searcher
         ];
 
         homebrew = {
           enable = true;
           brews = [
-            "mariadb"
             "sandstorm/tap/dev-script-runner"
           ];
-           # onActivation.cleanup = "zap";
+          casks = [
+            "android-commandlinetools"
+            "chromium"
+          ];
         };
 
         # Activation script to alias gui applications to the Nix Apps directory.
@@ -141,6 +149,7 @@
             # Automatically migrate existing Homebrew installations
             autoMigrate = true;
 
+            # onActivation.cleanup = "zap";
             mutableTaps = true;
             taps = {
               "homebrew/homebrew-core" = inputs.homebrew-core;
