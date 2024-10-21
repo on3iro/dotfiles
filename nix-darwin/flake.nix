@@ -40,7 +40,6 @@
           pkgs.bottom 
           pkgs.chezmoi 
           pkgs.curl 
-          pkgs.pika
           pkgs.dbmate 
           pkgs.delta 
           pkgs.fd 
@@ -52,14 +51,17 @@
           pkgs.just 
           pkgs.lazygit 
           pkgs.lua 
+          pkgs.mariadb
           pkgs.marksman 
           pkgs.mkalias
           pkgs.neovim 
           pkgs.nmap 
+          pkgs.pika
+          pkgs.postgresql
           pkgs.ripgrep 
           pkgs.sd 
-          pkgs.mariadb
           pkgs.shellclear 
+          pkgs.silver-searcher
           pkgs.starship 
           pkgs.tealdeer 
           pkgs.tree-sitter 
@@ -69,9 +71,8 @@
           pkgs.zellij 
           pkgs.zoxide 
           pkgs.zsh 
-          pkgs.zsh-completions
           pkgs.zsh-autosuggestions
-          pkgs.silver-searcher
+          pkgs.zsh-completions
         ];
 
         homebrew = {
