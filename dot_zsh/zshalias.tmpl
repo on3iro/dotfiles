@@ -1,0 +1,68 @@
+# zentime
+alias zt='zentime'
+alias ztt='zentime -s toggle-timer'
+alias zts='zentime -s skip'
+alias ztr='zentime -s reset'
+alias ztq='zentime server stop'
+alias ztp='zentime -s postpone'
+
+# git
+alias g='git'
+alias lg='lazygit'
+alias gwi='g all && g wip && g push'
+
+# ls
+alias ls='ls --color=auto'
+alias l='exa --icons'
+
+# fzf
+alias fz="fd -t f . | fzf --preview 'bat -n --color=always {}'"
+alias nfz="nvim \$(fz) && clear"
+fuzzyGrep() {
+  rg --files $1 . | fzf --preview 'bat -n --color=always {}'
+}
+alias fzg="fuzzyGrep"
+alias nfzg="nvim \$(fzg) && clear"
+
+# misc
+alias cd='z'
+alias v='nvim'
+alias vi='nvim'
+alias y='yazi'
+alias pn='pnpm'
+alias c='chezmoi'
+alias cz='chezmoi'
+alias j='just'
+alias mvi='NVIM_APPNAME=minimal-nvim nvim'
+
+
+# Date for history backups
+alias DATE="date '+%Y%m%d'"
+
+{{ if eq .chezmoi.hostname "ssmnaut" }}
+# Alias for reaper dir
+alias cdreaper="$HOME/Documents/audio/Reaper-Portable"
+{{ end }}
+
+# Alias for docker compose
+alias dc="docker compose"
+
+# Alias to restart ssh agent for yubikey
+alias yubi-reload="ykpiv-ssh-agent-helper -r"
+
+# Copy/paste
+alias copy='xclip -selection clipboard'
+alias paste='xclip -selection clipboard -o'
+
+# Note aliases
+# Default daily note/todo list
+alias td='nvim ~/Nextcloud/Notes/todo.md'
+# Create named note for today inside inbox
+function nt() {
+  name=${1:-note}  # Use parameter expansion to set a default value
+  file=$(touty -t ~/Nextcloud/Notes/inbox -n "$name")  # Capture the output in a variable
+  nvim "$file"  # Pass the file directly to nvim
+}
+
+# tmp files
+alias tmp='nvim ~/tmp-theo/scratchpad'

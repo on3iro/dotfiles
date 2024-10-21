@@ -59,6 +59,14 @@
           pkgs.zsh 
         ];
 
+        homebrew = {
+          enable = true;
+          brews = [
+            "mysql"
+            "mariadb"
+          ];
+        };
+
         # Activation script to alias gui applications to the Nix Apps directory.
         system.activationScripts.applications.text = let
           env = pkgs.buildEnv {
