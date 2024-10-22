@@ -18,10 +18,6 @@ alias l='exa --icons'
 # fzf
 alias fz="fd -t f . | fzf --preview 'bat -n --color=always {}'"
 alias nfz="nvim \$(fz) && clear"
-fuzzyGrep() {
-  rg --files $1 . | fzf --preview 'bat -n --color=always {}'
-}
-alias fzg="fuzzyGrep"
 alias nfzg="nvim \$(fzg) && clear"
 
 # misc
@@ -57,12 +53,7 @@ alias paste='xclip -selection clipboard -o'
 # Note aliases
 # Default daily note/todo list
 alias td='nvim ~/Nextcloud/Notes/todo.md'
-# Create named note for today inside inbox
-function nt() {
-  name=${1:-note}  # Use parameter expansion to set a default value
-  file=$(touty -t ~/Nextcloud/Notes/inbox -n "$name")  # Capture the output in a variable
-  nvim "$file"  # Pass the file directly to nvim
-}
+
 
 # tmp files
 alias tmp='nvim ~/tmp-theo/scratchpad'

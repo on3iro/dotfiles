@@ -88,11 +88,22 @@ eval "$(fnm env --use-on-cd)"
 export PATH=$HOME/.local/bin/:$PATH
 
 # Aliases
-if [ -f ~/.zsh/zshalias ]; then
-    source ~/.zsh/zshalias
+if [ -f ~/.config/aliases ]; then
+    source ~/.config/aliases
 else
-    print "404: ~/.zsh/zshalias not found."
+    print "404: ~/.config/aliases not found."
 fi
+
+fuzzyGrep() {
+  rg --files $1 . | fzf --preview 'bat -n --color=always {}'
+}
+
+# Create named note for today inside inbox
+function nt() {
+  name=${1:-note}  # Use parameter expansion to set a default value
+  file=$(touty -t ~/Nextcloud/Notes/inbox -n "$name")  # Capture the output in a variable
+  nvim "$file"  # Pass the file directly to nvim
+}
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -189,7 +200,6 @@ export GOPATH="$HOME/go"
 export PATH=$PATH:$GOPATH/bin
 
 {{ if eq .chezmoi.os "darwin" }}
-
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 

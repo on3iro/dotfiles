@@ -104,6 +104,11 @@ symbol = " "
 [scala]
 symbol = " "
 
+[shell]
+disabled = false
+zsh_indicator = "⚡️"
+fish_indicator = "🐟"
+
 [spack]
 symbol = "🅢 "
 
