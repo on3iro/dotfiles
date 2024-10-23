@@ -1,0 +1,13 @@
+return {
+  {{- if eq .install_mode "full" }}
+
+	-- Color highlighter
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup()
+		end,
+	},
+
+  {{- end }}
+}

@@ -8,17 +8,15 @@ return {
       -- Only ever show a single status line
       vim.opt.laststatus = 2
 
-      -- vim.cmd("colorscheme nightfox")
-      --
-      local theme = require("lualine.themes.nightfox")
-      theme.insert.a.fg = "#282a36"
-      theme.insert.a.bg = "turquoise"
-      -- theme.insert.a.gui = "none"
-      theme.normal.a.fg = "turquoise"
-      theme.normal.a.bg = "#282a36"
-      theme.normal.a.gui = "none"
-      theme.visual.a.gui = "none"
-      theme.replace.a.gui = "none"
+      local theme = require("lualine.themes.nordic")
+      -- theme.insert.a.fg = "#282a36"
+      -- theme.insert.a.bg = "turquoise"
+      -- -- theme.insert.a.gui = "none"
+      -- theme.normal.a.fg = "turquoise"
+      -- theme.normal.a.bg = "#282a36"
+      -- theme.normal.a.gui = "none"
+      -- theme.visual.a.gui = "none"
+      -- theme.replace.a.gui = "none"
 
       require("lualine").setup({
         options = {
