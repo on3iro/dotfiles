@@ -6,7 +6,7 @@
 
 prepend_keymap = [
   # Drop to shell
-  { on   = "<C-s>", run  = 'shell "$SHELL" --block --confirm', desc = "Open shell here" }
+  { on   = "<C-s>", run  = 'shell fish --block --confirm', desc = "Open shell here" }
 ]
 
 keymap = [
