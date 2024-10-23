@@ -23,10 +23,11 @@ return {
           theme = theme,
           component_separators = "",
           section_separators = { left = "", right = "" },
+          -- section_separators = { left = '', right = '' },
         },
 
         sections = {
-          lualine_a = { "mode" },
+          lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
           lualine_b = {
             {
               "diagnostics",
@@ -62,6 +63,7 @@ return {
 
           lualine_z = {
             "lsp_progress",
+            { 'location', separator = { right = '' }, left_padding = 2 },
             -- { git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available },
           },
         },
