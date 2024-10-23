@@ -2,11 +2,12 @@ local wt = require 'wezterm'
 
 local config = {}
 
-local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
--- local custom_color_scheme = wt.color.get_builtin_schemes()['nightfox']
+-- local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
+local custom_color_scheme = wt.color.get_builtin_schemes()['nord']
 -- custom_color_scheme.background = "#05181f"
-custom_color_scheme.background = "#16252c"
--- custom_color_scheme.background = "#06212B"
+-- custom_color_scheme.background = "#16252c"
+-- custom_color_scheme.background = "#081826"
+custom_color_scheme.background = "#20252c"
 
 config.color_schemes = {
   ['Custom'] = custom_color_scheme
