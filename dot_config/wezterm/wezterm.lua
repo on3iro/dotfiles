@@ -2,7 +2,8 @@ local wt = require 'wezterm'
 
 local config = {}
 
-local custom_color_scheme = wt.color.get_builtin_schemes()['Everforest Dark (Gogh)']
+-- local custom_color_scheme = wt.color.get_builtin_schemes()['Everforest Dark (Gogh)']
+local custom_color_scheme = wt.color.get_builtin_schemes()['Ayu Dark (Gogh)']
 -- custom_color_scheme.background = "#05181f"
 -- custom_color_scheme.background = "#16252c"
 custom_color_scheme.background = "#22292d"
