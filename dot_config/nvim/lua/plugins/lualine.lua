@@ -8,15 +8,15 @@ return {
       -- Only ever show a single status line
       vim.opt.laststatus = 2
 
-      local theme = require("lualine.themes.nordic")
-      -- theme.insert.a.fg = "#282a36"
-      -- theme.insert.a.bg = "turquoise"
-      -- -- theme.insert.a.gui = "none"
-      -- theme.normal.a.fg = "turquoise"
-      -- theme.normal.a.bg = "#282a36"
-      -- theme.normal.a.gui = "none"
-      -- theme.visual.a.gui = "none"
-      -- theme.replace.a.gui = "none"
+      local theme = require("lualine.themes.everforest")
+      theme.insert.a.fg = "#282a36"
+      theme.insert.a.bg = "turquoise"
+      -- theme.insert.a.gui = "none"
+      theme.normal.a.fg = "#282a36"
+      theme.normal.a.bg = "orange"
+      theme.normal.a.gui = "none"
+      theme.visual.a.gui = "none"
+      theme.replace.a.gui = "none"
 
       require("lualine").setup({
         options = {
@@ -27,7 +27,11 @@ return {
         },
 
         sections = {
-          lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
+          lualine_a = { {
+            'mode',
+            -- separator = { left = '', right = '' },
+            right_padding = 2
+          } },
           lualine_b = {
             {
               "diagnostics",
@@ -65,7 +69,11 @@ return {
 
           lualine_z = {
             "lsp_progress",
-            { 'location', separator = { right = '' }, left_padding = 2 },
+            {
+              'location',
+              -- separator = { left = '', right = '' },
+              left_padding = 2
+            },
             -- { git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available },
           },
         },

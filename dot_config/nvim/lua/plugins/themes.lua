@@ -10,12 +10,13 @@ return {
       vim.g.everforest_diagnostic_virtual_text = "colored"
       vim.g.everforest_dim_inactive_windows = 1
       vim.g.everforest_transparent_background = 1
-      -- vim.cmd("colorscheme everforest")
+      vim.cmd("colorscheme everforest")
     end,
   },
   {
     'AlexvZyl/nordic.nvim',
     lazy = false,
+    enabled = false,
     priority = 1000,
     config = function()
       require('nordic').setup({
@@ -23,7 +24,7 @@ return {
           palette.gray0 = "#20252c"
         end,
       })
-      require('nordic').load()
+      -- require('nordic').load()
     end
   },
   {

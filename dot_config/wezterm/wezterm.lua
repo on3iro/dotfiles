@@ -2,41 +2,11 @@ local wt = require 'wezterm'
 
 local config = {}
 
--- Neovim colors.
--- config.colors = {
---     foreground = "#E0E2EA",
---     background = "#14161B",
---     ansi = {
---         '#07080D',
---         '#F08080',
---         '#B3F6C0',
---         '#FCE094',
---         '#87CEFA',
---         '#ffcaff',
---         "#8cf8f7",
---         '#eef1f8',
---     },
---     brights = {
---         '#4F5258',
---         '#F08080',
---         '#B3F6C0',
---         '#FCE094',
---         '#87CEFA',
---         '#ffcaff',
---         "#8cf8f7",
---         '#eef1f8',
---     },
--- }
--- config.colors.cursor_bg = config.colors.foreground
--- config.colors.cursor_border = config.colors.foreground
--- config.colors.split = config.colors.foreground
---
--- local custom_color_scheme = wt.color.get_builtin_schemes()['Sea Shells (Gogh)']
-local custom_color_scheme = wt.color.get_builtin_schemes()['nord']
+local custom_color_scheme = wt.color.get_builtin_schemes()['Everforest Dark (Gogh)']
 -- custom_color_scheme.background = "#05181f"
 -- custom_color_scheme.background = "#16252c"
--- custom_color_scheme.background = "#081826"
-custom_color_scheme.background = "#20252c"
+custom_color_scheme.background = "#22292d"
+-- custom_color_scheme.background = "#20252c"
 
 config.color_schemes = {
   ['Custom'] = custom_color_scheme
