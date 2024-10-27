@@ -1,0 +1,27 @@
+{ pkgs }: [
+  pkgs.ack
+  pkgs.bat 
+  pkgs.bottom 
+  pkgs.chezmoi 
+  pkgs.curl 
+  pkgs.eza
+  pkgs.fd 
+  pkgs.fish
+  pkgs.fzf 
+  pkgs.git 
+  pkgs.git-lfs
+  pkgs.jq 
+  pkgs.lua 
+  pkgs.marksman 
+  pkgs.mkalias
+  pkgs.neovim 
+  pkgs.ripgrep 
+  pkgs.sd 
+  pkgs.shellclear 
+  pkgs.starship 
+  pkgs.tree-sitter 
+  pkgs.vim
+  pkgs.yazi 
+  pkgs.zellij 
+  pkgs.zoxide 
+]

@@ -5,8 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpgs.follows = "nixpkgs";
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
@@ -30,54 +28,26 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
   let
     configuration = { pkgs, config, ... }: {
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages =
+      environment.systemPackages = import ./pkgs.common.nix { pkgs } ++
         [
-          pkgs.ack
           pkgs.alacritty
           pkgs.ansible
-          pkgs.bat 
-          pkgs.bottom 
-          pkgs.chezmoi 
-          pkgs.curl 
           pkgs.dbmate 
           pkgs.delta 
-          pkgs.eza
-          # pkgs.direnv
-          pkgs.fd 
-          pkgs.fish
           pkgs.fnm 
-          pkgs.fzf 
-          pkgs.git 
-          pkgs.git-lfs
           pkgs.imagemagick
-          pkgs.jq 
           pkgs.just 
           pkgs.lazygit 
-          pkgs.lua 
           pkgs.mariadb
-          pkgs.marksman 
-          pkgs.mkalias
-          pkgs.neovim 
           pkgs.nmap 
-          # pkgs.pika
+          pkgs.pika
           pkgs.postgresql
-          pkgs.ripgrep 
-          pkgs.sd 
-          pkgs.shellclear 
           pkgs.silver-searcher
-          pkgs.starship 
           pkgs.tealdeer 
-          pkgs.tree-sitter 
           pkgs.universal-ctags 
-          pkgs.vim
-          pkgs.yazi 
-          pkgs.zellij 
-          pkgs.zoxide 
           pkgs.zsh-autosuggestions
           pkgs.zsh-completions
         ];
