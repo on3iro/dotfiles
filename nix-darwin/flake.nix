@@ -5,6 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpgs.follows = "nixpkgs";
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
@@ -28,7 +30,7 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew,homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
   let
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -44,6 +46,8 @@
           pkgs.curl 
           pkgs.dbmate 
           pkgs.delta 
+          pkgs.eza
+          # pkgs.direnv
           pkgs.fd 
           pkgs.fish
           pkgs.fnm 
@@ -60,7 +64,7 @@
           pkgs.mkalias
           pkgs.neovim 
           pkgs.nmap 
-          pkgs.pika
+          # pkgs.pika
           pkgs.postgresql
           pkgs.ripgrep 
           pkgs.sd 

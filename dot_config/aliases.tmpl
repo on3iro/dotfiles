@@ -13,7 +13,7 @@ alias gwi='g all && g wip && g push'
 
 # ls
 alias l='ls --color=auto'
-alias ls='exa --icons'
+alias ls='exa --icons --group-directories-first'
 
 # fzf
 alias fz="fd -t f . | fzf --preview 'bat -n --color=always {}'"
@@ -21,6 +21,7 @@ alias nfz="nvim \$(fz) && clear"
 alias nfzg="nvim \$(fzg) && clear"
 
 # misc
+alias renix='darwin-rebuild switch --flake $HOME/.local/share/chezmoi/nix-darwin/#ssmnaut'
 alias cd='z'
 alias v='nvim'
 alias vi='nvim'
