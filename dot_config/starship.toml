@@ -1,8 +1,12 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 # Inserts a blank line between shell prompts
 add_newline = false
 
 command_timeout = 10000
 
+format = """$character"""
+right_format = """$all"""
 
 # format = """
 # [┌───────────────────>](bold green)

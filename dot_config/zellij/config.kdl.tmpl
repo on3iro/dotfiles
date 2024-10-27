@@ -362,11 +362,7 @@ scroll_buffer_size 20000
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-{{- if eq .chezmoi.os "darwin" }}
-scrollback_editor "/Users/{{- .chezmoi.username }}/.nix-profile/bin/nvim"
-{{ else }}
-scrollback_editor "/Home/{{- .chezmoi.username }}/.nix-profile/bin/nvim"
-{{- end}}
+scrollback_editor "nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)

@@ -78,7 +78,6 @@
           pkgs.yazi 
           pkgs.zellij 
           pkgs.zoxide 
-          pkgs.zsh 
           pkgs.zsh-autosuggestions
           pkgs.zsh-completions
         ];
