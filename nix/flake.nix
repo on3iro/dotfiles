@@ -38,6 +38,7 @@
             pkgs.dbmate 
             pkgs.delta 
             pkgs.fnm 
+            pkgs.httpie
             pkgs.imagemagick
             pkgs.just 
             pkgs.lazygit 
@@ -55,6 +56,7 @@
           homebrew = {
             enable = true;
             brews = [
+              "ain"
               "sandstorm/tap/dev-script-runner"
               "sandstorm/tap/sandstorm-yubikey-agent"
               "sandstorm/tap/sku"
