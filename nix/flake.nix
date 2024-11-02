@@ -9,7 +9,6 @@
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
     # Optional: Declarative tap management
@@ -32,166 +31,20 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+ outputs = { self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
     let
-      configuration = { pkgs, config, ... }: {
-        environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++
-          [
-            pkgs.alacritty
-            pkgs.ansible
-            pkgs.dbmate 
-            pkgs.delta 
-            pkgs.deno
-            pkgs.fnm 
-            pkgs.httpie
-            pkgs.imagemagick
-            pkgs.just 
-            pkgs.lazygit 
-            pkgs.mariadb
-            pkgs.nmap 
-            pkgs.pika
-            pkgs.postgresql
-            pkgs.silver-searcher
-            pkgs.tealdeer 
-            pkgs.universal-ctags 
-            pkgs.zsh-autosuggestions
-            pkgs.zsh-completions
-          ];
-
-          homebrew = {
-            enable = true;
-            brews = [
-              "ain"
-              "sandstorm/tap/dev-script-runner"
-              "sandstorm/tap/sandstorm-yubikey-agent"
-              "sandstorm/tap/sku"
-              "sandstorm/tap/synco"
-            ];
-            casks = [
-              "android-commandlinetools"
-              "chromium"
-            ];
-          };
-
-          # Activation script to alias gui applications to the Nix Apps directory.
-          system.activationScripts.applications.text = let
-            env = pkgs.buildEnv {
-              name = "system-applications";
-              paths = config.environment.systemPackages;
-              pathsToLink = "/Applications";
-            };
-          in
-            pkgs.lib.mkForce ''
-            # Set up applications.
-            echo "setting up /Applications..." >&2
-            rm -rf /Applications/Nix\ Apps
-            mkdir -p /Applications/Nix\ Apps
-            find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-            while read src; do
-              app_name=$(basename "$src")
-              echo "copying $src" >&2
-              ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-            done
-                '';
-
-        # Auto upgrade nix package and the daemon service.
-        services.nix-daemon.enable = true;
-        # nix.package = pkgs.nix;
-
-        # Necessary for using flakes on this system.
-        nix.settings.experimental-features = "nix-command flakes";
-
-        # Create /etc/zshrc that loads the nix-darwin environment.
-        programs.zsh.enable = true;  # default shell on catalina
-        # programs.fish.enable = true;
-
-        # Set Git commit hash for darwin-version.
-        system.configurationRevision = self.rev or self.dirtyRev or null;
-
-        # Used for backwards compatibility, please read the changelog before changing.
-        # $ darwin-rebuild changelog
-        system.stateVersion = 5;
-
-
-        system.defaults = {
-          dock.autohide = true;
-          dock.launchanim = false;
-          dock.magnification = false;
-          dock.mineffect = "scale";
-          dock.orientation = "right";
-          dock.persistent-apps = [];
-          dock.persistent-others = [
-            "/Applications"
-          ];
-          # Show only open applications
-          dock.static-only = true;
-          dock.mru-spaces = false; # Most Recently Used spaces.
-          dock.wvous-bl-corner = 1;
-          dock.wvous-br-corner = 1;
-          dock.wvous-tl-corner = 1;
-          dock.wvous-tr-corner = 1;
-
-          finder.FXPreferredViewStyle = "icnv"; # icon view. Other options are: Nlsv (list), clmv (column), Flwv (cover flow)
-          finder.AppleShowAllExtensions = true;
-          finder.AppleShowAllFiles = true;
-          finder.ShowPathbar = true;
-          finder.ShowStatusBar = true;
-          finder._FXShowPosixPathInTitle = true;
-          finder._FXSortFoldersFirst = true;
-
-          screencapture.location = "~/Pictures/screenshots";
-
-          # Force 24h format
-          NSGlobalDomain.AppleICUForce24HourTime = true;
-          NSGlobalDomain.AppleInterfaceStyle = "Dark";
-          # Show hidden files
-          NSGlobalDomain.AppleShowAllFiles = true;
-          NSGlobalDomain.AppleShowScrollBars = "Automatic";
-          NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
-          NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
-          NSGlobalDomain."com.apple.keyboard.fnState" = true;
-          # Disable natural scrolling
-          NSGlobalDomain."com.apple.swipescrolldirection" = false;
-        };
-
-        system.keyboard.enableKeyMapping = true;
-        system.keyboard.remapCapsLockToEscape = true;
-
-        # The platform the configuration will be used on.
-        nixpkgs.hostPlatform = "aarch64-darwin";
+      # Import the Darwin and Homebrew configurations
+      darwinConfig = import ./config/darwin.nix;
+      homebrewConfig = import ./config/homebrew.nix {
+        inherit homebrew-core homebrew-cask homebrew-bundle sandstorm-tap;
       };
-  in
+    in
     {
-      # Build darwin flake using:
-      # $ darwin-rebuild build --flake .#ssmnaut
       darwinConfigurations."ssmnaut" = nix-darwin.lib.darwinSystem {
         modules = [
-          configuration 
+          darwinConfig
+          homebrewConfig
           nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              # Install Homebrew under the default prefix
-              enable = true;
-
-              # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-              enableRosetta = true;
-
-              # User owning the Homebrew prefix
-              user = "theo";
-
-              # Automatically migrate existing Homebrew installations
-              autoMigrate = true;
-
-              # onActivation.cleanup = "zap";
-              mutableTaps = true;
-              taps = {
-                "homebrew/homebrew-core" = inputs.homebrew-core;
-                "homebrew/homebrew-cask" = inputs.homebrew-cask;
-                "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
-                "sandstorm/tap" = inputs.sandstorm-tap;
-              };
-            };
-          }
         ];
       };
 
