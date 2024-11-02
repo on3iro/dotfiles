@@ -6,29 +6,15 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    # Optional: Declarative tap management
+    homebrew-core = { url = "github:homebrew/homebrew-core"; flake = false; };
+    homebrew-cask = { url = "github:homebrew/homebrew-cask"; flake = false; };
+    homebrew-bundle = { url = "github:homebrew/homebrew-bundle"; flake = false; };
+    sandstorm-tap = { url = "github:sandstorm/homebrew-tap"; flake = false; };
+
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-
-    # Optional: Declarative tap management
-    homebrew-core = {
-      url = "github:homebrew/homebrew-core";
-      flake = false;
-    };
-    homebrew-cask = {
-      url = "github:homebrew/homebrew-cask";
-      flake = false;
-    };
-    homebrew-bundle = {
-      url = "github:homebrew/homebrew-bundle";
-      flake = false;
-    };
-
-    sandstorm-tap = {
-      url = "github:sandstorm/homebrew-tap";
-      flake = false;
-    };
   };
 
  outputs = { self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
