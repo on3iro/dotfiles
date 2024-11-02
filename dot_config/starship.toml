@@ -5,8 +5,8 @@ add_newline = false
 
 command_timeout = 10000
 
-format = """$jobs$character"""
-right_format = """$all"""
+# format = """$jobs$character"""
+# right_format = """$all"""
 
 # format = """
 # [┌───────────────────>](bold green)
@@ -38,7 +38,6 @@ read_only = " "
 truncate_to_repo = false
 
 [docker_context]
-disabled = true
 symbol = " "
 
 [elixir]
