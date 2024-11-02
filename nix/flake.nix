@@ -6,6 +6,10 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
     # Optional: Declarative tap management
@@ -28,7 +32,7 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
     let
       configuration = { pkgs, config, ... }: {
         environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++
@@ -107,6 +111,51 @@
         # Used for backwards compatibility, please read the changelog before changing.
         # $ darwin-rebuild changelog
         system.stateVersion = 5;
+
+
+        system.defaults = {
+          dock.autohide = true;
+          dock.launchanim = false;
+          dock.magnification = false;
+          dock.mineffect = "scale";
+          dock.orientation = "right";
+          dock.persistent-apps = [];
+          dock.persistent-others = [
+            "/Applications"
+          ];
+          # Show only open applications
+          dock.static-only = true;
+          dock.mru-spaces = false; # Most Recently Used spaces.
+          dock.wvous-bl-corner = 1;
+          dock.wvous-br-corner = 1;
+          dock.wvous-tl-corner = 1;
+          dock.wvous-tr-corner = 1;
+
+          finder.AppleShowAllExtensions = true;
+          finder.FXPreferredViewStyle = "icnv"; # icon view. Other options are: Nlsv (list), clmv (column), Flwv (cover flow)
+          finder.AppleShowAllExtensions = true;
+          finder.AppleShowAllFiles = true;
+          finder.ShowPathbar = true;
+          finder.ShowStatusBar = true;
+          finder._FXShowPosixPathInTitle = true;
+          finder._FXSortFoldersFirst = true;
+
+          screencapture.location = "~/Pictures/screenshots";
+
+          # Force 24h format
+          NSGlobalDomain.AppleICUForce24HourTime = true;
+          NSGlobalDomain.AppleInterfaceStyle = "Dark";
+          # Show hidden files
+          NSGlobalDomain.AppleShowAllFiles = true;
+          NSGlobalDomain.AppleShowScrollBars = "Automatic";
+          NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
+          NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
+          NSGlobalDomain."com.apple.keyboard.fnState" = true;
+          # Disable natural scrolling
+          NSGlobalDomain."com.apple.swipescrolldirection" = false;
+        };
+
+        keyboard.remapCapsLockToEscape = true;
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
