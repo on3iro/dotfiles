@@ -154,7 +154,8 @@
           NSGlobalDomain."com.apple.swipescrolldirection" = false;
         };
 
-        keyboard.remapCapsLockToEscape = true;
+        system.keyboard.enableKeyMapping = true;
+        system.keyboard.remapCapsLockToEscape = true;
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
