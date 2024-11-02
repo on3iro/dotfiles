@@ -131,7 +131,6 @@
           dock.wvous-tl-corner = 1;
           dock.wvous-tr-corner = 1;
 
-          finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "icnv"; # icon view. Other options are: Nlsv (list), clmv (column), Flwv (cover flow)
           finder.AppleShowAllExtensions = true;
           finder.AppleShowAllFiles = true;
