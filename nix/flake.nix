@@ -37,6 +37,7 @@
             pkgs.ansible
             pkgs.dbmate 
             pkgs.delta 
+            pkgs.deno
             pkgs.fnm 
             pkgs.httpie
             pkgs.imagemagick

@@ -38,6 +38,7 @@ read_only = " "
 truncate_to_repo = false
 
 [docker_context]
+disabled = true
 symbol = " "
 
 [elixir]
