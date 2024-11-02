@@ -1,5 +1,7 @@
+{ flox }:
 { pkgs, config, ... }: {
   environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++ [
+    flox.packages.${pkgs.system}.default
     pkgs.alacritty
     pkgs.ansible
     pkgs.dbmate 
@@ -43,7 +45,15 @@
 
   # System-level services and Nix settings
   services.nix-daemon.enable = true;
-  nix.settings.experimental-features = "nix-command flakes";
+  nix.settings = {
+    experimental-features = "nix-command flakes";
+    substituters = [
+      "https://cache.flox.dev"
+    ];
+    trusted-public-keys = [
+      "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs="
+    ];
+  };
 
   # Shell configurations
   programs.zsh.enable = true;
