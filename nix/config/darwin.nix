@@ -5,6 +5,7 @@
     pkgs.dbmate 
     pkgs.delta 
     pkgs.deno
+    pkgs.devbox
     pkgs.fnm 
     pkgs.httpie
     pkgs.imagemagick
