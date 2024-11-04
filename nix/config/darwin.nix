@@ -1,11 +1,11 @@
 { pkgs, config, ... }: {
   environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++ [
-    pkgs.alacritty
     pkgs.ansible
+    pkgs.cargo
     pkgs.dbmate 
     pkgs.delta 
-    pkgs.deno
     pkgs.devbox
+    pkgs.direnv
     pkgs.fnm 
     pkgs.httpie
     pkgs.imagemagick
@@ -15,6 +15,7 @@
     pkgs.nmap 
     pkgs.pika
     pkgs.postgresql
+    pkgs.rustc
     pkgs.silver-searcher
     pkgs.tealdeer 
     pkgs.universal-ctags 
