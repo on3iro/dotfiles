@@ -11,7 +11,7 @@ return {
       enabled = true,
       -- Maximum file size (in MB) that this plugin will attempt to render
       -- Any file larger than this will effectively be ignored
-      max_file_size = 10.0,
+      max_file_size = 4.0,
       -- Milliseconds that must pass before updating marks, updates occur
       -- within the context of the visible window, not the entire buffer
       debounce = 100,
@@ -85,9 +85,9 @@ return {
       },
       heading = {
         -- Turn on / off heading icon & background rendering
-        enabled = true,
+        enabled = false,
         -- Turn on / off any sign column related rendering
-        sign = true,
+        sign = false,
         -- Determines how icons fill the available space:
         --  inline:  underlying '#'s are concealed resulting in a left aligned icon
         --  overlay: result is left padded with spaces to hide any additional '#'
@@ -104,7 +104,7 @@ return {
         --  full:  full width of the window
         -- Can also be a list of the above values in which case the 'level' is used
         -- to index into the list using a clamp
-        width = 'full',
+        width = 'block',
         -- Amount of margin to add to the left of headings
         -- If a floating point value < 1 is provided it is treated as a percentage of the available window space
         -- Margin available space is computed after accounting for padding

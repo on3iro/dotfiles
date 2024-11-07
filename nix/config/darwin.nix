@@ -1,5 +1,6 @@
 { pkgs, config, ... }: {
   environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++ [
+    pkgs.ain
     pkgs.ansible
     pkgs.cargo
     pkgs.dbmate 

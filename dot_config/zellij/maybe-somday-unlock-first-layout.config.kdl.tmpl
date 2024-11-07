@@ -103,6 +103,15 @@ keybinds clear-defaults=true {
         bind "p" { Search "up"; }
         bind "w" { SearchToggleOption "Wrap"; }
     }
+    normal {
+        bind "?" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                "LOAD_ZELLIJ_BINDINGS" "true"
+                floating true
+            }
+            SwitchToMode "Normal"
+        }
+    }
     session {
         bind "c" {
             LaunchOrFocusPlugin "configuration" {
