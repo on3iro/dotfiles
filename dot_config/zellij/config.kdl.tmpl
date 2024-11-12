@@ -6,6 +6,9 @@ keybinds clear-defaults=true {
     shared_except "locked" "normal" "entersearch" {
       bind "esc" { SwitchToMode "normal"; }
     }
+    shared_except "normal" "locked" {
+      bind "Enter" "Space" "Esc" { SwitchToMode "Normal"; }
+    }
     shared_except "locked" {
          bind "Ctrl h" {
             MessagePlugin "file:/Users/theo/.config/zellij/plugins/vim-zellij-navigator.wasm" {
@@ -106,7 +109,9 @@ keybinds clear-defaults=true {
         bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        bind "x" { CloseFocus; SwitchToMode "locked"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        bind "tab" { SwitchFocus; }
     }
     move {
         bind "n" "Tab" { MovePane; }
@@ -159,7 +164,6 @@ keybinds clear-defaults=true {
         bind "Esc" { UndoRenameTab; SwitchToMode "Normal"; }
     }
     renamepane {
-        bind "Ctrl c" { SwitchToMode "Normal"; }
         bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
     session {
