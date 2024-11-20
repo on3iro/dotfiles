@@ -22,6 +22,6 @@
   pkgs.tree-sitter 
   pkgs.vim
   pkgs.yazi 
-  # pkgs.zellij 
+  pkgs.zellij 
   pkgs.zoxide 
 ]
