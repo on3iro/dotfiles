@@ -38,10 +38,10 @@ return {
           layout_strategy = "vertical",
           layout_config = {
             vertical = {
-              prompt_position = "top",
+              prompt_position = "bottom",
               width = { padding = 0 },
               height = { padding = 0 },
-              preview_height = 0.7,
+              preview_height = 0.6,
               preview_cutoff = 10,
             },
           },
@@ -49,8 +49,8 @@ return {
           buffer_previewer_maker = new_maker,
           file_ignore_patterns = { "node_modules", "%.git/" },
           path_display = {
-            shorten = true,
-            -- truncate = 3,
+            -- shorten = true,
+            truncate = 3,
           },
           -- Old style arguments as a quickfix for ripgrep memory leak
           -- see: https://github.com/nvim-telescope/telescope.nvim/issues/2482#issuecomment-1528053505
