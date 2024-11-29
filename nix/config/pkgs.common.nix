@@ -3,6 +3,7 @@
   pkgs.bat 
   pkgs.bottom 
   pkgs.chezmoi 
+  pkgs.clipboard-jh
   pkgs.curl 
   pkgs.eza
   pkgs.fd 
@@ -15,6 +16,7 @@
   pkgs.marksman 
   pkgs.mkalias
   pkgs.neovim 
+  pkgs.nushell
   pkgs.ripgrep 
   pkgs.sd 
   pkgs.shellclear 

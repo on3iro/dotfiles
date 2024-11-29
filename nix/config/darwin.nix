@@ -86,7 +86,7 @@
     NSGlobalDomain.AppleShowScrollBars = "Automatic";
     NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
     NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
-    NSGlobalDomain."com.apple.keyboard.fnState" = true;
+    NSGlobalDomain."com.apple.keyboard.fnState" = false;
     NSGlobalDomain."com.apple.swipescrolldirection" = false;
   };
 
