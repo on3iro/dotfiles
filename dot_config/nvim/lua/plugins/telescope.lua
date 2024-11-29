@@ -35,6 +35,16 @@ return {
       require("telescope").setup({
         -- ...
         defaults = {
+          layout_strategy = "vertical",
+          layout_config = {
+            vertical = {
+              prompt_position = "top",
+              width = { padding = 0 },
+              height = { padding = 0 },
+              preview_height = 0.7,
+              preview_cutoff = 10,
+            },
+          },
           wrap_results = true,
           buffer_previewer_maker = new_maker,
           file_ignore_patterns = { "node_modules", "%.git/" },
@@ -60,14 +70,14 @@ return {
           },
         },
         pickers = {
-          find_files = { theme = "dropdown" },
-          grep_string = { theme = "dropdown" },
-          buffers = { theme = "dropdown" },
-          live_grep = { theme = "dropdown" },
-          current_buffer_fuzzy_find = { theme = "dropdown" },
-          oldfiles = { theme = "dropdown" },
-          quickfix = { theme = "dropdown", fname_width = 80 },
-          lsp_references = { theme = "dropdown" }, -- Add this line
+          find_files = {},
+          grep_string = {},
+          buffers = {},
+          live_grep = {},
+          current_buffer_fuzzy_find = {},
+          oldfiles = {},
+          quickfix = { fname_width = 80 },
+          lsp_references = {},
         },
         extensions = {
           ["ui-select"] = {
