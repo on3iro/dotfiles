@@ -77,7 +77,7 @@ return {
           current_buffer_fuzzy_find = {},
           oldfiles = {},
           quickfix = { fname_width = 80 },
-          lsp_references = {},
+          lsp_references = { fname_width = 0.6 },
         },
         extensions = {
           ["ui-select"] = {
