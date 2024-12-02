@@ -31,6 +31,7 @@ return {
       end
 
       actions = require("telescope.actions")
+      builtins = require("telescope.builtin")
 
       require("telescope").setup({
         -- ...
@@ -66,6 +67,8 @@ return {
           mappings = {
             i = {
               ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
+              ["<C-s>"] = actions.cycle_previewers_next,
+              ["<C-a>"] = actions.cycle_previewers_prev,
             },
           },
         },
@@ -139,7 +142,8 @@ return {
       vim.keymap.set("n", "<leader>nt", "<cmd>lua live_grep_frontmatter_tags()<cr>", { noremap = true })
 
       -- Git
-      a.nvim_set_keymap("n", "<leader>gc", "<cmd>Telescope git_commits<cr>", { noremap = false })
+      a.nvim_set_keymap("n", "<leader>gc", "<cmd>Telescope git_bcommits<cr>",
+        { noremap = false, desc = "Git buffer commits" })
       a.nvim_set_keymap("n", "<leader>gb", "<cmd>Telescope git_branches<cr>", { noremap = false })
       a.nvim_set_keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { noremap = false })
 
