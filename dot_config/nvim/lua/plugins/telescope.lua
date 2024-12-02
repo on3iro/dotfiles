@@ -69,6 +69,8 @@ return {
               ["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
               ["<C-s>"] = actions.cycle_previewers_next,
               ["<C-a>"] = actions.cycle_previewers_prev,
+              ["<C-d>"] = actions.preview_scrolling_down,
+              ["<C-u>"] = actions.preview_scrolling_up,
             },
           },
         },
