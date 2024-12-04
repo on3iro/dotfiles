@@ -71,6 +71,8 @@
     dock.wvous-tl-corner = 1;
     dock.wvous-tr-corner = 1;
 
+    WindowManager.AppWindowGroupingBehavior = true;
+
     finder.FXPreferredViewStyle = "icnv";
     finder.AppleShowAllExtensions = true;
     finder.AppleShowAllFiles = true;
