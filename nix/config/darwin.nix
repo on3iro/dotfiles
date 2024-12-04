@@ -65,13 +65,14 @@
     dock.persistent-apps = [];
     dock.persistent-others = [ "/Applications" ];
     dock.static-only = true;
+    dock.expose-group-apps = true; # group windows by application
     dock.mru-spaces = false;
     dock.wvous-bl-corner = 1;
     dock.wvous-br-corner = 1;
     dock.wvous-tl-corner = 1;
     dock.wvous-tr-corner = 1;
 
-    WindowManager.AppWindowGroupingBehavior = true;
+    # WindowManager.AppWindowGroupingBehavior = true;
 
     finder.FXPreferredViewStyle = "icnv";
     finder.AppleShowAllExtensions = true;
