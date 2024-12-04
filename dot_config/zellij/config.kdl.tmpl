@@ -86,6 +86,12 @@ keybinds clear-defaults=true {
           };
           SwitchToMode "Normal"
         }
+        bind "Ctrl p" {
+            LaunchOrFocusPlugin "plugin-manager" {
+                floating true
+                move_to_focused_tab true
+            }
+        }
     }
     resize {
         bind "h" "Left" { Resize "Increase Left"; }
