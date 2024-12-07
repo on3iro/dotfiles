@@ -124,7 +124,7 @@ alt-a = 'workspace A' # audio
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-2 = 'move-node-to-workspace 2'
-alt-shift-t = 'move-node-to-workspace t'
+alt-shift-t = 'move-node-to-workspace T'
 alt-shift-d = 'move-node-to-workspace D'
 alt-shift-a = 'move-node-to-workspace A'
 alt-shift-m = 'move-node-to-workspace M'
