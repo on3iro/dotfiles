@@ -149,11 +149,10 @@ return {
       a.nvim_set_keymap("n", "<leader>gb", "<cmd>Telescope git_branches<cr>", { noremap = false })
       a.nvim_set_keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { noremap = false })
 
-      -- Registers
+      -- nvim
       a.nvim_set_keymap("n", "<leader>re", "<cmd>Telescope registers<cr>", { noremap = false })
-
-      -- Marks
       a.nvim_set_keymap("n", "<leader>ma", "<cmd>Telescope marks<cr>", { noremap = false })
+      a.nvim_set_keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = false })
     end,
   },
 
