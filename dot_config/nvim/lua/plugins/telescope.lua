@@ -152,7 +152,7 @@ return {
       -- nvim
       a.nvim_set_keymap("n", "<leader>re", "<cmd>Telescope registers<cr>", { noremap = false })
       a.nvim_set_keymap("n", "<leader>ma", "<cmd>Telescope marks<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = false })
+      a.nvim_set_keymap("n", "<leader>he", "<cmd>Telescope help_tags<cr>", { noremap = false })
     end,
   },
 
