@@ -5,8 +5,9 @@ return {
     config = function()          -- Lua
       -- local git_blame = require("gitblame")
 
-      -- Only ever show a single status line
-      vim.opt.laststatus = 2
+      -- Only ever show a single status line -> 2
+      -- global status line -> 3
+      vim.opt.laststatus = 3
 
       local theme = require("lualine.themes.everforest")
       theme.insert.a.fg = "#282a36"
