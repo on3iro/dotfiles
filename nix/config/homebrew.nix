@@ -4,6 +4,7 @@
     enable = true;
     brews = [
       "ain"
+      "nixpacks"
       "sandstorm/tap/dev-script-runner"
       "sandstorm/tap/sandstorm-yubikey-agent"
       "sandstorm/tap/sku"
