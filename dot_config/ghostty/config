@@ -1,6 +1,6 @@
 # window-decoration = false
 macos-titlebar-style = hidden
-theme = SeaShells
+theme = Ayu
 background = 22292d
 
 font-size = 18
