@@ -106,6 +106,11 @@ o.formatoptions = o.formatoptions + "ro"
 -- trigger `autoread` when files changes on disk
 o.autoread = true
 
+-- Syntax folding
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+o.foldlevelstart = 99 -- Start with all folds open
+
 -- Autocommand for FocusGained, BufEnter, CursorHold, CursorHoldI
 a.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
   pattern = "*",

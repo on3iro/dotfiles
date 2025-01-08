@@ -10,6 +10,7 @@ return {
         typescript = { "eslint" },
         typescriptreact = { "eslint" },
         markdown = {},
+        php = { "phpstan" },
         go = { "revive" },
       }
 
