@@ -13,7 +13,6 @@
     casks = [
       "android-commandlinetools"
       "chromium"
-      "nikitabobko/tap/aerospace"
     ];
   };
 

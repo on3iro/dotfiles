@@ -1,5 +1,6 @@
 { pkgs, config, ... }: {
   environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++ [
+    pkgs.aerospace
     pkgs.ghostty
     pkgs.ain
     pkgs.ansible
@@ -50,6 +51,7 @@
 
   # System-level services and Nix settings
   services.nix-daemon.enable = true;
+  # services.aerospace.enable = true; -> use acutal package and manual toml file instead
   nix.settings.experimental-features = "nix-command flakes";
 
   # Shell configurations
