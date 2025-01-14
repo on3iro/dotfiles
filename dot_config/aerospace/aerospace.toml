@@ -114,7 +114,8 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-2 = 'workspace 2' # secondary monitor
+alt-c = 'workspace C' # secondary monitor, calendar
+alt-s = 'workspace S' # secondary monitor, spotify
 alt-d = 'workspace D' # development
 alt-t = 'workspace T' # tools
 alt-m = 'workspace M' # messaging
@@ -123,7 +124,8 @@ alt-b = 'workspace B' # browser
 alt-a = 'workspace A' # audio
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-s = 'move-node-to-workspace S'
 alt-shift-t = 'move-node-to-workspace T'
 alt-shift-d = 'move-node-to-workspace D'
 alt-shift-a = 'move-node-to-workspace A'
@@ -160,4 +162,5 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-2 = 'secondary'                       
+C = 'secondary'                       
+S = 'secondary'                       
