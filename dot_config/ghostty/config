@@ -1,7 +1,8 @@
 # window-decoration = false
 macos-titlebar-style = hidden
-theme = Ayu
-background = 22292d
+# theme = Ayu
+theme = Nord
+# background = 22292d
 
 font-size = 18
 font-family = JetbrainsMono Nerd Font Mono
@@ -20,3 +21,6 @@ scrollback-limit = 10000
 
 macos-option-as-alt = false
 macos-auto-secure-input = true
+
+background-opacity = 0.97
+

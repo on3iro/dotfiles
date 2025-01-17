@@ -1,7 +1,7 @@
 return {
   {
     "sainnhe/everforest",
-    enabled = true,
+    enabled = false,
     config = function()
       vim.opt.background = "dark"
       vim.g.everforest_better_performance = 1
@@ -26,6 +26,17 @@ return {
       })
       -- require('nordic').load()
     end
+  },
+  {
+    "gbprod/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("nord").setup({
+        transparent = true
+      })
+      vim.cmd.colorscheme("nord")
+    end,
   },
   {
     "EdenEast/nightfox.nvim",
