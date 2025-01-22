@@ -7,6 +7,7 @@ return {
       "nvim-lua/plenary.nvim",
       "BurntSushi/ripgrep",
       "nvim-telescope/telescope-ui-select.nvim",
+      "jvgrootveld/telescope-zoxide",
     },
     config = function()
       local a = vim.api
@@ -32,6 +33,7 @@ return {
 
       actions = require("telescope.actions")
       builtins = require("telescope.builtin")
+      local zox_utils = require("telescope._extensions.zoxide.utils")
 
       require("telescope").setup({
         -- ...
@@ -85,6 +87,24 @@ return {
           lsp_references = { fname_width = 0.6 },
         },
         extensions = {
+          zoxide = {
+            prompt_title = "[ Zoxide ]",
+            mappings = {
+              default = {
+                after_action = function(selection)
+                  print("Update to (" .. selection.z_score .. ") " .. selection.path)
+                end
+              },
+              ["<C-s>"] = {
+                before_action = function(selection) print("before C-s") end,
+                action = function(selection)
+                  vim.cmd.edit(selection.path)
+                end
+              },
+              -- Opens the selected entry in a new split
+              ["<C-q>"] = { action = zox_utils.create_basic_command("split") },
+            },
+          },
           ["ui-select"] = {
             require("telescope.themes").get_dropdown({
               -- even more opts
@@ -109,6 +129,7 @@ return {
 
       require("telescope").load_extension("fzf")
       require("telescope").load_extension("ui-select")
+      require("telescope").load_extension('zoxide')
 
       require("plugins.flutter.telescope").setup()
 
@@ -119,6 +140,7 @@ return {
       a.nvim_set_keymap("n", "<leader>/", "<cmd>Telescope live_grep<cr>", { noremap = false })
       a.nvim_set_keymap("n", "<leader>l", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = false })
       a.nvim_set_keymap("n", "<leader>hi", "<cmd>Telescope oldfiles<cr>", { noremap = false })
+      a.nvim_set_keymap("n", "<leader>z", "<cmd>Telescope zoxide list<cr>", { noremap = false })
       local builtin = require("telescope.builtin")
 
       -- Notes

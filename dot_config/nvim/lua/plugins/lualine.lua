@@ -30,6 +30,8 @@ return {
         sections = {
           lualine_a = { {
             'mode',
+            icons_enabled = true,
+            icon = '',
             -- separator = { left = '', right = '' },
             right_padding = 2
           } },

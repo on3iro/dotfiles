@@ -1,7 +1,7 @@
 return {
   {
     "sainnhe/everforest",
-    enabled = false,
+    enabled = true,
     config = function()
       vim.opt.background = "dark"
       vim.g.everforest_better_performance = 1
@@ -14,22 +14,43 @@ return {
     end,
   },
   {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    enabled = false,
+    "ellisonleao/gruvbox.nvim",
     priority = 1000,
+    enabled = false,
     config = function()
-      require('nordic').setup({
-        on_palette = function(palette)
-          palette.gray0 = "#20252c"
-        end,
+      -- Default options:
+      require("gruvbox").setup({
+        terminal_colors = true, -- add neovim terminal colors
+        undercurl = true,
+        underline = true,
+        bold = true,
+        italic = {
+          strings = true,
+          emphasis = true,
+          comments = true,
+          operators = false,
+          folds = true,
+        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = "",  -- can be "hard", "soft" or empty string
+        palette_overrides = {},
+        overrides = {},
+        dim_inactive = false,
+        transparent_mode = true,
       })
-      -- require('nordic').load()
+      -- vim.o.background = "dark" -- or "light" for light mode
+      -- vim.cmd([[colorscheme gruvbox]])
     end
   },
   {
     "gbprod/nord.nvim",
     lazy = false,
+    enabled = false,
     priority = 1000,
     config = function()
       require("nord").setup({

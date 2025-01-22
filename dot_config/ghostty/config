@@ -1,16 +1,20 @@
 # window-decoration = false
 macos-titlebar-style = hidden
 # theme = Ayu
-theme = Nord
+# theme = Nord
+theme = Everforest Dark - Hard
 # background = 22292d
 
 font-size = 18
-font-family = JetbrainsMono Nerd Font Mono
+# font-family = JetbrainsMono Nerd Font Mono
+font-family = FiraCode Nerd Font Mono
+# font-family = GeistMono Nerd Font Mono
+# font-family = UbuntuMono Nerd Font Mono
 
 # Disable ligatures
 font-feature = -calt
-font-feature = -liga
-font-feature = -dlig
+# font-feature = -liga
+# font-feature = -dlig
 
 # Padding
 window-padding-x = 10
@@ -22,5 +26,6 @@ scrollback-limit = 10000
 macos-option-as-alt = false
 macos-auto-secure-input = true
 
-background-opacity = 0.97
+background-opacity = 0.92
+background-blur-radius = 18
 
