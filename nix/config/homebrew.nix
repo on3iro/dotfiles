@@ -9,6 +9,7 @@
       "sandstorm/tap/sandstorm-yubikey-agent"
       "sandstorm/tap/sku"
       "sandstorm/tap/synco"
+      "mise"
     ];
     casks = [
       "android-commandlinetools"
