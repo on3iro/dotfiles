@@ -14,6 +14,7 @@
     pkgs.imagemagick
     pkgs.just 
     pkgs.lazygit 
+    pkgs.lazydocker
     pkgs.mariadb
     pkgs.nmap 
     pkgs.pika
