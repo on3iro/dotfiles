@@ -7,7 +7,7 @@
 # : Flavor {{{
 
 [flavor]
-use = ""
+use = "everforest-medium"
 
 # : }}}
 

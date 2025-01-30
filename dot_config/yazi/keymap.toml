@@ -7,7 +7,8 @@
 prepend_keymap = [
   # Drop to shell
   { on   = "<C-s>", run  = 'shell fish --block --confirm', desc = "Open shell here" },
-  { on = "<C-y>", run = ["plugin system-clipboard"] }
+  { on = "<C-y>", run = ["plugin system-clipboard"] },
+  { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory or open the file" }
 ]
 
 keymap = [
