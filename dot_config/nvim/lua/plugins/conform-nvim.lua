@@ -1,17 +1,6 @@
 return {
   {
     "stevearc/conform.nvim",
-    opts = {
-      cond = true,
-      formatters_by_ft = {
-        lua = { "stylua" },
-        javascript = { { "prettierd", "prettier" } },
-        astro = { { "prettierd", "prettier" } },
-        typescript = { { "prettierd", "prettier" } },
-        typescriptreact = { { "prettierd", "prettier" } },
-        markdown = { { "prettierd", "prettier" } },
-      },
-    },
     config = function()
       require("conform").setup({
         format_on_save = function(bufnr)
@@ -21,6 +10,14 @@ return {
           end
           return { timeout_ms = 500, lsp_format = "fallback" }
         end,
+        formatters_by_ft = {
+          lua = { "stylua" },
+          javascript = { "prettierd", "prettier", stop_after_first = true },
+          astro = { "prettierd", "prettier", stop_after_first = true },
+          typescript = { "prettierd", "prettier", stop_after_first = true },
+          typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+          markdown = { "prettierd", "prettier", stop_after_first = true },
+        },
       })
 
       vim.api.nvim_create_user_command("FormatDisable", function(args)

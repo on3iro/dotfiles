@@ -3,11 +3,13 @@ macos-titlebar-style = hidden
 # theme = Ayu
 # theme = Nord
 theme = Everforest Dark - Hard
+# theme = tokyonight-storm
 # background = 22292d
 
 font-size = 18
 # font-family = JetbrainsMono Nerd Font Mono
-font-family = FiraCode Nerd Font Mono
+# font-family = FiraCode Nerd Font Mono
+font-family = Monaco
 # font-family = GeistMono Nerd Font Mono
 # font-family = UbuntuMono Nerd Font Mono
 
@@ -26,6 +28,6 @@ scrollback-limit = 10000
 macos-option-as-alt = false
 macos-auto-secure-input = true
 
-background-opacity = 0.92
-background-blur-radius = 18
+# background-opacity = 0.92
+# background-blur-radius = 18
 
