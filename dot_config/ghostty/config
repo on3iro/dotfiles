@@ -28,6 +28,6 @@ scrollback-limit = 10000
 macos-option-as-alt = false
 macos-auto-secure-input = true
 
-# background-opacity = 0.92
-# background-blur-radius = 18
+background-opacity = 0.95
+background-blur-radius = 18
 
