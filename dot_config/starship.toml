@@ -17,6 +17,10 @@ command_timeout = 10000
 # [character]                            # The name of the module we are configuring is "character"
 # success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
 
+[custom.yazi]
+when = "env | grep -q YAZI_LEVEL"
+command = "echo ''"
+style = "bold yellow"
 
 [aws]
 symbol = "  "
