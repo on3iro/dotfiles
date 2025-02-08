@@ -1,3 +1,6 @@
+# Manage updates through nix
+auto-update = off
+
 # window-decoration = false
 macos-titlebar-style = hidden
 theme = Ayu Mirage

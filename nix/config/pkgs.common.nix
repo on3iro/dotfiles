@@ -16,13 +16,11 @@
   pkgs.marksman 
   pkgs.mkalias
   pkgs.neovim 
-  pkgs.nushell
   pkgs.ripgrep 
   pkgs.sd 
   pkgs.shellclear 
   pkgs.starship 
   pkgs.tree-sitter 
-  pkgs.vim
   pkgs.yazi 
   pkgs.zellij 
   pkgs.zoxide 

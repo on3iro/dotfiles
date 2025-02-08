@@ -1,7 +1,6 @@
 { pkgs, config, ... }: {
   environment.systemPackages = import ./pkgs.common.nix { pkgs = pkgs; } ++ [
     pkgs.aerospace
-    pkgs.ghostty
     pkgs.ain
     pkgs.ansible
     pkgs.cargo
