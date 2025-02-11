@@ -30,4 +30,4 @@ macos-auto-secure-input = true
 
 background-opacity = 0.95
 background-blur-radius = 18
-
+minimum-contrast = 1.1
