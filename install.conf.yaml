@@ -1,0 +1,23 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+        force: true
+
+- clean: ['~']
+
+- link:
+    ~/bin/:
+        glob: true
+        path: bin/*
+    ~/.config/: 
+        glob: true
+        path: config/*
+    ~/.vim:
+    ~/.zsh:
+    ~/.editorconfig:
+    ~/.fzf.zsh:
+    ~/.gitconfig:
+    ~/.psqlrc:
+    ~/.zshrc:
+
