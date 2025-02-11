@@ -38,10 +38,8 @@ alias mvi='NVIM_APPNAME=minimal-nvim nvim'
 # Date for history backups
 alias DATE="date '+%Y%m%d'"
 
-{{ if eq .chezmoi.hostname "ssmnaut" }}
 # Alias for reaper dir
 alias cdreaper="$HOME/Documents/audio/Reaper-Portable"
-{{ end }}
 
 # Alias for docker compose
 alias dc="docker compose"

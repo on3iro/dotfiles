@@ -368,11 +368,7 @@ scrollback_editor "nvim"
 
 // The folder in which Zellij will look for layouts
 //
-{{- if eq .chezmoi.os "darwin" }}
-layout_dir "/Users/{{- .chezmoi.username }}/.config/zellij/layouts"
-{{ else }}
-layout_dir "/Home/{{- .chezmoi.username }}/.config/zellij/layouts"
-{{- end}}
+layout_dir "/Users/theo/.config/zellij/layouts"
 
 pane_frames false
 
