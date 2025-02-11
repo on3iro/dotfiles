@@ -1,6 +1,6 @@
 [user]
   name = Theo Salzmann
-  email = {{ .email }}
+  email = theo.salzmann@sandstorm.de
 [diff]
   colorMoved = default
 [push]
