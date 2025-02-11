@@ -1,8 +1,0 @@
-return {
-  {{- if eq .install_mode "full" }}
-
-	-- Instant markdown preview
-	{ "iamcco/markdown-preview.nvim", build = "cd app && yarn install" },
-
-  {{- end }}
-}

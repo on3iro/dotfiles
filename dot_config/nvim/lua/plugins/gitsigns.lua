@@ -1,5 +1,4 @@
 return {
-  {{- if eq .install_mode "full" }}
 	-- Git related {
 	{
 		"lewis6991/gitsigns.nvim",
@@ -18,5 +17,4 @@ return {
       })
 		end,
 	},
-  {{- end }}
 }
