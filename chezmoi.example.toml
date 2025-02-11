@@ -1,7 +1,0 @@
-[data]
-email = "<personal email address>"
-
-# Full mode will configure everything (typically useful for dev machine)
-# Light mode will configure things I deem necessary but will skip various lsp's etc.
-# Server lightest version will skip all gui tools as well
-install_mode = "full" # Could be "server", "light" or "full"
