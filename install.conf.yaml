@@ -12,6 +12,8 @@
         path: bin/*
     ~/.config/: 
         glob: true
+        force: true
+        relink: true
         path: config/*
     ~/.vim:
     ~/.zsh:
