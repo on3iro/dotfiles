@@ -23,6 +23,13 @@ return {
         layout = { position = "bottom" }
       },
       ui_select = true, -- replace `vim.ui.select` with the snacks picker
+      win = {
+        input = {
+          keys = {
+            ["<c-t>"] = { "toggle_live", mode = { "i", "n" } },
+          },
+        },
+      },
     },
   },
   keys = {
@@ -55,12 +62,33 @@ return {
     { "<leader>dib", function() Snacks.picker.diagnostics_buffer() end,    desc = "Buffer Diagnostics" },
     { "<leader>key", function() Snacks.picker.keymaps() end,               desc = "Keymaps" },
     -- Lsp
-    { "<leader>gd",  function() Snacks.picker.lsp_definitions() end,       desc = "Goto Definition" },
-    { "<leader>gD",  function() Snacks.picker.lsp_declarations() end,      desc = "Goto Declarations" },
-    { "<leader>gr",  function() Snacks.picker.lsp_references() end,        desc = "Goto References" },
-    { "<leader>gi",  function() Snacks.picker.lsp_implementations() end,   desc = "Goto Implementation" },
-    { "<leader>gy",  function() Snacks.picker.lsp_type_definitions() end,  desc = "Goto T[y]pe Definitions" },
+    { "gd",          function() Snacks.picker.lsp_definitions() end,       desc = "Goto Definition" },
+    { "gD",          function() Snacks.picker.lsp_declarations() end,      desc = "Goto Declarations" },
+    { "gr",          function() Snacks.picker.lsp_references() end,        desc = "Goto References" },
+    { "gi",          function() Snacks.picker.lsp_implementations() end,   desc = "Goto Implementation" },
+    { "gy",          function() Snacks.picker.lsp_type_definitions() end,  desc = "Goto T[y]pe Definitions" },
     { "<leader>si",  function() Snacks.picker.lsp_symbols() end,           desc = "LSP Symbols" },
     { "<leader>ws",  function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    -- Notes
+    {
+      "<leader>n/",
+      function()
+        Snacks.picker.grep({
+          dirs = { "~/notes" },
+          follow = true
+        })
+      end,
+      desc = "Grep Notes"
+    },
+    {
+      "<leader>nf",
+      function()
+        Snacks.picker.files({
+          dirs = { "~/notes" },
+          follow = true
+        })
+      end,
+      desc = "Find Notes"
+    }
   }
 }
