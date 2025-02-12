@@ -23,3 +23,5 @@
     ~/.psqlrc:
     ~/.zshrc:
 
+- shell:
+    - chmod -R +x ~/bin
