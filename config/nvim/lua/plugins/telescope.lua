@@ -135,9 +135,6 @@ return {
       require("plugins.flutter.telescope").setup()
 
       -- Files
-      a.nvim_set_keymap("n", "<leader>l", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>hi", "<cmd>Telescope oldfiles<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>z", "<cmd>Telescope zoxide list<cr>", { noremap = false })
       local builtin = require("telescope.builtin")
 
       -- Notes
@@ -159,17 +156,6 @@ return {
           },
         })
       end, { noremap = false })
-
-      -- Git
-      a.nvim_set_keymap("n", "<leader>gc", "<cmd>Telescope git_bcommits<cr>",
-        { noremap = false, desc = "Git buffer commits" })
-      a.nvim_set_keymap("n", "<leader>gb", "<cmd>Telescope git_branches<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>", { noremap = false })
-
-      -- nvim
-      a.nvim_set_keymap("n", "<leader>re", "<cmd>Telescope registers<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>ma", "<cmd>Telescope marks<cr>", { noremap = false })
-      a.nvim_set_keymap("n", "<leader>he", "<cmd>Telescope help_tags<cr>", { noremap = false })
     end,
   },
 
