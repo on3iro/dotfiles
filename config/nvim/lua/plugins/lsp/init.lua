@@ -6,36 +6,7 @@ return {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "yioneko/nvim-vtsls",
-
-      -- Useful status updates for LSP
-      -- { "j-hui/fidget.nvim", tag = "v1.4.5" },
-
-      -- LSP linting/formatting etc.
-      -- "nvimtools/none-ls.nvim",
-
-      -- Autocompletion
-      {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-          {
-            "hrsh7th/cmp-nvim-lsp",
-            "hrsh7th/cmp-path",
-            "L3MON4D3/LuaSnip",
-            "FelipeLema/cmp-async-path",
-            {
-              "saadparwaiz1/cmp_luasnip",
-              config = function()
-                require("luasnip.loaders.from_snipmate").lazy_load({ paths = "~/.vim/snippets" })
-
-                local ls = require("luasnip")
-
-                vim.keymap.set({ "i", "s" }, "<C-l>", function() ls.jump(1) end, { silent = true })
-                vim.keymap.set({ "i", "s" }, "<C-h>", function() ls.jump(-1) end, { silent = true })
-              end,
-            },
-          },
-        },
-      },
+      "saghen/blink.cmp"
     },
 
     config = function()
@@ -50,10 +21,8 @@ return {
 
       local servers = require("plugins.lsp.servers")
 
-      -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
       local capabilities = vim.lsp.protocol.make_client_capabilities()
-      capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
-
+      capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
       -- Setup mason so it can manage external tooling
       require("mason").setup()
 
@@ -79,7 +48,7 @@ return {
       })
 
       require("lspconfig.configs").vtsls = require("vtsls")
-      .lspconfig                                                   -- set default server config, optional but recommended
+          .lspconfig -- set default server config, optional but recommended
 
       require("flutter-tools").setup({
         lsp = {
@@ -94,8 +63,6 @@ return {
         },
         fvm = true,
       })
-
-      require("plugins.lsp.cmp").init()
 
       -------------
       -- Styling --
