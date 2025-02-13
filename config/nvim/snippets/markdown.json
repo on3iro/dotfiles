@@ -1,0 +1,39 @@
+{
+  "Morgenrunden":  {
+    "prefix": "moru",
+    "body": [
+      "## ${1:Name}",
+      "?? ${2:Zeiten}",
+      "++ ${3:Happy}",
+      "-- ${4:Frust}",
+      "== ${5:Heute}"
+    ]
+  },
+  "Concept": {
+    "prefix": "concept",
+    "body": [
+      "## Problem",
+      "",
+      "## Appetite",
+      "",
+      "## Solution",
+      "",
+      "## Rabbit holes",
+      "",
+      "## No Go's",
+    ]
+  },
+  "Daily Contemplation": {
+    "prefix": "cont",
+    "body": [
+        "## Was ist mir nicht gut gelungen",
+        "",
+        "## Was ist mir gelungen",
+        "",
+        "## Gesundheit",
+        "",
+        "## Was nehme ich mir für heute vor?",
+        "",
+    ]
+  }
+}

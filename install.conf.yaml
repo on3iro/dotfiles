@@ -15,7 +15,6 @@
         force: true
         relink: true
         path: config/*
-    ~/.vim:
     ~/.zsh:
     ~/.editorconfig:
     ~/.fzf.zsh:
