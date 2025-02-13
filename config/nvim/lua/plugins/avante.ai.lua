@@ -15,8 +15,8 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
-      "hrsh7th/nvim-cmp",       -- autocompletion for avante commands and mentions
       "echasnovski/mini.icons", -- or echasnovski/mini.icons
+      "folke/snacks.nvim",
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
@@ -31,6 +31,12 @@ return {
             },
             -- required for Windows users
             use_absolute_path = true,
+          },
+          file_selector = {
+            --- @alias FileSelectorProvider "native" | "fzf" | "mini.pick" | "snacks" | "telescope" | string | fun(params: avante.file_selector.IParams|nil): nil
+            provider = "snacks",
+            -- Options override for custom providers
+            provider_opts = {},
           },
         },
       },
