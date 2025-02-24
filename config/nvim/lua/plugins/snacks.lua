@@ -12,6 +12,26 @@ return {
     input = { enabled = true, prompt_pos = "left" },
     quickfile = { enabled = true },
     words = { enabled = true },
+    toggle = {
+      enabled = true,
+      map = vim.keymap.set, -- keymap.set function to use
+      which_key = true,     -- integrate with which-key to show enabled/disabled icons and colors
+      notify = false,       -- show a notification when toggling
+      -- icons for enabled/disabled states
+      icon = {
+        enabled = " ",
+        disabled = " ",
+      },
+      -- colors for enabled/disabled states
+      color = {
+        enabled = "green",
+        disabled = "yellow",
+      },
+      wk_desc = {
+        enabled = "Disable ",
+        disabled = "Enable ",
+      },
+    },
     picker = {
       enabled = false,
       prompt = " ",
@@ -28,6 +48,7 @@ return {
         input = {
           keys = {
             ["<c-t>"] = { "toggle_live", mode = { "i", "n" } },
+            ["<c-h>"] = { "toggle_hidden", mode = { "i", "n" } },
           },
         },
       },
@@ -45,12 +66,12 @@ return {
     -- Todo/Fixme/Note comments
     { "<leader>td",  function() Snacks.picker.todo_comments() end,         desc = "Todo" },
     -- Files
-    { "<leader>ff",  function() Snacks.picker.files() end,                 desc = "Find Files" },
+    { "<leader>f",   function() Snacks.picker.files() end,                 desc = "Find Files" },
     { "<leader>bu",  function() Snacks.picker.buffers() end,               desc = "Buffers" },
     { "<leader>hi",  function() Snacks.picker.recent() end,                desc = "Recent" },
     { "<leader>zo",  function() Snacks.picker.zoxide() end,                desc = "Zoxide" },
     -- Grep
-    { "<leader>fw",  function() Snacks.picker.grep_word() end,             desc = "Visual selection or word", mode = { "n", "x" } },
+    { "<leader>gw",  function() Snacks.picker.grep_word() end,             desc = "Visual selection or word", mode = { "n", "x" } },
     { "<leader>/",   function() Snacks.picker.grep() end,                  desc = "Grep" },
     { "<leader>l",   function() Snacks.picker.lines() end,                 desc = "Buffer Lines" },
     -- Git

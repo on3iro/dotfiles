@@ -1,6 +1,7 @@
 # window-decoration = false
 macos-titlebar-style = hidden
 theme = Ayu Mirage
+# theme = catppuccin-mocha
 # theme = nord
 # theme = Everforest Dark - Hard
 # theme = tokyonight-storm
