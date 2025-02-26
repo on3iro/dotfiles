@@ -49,6 +49,7 @@ return {
           keys = {
             ["<c-t>"] = { "toggle_live", mode = { "i", "n" } },
             ["<c-h>"] = { "toggle_hidden", mode = { "i", "n" } },
+            ["<c-i>"] = { "toggle_ignored", mode = { "i", "n" } },
           },
         },
       },
@@ -83,6 +84,7 @@ return {
     { "<leader>di",  function() Snacks.picker.diagnostics() end,           desc = "Diagnostics" },
     { "<leader>dib", function() Snacks.picker.diagnostics_buffer() end,    desc = "Buffer Diagnostics" },
     { "<leader>key", function() Snacks.picker.keymaps() end,               desc = "Keymaps" },
+    { "<leader>col", function() Snacks.picker.colorschemes() end,          desc = "Colorschemes" },
     -- Lsp
     { "gd",          function() Snacks.picker.lsp_definitions() end,       desc = "Goto Definition" },
     { "gD",          function() Snacks.picker.lsp_declarations() end,      desc = "Goto Declarations" },

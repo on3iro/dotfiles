@@ -14,6 +14,7 @@
     casks = [
       "android-commandlinetools"
       "chromium"
+      "ghostty"
     ];
   };
 
