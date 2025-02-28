@@ -98,6 +98,7 @@ return {
   "nvim-treesitter/nvim-treesitter-textobjects",
 
   "virchau13/tree-sitter-astro",
+
   {
     "nvim-treesitter/nvim-treesitter-context",
     config = function()
