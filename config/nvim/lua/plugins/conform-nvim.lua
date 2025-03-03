@@ -11,6 +11,7 @@ return {
           return { timeout_ms = 500, lsp_format = "fallback" }
         end,
         formatters_by_ft = {
+          blade = { "blade-formatter" },
           lua = { "stylua" },
           javascript = { "prettierd", "prettier", stop_after_first = true },
           astro = { "prettierd", "prettier", stop_after_first = true },

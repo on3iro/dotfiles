@@ -90,8 +90,23 @@ return {
           branch = "master",
         },
       }
+      treesitter_parser_config.blade = {
+        install_info = {
+          url = "https://github.com/EmranMR/tree-sitter-blade",
+          files = { "src/parser.c" },
+          branch = "main",
+        },
+        filetype = "blade"
+      }
 
       vim.treesitter.language.register("templ", "templ")
+      vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+        pattern = "*.blade.php",
+        callback = function()
+          vim.bo.filetype = "blade"
+        end,
+        group = vim.api.nvim_create_augroup("BladeFiltypeRelated", { clear = true })
+      })
     end,
   },
 
