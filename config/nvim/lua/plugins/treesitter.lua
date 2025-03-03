@@ -19,6 +19,8 @@ return {
           "vimdoc",
           "markdown",
           "templ",
+          "html",
+          "php"
         },
 
         highlight = { enable = true },
