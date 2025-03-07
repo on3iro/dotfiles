@@ -19,6 +19,14 @@ return {
       theme.visual.a.gui = "none"
       theme.replace.a.gui = "none"
 
+      local lint_progress = function()
+        local linters = require("lint").get_running()
+        if #linters == 0 then
+          return "󰦕"
+        end
+        return "󱉶 " .. table.concat(linters, ", ")
+      end
+
       require("lualine").setup({
         options = {
           theme = theme,
@@ -59,6 +67,7 @@ return {
             },
           },
           lualine_c = {
+            { lint_progress },
             {
               "filename",
               file_status = true,   -- displays file status (readonly status, modified status)
