@@ -2,6 +2,9 @@ local wt = require 'wezterm'
 
 local config = {}
 
+-- Spawn a fish shell in login mode
+config.default_prog = { '/run/current-system/sw/bin/fish', '-l' }
+
 -- local custom_color_scheme = wt.color.get_builtin_schemes()['Everforest Dark (Gogh)']
 local custom_color_scheme = wt.color.get_builtin_schemes()['Ayu Dark (Gogh)']
 -- custom_color_scheme.background = "#05181f"

@@ -50,6 +50,8 @@ return {
             ["<c-t>"] = { "toggle_live", mode = { "i", "n" } },
             ["<c-h>"] = { "toggle_hidden", mode = { "i", "n" } },
             ["<c-i>"] = { "toggle_ignored", mode = { "i", "n" } },
+            ["<c-p>"] = { "toggle_preview", mode = { "i", "n" } },
+            ["<s-k>"] = { "inspect", mode = { "i", "n" } },
           },
         },
       },
@@ -57,7 +59,7 @@ return {
   },
   keys = {
     -- Scratch buffers
-    { "<leader>.",   function() Snacks.scratch() end,                      desc = "Toggle Scratch Buffer" },
+    { "<leader>.",   function() end,                                       desc = "Toggle Scratch Buffer" },
     { "<leader>S",   function() Snacks.scratch.select() end,               desc = "Select Scratch Buffer" },
 
     ------------
