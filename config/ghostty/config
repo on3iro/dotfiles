@@ -1,3 +1,5 @@
+command = /run/current-system/sw/bin/fish
+
 # window-decoration = false
 macos-titlebar-style = hidden
 theme = Ayu Mirage
