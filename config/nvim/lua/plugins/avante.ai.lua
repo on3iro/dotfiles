@@ -22,6 +22,15 @@ return {
         "HakonHarnes/img-clip.nvim",
         event = "VeryLazy",
         opts = {
+          -- provider = "mistral",
+          -- vendors = {
+          --   mistral = {
+          --     __inherited_from = "openai",
+          --     api_key_name = "MISTRAL_API_KEY",
+          --     endpoint = "https://api.mistral.ai/v1/",
+          --     model = "mistral-large-latest",
+          --   },
+          -- },
           -- recommended settings
           default = {
             embed_image_as_base64 = false,

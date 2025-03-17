@@ -70,6 +70,7 @@ return {
     { "<leader>td",  function() Snacks.picker.todo_comments() end,         desc = "Todo" },
     -- Files
     { "<leader>f",   function() Snacks.picker.files() end,                 desc = "Find Files" },
+    { "<leader>sm",  function() Snacks.picker.smart() end,                 desc = "Find Files Smart" },
     { "<leader>bu",  function() Snacks.picker.buffers() end,               desc = "Buffers" },
     { "<leader>hi",  function() Snacks.picker.recent() end,                desc = "Recent" },
     { "<leader>zo",  function() Snacks.picker.zoxide() end,                desc = "Zoxide" },
