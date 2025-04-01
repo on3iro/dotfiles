@@ -33,6 +33,7 @@ alias c='chezmoi'
 alias cz='chezmoi'
 alias j='just'
 alias mvi='NVIM_APPNAME=minimal-nvim nvim'
+alias usql='usql --config=$HOME/.config/usql/config.yaml'
 
 
 # Date for history backups
