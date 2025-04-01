@@ -22,6 +22,7 @@
     pkgs.silver-searcher
     pkgs.tealdeer 
     pkgs.universal-ctags 
+    pkgs.usql
     pkgs.zsh-autosuggestions
     pkgs.zsh-completions
   ];
