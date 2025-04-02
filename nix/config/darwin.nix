@@ -15,6 +15,7 @@
     pkgs.lazygit 
     pkgs.lazydocker
     pkgs.mariadb
+    pkgs.mycli
     pkgs.nmap 
     pkgs.pika
     pkgs.postgresql
@@ -22,7 +23,6 @@
     pkgs.silver-searcher
     pkgs.tealdeer 
     pkgs.universal-ctags 
-    pkgs.usql
     pkgs.zsh-autosuggestions
     pkgs.zsh-completions
   ];
