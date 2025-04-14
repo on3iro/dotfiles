@@ -57,6 +57,12 @@ return {
         preset = "ivy",
         layout = { position = "bottom" }
       },
+      formatters = {
+        file = {
+          filename_first = true,
+          truncate = 240
+        }
+      },
       ui_select = true, -- replace `vim.ui.select` with the snacks picker
       win = {
         input = {
