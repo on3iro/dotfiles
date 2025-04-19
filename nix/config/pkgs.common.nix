@@ -16,6 +16,7 @@
   pkgs.marksman 
   pkgs.mkalias
   pkgs.neovim 
+  pkgs.restic
   pkgs.ripgrep 
   pkgs.sd 
   pkgs.shellclear 
