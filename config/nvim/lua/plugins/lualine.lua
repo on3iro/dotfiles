@@ -90,13 +90,36 @@ return {
           },
         },
         winbar = {
-          lualine_a = { "filename" },
+          lualine_a = {
+            {
+              "filename",
+              file_status = true, -- displays file status (readonly status, modified status)
+            },
+            { "filetype", icon_only = true }
+          },
           lualine_b = {},
           lualine_c = {},
           lualine_x = {},
           lualine_y = {},
           lualine_z = {},
         },
+        inactive_winbar = {
+          lualine_a = {
+            {
+              "filename",
+              file_status = true,   -- displays file status (readonly status, modified status)
+              path = 2,             -- 0 = just filename, 1 = relative path, 3 = absolute path
+              shorting_target = 40, -- Shortens path to leave 40 space in the window
+            },
+            { "filetype",    icon_only = true },
+            { separator = "" },
+          },
+          lualine_b = {},
+          lualine_c = {},
+          lualine_x = {},
+          lualine_y = {},
+          lualine_z = {},
+        }
       })
     end,
   },
