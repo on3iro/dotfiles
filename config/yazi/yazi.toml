@@ -46,7 +46,7 @@ rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 
 	{ mime = "text/*",  use = [ "edit", "reveal" ] },
-  { name = "*.{json,ts,js,tsx,go,rs,html,css,scss,yaml,yml,md,toml,php}", use =  "edit" },
+  { name = "*.{json,ts,js,tsx,go,rs,html,css,scss,yaml,yml,md,toml,php,sh}", use =  "edit" },
 	{ mime = "image/*", use = [ "open", "reveal" ] },
 	{ mime = "video/*", use = [ "play", "reveal" ] },
 	{ mime = "audio/*", use = [ "play", "reveal" ] },

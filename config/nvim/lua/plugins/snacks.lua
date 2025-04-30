@@ -139,6 +139,8 @@ return {
     -- Git
     { "<leader>gc",  function() Snacks.picker.git_log() end,               desc = "Git Log" },
     { "<leader>gb",  function() Snacks.picker.git_branches() end,          desc = "Git Branches" },
+    { "<leader>gg",  function() Snacks.picker.git_grep() end,              desc = "Git Grep" },
+    { "<leader>gf",  function() Snacks.picker.git_grep() end,              desc = "Git Files" },
     { "<leader>gs",  function() Snacks.picker.git_status() end,            desc = "Git Status" },
     -- Search
     { "<leader>he",  function() Snacks.picker.help() end,                  desc = "Nvim Help" },
