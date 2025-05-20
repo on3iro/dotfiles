@@ -19,8 +19,6 @@ return {
         vim.lsp.inlay_hint.enable(true)
       end
 
-      local servers = require("plugins.lsp.servers")
-
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
       -- Setup mason so it can manage external tooling
@@ -34,6 +32,10 @@ return {
           "intelephense"
         },
       })
+
+      -- Currently just calling this here - previously was used by mason,
+      -- don't know where to put it now :shrug:
+      on_attach()
 
       require("lspconfig.configs").vtsls = require("vtsls")
           .lspconfig -- set default server config, optional but recommended
@@ -102,6 +104,10 @@ return {
       "nvim-lua/plenary.nvim",
       "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
-    config = function() end,
+    config = function()
+      require("flutter-tools").setup {
+        flutter_lookup_cmd = "dirname $(which flutter)"
+      }
+    end,
   },
 }
