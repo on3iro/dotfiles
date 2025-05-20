@@ -106,7 +106,7 @@ return {
     },
     config = function()
       require("flutter-tools").setup {
-        flutter_lookup_cmd = "dirname $(which flutter)"
+        flutter_lookup_cmd = "dirname $(mise bin-paths flutter)"
       }
     end,
   },
