@@ -106,7 +106,7 @@ return {
     },
     config = function()
       require("flutter-tools").setup {
-        flutter_lookup_cmd = "dirname $(mise bin-paths flutter)"
+        flutter_path = "/Users/theo/.local/share/mise/installs/flutter/3.29.3-stable/bin/flutter"
       }
     end,
   },
