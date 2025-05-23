@@ -8,7 +8,6 @@
     pkgs.delta 
     pkgs.devbox
     pkgs.direnv
-    pkgs.fnm 
     pkgs.httpie
     pkgs.imagemagick
     pkgs.just 

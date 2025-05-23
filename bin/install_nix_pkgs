@@ -16,7 +16,6 @@ nix-env -iA \
   nixpkgs.curl \
   nixpkgs.dbmate \
   nixpkgs.fd \
-  nixpkgs.fnm \
   nixpkgs.jq \
   nixpkgs.just \
   nixpkgs.lazygit \
