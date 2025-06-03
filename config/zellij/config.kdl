@@ -57,13 +57,6 @@ keybinds clear-defaults=true {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
     tmux {
-       bind "?" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
-                "LOAD_ZELLIJ_BINDINGS" "true"
-                floating true
-            }
-            SwitchToMode "Normal"
-        }
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "f" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
@@ -104,6 +97,7 @@ keybinds clear-defaults=true {
         bind "L" { Resize "Decrease Right"; }
         bind "=" "+" { Resize "Increase"; }
         bind "-" { Resize "Decrease"; }
+        bind "i" { TogglePanePinned; SwitchToMode "Normal"; }
     }
     pane {
         bind "h" "Left" { MoveFocus "Left"; }
