@@ -2,8 +2,8 @@ command = /run/current-system/sw/bin/fish
 
 # window-decoration = false
 macos-titlebar-style = hidden
-theme = Ayu Mirage
-# theme = Everforest Dark - Hard
+#theme = Ayu Mirage
+theme = Everforest Dark - Hard
 # theme = catppuccin-mocha
 # theme = nord
 # theme = tokyonight-storm
