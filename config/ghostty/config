@@ -3,11 +3,12 @@ command = /run/current-system/sw/bin/fish
 # window-decoration = false
 macos-titlebar-style = hidden
 theme = Ayu Mirage
+# theme = Everforest Dark - Hard
 # theme = catppuccin-mocha
 # theme = nord
-# theme = Everforest Dark - Hard
 # theme = tokyonight-storm
-# background = 22292d
+#background = 22292d
+background = 2D353B
 
 font-size = 18
 # font-family = JetbrainsMono Nerd Font Mono
@@ -31,6 +32,7 @@ scrollback-limit = 10000
 macos-option-as-alt = false
 macos-auto-secure-input = true
 
-background-opacity = 0.95
+background-opacity = 1
+#background-opacity = 0.95
 background-blur-radius = 18
 minimum-contrast = 1.2

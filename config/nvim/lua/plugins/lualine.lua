@@ -11,10 +11,11 @@ return {
 
       local theme = require("lualine.themes.everforest")
       theme.insert.a.fg = "#282a36"
-      theme.insert.a.bg = "turquoise"
-      -- theme.insert.a.gui = "none"
-      theme.normal.a.fg = "#282a36"
-      theme.normal.a.bg = "orange"
+      theme.insert.a.bg = "orange"
+      -- theme.insert.a.bg = "turquoise"
+      -- -- theme.insert.a.gui = "none"
+      -- theme.normal.a.fg = "#282a36"
+      -- theme.normal.a.bg = "orange"
       theme.normal.a.gui = "none"
       theme.visual.a.gui = "none"
       theme.replace.a.gui = "none"
