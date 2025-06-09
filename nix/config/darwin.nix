@@ -57,6 +57,8 @@
   programs.zsh.enable = true;
   # programs.fish.enable = true;
 
+  system.primaryUser = "theo";
+
   # System defaults for macOS
   system.defaults = {
     dock.autohide = true;
