@@ -186,6 +186,8 @@ plugins {
 //
 // on_force_close "quit"
 
+stacked_resize true
+
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 //  Options:
 //    - true
