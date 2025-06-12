@@ -14,6 +14,7 @@
     pkgs.lazygit 
     pkgs.lazydocker
     pkgs.mariadb
+    pkgs.mise
     pkgs.mycli
     pkgs.nmap 
     pkgs.pika
