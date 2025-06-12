@@ -168,7 +168,7 @@ E = 'secondary'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.valvesoftware.steam'
