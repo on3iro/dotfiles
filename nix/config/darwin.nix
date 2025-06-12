@@ -17,6 +17,7 @@
     pkgs.mise
     pkgs.mycli
     pkgs.nmap 
+    pkgs.usage
     pkgs.pika
     pkgs.postgresql
     pkgs.rustc

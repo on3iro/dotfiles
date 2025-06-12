@@ -137,7 +137,9 @@ return {
     { "<leader>/",   function() Snacks.picker.grep() end,                  desc = "Grep" },
     { "<leader>l",   function() Snacks.picker.lines() end,                 desc = "Buffer Lines" },
     -- Git
-    { "<leader>gc",  function() Snacks.picker.git_log() end,               desc = "Git Log" },
+    { "<leader>gl",  function() Snacks.picker.git_log() end,               desc = "Git Log" },
+    { "<leader>glf", function() Snacks.picker.git_log_file() end,          desc = "Git Log File" },
+    { "<leader>gll", function() Snacks.picker.git_log_line() end,          desc = "Git Log Line" },
     { "<leader>gb",  function() Snacks.picker.git_branches() end,          desc = "Git Branches" },
     { "<leader>gg",  function() Snacks.picker.git_grep() end,              desc = "Git Grep" },
     { "<leader>gf",  function() Snacks.picker.git_grep() end,              desc = "Git Files" },
