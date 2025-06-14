@@ -1,5 +1,6 @@
 { pkgs }: [
   pkgs.ack
+  pkgs.atuin
   pkgs.bat 
   pkgs.bottom 
   pkgs.chezmoi 
