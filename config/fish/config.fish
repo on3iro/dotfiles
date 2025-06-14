@@ -21,5 +21,8 @@ if status is-interactive
   function fish_user_key_bindings
     # Execute this once per mode that emacs bindings should be used in
     fish_vi_key_bindings --no-erase normal
+
+    bind \cr _atuin_search
+    bind -M insert \cr _atuin_search
   end
 end
