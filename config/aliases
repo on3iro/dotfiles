@@ -37,6 +37,9 @@ alias j='just'
 alias mvi='NVIM_APPNAME=minimal-nvim nvim'
 alias usql='usql --config=$HOME/.config/usql/config.yaml'
 
+# mise
+alias m='mise'
+alias mr='mise run'
 
 # Date for history backups
 alias DATE="date '+%Y%m%d'"
