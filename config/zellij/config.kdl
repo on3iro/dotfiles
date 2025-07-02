@@ -12,7 +12,7 @@ keybinds clear-defaults=true {
     shared_except "locked" {
          bind "Ctrl h" {
             MessagePlugin "file:/Users/theo/.config/zellij/plugins/vim-zellij-navigator.wasm" {
-                name "move_focus_or_tab";
+                name "move_focus";
                 payload "left";
 
                 // Plugin Configuration
@@ -43,7 +43,7 @@ keybinds clear-defaults=true {
 
         bind "Ctrl l" {
             MessagePlugin "file:/Users/theo/.config/zellij/plugins/vim-zellij-navigator.wasm" {
-                name "move_focus_or_tab";
+                name "move_focus";
                 payload "right";
 
                 move_mod "ctrl";
