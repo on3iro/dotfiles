@@ -188,3 +188,5 @@ textarea
 generateAiProperties
 quizStreakID
 php/!
+mirror
+OPEN_CODE_PRIVATE_SSH_KEY/!
