@@ -59,38 +59,43 @@ return {
           "intelephense",
           "yamlls"
         },
-      })
+        -- Use handlers to avoid double setup
+        handlers = {
+          -- Default handler for servers without custom config
+          function(server_name)
+            lspconfig[server_name].setup({
+              on_attach = on_attach,
+              capabilities = capabilities,
+              settings = servers[server_name] or {},
+            })
+          end,
 
-      -- PHP/Laravel LSP (intelephense)
-      lspconfig.intelephense.setup({
-        on_attach = on_attach,
-        capabilities = capabilities,
-        root_dir = function(fname)
-          return lspconfig.util.root_pattern("composer.json", ".git")(fname)
-              or lspconfig.util.root_pattern("composer.json")(fname .. "/backend")
-              or vim.fn.getcwd() .. "/backend"
-        end,
-        settings = servers.intelephense or {},
-      })
+          -- Custom handler for intelephense
+          ["intelephense"] = function()
+            lspconfig.intelephense.setup({
+              on_attach = on_attach,
+              capabilities = capabilities,
+              root_dir = function(fname)
+                return lspconfig.util.root_pattern("composer.json", ".git")(fname)
+                    or lspconfig.util.root_pattern("composer.json")(fname .. "/backend")
+                    or vim.fn.getcwd() .. "/backend"
+              end,
+              settings = servers.intelephense or {},
+            })
+          end,
 
-      -- YAML LSP
-      lspconfig.yamlls.setup({
-        on_attach = on_attach,
-        capabilities = capabilities,
-        settings = {
-          yaml = servers.yaml or {},
-        },
+          -- Custom handler for yamlls
+          ["yamlls"] = function()
+            lspconfig.yamlls.setup({
+              on_attach = on_attach,
+              capabilities = capabilities,
+              settings = {
+                yaml = servers.yaml or {},
+              },
+            })
+          end,
+        }
       })
-
-      -- Other LSP servers with updated root detection
-      for server, config in pairs(servers) do
-        if server ~= "intelephense" and server ~= "yaml" then
-          lspconfig[server].setup(vim.tbl_extend("force", {
-            on_attach = on_attach,
-            capabilities = capabilities,
-          }, config))
-        end
-      end
 
       require("lspconfig.configs").vtsls = require("vtsls")
           .lspconfig -- set default server config, optional but recommended
