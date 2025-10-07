@@ -26,3 +26,6 @@ if status is-interactive
     bind -M insert \cr _atuin_search
   end
 end
+
+# Created by `pipx` on 2025-09-26 16:02:55
+set PATH $PATH /Users/theo/.local/bin

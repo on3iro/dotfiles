@@ -25,6 +25,15 @@ return {
               provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
               contains_code = true,
             },
+            ["buffer"] = {
+              -- Location to the slash command in CodeCompanion
+              callback = "strategies.chat.slash_commands.buffer",
+              description = "Select a buffer using snacks.picker",
+              opts = {
+                provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
+                contains_code = true,
+              },
+            }
           }
         }
       },
