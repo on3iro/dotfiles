@@ -192,7 +192,7 @@ run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.thunderbird'
-run = 'move-node-to-workspace M'
+run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'sanduhr.sandstorm.de'
