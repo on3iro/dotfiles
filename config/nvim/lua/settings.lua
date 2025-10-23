@@ -12,7 +12,7 @@ o.smartcase = true
 
 -- show line numbers
 o.number = true
-o.relativenumber = true
+o.relativenumber = false
 
 -- Leader key
 g.mapleader = " "
