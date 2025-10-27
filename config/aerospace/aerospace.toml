@@ -183,6 +183,10 @@ if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace E'
 
 [[on-window-detected]]
+if.app-id = 'org.jeffvli.feishin'
+run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.iCal'
 run = 'move-node-to-workspace C'
 
