@@ -1,6 +1,6 @@
 local mappings = {}
 
--- Inits lsp mappings. Should be called inside on_attach
+ -- Inits lsp mappings. Should be called inside LspAttach autocmd
 function mappings.init_lsp()
   -- Mappings.
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -21,7 +21,7 @@ function mappings.init_lsp()
       desc = "LSP: " .. desc
     end
 
-    vim.keymap.set("n", keys, func, { buffer = bufnr, desc = desc })
+    vim.keymap.set("n", keys, func, { buffer = 0, desc = desc })
   end
 
   nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
