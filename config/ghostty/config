@@ -37,3 +37,6 @@ background-opacity = 1
 #background-opacity = 0.95
 background-blur-radius = 18
 minimum-contrast = 1.2
+
+# Cursor shader
+custom-shader = shaders/cursor_sweep.glsl
