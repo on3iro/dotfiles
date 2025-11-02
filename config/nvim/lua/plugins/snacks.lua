@@ -114,7 +114,7 @@ return {
   },
   keys = {
     -- Scratch buffers
-    { "<leader>.",   function() end,                                       desc = "Toggle Scratch Buffer" },
+    { "<leader>.",   function() Snacks.scratch.open() end,                 desc = "Toggle Scratch Buffer" },
     { "<leader>S",   function() Snacks.scratch.select() end,               desc = "Select Scratch Buffer" },
 
     -- Zen
