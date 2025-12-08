@@ -18,7 +18,7 @@ return {
         adapter = "anthropic",
         slash_commands = {
           ["file"] = {
-            callback = "strategies.chat.slash_commands.file",
+            callback = "strategies.chat.slash_commands.catalog.file",
             description = "Select a file using snacks.picker",
             opts = {
               provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
@@ -26,7 +26,7 @@ return {
             },
           },
           ["buffer"] = {
-            callback = "strategies.chat.slash_commands.buffer",
+            callback = "strategies.chat.slash_commands.catalog.buffer",
             description = "Select a buffer using snacks.picker",
             opts = {
               provider = "snacks",
@@ -34,14 +34,14 @@ return {
             },
           },
           ["help"] = {
-            callback = "strategies.chat.slash_commands.help",
+            callback = "strategies.chat.slash_commands.catalog.help",
             description = "Search help using snacks.picker",
             opts = {
               provider = "snacks",
             },
           },
           ["symbols"] = {
-            callback = "strategies.chat.slash_commands.symbols",
+            callback = "strategies.chat.slash_commands.catalog.symbols",
             description = "Select symbols using snacks.picker",
             opts = {
               provider = "snacks",
