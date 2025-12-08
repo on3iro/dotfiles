@@ -76,9 +76,6 @@ return {
         return cwd
       end
 
-      -- Make function available for testing
-      _G.debug_get_lint_cwd = get_lint_cwd
-
       lint.linters_by_ft = {
         typescript = { "eslint" },
         typescriptreact = { "eslint" },
@@ -101,16 +98,6 @@ return {
 
           if lint_cwd ~= original_cwd then
             vim.cmd("cd " .. lint_cwd)
-            
-            -- Debug: Show if we find phpstan.neon in the new directory
-            if bufname:match("%.php$") then
-              local phpstan_config = lint_cwd .. "/phpstan.neon"
-              print(string.format("[DEBUG] PHPStan config exists: %s", vim.fn.filereadable(phpstan_config) == 1))
-              if vim.fn.filereadable(phpstan_config) == 1 then
-                print("[DEBUG] Running PHPStan from:" .. lint_cwd)
-              end
-            end
-            
             lint.try_lint()
             vim.cmd("cd " .. original_cwd)
           else
