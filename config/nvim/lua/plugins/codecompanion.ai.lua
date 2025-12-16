@@ -25,6 +25,14 @@ return {
               contains_code = true,
             },
           },
+          ["fetch"] = {
+            callback = "strategies.chat.slash_commands.catalog.fetch",
+            description = "Fetch a file using snacks.picker",
+            opts = {
+              provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
+              contains_code = true,
+            },
+          },
           ["buffer"] = {
             callback = "strategies.chat.slash_commands.catalog.buffer",
             description = "Select a buffer using snacks.picker",
