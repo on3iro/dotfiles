@@ -13,12 +13,12 @@ return {
     { "ga",         "<cmd>CodeCompanionChat Add<cr>",    mode = "v",                    desc = "CodeCompanion Add Selection" },
   },
   opts = {
-    strategies = {
+    interactions = {
       chat = {
         adapter = "anthropic",
         slash_commands = {
           ["file"] = {
-            callback = "strategies.chat.slash_commands.catalog.file",
+            callback = "interactions.chat.slash_commands.builtin.file",
             description = "Select a file using snacks.picker",
             opts = {
               provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
@@ -26,7 +26,7 @@ return {
             },
           },
           ["fetch"] = {
-            callback = "strategies.chat.slash_commands.catalog.fetch",
+            callback = "interactions.chat.slash_commands.builtin.fetch",
             description = "Fetch a file using snacks.picker",
             opts = {
               provider = "snacks", -- Can be "default", "telescope", "fzf_lua", "mini_pick" or "snacks"
@@ -34,7 +34,7 @@ return {
             },
           },
           ["buffer"] = {
-            callback = "strategies.chat.slash_commands.catalog.buffer",
+            callback = "interactions.chat.slash_commands.builtin.buffer",
             description = "Select a buffer using snacks.picker",
             opts = {
               provider = "snacks",
@@ -42,14 +42,14 @@ return {
             },
           },
           ["help"] = {
-            callback = "strategies.chat.slash_commands.catalog.help",
+            callback = "interactions.chat.slash_commands.builtin.help",
             description = "Search help using snacks.picker",
             opts = {
               provider = "snacks",
             },
           },
           ["symbols"] = {
-            callback = "strategies.chat.slash_commands.catalog.symbols",
+            callback = "interactions.chat.slash_commands.builtin.symbols",
             description = "Select symbols using snacks.picker",
             opts = {
               provider = "snacks",
