@@ -11,7 +11,6 @@ c("command! NoteTomorrow edit `touty -t ~/Nextcloud/Notes/scratchpad -n note -a 
 c("command! Diary edit `touty -t ~/Nextcloud/Notes/diary -n diary`")
 
 a.nvim_set_keymap("n", "<leader>no", ":Note<CR>", { noremap = true })
-a.nvim_set_keymap("n", "<leader>ye", ":NoteYesterday<CR>", { noremap = true })
 a.nvim_set_keymap("n", "<leader>mo", ":NoteTomorrow<CR>", { noremap = true })
 
 -- tmp files

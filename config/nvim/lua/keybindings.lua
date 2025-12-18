@@ -29,6 +29,15 @@ vim.api.nvim_set_keymap("n", "[q", ":cprev<CR>", { noremap = true, silent = true
 -- Current iso date
 vim.keymap.set("n", "<leader>dt", ":r !date -u +\\%Y-\\%m-\\%d<cr>")
 
+-- Yank to system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard" })
+
+-- Paste from system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
+
+
 -------------------------
 -- [ Buffer settings ] --
 -------------------------
