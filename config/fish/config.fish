@@ -10,6 +10,7 @@ if status is-interactive
   end
 
   set -g fish_greeting ""
+  set -g fish_key_bindings fish_vi_key_bindings  
 
   set fish_vi_force_cursor 1
   set fish_cursor_default block
@@ -20,7 +21,7 @@ if status is-interactive
 
   function fish_user_key_bindings
     # Execute this once per mode that emacs bindings should be used in
-    fish_vi_key_bindings --no-erase normal
+    fish_vi_key_bindings --no-erase 
 
     bind \cr _atuin_search
     bind -M insert \cr _atuin_search
