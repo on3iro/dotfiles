@@ -13,6 +13,19 @@ return {
     { "ga",         "<cmd>CodeCompanionChat Add<cr>",    mode = "v",                    desc = "CodeCompanion Add Selection" },
   },
   opts = {
+    adapters = {
+      http = {
+        mistral = function()
+          return require("codecompanion.adapters").extend("mistral", {
+            schema = {
+              model = {
+                default = "mistral-large-latest", -- Replace with the correct model name
+              },
+            },
+          })
+        end,
+      },
+    },
     interactions = {
       chat = {
         adapter = "mistral",
