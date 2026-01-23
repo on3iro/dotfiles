@@ -15,7 +15,7 @@ return {
   opts = {
     interactions = {
       chat = {
-        adapter = "anthropic",
+        adapter = "mistral",
         slash_commands = {
           ["file"] = {
             callback = "interactions.chat.slash_commands.builtin.file",
@@ -59,8 +59,11 @@ return {
         }
       },
       inline = {
-        adapter = "anthropic",
+        adapter = "mistral",
       },
+      cmd = {
+        adapter = "mistral",
+      }
     },
   },
 }
