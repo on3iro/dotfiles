@@ -10,6 +10,7 @@ alias ztp='zentime -s postpone'
 alias g='git'
 alias lg='lazygit'
 alias wip='g all && g wip'
+alias amend='g all && g ct --amend --no-edit'
 
 # docker
 alias ld='lazydocker'
