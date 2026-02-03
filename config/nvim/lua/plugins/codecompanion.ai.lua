@@ -1,5 +1,6 @@
 return {
   "olimorris/codecompanion.nvim",
+  commit = "26fa57c",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
@@ -14,21 +15,21 @@ return {
   },
   opts = {
     adapters = {
-      http = {
-        mistral = function()
-          return require("codecompanion.adapters").extend("mistral", {
-            schema = {
-              model = {
-                default = "mistral-large-latest", -- Replace with the correct model name
-              },
-            },
-          })
-        end,
-      },
+      -- http = {
+      --   mistral = function()
+      --     return require("codecompanion.adapters").extend("mistral", {
+      --       schema = {
+      --         model = {
+      --           default = "mistral-large-latest", -- Replace with the correct model name
+      --         },
+      --       },
+      --     })
+      --   end,
+      -- },
     },
     interactions = {
       chat = {
-        adapter = "mistral",
+        adapter = "anthropic",
         slash_commands = {
           ["file"] = {
             callback = "interactions.chat.slash_commands.builtin.file",
@@ -72,10 +73,10 @@ return {
         }
       },
       inline = {
-        adapter = "mistral",
+        adapter = "anthropic",
       },
       cmd = {
-        adapter = "mistral",
+        adapter = "anthropic",
       }
     },
   },

@@ -264,13 +264,6 @@ return {
   },
 
   {
-    "ray-x/lsp_signature.nvim",
-    config = function()
-      require("lsp_signature").setup({})
-    end,
-  },
-
-  {
     "pmizio/typescript-tools.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -288,7 +281,6 @@ return {
     lazy = false,
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
     config = function()
       require("flutter-tools").setup({
