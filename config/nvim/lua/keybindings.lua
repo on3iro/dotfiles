@@ -37,6 +37,28 @@ vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard"
 vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
 
+-- Create scratch buffer in ~/tmp/
+vim.keymap.set("n", "<leader>e", function()
+  local date = os.date("%Y-%m-%d")
+  vim.ui.input({ prompt = "Scratch file name (with extension): " }, function(input)
+    if input and input ~= "" then
+      local filename = string.format("%s_scratch_%s", date, input)
+      local dir = vim.fn.expand("~/tmp")
+      local filepath = dir .. "/" .. filename
+
+      -- Ensure directory exists
+      vim.fn.mkdir(dir, "p")
+
+      -- Create the file if it doesn't exist
+      if vim.fn.filereadable(filepath) == 0 then
+        vim.fn.writefile({}, filepath)
+      end
+
+      -- Open in vertical split
+      vim.cmd("tabnew " .. vim.fn.fnameescape(filepath))
+    end
+  end)
+end, { desc = "Create scratch file in ~/tmp/" })
 
 -------------------------
 -- [ Buffer settings ] --
