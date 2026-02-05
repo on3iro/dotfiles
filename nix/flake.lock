@@ -127,7 +127,8 @@
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs",
-        "sandstorm-tap": "sandstorm-tap"
+        "sandstorm-tap": "sandstorm-tap",
+        "tirith-tap": "tirith-tap"
       }
     },
     "sandstorm-tap": {
@@ -142,6 +143,22 @@
       },
       "original": {
         "owner": "sandstorm",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
+    "tirith-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1770228237,
+        "narHash": "sha256-3DmpWDxmlAvTOBcw9ynDamSiFRNW8rH7/Rhmt0Clq9k=",
+        "owner": "sheeki03",
+        "repo": "homebrew-tap",
+        "rev": "5179ff1a2483d05de698c25ebd49fdc789ce9ff2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sheeki03",
         "repo": "homebrew-tap",
         "type": "github"
       }

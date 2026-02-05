@@ -12,14 +12,15 @@
     homebrew-cask = { url = "github:homebrew/homebrew-cask"; flake = false; };
     homebrew-bundle = { url = "github:homebrew/homebrew-bundle"; flake = false; };
     sandstorm-tap = { url = "github:sandstorm/homebrew-tap"; flake = false; };
+    tirith-tap = { url = "github:sheeki03/homebrew-tap"; flake = false; };
   };
 
- outputs = { self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+ outputs = { self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, tirith-tap, ... }:
     let
       # Import the Darwin and Homebrew configurations
       darwinConfig = import ./config/darwin.nix;
       homebrewConfig = import ./config/homebrew.nix {
-        inherit homebrew-core homebrew-cask homebrew-bundle sandstorm-tap;
+        inherit homebrew-core homebrew-cask homebrew-bundle sandstorm-tap tirith-tap;
       };
     in
     {

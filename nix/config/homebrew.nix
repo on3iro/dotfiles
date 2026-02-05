@@ -1,4 +1,4 @@
-{ homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, ... }:
+{ homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, tirith-tap, ... }:
 { config, pkgs, ...}: {
   homebrew = {
     enable = true;
