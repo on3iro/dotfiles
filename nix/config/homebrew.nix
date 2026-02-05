@@ -9,6 +9,7 @@
       "sandstorm/tap/sandstorm-yubikey-agent"
       "sandstorm/tap/sku"
       "sandstorm/tap/synco"
+      "sheeki03/tap/tirith"
     ];
     casks = [
       "android-commandlinetools"
@@ -27,6 +28,7 @@
       "homebrew/homebrew-cask" = homebrew-cask;
       "homebrew/homebrew-bundle" = homebrew-bundle;
       "sandstorm/tap" = sandstorm-tap;
+      "sheeki03/tap" = tirith-tap;
     };
   };
 }
