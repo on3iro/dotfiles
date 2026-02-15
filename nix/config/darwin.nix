@@ -6,7 +6,6 @@
     pkgs.cargo
     pkgs.dbmate 
     pkgs.delta 
-    pkgs.devbox
     pkgs.direnv
     pkgs.go
     pkgs.httpie
@@ -25,8 +24,6 @@
     pkgs.silver-searcher
     pkgs.tealdeer 
     pkgs.universal-ctags 
-    pkgs.zsh-autosuggestions
-    pkgs.zsh-completions
   ];
 
   system.activationScripts = {
