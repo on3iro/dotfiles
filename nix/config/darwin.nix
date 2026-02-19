@@ -49,6 +49,7 @@
     };
 };
 
+ services.yubikey-agent.enable = true;
   # services.aerospace.enable = true; -> use acutal package and manual toml file instead
   nix.settings.experimental-features = "nix-command flakes";
   nix.enable = false;
