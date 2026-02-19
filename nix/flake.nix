@@ -5,30 +5,17 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    # Optional: Declarative tap management
-    homebrew-core = { url = "github:homebrew/homebrew-core"; flake = false; };
-    homebrew-cask = { url = "github:homebrew/homebrew-cask"; flake = false; };
-    homebrew-bundle = { url = "github:homebrew/homebrew-bundle"; flake = false; };
-    sandstorm-tap = { url = "github:sandstorm/homebrew-tap"; flake = false; };
-    tirith-tap = { url = "github:sheeki03/homebrew-tap"; flake = false; };
   };
 
- outputs = { self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, sandstorm-tap, tirith-tap, ... }:
+ outputs = { self, nix-darwin, nixpkgs,  ... }:
     let
       # Import the Darwin and Homebrew configurations
       darwinConfig = import ./config/darwin.nix;
-      homebrewConfig = import ./config/homebrew.nix {
-        inherit homebrew-core homebrew-cask homebrew-bundle sandstorm-tap tirith-tap;
-      };
     in
     {
       darwinConfigurations."ssmnaut" = nix-darwin.lib.darwinSystem {
         modules = [
           darwinConfig
-          homebrewConfig
-          nix-homebrew.darwinModules.nix-homebrew
         ];
       };
 
