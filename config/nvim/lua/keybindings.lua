@@ -60,6 +60,7 @@ vim.keymap.set("n", "<leader>0", function()
   end)
 end, { desc = "Create scratch file in ~/tmp/" })
 
+vim.keymap.set("n", "<leader>9", '<cmd>Oil ~/notes/vw_sandstorm/scratchpads/ <cr>', { desc = 'Open scratchpads in oil' })
 -------------------------
 -- [ Buffer settings ] --
 -------------------------
