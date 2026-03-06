@@ -284,7 +284,7 @@ return {
     },
     config = function()
       require("flutter-tools").setup({
-        flutter_path = "/Users/theo/.local/share/mise/installs/flutter/3.29.3-stable/bin/flutter",
+        flutter_path = "/Users/theo/.local/share/mise/installs/flutter/3.32.7-stable/bin/flutter",
         root_patterns = { "pubspec.yaml", ".git" },
         lsp = {
           -- Flutter-tools will handle its own LSP setup
