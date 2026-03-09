@@ -18,6 +18,7 @@ return {
           typescript = { "prettierd", "prettier", stop_after_first = true },
           typescriptreact = { "prettierd", "prettier", stop_after_first = true },
           markdown = { "prettierd", "prettier", stop_after_first = true },
+          dart = { "dart_format" },
         },
       })
 

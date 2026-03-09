@@ -9,7 +9,7 @@ return {
     -- refer to the configuration section below
     bigfile = { enabled = true },
     indent = { enabled = true },
-    input = { enabled = true, prompt_pos = "left" },
+    input = { enabled = true },
     quickfile = { enabled = true },
     words = { enabled = true },
     statuscolumn = {
