@@ -38,12 +38,14 @@ vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system cli
 vim.keymap.set({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
 
 -- Create scratch buffer in ~/tmp/
+local scratchpads_dir = vim.fn.expand("~/notes/vw_sandstorm/scratchpads")
+
 vim.keymap.set("n", "<leader>0", function()
   local date = os.date("%Y-%m-%d")
   vim.ui.input({ prompt = "Scratch file name (with extension): " }, function(input)
     if input and input ~= "" then
       local filename = string.format("%s_scratch_%s", date, input)
-      local dir = vim.fn.expand("~/notes/vw_sandstorm/scratchpads")
+      local dir = scratchpads_dir
       local filepath = dir .. "/" .. filename
 
       -- Ensure directory exists
@@ -56,11 +58,21 @@ vim.keymap.set("n", "<leader>0", function()
 
       -- Open in vertical split
       vim.cmd("tabnew " .. vim.fn.fnameescape(filepath))
+      vim.bo.swapfile = false
     end
   end)
 end, { desc = "Create scratch file in ~/tmp/" })
 
-vim.keymap.set("n", "<leader>9", '<cmd>Oil ~/notes/vw_sandstorm/scratchpads/ <cr>', { desc = 'Open scratchpads in oil' })
+vim.keymap.set("n", "<leader>9", function() vim.cmd("Oil " .. scratchpads_dir) end, { desc = 'Open scratchpads in oil' })
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = scratchpads_dir .. "/*",
+  callback = function()
+    vim.bo.swapfile = false
+  end,
+  desc = "Disable swap files for scratchpad buffers",
+})
+
 -------------------------
 -- [ Buffer settings ] --
 -------------------------
