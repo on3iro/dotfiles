@@ -4,6 +4,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
+    "ravitemer/codecompanion-history.nvim",
   },
   keys = {
     -- Toggle the CodeCompanion Chat interface
@@ -14,6 +15,24 @@ return {
     { "ga",         "<cmd>CodeCompanionChat Add<cr>",    mode = "v",                    desc = "CodeCompanion Add Selection" },
   },
   opts = {
+    extensions = {
+      history = {
+        enabled = true, -- defaults to true
+        opts = {
+          dir_to_save = vim.fn.stdpath("data") .. "/codecompanion_chats.json",
+          -- Keymap to open history from chat buffer (default: gh)
+          keymap = "gh",
+          -- Keymap to save the current chat manually (when auto_save is disabled)
+          save_chat_keymap = "sc",
+          -- Save all chats by default (disable to save only manually using 'sc')
+          auto_save = false,
+          -- Number of days after which chats are automatically deleted (0 to disable)
+          expiration_days = 4,
+          -- Picker interface (auto resolved to a valid picker)
+          picker = "snacks", --- ("telescope", "snacks", "fzf-lua", or "default")
+        }
+      }
+    },
     adapters = {
       -- http = {
       --   mistral = function()
