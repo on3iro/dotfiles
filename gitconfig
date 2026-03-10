@@ -16,6 +16,7 @@
   side-by-side = true
   zero-style = dim syntax
   line-numbers = true
+  syntax-theme = Nord
 [merge]
   conflictstyle = diff3
 [alias]
