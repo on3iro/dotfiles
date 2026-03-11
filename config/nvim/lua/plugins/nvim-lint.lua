@@ -81,7 +81,7 @@ return {
         typescriptreact = { "eslint" },
         markdown = {},
         php = { "phpstan" },
-        go = { "golangci-lint" },
+        go = { "golangcilint" },
       }
 
       -- Configure PHPStan with higher memory limit
