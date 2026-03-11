@@ -11,6 +11,8 @@ a.nvim_set_keymap("n", "<esc>", ":noh <cr>", { noremap = false })
 -- a.nvim_set_keymap("n", "<C-k>", "<C-w><C-k>", { noremap = false })
 -- a.nvim_set_keymap("n", "<C-h>", "<C-w><C-h>", { noremap = false })
 -- a.nvim_set_keymap("n", "<C-l>", "<C-w><C-l>", { noremap = false })
+--
+vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Save file (if modified)" })
 
 -- Create splits
 a.nvim_set_keymap("n", "<C-s>", ":vs<cr>", { noremap = false })

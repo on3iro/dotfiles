@@ -1,6 +1,6 @@
 local mappings = {}
 
- -- Inits lsp mappings. Should be called inside LspAttach autocmd
+-- Inits lsp mappings. Should be called inside LspAttach autocmd
 function mappings.init_lsp()
   -- Mappings.
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -32,11 +32,11 @@ function mappings.init_lsp()
   nmap("S", vim.lsp.buf.signature_help, "Signature Documentation")
 
   -- Lesser used LSP functionality
-  nmap("<leader>wa", vim.lsp.buf.add_workspace_folder, "[W]orkspace [A]dd Folder")
-  nmap("<leader>wr", vim.lsp.buf.remove_workspace_folder, "[W]orkspace [R]emove Folder")
-  nmap("<leader>wl", function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, "[W]orkspace [L]ist Folders")
+  -- nmap("<leader>wa", vim.lsp.buf.add_workspace_folder, "[W]orkspace [A]dd Folder")
+  -- nmap("<leader>wr", vim.lsp.buf.remove_workspace_folder, "[W]orkspace [R]emove Folder")
+  -- nmap("<leader>wl", function()
+  --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+  -- end, "[W]orkspace [L]ist Folders")
 
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(0, "Format", function(_)
