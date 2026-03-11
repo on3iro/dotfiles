@@ -18,7 +18,7 @@ return {
 
             while current and current ~= "/" do
               local flow_yaml = current .. "/Configuration/Settings.yaml"
-              local flow_routes = current .. "/Configuration/Routes.yaml" 
+              local flow_routes = current .. "/Configuration/Routes.yaml"
               local packages_dir = current .. "/Packages"
               local dist_packages_dir = current .. "/DistributionPackages"
               local main_composer = current .. "/composer.json"
@@ -81,7 +81,7 @@ return {
         typescriptreact = { "eslint" },
         markdown = {},
         php = { "phpstan" },
-        go = { "revive" },
+        go = { "golangci-lint" },
       }
 
       -- Configure PHPStan with higher memory limit
