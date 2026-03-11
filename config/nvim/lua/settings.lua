@@ -67,7 +67,7 @@ o.backspace = { "indent", "eol", "start" }
 o.laststatus = 2
 
 -- Faster escape
-o.timeoutlen = 1000
+o.timeoutlen = 300
 o.ttimeoutlen = 0
 
 -- No autoresizing on split windows
