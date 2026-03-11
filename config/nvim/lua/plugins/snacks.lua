@@ -114,51 +114,51 @@ return {
   },
   keys = {
     -- Scratch buffers
-    { "<leader>.",   function() Snacks.scratch.open() end,                 desc = "Toggle Scratch Buffer" },
-    { "<leader>S",   function() Snacks.scratch.select() end,               desc = "Select Scratch Buffer" },
+    { "<leader>.",   function() Snacks.scratch.open() end,                desc = "Toggle Scratch Buffer" },
+    { "<leader>S",   function() Snacks.scratch.select() end,              desc = "Select Scratch Buffer" },
 
     -- Zen
-    { "<leader>zen", function() Snacks.zen() end,                          desc = "Zen Mode" },
-    { "<leader>+",   function() Snacks.zen.zoom() end,                     desc = "Zen Zoom" },
+    { "<leader>zen", function() Snacks.zen() end,                         desc = "Zen Mode" },
+    { "<leader>+",   function() Snacks.zen.zoom() end,                    desc = "Zen Zoom" },
 
     ------------
     -- Picker --
     ------------
 
     -- Todo/Fixme/Note comments
-    { "<leader>td",  function() Snacks.picker.todo_comments() end,         desc = "Todo" },
+    { "<leader>td",  function() Snacks.picker.todo_comments() end,        desc = "Todo" },
     -- Files
-    { "<leader>f",   function() Snacks.picker.files() end,                 desc = "Find Files" },
-    { "<leader>sm",  function() Snacks.picker.smart() end,                 desc = "Find Files Smart" },
-    { "<leader>bu",  function() Snacks.picker.buffers() end,               desc = "Buffers" },
-    { "<leader>hi",  function() Snacks.picker.recent() end,                desc = "Recent" },
-    { "<leader>zo",  function() Snacks.picker.zoxide() end,                desc = "Zoxide" },
+    { "<leader>f",   function() Snacks.picker.files() end,                desc = "Find Files" },
+    { "<leader>sm",  function() Snacks.picker.smart() end,                desc = "Find Files Smart" },
+    { "<leader>bu",  function() Snacks.picker.buffers() end,              desc = "Buffers" },
+    { "<leader>hi",  function() Snacks.picker.recent() end,               desc = "Recent" },
+    { "<leader>zo",  function() Snacks.picker.zoxide() end,               desc = "Zoxide" },
     -- Grep
-    { "<leader>gw",  function() Snacks.picker.grep_word() end,             desc = "Visual selection or word", mode = { "n", "x" } },
-    { "<leader>/",   function() Snacks.picker.grep() end,                  desc = "Grep" },
-    { "<leader>l",   function() Snacks.picker.lines() end,                 desc = "Buffer Lines" },
+    { "<leader>gw",  function() Snacks.picker.grep_word() end,            desc = "Visual selection or word", mode = { "n", "x" } },
+    { "<leader>/",   function() Snacks.picker.grep() end,                 desc = "Grep" },
+    { "<leader>l",   function() Snacks.picker.lines() end,                desc = "Buffer Lines" },
     -- Git
-    { "<leader>gl",  function() Snacks.picker.git_log() end,               desc = "Git Log" },
-    { "<leader>glf", function() Snacks.picker.git_log_file() end,          desc = "Git Log File" },
-    { "<leader>gll", function() Snacks.picker.git_log_line() end,          desc = "Git Log Line" },
-    { "<leader>gb",  function() Snacks.picker.git_branches() end,          desc = "Git Branches" },
-    { "<leader>gg",  function() Snacks.picker.git_grep() end,              desc = "Git Grep" },
-    { "<leader>gf",  function() Snacks.picker.git_grep() end,              desc = "Git Files" },
-    { "<leader>gs",  function() Snacks.picker.git_status() end,            desc = "Git Status" },
+    { "<leader>gl",  function() Snacks.picker.git_log() end,              desc = "Git Log" },
+    { "<leader>glf", function() Snacks.picker.git_log_file() end,         desc = "Git Log File" },
+    { "<leader>gll", function() Snacks.picker.git_log_line() end,         desc = "Git Log Line" },
+    { "<leader>gb",  function() Snacks.picker.git_branches() end,         desc = "Git Branches" },
+    { "<leader>gg",  function() Snacks.picker.git_grep() end,             desc = "Git Grep" },
+    { "<leader>gf",  function() Snacks.picker.git_grep() end,             desc = "Git Files" },
+    { "<leader>gs",  function() Snacks.picker.git_status() end,           desc = "Git Status" },
     -- Search
-    { "<leader>he",  function() Snacks.picker.help() end,                  desc = "Nvim Help" },
-    { "<leader>di",  function() Snacks.picker.diagnostics() end,           desc = "Diagnostics" },
-    { "<leader>dib", function() Snacks.picker.diagnostics_buffer() end,    desc = "Buffer Diagnostics" },
-    { "<leader>key", function() Snacks.picker.keymaps() end,               desc = "Keymaps" },
-    { "<leader>col", function() Snacks.picker.colorschemes() end,          desc = "Colorschemes" },
+    { "<leader>he",  function() Snacks.picker.help() end,                 desc = "Nvim Help" },
+    { "<leader>di",  function() Snacks.picker.diagnostics() end,          desc = "Diagnostics" },
+    { "<leader>dib", function() Snacks.picker.diagnostics_buffer() end,   desc = "Buffer Diagnostics" },
+    { "<leader>key", function() Snacks.picker.keymaps() end,              desc = "Keymaps" },
+    { "<leader>col", function() Snacks.picker.colorschemes() end,         desc = "Colorschemes" },
     -- Lsp
-    { "gd",          function() Snacks.picker.lsp_definitions() end,       desc = "Goto Definition" },
-    { "gD",          function() Snacks.picker.lsp_declarations() end,      desc = "Goto Declarations" },
-    { "gr",          function() Snacks.picker.lsp_references() end,        desc = "Goto References" },
-    { "gi",          function() Snacks.picker.lsp_implementations() end,   desc = "Goto Implementation" },
-    { "gy",          function() Snacks.picker.lsp_type_definitions() end,  desc = "Goto T[y]pe Definitions" },
-    { "<leader>si",  function() Snacks.picker.lsp_symbols() end,           desc = "LSP Symbols" },
-    { "<leader>ws",  function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
+    { "gd",          function() Snacks.picker.lsp_definitions() end,      desc = "Goto Definition" },
+    { "gD",          function() Snacks.picker.lsp_declarations() end,     desc = "Goto Declarations" },
+    { "gr",          function() Snacks.picker.lsp_references() end,       desc = "Goto References" },
+    { "gi",          function() Snacks.picker.lsp_implementations() end,  desc = "Goto Implementation" },
+    { "gy",          function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definitions" },
+    { "<leader>si",  function() Snacks.picker.lsp_symbols() end,          desc = "LSP Symbols" },
+    -- { "<leader>ws",  function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
     -- Notes
     {
       "<leader>n/",
