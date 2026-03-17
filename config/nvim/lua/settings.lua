@@ -111,6 +111,9 @@ vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 o.foldlevelstart = 99 -- Start with all folds open
 
+-- Disable swapfiles
+o.swapfile = false
+
 -- Autocommand for FocusGained, BufEnter, CursorHold, CursorHoldI
 a.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" }, {
   pattern = "*",
