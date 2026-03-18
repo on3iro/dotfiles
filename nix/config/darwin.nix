@@ -20,7 +20,6 @@
     pkgs.usage
     pkgs.pika
     pkgs.postgresql
-    pkgs.rustc
     pkgs.silver-searcher
     pkgs.tealdeer 
     pkgs.universal-ctags 
