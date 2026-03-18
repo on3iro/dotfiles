@@ -3,7 +3,6 @@
     pkgs.aerospace
     pkgs.ain
     pkgs.ansible
-    pkgs.cargo
     pkgs.dbmate 
     pkgs.delta 
     pkgs.direnv
