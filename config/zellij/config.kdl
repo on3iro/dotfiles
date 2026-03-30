@@ -158,13 +158,13 @@ keybinds clear-defaults=true {
         bind "Ctrl g" { SwitchToMode "locked"; }
     }
     shared_except "normal" "locked" {
-        bind "space" { SwitchToMode "normal"; }
+        bind "space" { SwitchToMode "locked"; }
     }
     shared_except "normal" "locked" "entersearch" {
-        bind "enter" { SwitchToMode "normal"; }
+        bind "enter" { SwitchToMode "locked"; }
     }
     shared_except "normal" "locked" "entersearch" "renametab" "renamepane" {
-        bind "esc" { SwitchToMode "normal"; }
+        bind "esc" { SwitchToMode "locked"; }
     }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }
@@ -188,10 +188,10 @@ keybinds clear-defaults=true {
         bind "enter" { SwitchToMode "search"; }
     }
     renametab {
-        bind "esc" { UndoRenameTab; SwitchToMode "normal"; }
+        bind "esc" { UndoRenameTab; SwitchToMode "locked"; }
     }
     renamepane {
-        bind "esc" { UndoRenamePane; SwitchToMode "pane"; }
+        bind "esc" { UndoRenamePane; SwitchToMode "locked"; }
     }
 }
 

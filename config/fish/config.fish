@@ -18,6 +18,7 @@ if status is-interactive
   set fish_cursor_replace_one underscore
   set fish_cursor_visual block
 
+set -U fish_exit_on_ctrl_d false
 
   function fish_user_key_bindings
     # Execute this once per mode that emacs bindings should be used in

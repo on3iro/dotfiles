@@ -4,7 +4,6 @@ layout {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar" {
               tooltip "F1"
-              tooltip_hidden_by_default true
           }
       }
   }
@@ -17,5 +16,5 @@ layout {
       pane name="Tests"
     }
   }
-  tab name="db" 
+  tab name="db"
 }
