@@ -13,10 +13,15 @@
   diffFilter = delta --color-only
 [delta]
   navigate = true
-  side-by-side = true
+  side-by-side = false
   zero-style = dim syntax
   line-numbers = true
   syntax-theme = Nord
+  zero-style = dim syntax
+  minus-style = syntax "#3b1e1e"
+  minus-emph-style = blue bold "#4d1f1f"
+  plus-style = syntax "#1e3b1e"
+  plus-emph-style = red bold "#1f4d1f"
 [merge]
   conflictstyle = diff3
 [alias]
