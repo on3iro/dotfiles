@@ -12,6 +12,9 @@ alias lg='lazygit'
 alias wip='g all && g wip'
 alias amend='g all && g ct --amend --no-edit'
 
+# llms
+alias klaus='claude-safe'
+
 # docker
 alias ld='lazydocker'
 
