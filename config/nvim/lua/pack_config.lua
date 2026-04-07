@@ -16,15 +16,10 @@ vim.pack.add({
   -- LSP
   "https://github.com/mason-org/mason.nvim",
   "https://github.com/mason-org/mason-lspconfig.nvim",
-  "https://github.com/neovim/nvim-lspconfig",
-
   -- Completion (pinned tag includes pre-built fuzzy binary)
   { src = "https://github.com/saghen/blink.cmp", checkout = "v1.10.2" },
   "https://github.com/rafamadriz/friendly-snippets",
 
-  -- TypeScript & Flutter
-  "https://github.com/pmizio/typescript-tools.nvim",
-  "https://github.com/akinsho/flutter-tools.nvim",
 
   -- Treesitter
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", checkout = "main" },

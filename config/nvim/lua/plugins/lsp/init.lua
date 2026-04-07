@@ -11,6 +11,7 @@ require("mason-lspconfig").setup({
     "marksman",
     "intelephense",
     "yamlls",
+    "ts_ls",
   },
 })
 
@@ -37,6 +38,18 @@ vim.lsp.config.templ = { filetypes = { "templ" } }
 
 -- Markdown
 vim.lsp.config.marksman = { filetypes = { "markdown" } }
+
+-- TypeScript / JavaScript
+vim.lsp.config.ts_ls = {
+  filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+  root_markers = { "tsconfig.json", "package.json", ".git" },
+}
+
+-- Dart / Flutter (dart binary is in PATH via mise shims)
+vim.lsp.config.dartls = {
+  filetypes = { "dart" },
+  root_markers = { "pubspec.yaml", ".git" },
+}
 
 -- YAML
 vim.lsp.config.yamlls = {
@@ -140,7 +153,7 @@ vim.lsp.config.intelephense = {
   }),
 }
 
-vim.lsp.enable({ "gopls", "rust_analyzer", "intelephense", "yamlls", "templ", "marksman" })
+vim.lsp.enable({ "gopls", "rust_analyzer", "intelephense", "yamlls", "templ", "marksman", "ts_ls", "dartls" })
 
 -- Run on LSP attach
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -181,21 +194,3 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
 end
 
 vim.diagnostic.config({ virtual_text = false })
-
--- TypeScript
-require("typescript-tools").setup({
-  capabilities = capabilities,
-})
-
--- Flutter / Dart
-require("flutter-tools").setup({
-  flutter_path = "/Users/theo/.local/share/mise/installs/flutter/3.32.7-stable/bin/flutter",
-  root_patterns = { "pubspec.yaml", ".git" },
-  lsp = {
-    capabilities = capabilities,
-  },
-  debugger = {
-    enabled = true,
-  },
-  fvm = true,
-})
