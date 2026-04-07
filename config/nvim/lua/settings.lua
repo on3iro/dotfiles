@@ -108,7 +108,7 @@ o.autoread = true
 
 -- Syntax folding
 vim.wo.foldmethod = 'expr'
-vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 o.foldlevelstart = 99 -- Start with all folds open
 
 -- Disable swapfiles
