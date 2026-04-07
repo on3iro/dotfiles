@@ -63,8 +63,11 @@ o.nrformats = ""
 -- Backspace fix
 o.backspace = { "indent", "eol", "start" }
 
--- Always display status line
+-- Always display status line (lualine will override this to 3 for global statusline)
 o.laststatus = 2
+
+-- Hide cmdline when not in use (pairs with laststatus=3)
+o.cmdheight = 0
 
 -- Faster escape
 o.timeoutlen = 300

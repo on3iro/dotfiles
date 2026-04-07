@@ -1,5 +1,5 @@
 require("settings")
-require("lazy_config")
+require("pack_config")
 require("keybindings")
 
 -- Languages

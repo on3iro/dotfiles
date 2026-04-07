@@ -1,4 +1,4 @@
-return {
-  -- Instant markdown preview
-  { "iamcco/markdown-preview.nvim", build = "cd app && yarn install" },
-}
+-- markdown-preview.nvim is command-based; no setup() call needed.
+-- On first install, run the build manually:
+--   cd ~/.local/share/nvim/pack/core/opt/markdown-preview.nvim/app && yarn install
+-- Or use :PackChanged to trigger the hook defined in pack_config.lua.
