@@ -39,6 +39,10 @@ vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard"
 vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
 
+-- undotree
+vim.cmd("packadd nvim.undotree")
+vim.keymap.set({ "n" }, "<leader>ut", ':Undotree<CR>', { desc = "Open undotree" })
+
 -- Create scratch buffer in ~/tmp/
 local scratchpads_dir = vim.fn.expand("~/notes/vw_sandstorm/scratchpads")
 

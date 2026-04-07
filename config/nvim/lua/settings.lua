@@ -151,3 +151,5 @@ local mise_shims = vim.fn.expand("~/.local/share/mise/shims")
 if vim.fn.isdirectory(mise_shims) == 1 and not vim.env.PATH:find(mise_shims, 1, true) then
   vim.env.PATH = mise_shims .. ":" .. vim.env.PATH
 end
+
+require('vim._core.ui2').enable({})
