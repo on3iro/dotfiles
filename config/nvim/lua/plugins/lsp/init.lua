@@ -1,24 +1,7 @@
 local mappings = require("plugins.lsp.mappings")
 local servers = require("plugins.lsp.servers")
 
--- Function to detect project roots
-local function get_project_roots()
-  local cwd = vim.fn.getcwd()
-  local roots = {}
-
-  if vim.fn.isdirectory(cwd .. "/backend") == 1 then
-    table.insert(roots, cwd .. "/backend")
-  end
-
-  if vim.fn.isdirectory(cwd .. "/app") == 1 then
-    table.insert(roots, cwd .. "/app")
-  end
-
-  return roots
-end
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
+local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 require("mason").setup()
 
@@ -27,17 +10,44 @@ require("mason-lspconfig").setup({
     "templ",
     "marksman",
     "intelephense",
-    "yamlls"
+    "yamlls",
   },
 })
 
--- Set global defaults for all LSP clients
+-- Global defaults for all LSP clients
 vim.lsp.config('*', {
   capabilities = capabilities,
   root_markers = { '.git' },
 })
 
--- Configure PHP/Laravel LSP (intelephense) with custom root detection
+-- Go
+vim.lsp.config.gopls = {
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  settings = servers.gopls,
+}
+
+-- Rust
+vim.lsp.config.rust_analyzer = {
+  filetypes = { "rust" },
+  settings = servers.rust_analyzer,
+}
+
+-- Templ
+vim.lsp.config.templ = { filetypes = { "templ" } }
+
+-- Markdown
+vim.lsp.config.marksman = { filetypes = { "markdown" } }
+
+-- YAML
+vim.lsp.config.yamlls = {
+  filetypes = { 'yaml', 'yml' },
+  root_markers = { '.git', 'package.json' },
+  settings = {
+    yaml = servers.yaml or {},
+  },
+}
+
+-- PHP (Intelephense) with custom root detection for Flow/Neos projects
 vim.lsp.config.intelephense = {
   filetypes = { 'php' },
   root_dir = function(bufnr, on_dir)
@@ -75,17 +85,10 @@ vim.lsp.config.intelephense = {
       end
 
       table.sort(potential_roots, function(a, b) return a.priority > b.priority end)
-
-      if #potential_roots > 0 then
-        return potential_roots[1].path
-      end
-
-      return nil
+      return #potential_roots > 0 and potential_roots[1].path or nil
     end
 
-    local file_dir = vim.fn.fnamemodify(fname, ":h")
-    local flow_root = find_flow_root(file_dir)
-
+    local flow_root = find_flow_root(vim.fn.fnamemodify(fname, ":h"))
     if flow_root then
       on_dir(flow_root)
       return
@@ -98,8 +101,7 @@ vim.lsp.config.intelephense = {
     end
 
     local cwd = vim.fn.getcwd()
-    local backend_composer = cwd .. "/backend/composer.json"
-    if vim.fn.filereadable(backend_composer) == 1 then
+    if vim.fn.filereadable(cwd .. "/backend/composer.json") == 1 then
       on_dir(cwd .. "/backend")
       return
     end
@@ -111,11 +113,7 @@ vim.lsp.config.intelephense = {
   settings = vim.tbl_extend("force", servers.intelephense or {}, {
     intelephense = {
       files = {
-        associations = {
-          "*.php",
-          "*.phtml",
-          "*.inc"
-        },
+        associations = { "*.php", "*.phtml", "*.inc" },
         maxSize = 5000000,
         exclude = {
           "**/Data/Temporary/**",
@@ -142,47 +140,9 @@ vim.lsp.config.intelephense = {
   }),
 }
 
--- Configure YAML LSP
-vim.lsp.config.yamlls = {
-  filetypes = { 'yaml', 'yml' },
-  root_markers = { '.git', 'package.json' },
-  settings = {
-    yaml = servers.yaml or {},
-  },
-}
+vim.lsp.enable({ "gopls", "rust_analyzer", "intelephense", "yamlls", "templ", "marksman" })
 
--- Configure other servers from servers.lua
-for server, config in pairs(servers) do
-  if server ~= "intelephense" and server ~= "yaml" then
-    local filetypes = {}
-    if server == "gopls" then
-      filetypes = { "go", "gomod", "gowork", "gotmpl" }
-    elseif server == "rust_analyzer" then
-      filetypes = { "rust" }
-    elseif server == "templ" then
-      filetypes = { "templ" }
-    elseif server == "marksman" then
-      filetypes = { "markdown" }
-    end
-
-    vim.lsp.config[server] = vim.tbl_extend("force", {
-      filetypes = filetypes,
-      settings = config,
-    }, {})
-  end
-end
-
--- Enable all configured servers
-local servers_to_enable = { "intelephense", "yamlls" }
-for server, _ in pairs(servers) do
-  if server ~= "intelephense" and server ~= "yaml" then
-    table.insert(servers_to_enable, server)
-  end
-end
-
-vim.lsp.enable(servers_to_enable)
-
--- LSP Attach autocmd
+-- Run on LSP attach
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     local bufnr = args.buf
@@ -190,10 +150,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     mappings.init_lsp()
     vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 
-    local roots = get_project_roots()
-    for _, root in ipairs(roots) do
-      if not vim.tbl_contains(vim.lsp.buf.list_workspace_folders(), root) then
-        vim.lsp.buf.add_workspace_folder(root)
+    -- Add workspace folders for monorepo layouts (backend/ and app/ subdirs)
+    local cwd = vim.fn.getcwd()
+    for _, subdir in ipairs({ "/backend", "/app" }) do
+      local path = cwd .. subdir
+      if vim.fn.isdirectory(path) == 1
+        and not vim.tbl_contains(vim.lsp.buf.list_workspace_folders(), path)
+      then
+        vim.lsp.buf.add_workspace_folder(path)
       end
     end
   end
@@ -204,14 +168,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -------------
 
 local border = {
-  { "╭", "FloatBorder" },
-  { "─", "FloatBorder" },
-  { "╮", "FloatBorder" },
-  { "│", "FloatBorder" },
-  { "╯", "FloatBorder" },
-  { "─", "FloatBorder" },
-  { "╰", "FloatBorder" },
-  { "│", "FloatBorder" },
+  { "╭", "FloatBorder" }, { "─", "FloatBorder" }, { "╮", "FloatBorder" },
+  { "│", "FloatBorder" }, { "╯", "FloatBorder" }, { "─", "FloatBorder" },
+  { "╰", "FloatBorder" }, { "│", "FloatBorder" },
 }
 
 local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
@@ -221,26 +180,22 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
   return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
 
-vim.diagnostic.config({
-  virtual_text = false,
-})
+vim.diagnostic.config({ virtual_text = false })
 
--- typescript-tools
+-- TypeScript
 require("typescript-tools").setup({
-  capabilities = vim.lsp.protocol.make_client_capabilities(),
+  capabilities = capabilities,
 })
 
--- flutter-tools
+-- Flutter / Dart
 require("flutter-tools").setup({
   flutter_path = "/Users/theo/.local/share/mise/installs/flutter/3.32.7-stable/bin/flutter",
   root_patterns = { "pubspec.yaml", ".git" },
   lsp = {
-    capabilities = vim.lsp.protocol.make_client_capabilities(),
+    capabilities = capabilities,
   },
   debugger = {
     enabled = true,
-    register_configurations = function()
-    end,
   },
   fvm = true,
 })
