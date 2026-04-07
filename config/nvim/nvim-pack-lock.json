@@ -24,10 +24,6 @@
       "rev": "b03a03148c8b34c24c96960b93da9c8883d11f54",
       "src": "https://github.com/sainnhe/everforest"
     },
-    "flutter-tools.nvim": {
-      "rev": "677cc07c16e8b89999108d2ebeefcfc5f539b73c",
-      "src": "https://github.com/akinsho/flutter-tools.nvim"
-    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
@@ -35,10 +31,6 @@
     "gitsigns.nvim": {
       "rev": "0d797daee85366bc242580e352a4f62d67557b84",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
-    },
-    "harpoon": {
-      "rev": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3",
-      "src": "https://github.com/ThePrimeagen/harpoon"
     },
     "lualine-lsp-progress": {
       "rev": "56842d097245a08d77912edf5f2a69ba29f275d7",
@@ -67,10 +59,6 @@
     "nvim-lint": {
       "rev": "4b03656c09c1561f89b6aa0665c15d292ba9499d",
       "src": "https://github.com/mfussenegger/nvim-lint"
-    },
-    "nvim-lspconfig": {
-      "rev": "bedca8b426b2fee0ccac596d167d71bbe971253f",
-      "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-surround": {
       "rev": "9291040de8cd8a4439eb64c441e8d5d2bf884a5a",
@@ -119,10 +107,6 @@
     "tree-sitter-templ": {
       "rev": "1c6db04effbcd7773c826bded9783cbc3061bd55",
       "src": "https://github.com/vrischmann/tree-sitter-templ"
-    },
-    "typescript-tools.nvim": {
-      "rev": "c2f5910074103705661e9651aa841e0d7eea9932",
-      "src": "https://github.com/pmizio/typescript-tools.nvim"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

@@ -7,7 +7,6 @@ vim.pack.add({
 
   -- Navigation & file browsing
   "https://github.com/stevearc/oil.nvim",
-  { src = "https://github.com/ThePrimeagen/harpoon", checkout = "harpoon2" },
   "https://github.com/mrjones2014/smart-splits.nvim",
 
   -- Search & picker
