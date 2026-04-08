@@ -40,7 +40,6 @@ vim.pack.add({
   "https://github.com/arkav/lualine-lsp-progress",
   "https://github.com/sainnhe/everforest",
   "https://github.com/folke/which-key.nvim",
-  "https://github.com/MeanderingProgrammer/render-markdown.nvim",
   "https://github.com/folke/todo-comments.nvim",
   "https://github.com/iamcco/markdown-preview.nvim",
 
@@ -70,7 +69,6 @@ require("plugins.colorschemes")
 require("plugins.icons")
 require("plugins.snacks")
 require("plugins.oil")
-require("plugins.harpoon")
 require("plugins.zellij-nav")
 require("plugins.lsp")
 require("plugins.blink")
@@ -81,7 +79,6 @@ require("plugins.gitsigns")
 require("plugins.diffview")
 require("plugins.lualine")
 require("plugins.which_key")
-require("plugins.render_markdown")
 require("plugins.todo-comments")
 require("plugins.markdown-preview")
 require("plugins.codecompanion")
