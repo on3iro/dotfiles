@@ -15,7 +15,7 @@ layout {
               hide_frame_except_for_search "true"
               hide_frame_for_single_pane "false"
 
-              mode_locked  "#[fg=#F45B69,bold] {name} "
+              mode_locked  "#[fg=#F45B69,bold]  "
               mode_normal  "#[bg=#6D676E,fg=#ffffff] "
               mode_tmux    "#[bg=#FF9328,fg=#444444] "
               mode_tab     "#[bg=#F1D302,fg=#444444] {name} "
