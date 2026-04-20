@@ -47,6 +47,7 @@ vim.lsp.config.ts_ls = {
 
 -- Dart / Flutter (dart binary is in PATH via mise shims)
 vim.lsp.config.dartls = {
+  cmd = { "dart", "language-server", "--protocol=lsp" },
   filetypes = { "dart" },
   root_markers = { "pubspec.yaml", ".git" },
 }

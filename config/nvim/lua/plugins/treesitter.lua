@@ -36,6 +36,7 @@ require("nvim-treesitter").setup()
 -- Install parsers not bundled with Neovim 0.12
 -- (bundled: bash, c, lua, markdown, markdown_inline, python, query, vim, vimdoc)
 require("nvim-treesitter").install({
+  "dart",
   "go",
   "rust",
   "typescript",
