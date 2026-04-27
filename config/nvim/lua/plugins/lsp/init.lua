@@ -7,6 +7,7 @@ require("mason").setup()
 
 require("mason-lspconfig").setup({
   ensure_installed = {
+    "gopls",
     "templ",
     "marksman",
     "intelephense",
@@ -181,17 +182,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- Styling --
 -------------
 
-local border = {
-  { "╭", "FloatBorder" }, { "─", "FloatBorder" }, { "╮", "FloatBorder" },
-  { "│", "FloatBorder" }, { "╯", "FloatBorder" }, { "─", "FloatBorder" },
-  { "╰", "FloatBorder" }, { "│", "FloatBorder" },
-}
-
-local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
-function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
-  opts = opts or {}
-  opts.border = opts.border or border
-  return orig_util_open_floating_preview(contents, syntax, opts, ...)
-end
+-- Use native winborder (neovim 0.11+) instead of monkey-patching open_floating_preview
+vim.o.winborder = 'rounded'
 
 vim.diagnostic.config({ virtual_text = false })
+
+-- Override the go.vim ftplugin's keywordprg (:GoKeywordPrg) which would otherwise
+-- open `go doc` in a terminal tab instead of the LSP hover float.
+-- This fires immediately on FileType, before gopls has attached.
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'go',
+  callback = function()
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = true, desc = 'LSP: Hover Documentation' })
+  end,
+})

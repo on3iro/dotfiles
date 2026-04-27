@@ -5,13 +5,15 @@
 --  the `settings` field of the server config. You must look up that documentation yourself.
 return {
   gopls = {
-    hints = {
-      assignVariableTypes = true,
-      compositeLiteralTypes = true,
-      constantValues = true,
-      functionTypeParameters = true,
-      parameterNames = true,
-      rangeVariableTypes = true,
+    gopls = {
+      hints = {
+        assignVariableTypes = true,
+        compositeLiteralTypes = true,
+        constantValues = true,
+        functionTypeParameters = true,
+        parameterNames = true,
+        rangeVariableTypes = true,
+      },
     },
   },
   rust_analyzer = {

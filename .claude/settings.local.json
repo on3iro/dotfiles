@@ -5,7 +5,8 @@
       "WebFetch(domain:neovim.io)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:practical.li)",
-      "WebFetch(domain:discuss.neos.io)"
+      "WebFetch(domain:discuss.neos.io)",
+      "Bash(cat /Users/theo/dotfiles/config/nvim/ftdetect/*.lua)"
     ]
   }
 }
