@@ -1,3 +1,19 @@
+-- Post-install hooks (must be registered before vim.pack.add)
+vim.api.nvim_create_autocmd("PackChanged", {
+  callback = function(ev)
+    local name = ev.data.spec.name
+    if name == "nvim-treesitter" then
+      vim.cmd("TSUpdate")
+    elseif name == "markdown-preview.nvim" then
+      vim.fn.jobstart("cd " .. ev.data.path .. "/app && yarn install", {
+        on_exit = function(_, code)
+          if code ~= 0 then vim.notify("markdown-preview build failed", vim.log.levels.ERROR) end
+        end,
+      })
+    end
+  end,
+})
+
 vim.pack.add({
   -- Foundation
   "https://github.com/nvim-lua/plenary.nvim",
@@ -52,18 +68,6 @@ vim.pack.add({
   "https://github.com/kylechui/nvim-surround",
 })
 
--- Post-install hooks
-vim.api.nvim_create_autocmd("PackChanged", {
-  callback = function(ev)
-    local name = ev.data.spec.name
-    if name == "nvim-treesitter" then
-      vim.cmd("TSUpdate")
-    elseif name == "markdown-preview.nvim" then
-      local plugin_path = vim.fn.stdpath("data") .. "/pack/core/opt/markdown-preview.nvim"
-      vim.fn.jobstart("cd " .. plugin_path .. "/app && yarn install", { detach = true })
-    end
-  end,
-})
 
 -- Load plugin configurations (order matters: colorscheme and icons load first)
 require("plugins.colorschemes")
