@@ -11,7 +11,7 @@ alias g='git'
 alias lg='lazygit'
 alias wip='g all && g wip'
 alias amend='g all && g ct --amend --no-edit'
-alias lin='git log --graph --no-merges --pretty=format:'%Cred%h%Creset %s' --abbrev-commit'
+alias lin="git log --graph --no-merges --pretty=format:'%Cred%h%Creset %s' --abbrev-commit"
 
 # llms
 alias klaus='claude-safe'
