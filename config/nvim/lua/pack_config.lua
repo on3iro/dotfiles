@@ -33,12 +33,12 @@ vim.pack.add({
   "https://github.com/mason-org/mason-lspconfig.nvim",
   "https://github.com/neovim/nvim-lspconfig", -- required by mason-lspconfig v2 for server definitions
   -- Completion (pinned tag includes pre-built fuzzy binary)
-  { src = "https://github.com/saghen/blink.cmp", checkout = "v1.10.2" },
+  { src = "https://github.com/saghen/blink.cmp",                            checkout = "v1.10.2" },
   "https://github.com/rafamadriz/friendly-snippets",
 
 
   -- Treesitter
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter", checkout = "main" },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter",             checkout = "main" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects", checkout = "main" },
   "https://github.com/nvim-treesitter/nvim-treesitter-context",
   "https://github.com/virchau13/tree-sitter-astro",
@@ -66,6 +66,9 @@ vim.pack.add({
 
   -- Text manipulation
   "https://github.com/kylechui/nvim-surround",
+
+  -- Tools
+  "https://github.com/mistweaverco/kulala.nvim"
 })
 
 
@@ -88,3 +91,4 @@ require("plugins.todo-comments")
 require("plugins.markdown-preview")
 require("plugins.codecompanion")
 require("plugins.nvim-surround")
+require("plugins.kulala")
