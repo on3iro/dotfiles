@@ -61,8 +61,8 @@ vim.pack.add({
   "https://github.com/iamcco/markdown-preview.nvim",
 
   -- AI
-  "https://github.com/olimorris/codecompanion.nvim",
-  "https://github.com/ravitemer/codecompanion-history.nvim",
+  -- "https://github.com/olimorris/codecompanion.nvim",
+  -- "https://github.com/ravitemer/codecompanion-history.nvim",
 
   -- Text manipulation
   "https://github.com/kylechui/nvim-surround",
@@ -89,6 +89,6 @@ require("plugins.lualine")
 require("plugins.which_key")
 require("plugins.todo-comments")
 require("plugins.markdown-preview")
-require("plugins.codecompanion")
+-- require("plugins.codecompanion")
 require("plugins.nvim-surround")
 require("plugins.kulala")
