@@ -1,0 +1,37 @@
+
+# 2026-06-30 10:55:07.396049
++select * from user_impersonation_consent;
+
+# 2026-06-30 10:56:43.258366
++UPDATE user_impersonation_consent
++  SET
++      last_acknowledged_at = CURRENT_TIMESTAMP - interval '1 day',
++      usages = jsonb_set(
++          usages,
++          ARRAY[(jsonb_array_length(usages) - 1)::text, 'datetime'],
++          to_jsonb(CURRENT_TIMESTAMP - interval '2 days')
++      )
++  WHERE id = 1;
+
+# 2026-06-30 10:56:50.963058
++select * from user_impersonation_consent;
+
+# 2026-06-30 11:00:53.013860
++delete from user_impersonation_consent;
+
+# 2026-06-30 11:00:59.747773
++select * from user_impersonation_consent;
+
+# 2026-06-30 11:04:27.703109
++UPDATE user_impersonation_consent
++  SET
++      last_acknowledged_at = CURRENT_TIMESTAMP - interval '1 day',
++      usages = jsonb_set(
++          usages,
++          ARRAY[(jsonb_array_length(usages) - 1)::text, 'datetime'],
++          to_jsonb(CURRENT_TIMESTAMP - interval '2 days')
++      )
++  WHERE id = 2;
+
+# 2026-06-30 11:04:32.640797
++select * from user_impersonation_consent;
