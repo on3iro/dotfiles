@@ -35,3 +35,91 @@
 
 # 2026-06-30 11:04:32.640797
 +select * from user_impersonation_consent;
+
+# 2026-06-30 13:32:44.860613
++show tables;
+
+# 2026-06-30 13:32:46.577242
++\d
+
+# 2026-06-30 13:33:01.856765
++select * from app_notification_user_profiles;
+
+# 2026-06-30 13:33:11.031597
++select * from app_notification_user_topic_settings
+
+# 2026-06-30 13:33:25.242769
++select * from app_notification_registration_tokens;
+
+# 2026-06-30 13:34:42.978441
++exit
+
+# 2026-06-30 13:35:02.173426
++delete from app_notification_registration_tokens;
+
+# 2026-06-30 13:35:59.153230
++exit
+
+# 2026-06-30 13:36:02.674923
++select * from app_notification_registration_tokens;
+
+# 2026-06-30 13:38:04.179195
++delete from app_notification_registration_tokens;
+
+# 2026-06-30 13:38:14.384370
++select * from app_notification_registration_tokens;
+
+# 2026-06-30 14:19:49.500197
++select * from user_impersonation_consent;
+
+# 2026-06-30 14:20:15.170961
++delete from user_impersonation_consent;
+
+# 2026-06-30 14:25:35.661011
++select * from app_notification_registration_tokens;
+
+# 2026-06-30 14:27:17.853246
++select * from user_impersonation_consent;
+
+# 2026-06-30 14:27:57.283680
++update user_impersonation_consent set last_acknowledged_at = null where id = 4;
+
+# 2026-06-30 14:28:00.053976
++select * from user_impersonation_consent;
+
+# 2026-06-30 14:28:32.316237
++select * from app_notification_registration_tokens;
+
+# 2026-06-30 14:29:36.419695
++update user_impersonation_consent set last_acknowledged_at = null where id = 4;
+
+# 2026-06-30 14:29:39.760838
++select * from user_impersonation_consent;
+
+# 2026-06-30 14:30:11.901645
++update user_impersonation_consent set last_acknowledged_at = null where id = 4;
+
+# 2026-06-30 14:36:27.106072
++select * from user_impersonation_consent;
+
+# 2026-07-01 12:54:30.101689
++select * from dynamic_content_storage;
+
+# 2026-07-01 12:54:42.607333
++select * from dynamic_contents;
+
+# 2026-07-01 12:56:06.090334
++\! pgcli -c "select * from dynamic_contents;" | pbcopy
+
+# 2026-07-01 12:57:47.621172
++\o | pbcopy
++
+
+# 2026-07-01 12:58:02.984216
++select * from dynamic_contents;
+
+# 2026-07-01 12:58:05.004370
++\o
+
+# 2026-07-01 14:03:53.389944
++exit

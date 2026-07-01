@@ -145,6 +145,7 @@ syntax_style = default
 # When Vi mode is disabled emacs keybindings such as Ctrl-A for home and Ctrl-E
 # for end are available in the REPL.
 vi = true
+escape_bind_timeout = 0.05
 
 # Error handling
 # When one of multiple SQL statements causes an error, choose to either
@@ -246,6 +247,7 @@ output.null = "#808080"
 # Here's where you can provide a list of connection string aliases.
 # You can use it by passing the -D option. `pgcli -D example_dsn`
 [alias_dsn]
+dave = postgresql://dave:development@localhost:5439/dave?sslmode=disable
 # example_dsn = postgresql://[user[:password]@][netloc][:port][/dbname]
 
 # Initial commands to execute when connecting to any database.
