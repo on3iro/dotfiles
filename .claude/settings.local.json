@@ -9,7 +9,10 @@
       "Bash(cat /Users/theo/dotfiles/config/nvim/ftdetect/*.lua)",
       "WebFetch(domain:neovim.getkulala.net)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:herdr.dev)"
+      "WebFetch(domain:herdr.dev)",
+      "Read(//etc/fish/**)",
+      "Read(//run/current-system/sw/etc/**)",
+      "Read(//run/current-system/sw/share/**)"
     ]
   }
 }

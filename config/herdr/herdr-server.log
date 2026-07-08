@@ -194,3 +194,453 @@
 2026-07-08T07:12:22.216070Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=14 rows=58 cols=110 scrollback_limit_bytes=10000000
 2026-07-08T07:12:22.224628Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=14 pid=87559
 2026-07-08T07:12:24.513078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:12:39.608137Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=14 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T07:12:39.608245Z  INFO herdr::pane: pane session terminated pane=14 pid=87559 signal=Hangup
+2026-07-08T07:12:44.615687Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:12:47.758916Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:12:48.964308Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T07:12:53.968546Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:12:58.197243Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T07:12:58.197343Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:13:03.204190Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:13:12.734341Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=15 rows=58 cols=121 scrollback_limit_bytes=10000000
+2026-07-08T07:13:12.739231Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=15 pid=87943
+2026-07-08T07:13:12.858475Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=15 status="ExitStatus { code: 1, signal: None }"
+2026-07-08T07:13:12.858795Z  INFO herdr::pane: pane session terminated pane=15 pid=87943 signal=Hangup
+2026-07-08T07:13:15.449705Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=16 rows=58 cols=121 scrollback_limit_bytes=10000000
+2026-07-08T07:13:15.453456Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=16 pid=87972
+2026-07-08T07:13:15.553181Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=16 status="ExitStatus { code: 1, signal: None }"
+2026-07-08T07:13:15.553275Z  INFO herdr::pane: pane session terminated pane=16 pid=87972 signal=Hangup
+2026-07-08T07:13:20.555262Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:13:20.969867Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=17 rows=58 cols=121 scrollback_limit_bytes=10000000
+2026-07-08T07:13:20.975715Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=17 pid=88071
+2026-07-08T07:16:58.544128Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=18 rows=58 cols=242 scrollback_limit_bytes=10000000
+2026-07-08T07:16:58.553345Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=18 pid=88694
+2026-07-08T07:16:58.553819Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:16:58.553840Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:17:03.558837Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:17:11.520630Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=19 rows=58 cols=242 scrollback_limit_bytes=10000000
+2026-07-08T07:17:11.526405Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=19 pid=88898
+2026-07-08T07:17:11.526612Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:17:13.047958Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=20 rows=29 cols=242 scrollback_limit_bytes=10000000
+2026-07-08T07:17:13.052933Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=20 pid=89086
+2026-07-08T07:17:13.053181Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:17:18.065172Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:17:26.312297Z  INFO herdr::server::headless: client resize client_id=2 cols=243 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:29.026693Z  INFO herdr::server::headless: client resize client_id=2 cols=121 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:30.483273Z  INFO herdr::server::headless: client resize client_id=2 cols=126 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:30.588017Z  INFO herdr::server::headless: client resize client_id=2 cols=131 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:30.796420Z  INFO herdr::server::headless: client resize client_id=2 cols=136 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:30.901468Z  INFO herdr::server::headless: client resize client_id=2 cols=141 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.106771Z  INFO herdr::server::headless: client resize client_id=2 cols=146 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.212293Z  INFO herdr::server::headless: client resize client_id=2 cols=151 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.435134Z  INFO herdr::server::headless: client resize client_id=2 cols=156 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.535414Z  INFO herdr::server::headless: client resize client_id=2 cols=161 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.636510Z  INFO herdr::server::headless: client resize client_id=2 cols=166 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:31.848344Z  INFO herdr::server::headless: client resize client_id=2 cols=171 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.047358Z  INFO herdr::server::headless: client resize client_id=2 cols=176 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.159400Z  INFO herdr::server::headless: client resize client_id=2 cols=181 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.436632Z  INFO herdr::server::headless: client resize client_id=2 cols=186 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.493706Z  INFO herdr::server::headless: client resize client_id=2 cols=191 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.687497Z  INFO herdr::server::headless: client resize client_id=2 cols=196 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:32.999815Z  INFO herdr::server::headless: client resize client_id=2 cols=201 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:17:46.465119Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:17:51.471180Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:17:54.608850Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:17:59.613961Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:18:08.026514Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:20:24.682577Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:20:29.691531Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:20:30.190924Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:20:35.202101Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:22:18.332046Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T07:23:00.274211Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:35:54.760792Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:35:55.444919Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:36:00.031892Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:36:05.040762Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:36:10.990347Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:36:13.824616Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:36:18.828110Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:37:08.857152Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:37:13.130283Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:37:13.130320Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:37:18.133303Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:37:54.161094Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=21 rows=58 cols=197 scrollback_limit_bytes=10000000
+2026-07-08T07:37:54.167371Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=21 pid=95946
+2026-07-08T07:37:54.167673Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t4"
+2026-07-08T07:37:54.167686Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t4"
+2026-07-08T07:37:56.026055Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=21 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T07:37:56.026131Z  INFO herdr::pane: pane session terminated pane=21 pid=95946 signal=Hangup
+2026-07-08T07:38:00.338859Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:38:09.394914Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:38:09.573884Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:38:11.831946Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=22 rows=58 cols=50 scrollback_limit_bytes=10000000
+2026-07-08T07:38:11.837138Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=22 pid=96164
+2026-07-08T07:38:11.837331Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:38:13.685333Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=22 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T07:38:13.685420Z  INFO herdr::pane: pane session terminated pane=22 pid=96164 signal=Hangup
+2026-07-08T07:38:16.896221Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=23 rows=58 cols=50 scrollback_limit_bytes=10000000
+2026-07-08T07:38:16.902801Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=23 pid=96267
+2026-07-08T07:38:16.903011Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:38:21.912593Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:38:58.445950Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:39:36.748975Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:39:43.423368Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:46:18.229250Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-08T07:46:48.106430Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:46:53.125690Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:47:31.540043Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=24 rows=58 cols=242 scrollback_limit_bytes=10000000
+2026-07-08T07:47:31.545335Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=24 pid=98864
+2026-07-08T07:47:31.545544Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:47:36.551338Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:47:37.139176Z  INFO herdr::pane: agent changed pane=24 previous_agent=None agent=Some(Claude) process=claude pgid=Some(98953)
+2026-07-08T07:48:07.828877Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:48:12.081232Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:48:17.084108Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:48:23.340450Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:48:28.345371Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:49:38.248472Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:49:43.257603Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:50:13.147504Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:50:18.155758Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:51:36.803583Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:51:41.816683Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:52:14.695917Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:52:18.341047Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T07:52:19.705666Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:52:48.278679Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=25 rows=58 cols=220 scrollback_limit_bytes=10000000
+2026-07-08T07:52:48.283715Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=25 pid=4640
+2026-07-08T07:52:48.283924Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t5"
+2026-07-08T07:52:53.287356Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:53:00.506415Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=25 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T07:53:00.506842Z  INFO herdr::pane: pane session terminated pane=25 pid=4640 signal=Hangup
+2026-07-08T07:53:03.168304Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:53:08.172792Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:53:21.207928Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:53:25.601502Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:53:30.608429Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:54:05.815896Z  INFO herdr::pane: agent changed pane=24 previous_agent=Some(Claude) agent=None pgid=Some(98864)
+2026-07-08T07:54:08.127619Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T07:54:13.133587Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:54:31.895448Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T07:54:31.895502Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T07:54:32.734811Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:54:36.014573Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:54:41.018157Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:55:00.218741Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:55:05.222652Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:55:14.732865Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:55:19.736763Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:55:33.114575Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:55:35.255978Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T07:55:40.262112Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:55:42.624568Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T07:55:42.624615Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T07:55:47.653524Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:56:12.717117Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T07:56:17.726527Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T07:56:18.653730Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=26 rows=58 cols=220 scrollback_limit_bytes=10000000
+2026-07-08T07:56:18.659885Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=26 pid=8128
+2026-07-08T07:56:22.097956Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=26 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T07:56:22.098205Z  INFO herdr::pane: pane session terminated pane=26 pid=8128 signal=Hangup
+2026-07-08T07:56:27.102367Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:02:39.105610Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:02:44.114588Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:02:46.409813Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:02:51.417195Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:03:01.372973Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:03:06.385114Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:03:08.729573Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:03:13.738857Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:03:58.495507Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:04:02.858174Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:04:07.866301Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:04:13.897420Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:04:18.909945Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:04:25.107272Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:04:30.117181Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:04:35.167234Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:04:40.176218Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:04:48.048540Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:04:53.060687Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:08:05.418038Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=17 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T08:08:05.418400Z  INFO herdr::pane: pane session terminated pane=17 pid=88071 signal=Hangup
+2026-07-08T08:08:10.424124Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:11:17.084713Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:11:22.098646Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:16:13.801784Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:16:18.813375Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:16:31.081563Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:16:36.089129Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:20:07.043446Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:20:21.485188Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:20:26.496360Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:22:18.319497Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T08:22:52.912893Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:22:55.633754Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=27 rows=58 cols=110 scrollback_limit_bytes=10000000
+2026-07-08T08:22:55.639398Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=27 pid=20630
+2026-07-08T08:22:57.916546Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:23:21.960766Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=27 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T08:23:21.960900Z  INFO herdr::pane: pane session terminated pane=27 pid=20630 signal=Hangup
+2026-07-08T08:23:26.008538Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=28 rows=58 cols=110 scrollback_limit_bytes=10000000
+2026-07-08T08:23:26.013926Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=28 pid=21162
+2026-07-08T08:23:26.962332Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:23:44.298291Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=28 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T08:23:44.298393Z  INFO herdr::pane: pane session terminated pane=28 pid=21162 signal=Hangup
+2026-07-08T08:23:49.301975Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:27:22.277253Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:27:23.795926Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:27:35.019509Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:29:31.199146Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T08:29:31.199202Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T08:29:32.436192Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T08:29:37.443860Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:30:26.094926Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T08:30:26.095013Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:30:31.109973Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:33:37.858473Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=29 rows=58 cols=143 scrollback_limit_bytes=10000000
+2026-07-08T08:33:37.865780Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=29 pid=27579
+2026-07-08T08:33:37.866013Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:33:41.828029Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:33:46.833891Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:33:51.416925Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:33:52.818495Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:33:57.823901Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:33:59.764535Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:34:04.771754Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:34:33.305138Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:34:34.022616Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:34:39.035655Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:35:41.290194Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:35:46.296101Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:37:10.282704Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:37:15.290837Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:37:51.206303Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T08:37:51.206608Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T08:37:56.209871Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:38:44.297866Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T08:38:44.297922Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:38:49.304290Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:40:17.833312Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:40:22.838828Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:45:25.562307Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:45:30.569597Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:46:25.029703Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:46:30.034859Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:46:30.740174Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:46:34.145141Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:46:39.155134Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:46:57.331008Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T08:46:59.459611Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:47:04.466953Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:47:34.501434Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:47:39.507373Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:48:33.709177Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:48:35.124143Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:48:40.131176Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:49:20.823523Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:49:25.828818Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:49:27.294360Z  INFO herdr::pane: agent changed pane=24 previous_agent=None agent=Some(Claude) process=claude pgid=Some(34474)
+2026-07-08T08:49:50.531914Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T08:49:55.546391Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:49:59.113964Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T08:50:04.123587Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T08:52:18.289534Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T09:00:35.728950Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:00:38.765564Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:00:43.768812Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:00:45.329767Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:00:46.651244Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:00:51.662834Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:02:03.901818Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:02:05.117134Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T09:02:06.234596Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:02:11.249592Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:02:21.098752Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:02:26.105254Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:02:34.271290Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:02:39.273812Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:02:40.060525Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:02:45.063446Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:03:59.884084Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:04:04.890142Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:06:47.947999Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T09:06:47.948049Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T09:06:52.953533Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:07:07.252305Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T09:07:07.252360Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:07:12.258752Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:08:10.395381Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:08:15.397817Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:18:22.422977Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:18:25.137566Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:18:30.143207Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:19:39.304344Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:19:44.308227Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:20:45.937512Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:20:50.943813Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:21:06.484580Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:21:11.489095Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:21:30.988099Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:21:35.996718Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:22:12.710711Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:22:14.296611Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:22:18.287625Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T09:22:19.300976Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:28:24.929323Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:28:29.934680Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:31:40.937246Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T09:31:40.938473Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T09:31:45.945583Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:31:58.577385Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T09:31:58.577434Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:32:00.412645Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:32:05.426335Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:45:25.302873Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:45:30.309595Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:46:00.383302Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:46:04.408594Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:46:05.989643Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:46:09.039915Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:46:14.045400Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:46:20.656454Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:46:25.664619Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:46:47.291686Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:46:52.296023Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:48:26.610492Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:48:27.954963Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:48:32.976055Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:49:02.085868Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:49:07.115942Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:52:18.282063Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T09:53:21.929659Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:53:26.952687Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:53:27.603049Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T09:53:28.989662Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:53:34.007982Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:54:02.310418Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=30 rows=29 cols=143 scrollback_limit_bytes=10000000
+2026-07-08T09:54:02.317958Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=30 pid=60458
+2026-07-08T09:54:02.431098Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=30 status="ExitStatus { code: 1, signal: None }"
+2026-07-08T09:54:02.431215Z  INFO herdr::pane: pane session terminated pane=30 pid=60458 signal=Hangup
+2026-07-08T09:54:07.438846Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:54:09.791008Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=31 rows=29 cols=143 scrollback_limit_bytes=10000000
+2026-07-08T09:54:09.797256Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=31 pid=60517
+2026-07-08T09:54:09.915920Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=31 status="ExitStatus { code: 1, signal: None }"
+2026-07-08T09:54:09.916012Z  INFO herdr::pane: pane session terminated pane=31 pid=60517 signal=Hangup
+2026-07-08T09:54:14.921901Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:54:18.797608Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=32 rows=29 cols=143 scrollback_limit_bytes=10000000
+2026-07-08T09:54:18.803368Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=32 pid=60661
+2026-07-08T09:54:46.720678Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=32 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T09:54:46.720780Z  INFO herdr::pane: pane session terminated pane=32 pid=60661 signal=Hangup
+2026-07-08T09:54:51.725409Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:55:36.176883Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:55:41.716361Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T09:55:41.716489Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T09:55:44.564054Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:55:46.779560Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:55:46.851027Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:55:51.787109Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:56:14.470999Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T09:56:14.472095Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:56:19.482842Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:56:22.920226Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T09:56:25.455586Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T09:56:25.455703Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:56:30.465407Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:59:05.552673Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:59:10.560736Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:59:15.974834Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T09:59:15.974894Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T09:59:20.984044Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T09:59:52.153481Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:01:30.365194Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:01:35.387042Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:04:16.609876Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T10:04:16.610196Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:04:21.626923Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:05:12.570916Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T10:05:12.570960Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:05:14.200423Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:05:19.219299Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:06:44.049685Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:06:51.697553Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:07:31.745494Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:07:36.770643Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:08:09.118693Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T10:08:09.118988Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:08:14.128702Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:08:18.155385Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T10:08:18.155438Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:08:20.503692Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:08:23.937989Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T10:08:23.938069Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:08:28.951735Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:11:10.790847Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T10:11:10.791860Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:11:15.798694Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:11:54.132964Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:11:59.157149Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:12:24.418635Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T10:12:24.419690Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:12:29.429793Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:12:56.098666Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-08T10:12:58.091293Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:13:01.274200Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:13:02.921246Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:13:07.924452Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:13:38.666096Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-08T10:13:38.666145Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:13:40.759918Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:13:45.779151Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:13:52.143218Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=33 rows=58 cols=118 scrollback_limit_bytes=10000000
+2026-07-08T10:13:52.149801Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=33 pid=68266
+2026-07-08T10:13:52.149996Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:13:57.165748Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:15:41.938244Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=34 rows=29 cols=118 scrollback_limit_bytes=10000000
+2026-07-08T10:15:41.944680Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=34 pid=68910
+2026-07-08T10:15:41.945107Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:15:43.722532Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=34 status="ExitStatus { code: 0, signal: None }"
+2026-07-08T10:15:43.722620Z  INFO herdr::pane: pane session terminated pane=34 pid=68910 signal=Hangup
+2026-07-08T10:15:47.834405Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=35 rows=29 cols=118 scrollback_limit_bytes=10000000
+2026-07-08T10:15:47.843991Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=35 pid=69157
+2026-07-08T10:15:47.844564Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:15:52.858139Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:16:17.997081Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:16:23.004016Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:17:30.739964Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:17:35.761285Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:17:49.507564Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:17:54.535238Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:18:02.301370Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:18:07.324252Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:18:52.709124Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:22:18.328761Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-08T10:25:01.379856Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:25:06.399998Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:26:32.832907Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-08T10:26:34.252735Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:26:39.270849Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:26:53.128694Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:26:58.139830Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:27:04.580165Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T10:27:06.747388Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-08T10:27:11.761915Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:27:36.821057Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:27:41.832856Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:27:44.725356Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-08T10:27:49.741457Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:28:24.306256Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-08T10:28:24.306512Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:28:29.317392Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:28:45.456372Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:28:50.460070Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:28:50.867208Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:28:55.872150Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:29:16.683229Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:29:21.688840Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:29:25.856008Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:29:27.674173Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T10:29:32.682069Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-08T10:29:39.914669Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=36 rows=58 cols=110 scrollback_limit_bytes=10000000
+2026-07-08T10:29:39.923418Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=36 pid=80146
