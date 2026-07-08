@@ -114,7 +114,7 @@ search_path_filter = False
 # Default pager. See https://www.pgcli.com/pager for more information on settings.
 # By default 'PAGER' environment variable is used. If the pager is less, and the 'LESS'
 # environment variable is not set, then LESS='-SRXF' will be automatically set.
-# pager = less
+pager = nvim
 
 # Timing of sql statements and table rendering.
 timing = True
@@ -145,7 +145,7 @@ syntax_style = default
 # When Vi mode is disabled emacs keybindings such as Ctrl-A for home and Ctrl-E
 # for end are available in the REPL.
 vi = true
-escape_bind_timeout = 0.05
+# escape_bind_timeout is not a recognized pgcli option — has no effect
 
 # Error handling
 # When one of multiple SQL statements causes an error, choose to either

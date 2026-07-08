@@ -123,3 +123,172 @@
 
 # 2026-07-01 14:03:53.389944
 +exit
+
+# 2026-07-02 10:01:32.023366
++SELECT username, user_info_energy_manager_zip_code
++  FROM user_information_cache
++  WHERE username = 'home-app-demo-user';
+
+# 2026-07-02 10:01:41.328030
++\d user_information_cache
+
+# 2026-07-02 10:01:56.091426
++SELECT user_info_energy_manager_zip_code
++  FROM user_information_cache
++  WHERE username = 'home-app-demo-user';
+
+# 2026-07-02 10:02:11.010748
++SELECT user_info_energy_manager_zip_code, user_info_email as username
++  FROM user_information_cache
++  WHERE username = 'home-app-demo-user';
+
+# 2026-07-02 10:02:37.896229
++SELECT user_info_energy_manager_zip_code, user_info_email 
++  FROM user_information_cache
++  WHERE user_info_email = 'home-app-demo-user';
+
+# 2026-07-02 10:02:47.035429
++select * from user_information_cache;
+
+# 2026-07-02 10:03:33.932624
++SELECT user_info_energy_manager_zip_code, oneid_account_username
++  FROM user_information_cache
++  WHERE oneid_account_username = 'home-app-demo-user';
+
+# 2026-07-02 10:05:55.104426
++select * from dynamic_contents;
+
+# 2026-07-02 10:43:11.610593
++select restrict_to_user_oneid from dynamic_contents;
+
+# 2026-07-02 10:43:17.171159
++select id, restrict_to_user_oneid from dynamic_contents;
+
+# 2026-07-02 10:58:17.823545
++delete from dynamic_contents;
+
+# 2026-07-02 10:58:21.105480
++select id, restrict_to_user_oneid from dynamic_contents;
+
+# 2026-07-02 12:50:10.239655
++\o | pbcopy select * from dynamic_contents \o;
+
+# 2026-07-02 12:50:41.670973
++\o ! | pbcopy select * from dynamic_contents \o;
+
+# 2026-07-02 12:50:59.972211
++\o | pbcopy
++
+
+# 2026-07-02 12:51:07.232723
++select * from dynamic_contents;
+
+# 2026-07-02 12:51:09.004857
++\o
+
+# 2026-07-02 12:51:32.049060
++select * from dynamic_contents;
+
+# 2026-07-02 12:52:09.686183
++\o | pbcopy
+
+# 2026-07-02 12:52:12.934321
++select * from dynamic_contents;
+
+# 2026-07-02 12:52:40.931421
++exit
+
+# 2026-07-02 12:52:46.874191
++\o | pbcopy
+
+# 2026-07-02 12:52:58.631456
++\o
+
+# 2026-07-02 12:53:05.796121
++\o ! | pbcopy
+
+# 2026-07-02 12:53:19.564985
++\o \! pbcopy
+
+# 2026-07-02 12:53:26.808289
++select * from dynamic_contents;
+
+# 2026-07-02 12:54:05.685560
++^o
+
+# 2026-07-02 12:54:06.644393
++\o
+
+# 2026-07-02 12:55:23.593073
++exit
+
+# 2026-07-02 12:55:28.380861
++select * from dynamic_contents;
+
+# 2026-07-02 12:56:54.503400
++exit
+
+# 2026-07-02 12:56:56.617582
++select * from dynamic_contents;
+
+# 2026-07-02 12:57:22.125895
++exit
+
+# 2026-07-02 12:57:23.963308
++select * from dynamic_contents;
+
+# 2026-07-02 13:05:22.645257
++exit
+
+# 2026-07-02 13:05:25.936104
++select * from dynamic_contents;
+
+# 2026-07-02 14:23:31.829314
++delete from dynamic_contents;
+
+# 2026-07-02 14:29:11.653050
++select * from dynamic_contents;
+
+# 2026-07-02 14:30:08.435218
++delete from dynamic_contents;
+
+# 2026-07-02 14:31:33.668225
++select * from dynamic_contents;
+
+# 2026-07-02 14:43:01.027678
++delete from dynamic_contents;
+
+# 2026-07-02 15:05:55.121439
++select * from dynamic_contents;
+
+# 2026-07-03 08:16:52.754091
++tl
+
+# 2026-07-03 08:24:29.213973
++select * from dynamic_contents;
+
+# 2026-07-03 08:25:00.956843
++\T vertical;
+
+# 2026-07-03 08:25:02.801192
++select * from dynamic_contents;
+
+# 2026-07-03 08:26:28.904811
++\e
+
+# 2026-07-03 08:26:51.756817
++SELECT user_id, data->>'energy_manager_country' FROM user_information_cache WHERE user_id = 'b6050278-c3f7-4cbc-9298-bff6c7cbd613';
+
+# 2026-07-03 08:26:57.835990
++\d user_information_cache
+
+# 2026-07-03 08:27:48.374842
++\e
+
+# 2026-07-03 08:28:01.786516
++SELECT oneid_account_username, user_info_energy_manager_country
++  FROM user_information_cache
++  WHERE oneid_account_username = 'home-app-demo-user';
+
+# 2026-07-08 08:35:57.847139
++exit
