@@ -32,8 +32,9 @@ vim.pack.add({
   "https://github.com/mason-org/mason.nvim",
   "https://github.com/mason-org/mason-lspconfig.nvim",
   "https://github.com/neovim/nvim-lspconfig", -- required by mason-lspconfig v2 for server definitions
-  -- Completion (pinned tag includes pre-built fuzzy binary)
-  { src = "https://github.com/saghen/blink.cmp",                            checkout = "v1.10.2" },
+  -- Completion
+  "https://github.com/saghen/blink.cmp",
+  "https://github.com/saghen/blink.lib",
   "https://github.com/rafamadriz/friendly-snippets",
 
 
