@@ -23,6 +23,8 @@ require("kulala").setup({
     ["Show headers and body"]    = { "A", function() require("kulala.ui").show_headers_body() end, },
     ["Show script output"]       = { "O", function() require("kulala.ui").show_script_output() end, },
     ["Show report"]              = { "R", function() require("kulala.ui").show_report() end, },
+    ["Show next response"]       = { "n", function() require("kulala.ui").show_next() end },
+    ["Show previous response"]   = { "p", function() require("kulala.ui").show_previous() end },
     ["Show filter"]              = { "F", function() require("kulala.ui").toggle_filter() end },
     ["Show help"]                = { "?", function() require("kulala.ui").show_help() end, },
   },

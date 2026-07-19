@@ -6,24 +6,28 @@
       "custom_name": "Main",
       "identity_cwd": "/Users/theo/dotfiles",
       "public_pane_numbers": {
-        "52": 14,
-        "39": 10,
-        "56": 16,
-        "63": 18,
-        "38": 9,
         "1": 1,
+        "9": 3,
+        "82": 23,
+        "81": 22,
+        "80": 21,
+        "38": 9,
+        "56": 16,
+        "52": 14,
         "11": 5,
-        "9": 3
+        "39": 10,
+        "83": 24
       },
-      "next_public_pane_number": 19,
+      "next_public_pane_number": 25,
       "public_tab_numbers": [
         1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
-      "next_public_tab_number": 6,
+      "next_public_tab_number": 7,
       "tabs": [
         {
           "custom_name": "dotfiles",
@@ -32,16 +36,7 @@
               "direction": "Horizontal",
               "ratio": 0.5,
               "first": {
-                "Split": {
-                  "direction": "Horizontal",
-                  "ratio": 0.5,
-                  "first": {
-                    "Pane": 1
-                  },
-                  "second": {
-                    "Pane": 63
-                  }
-                }
+                "Pane": 1
               },
               "second": {
                 "Pane": 9
@@ -54,13 +49,10 @@
             },
             "1": {
               "cwd": "/Users/theo/dotfiles"
-            },
-            "63": {
-              "cwd": "/Users/theo/dotfiles"
             }
           },
-          "zoomed": true,
-          "focused": 63,
+          "zoomed": false,
+          "focused": 1,
           "root_pane": 1
         },
         {
@@ -87,29 +79,65 @@
                 "Pane": 38
               },
               "second": {
-                "Pane": 39
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 39
+                  },
+                  "second": {
+                    "Split": {
+                      "direction": "Horizontal",
+                      "ratio": 0.5,
+                      "first": {
+                        "Pane": 82
+                      },
+                      "second": {
+                        "Pane": 83
+                      }
+                    }
+                  }
+                }
               }
             }
           },
           "panes": {
+            "38": {
+              "cwd": "/Users/theo/projects/AudioMuse-AI"
+            },
+            "82": {
+              "cwd": "/Users/theo/projects/matchering"
+            },
             "39": {
               "cwd": "/Users/theo/projects/AudioMuse-AI"
             },
-            "38": {
-              "cwd": "/Users/theo/projects/AudioMuse-AI"
+            "83": {
+              "cwd": "/Users/theo/projects/matchering"
             }
           },
           "zoomed": false,
-          "focused": 38,
+          "focused": 82,
           "root_pane": 38
         },
         {
           "custom_name": "lyrics",
           "layout": {
-            "Pane": 52
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.55,
+              "first": {
+                "Pane": 52
+              },
+              "second": {
+                "Pane": 81
+              }
+            }
           },
           "panes": {
             "52": {
+              "cwd": "/Users/theo/Nextcloud/Notes/projects/lyrics"
+            },
+            "81": {
               "cwd": "/Users/theo/Nextcloud/Notes/projects/lyrics"
             }
           },
@@ -130,6 +158,20 @@
           "zoomed": false,
           "focused": 56,
           "root_pane": 56
+        },
+        {
+          "custom_name": "6 reflexion",
+          "layout": {
+            "Pane": 80
+          },
+          "panes": {
+            "80": {
+              "cwd": "/Users/theo/Nextcloud/Notes"
+            }
+          },
+          "zoomed": false,
+          "focused": 80,
+          "root_pane": 80
         }
       ],
       "active_tab": 0
@@ -139,27 +181,33 @@
       "custom_name": "Solarwatt",
       "identity_cwd": "/Users/theo/src/solarwatt/swtt-dave",
       "public_pane_numbers": {
-        "58": 41,
-        "60": 43,
-        "23": 17,
-        "59": 42,
-        "54": 39,
-        "5": 3,
-        "20": 14,
+        "19": 13,
         "8": 6,
         "35": 29,
+        "54": 39,
+        "58": 41,
+        "60": 43,
+        "20": 14,
+        "72": 54,
+        "59": 42,
         "6": 4,
-        "19": 13
+        "23": 17,
+        "71": 53,
+        "73": 55,
+        "5": 3,
+        "79": 59
       },
-      "next_public_pane_number": 46,
+      "next_public_pane_number": 60,
       "public_tab_numbers": [
         1,
         2,
         7,
         3,
-        8
+        8,
+        10,
+        11
       ],
-      "next_public_tab_number": 10,
+      "next_public_tab_number": 12,
       "tabs": [
         {
           "custom_name": "dave",
@@ -194,17 +242,17 @@
             }
           },
           "panes": {
-            "5": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave/server"
-            },
             "8": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave/laravel-filament"
+            },
+            "54": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
             },
             "23": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave"
             },
-            "54": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
+            "5": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave/server"
             }
           },
           "zoomed": false,
@@ -216,9 +264,18 @@
           "layout": {
             "Split": {
               "direction": "Horizontal",
-              "ratio": 0.42857143,
+              "ratio": 0.5649351,
               "first": {
-                "Pane": 6
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 6
+                  },
+                  "second": {
+                    "Pane": 79
+                  }
+                }
               },
               "second": {
                 "Pane": 35
@@ -226,15 +283,18 @@
             }
           },
           "panes": {
-            "6": {
-              "cwd": "/Users/theo/src/solarwatt"
-            },
             "35": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave/api_playground"
+            },
+            "79": {
+              "cwd": "/Users/theo/src/solarwatt"
+            },
+            "6": {
+              "cwd": "/Users/theo/src/solarwatt"
             }
           },
           "zoomed": false,
-          "focused": 35,
+          "focused": 79,
           "root_pane": 6
         },
         {
@@ -256,7 +316,7 @@
           "layout": {
             "Split": {
               "direction": "Vertical",
-              "ratio": 0.7017242,
+              "ratio": 0.41379312,
               "first": {
                 "Pane": 59
               },
@@ -275,13 +335,13 @@
             }
           },
           "panes": {
+            "19": {
+              "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
+            },
             "20": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
             },
             "59": {
-              "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
-            },
-            "19": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
             }
           },
@@ -302,14 +362,54 @@
           "zoomed": false,
           "focused": 60,
           "root_pane": 60
+        },
+        {
+          "custom_name": "6 sso",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.6397059,
+              "first": {
+                "Pane": 71
+              },
+              "second": {
+                "Pane": 72
+              }
+            }
+          },
+          "panes": {
+            "72": {
+              "cwd": "/Users/theo/src/solarwatt/solarwatt-sso"
+            },
+            "71": {
+              "cwd": "/Users/theo/src/solarwatt/solarwatt-sso"
+            }
+          },
+          "zoomed": false,
+          "focused": 71,
+          "root_pane": 71
+        },
+        {
+          "custom_name": "prod",
+          "layout": {
+            "Pane": 73
+          },
+          "panes": {
+            "73": {
+              "cwd": "/Users/theo/src/solarwatt/solarwatt-sso"
+            }
+          },
+          "zoomed": false,
+          "focused": 73,
+          "root_pane": 73
         }
       ],
-      "active_tab": 1
+      "active_tab": 0
     }
   ],
   "active": 0,
   "selected": 0,
   "sidebar_width": 26,
-  "sidebar_section_split": 0.5,
+  "sidebar_section_split": 0.51111114,
   "collapsed_space_keys": []
 }

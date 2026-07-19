@@ -63,3 +63,5 @@
 	ui = auto
 [branch]
 	sort = -committerdate
+[safe]
+	directory = /Users/theo

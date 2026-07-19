@@ -12,7 +12,8 @@
       "WebFetch(domain:herdr.dev)",
       "Read(//etc/fish/**)",
       "Read(//run/current-system/sw/etc/**)",
-      "Read(//run/current-system/sw/share/**)"
+      "Read(//run/current-system/sw/share/**)",
+      "WebFetch(domain:kulala.mwco.app)"
     ]
   }
 }

@@ -2556,3 +2556,725 @@
 2026-07-15T10:38:21.767691Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=63 rows=58 cols=110 scrollback_limit_bytes=10000000
 2026-07-15T10:38:21.773271Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=63 pid=23578
 2026-07-15T10:38:22.710246Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:38:49.168169Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=63 status="ExitStatus { code: 0, signal: None }"
+2026-07-15T10:38:49.168259Z  INFO herdr::pane: pane session terminated pane=63 pid=23578 signal=Hangup
+2026-07-15T10:38:54.172232Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:39:02.992623Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-15T10:39:02.992680Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:39:07.997239Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:39:32.274350Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:39:36.311416Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:39:41.323108Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:40:01.423995Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-15T10:40:01.424052Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:40:06.410977Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-15T10:40:06.411069Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:40:11.415129Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:40:17.948169Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:40:21.006450Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:40:26.021319Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:41:00.564196Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:41:01.771896Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:41:06.786358Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:41:07.373597Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:41:12.384469Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:41:18.003016Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:41:23.016815Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:41:46.056759Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:41:51.076432Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:42:34.046547Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:42:39.057480Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:42:40.236645Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-15T10:42:40.236689Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:42:45.242070Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:42:53.032164Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-15T10:42:53.032206Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:42:58.039270Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:43:05.851973Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:43:10.868056Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:43:31.964484Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:43:36.974029Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:44:08.776977Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T10:44:09.092884Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T10:44:43.038705Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:44:48.057850Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:45:39.255390Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:45:44.273588Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:46:03.907136Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:46:04.477185Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-15T10:46:04.820672Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:46:09.831538Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:46:25.815119Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:46:30.831030Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:46:31.772157Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:46:36.783504Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:46:54.084328Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=64 rows=58 cols=94 scrollback_limit_bytes=10000000
+2026-07-15T10:46:54.089851Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=64 pid=27843
+2026-07-15T10:46:54.281675Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=64 status="ExitStatus { code: 1, signal: None }"
+2026-07-15T10:46:54.281786Z  INFO herdr::pane: pane session terminated pane=64 pid=27843 signal=Hangup
+2026-07-15T10:46:57.719971Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-15T10:46:59.513663Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=65 rows=58 cols=143 scrollback_limit_bytes=10000000
+2026-07-15T10:46:59.518302Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=65 pid=27876
+2026-07-15T10:47:02.725355Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:47:03.361375Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=65 status="ExitStatus { code: 0, signal: None }"
+2026-07-15T10:47:03.361481Z  INFO herdr::pane: pane session terminated pane=65 pid=27876 signal=Hangup
+2026-07-15T10:47:04.524783Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:47:09.527770Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:47:31.391833Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:47:36.408070Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:48:06.476645Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:48:11.489772Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:48:21.303421Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:48:26.320338Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:48:35.427575Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:48:40.442176Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:48:54.412390Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-15T10:48:56.464589Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=66 rows=58 cols=143 scrollback_limit_bytes=10000000
+2026-07-15T10:48:56.469816Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=66 pid=28537
+2026-07-15T10:48:59.415429Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:49:00.949381Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=66 status="ExitStatus { code: 0, signal: None }"
+2026-07-15T10:49:00.949490Z  INFO herdr::pane: pane session terminated pane=66 pid=28537 signal=Hangup
+2026-07-15T10:49:02.385661Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:49:07.388771Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:49:11.264640Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:49:16.278955Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:49:18.243219Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:49:23.257678Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:49:48.342455Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-15T10:49:48.342783Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:49:53.347870Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:50:01.506383Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-15T10:50:01.506431Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:50:06.510991Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:50:21.156365Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-15T10:50:21.156869Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:50:21.829346Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:50:26.837367Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:51:39.192333Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:51:44.042918Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:51:49.056393Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:52:00.970912Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T10:52:04.038108Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-15T10:52:04.039104Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:52:09.041069Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:53:16.709030Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:53:21.726938Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:53:31.710262Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:53:36.418372Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:53:38.992943Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:53:44.007582Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:54:03.047440Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:05.414996Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:10.428784Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:54:11.986993Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:16.378712Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:21.389750Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:54:22.346689Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:25.376467Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:30.387728Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:54:31.111812Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=67 rows=58 cols=94 scrollback_limit_bytes=10000000
+2026-07-15T10:54:31.117029Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=67 pid=31210
+2026-07-15T10:54:31.117234Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:54:36.123726Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:55:02.793836Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:07.822752Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:55:08.335515Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:12.109345Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:15.291962Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:20.304924Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:55:26.716277Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:29.627282Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:32.743701Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:35.342337Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:55:37.456688Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=67 status="ExitStatus { code: 0, signal: None }"
+2026-07-15T10:55:37.458720Z  INFO herdr::pane: pane session terminated pane=67 pid=31210 signal=Hangup
+2026-07-15T10:55:42.461498Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:55:43.034759Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-15T10:55:47.339972Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=68 rows=58 cols=143 scrollback_limit_bytes=10000000
+2026-07-15T10:55:47.344758Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=68 pid=32428
+2026-07-15T10:55:48.039135Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:55:55.472788Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=68 status="ExitStatus { code: 0, signal: None }"
+2026-07-15T10:55:55.472882Z  INFO herdr::pane: pane session terminated pane=68 pid=32428 signal=Hangup
+2026-07-15T10:56:00.475016Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:56:02.471539Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:56:07.477767Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:57:00.370599Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:57:00.949255Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-15T10:57:05.962986Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T10:58:06.191143Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-15T10:58:11.204386Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T11:05:23.247648Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-15T11:05:23.248664Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-15T11:05:24.855534Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-15T11:05:29.862453Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-15T11:14:08.771856Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T11:14:08.932514Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T11:44:08.796289Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T11:44:09.010014Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T12:14:08.768320Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T12:14:08.922072Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T12:44:08.745880Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T12:44:08.906761Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T13:14:08.730096Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T13:14:08.920450Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T13:27:20.388112Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=46 cell_width_px=0 cell_height_px=0
+2026-07-15T13:27:21.042902Z  INFO herdr::server::headless: client resize client_id=2 cols=167 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-15T13:27:24.523078Z  INFO herdr::server::headless: client resize client_id=2 cols=166 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-15T13:27:24.657472Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-15T13:44:26.007585Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T13:44:26.170358Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T14:55:39.616075Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T14:55:39.833784Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T15:41:55.573981Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T15:41:55.809517Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T20:52:10.309810Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-15T20:52:11.418948Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T05:52:44.985914Z  INFO herdr::server::headless: client resize client_id=2 cols=288 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-16T05:58:04.435040Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-16T05:58:19.470489Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-16T05:58:19.470538Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T05:58:22.204683Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T05:58:27.220832Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T05:58:29.621976Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T05:58:34.634182Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:00:05.583428Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:00:10.598779Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:00:28.939951Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T06:00:29.019594Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.4"
+2026-07-16T06:00:29.581237Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T06:00:29.630281Z  INFO herdr::update: auto-update check: v0.7.4 available through Homebrew, waiting for explicit install
+2026-07-16T06:03:19.297046Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:03:22.564268Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:03:27.578647Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:03:43.694113Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:03:48.706228Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:04:38.024287Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-16T06:04:38.024339Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T06:04:39.591034Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T06:04:40.234934Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T06:04:45.257899Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:05:26.613567Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-16T06:05:26.613627Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:05:31.622400Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:10:03.070337Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:10:08.084013Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:10:09.303023Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:10:14.313507Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:19:28.077517Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:19:33.088148Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:27:44.633466Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:27:49.497122Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:27:54.541067Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:28:03.659089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:28:08.675020Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:28:26.176227Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:28:31.200195Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:30:29.164405Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T06:30:40.976916Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:30:43.208991Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:30:48.226872Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:40:46.463812Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:40:51.478818Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:40:59.985540Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:41:04.699806Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:41:09.712376Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:43:27.539443Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:43:32.551986Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:45:08.036102Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T06:45:13.052758Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T06:45:24.255281Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T06:45:29.276314Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T07:00:29.138130Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T07:17:27.963591Z  INFO herdr::server::headless: client resize client_id=2 cols=190 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-16T07:17:30.513733Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-16T07:17:31.308810Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-16T07:17:31.943774Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-16T07:18:57.324346Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-16T07:19:17.237519Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T07:20:05.884725Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-16T07:20:05.884778Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T07:20:07.101441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T07:20:12.108167Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T07:22:22.490416Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T07:22:23.136588Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T07:22:28.146538Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T07:30:51.503022Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T08:00:52.062122Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T08:27:19.429376Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-16T08:27:19.430372Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:27:24.441211Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:27:55.072536Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=69 rows=44 cols=92 scrollback_limit_bytes=10000000
+2026-07-16T08:27:55.079249Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=69 pid=18459
+2026-07-16T08:27:55.079684Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:28:00.091508Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:28:20.663582Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=69 status="ExitStatus { code: 127, signal: None }"
+2026-07-16T08:28:20.663686Z  INFO herdr::pane: pane session terminated pane=69 pid=18459 signal=Hangup
+2026-07-16T08:28:21.770725Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:28:26.788920Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:28:56.880884Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:28:59.319930Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:29:01.442734Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=70 rows=44 cols=92 scrollback_limit_bytes=10000000
+2026-07-16T08:29:01.448195Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=70 pid=18983
+2026-07-16T08:29:01.448407Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:29:06.461497Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:29:33.856922Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:29:34.556402Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:29:39.579571Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:29:47.697235Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:29:52.712690Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:29:58.293605Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:29:59.798867Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:30:00.349985Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:30:05.364561Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:30:33.047350Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:30:33.675772Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:30:38.735650Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:30:51.641087Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T08:32:09.017322Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:14.029990Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:32:17.039029Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:17.806497Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:32:18.497439Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:23.507498Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:32:41.576510Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:46.599764Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:32:48.647778Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:49.733800Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:32:50.400114Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:32:55.423452Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:33:00.109538Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:33:05.122987Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:33:10.989217Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:33:20.459428Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-16T08:33:22.581232Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:33:27.600255Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T08:33:50.108842Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:33:52.532057Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=70 status="ExitStatus { code: 0, signal: None }"
+2026-07-16T08:33:52.532154Z  INFO herdr::pane: pane session terminated pane=70 pid=18983 signal=Hangup
+2026-07-16T08:33:53.675511Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T08:33:58.700507Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:00:51.551335Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T09:01:40.111317Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=71 rows=44 cols=92 scrollback_limit_bytes=10000000
+2026-07-16T09:01:40.117619Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=71 pid=26081
+2026-07-16T09:01:40.117843Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-16T09:01:40.117855Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-16T09:01:45.130242Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:02:15.273033Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=72 rows=44 cols=136 scrollback_limit_bytes=10000000
+2026-07-16T09:02:15.278532Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=72 pid=26434
+2026-07-16T09:02:15.278714Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-16T09:02:20.284732Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:02:56.674460Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:03:28.088960Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:03:38.788539Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-16T09:03:42.496925Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-16T09:03:47.507131Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T09:30:51.702135Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T09:32:46.217724Z  INFO herdr::server::headless: client resize client_id=2 cols=185 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-16T09:32:46.826764Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-16T10:19:38.362445Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-16T10:21:23.661205Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-16T10:21:30.692877Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T10:42:56.541943Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T10:50:02.694378Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T10:50:07.205159Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=73 rows=44 cols=88 scrollback_limit_bytes=10000000
+2026-07-16T10:50:07.212866Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=73 pid=38951
+2026-07-16T10:50:07.213129Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-16T10:50:07.213146Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-16T10:50:12.220260Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T11:12:56.541491Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T11:26:14.634485Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T11:26:19.642034Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T11:42:56.571324Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T11:58:20.286058Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-16T11:58:20.287055Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T11:58:25.293530Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T12:59:21.591821Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T13:58:59.739712Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T14:28:59.674505Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T14:58:59.757563Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T15:28:59.648630Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T15:58:59.705395Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T16:28:59.936661Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T16:58:59.718236Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T17:28:59.682904Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T17:58:59.684236Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T18:28:59.756926Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T18:59:00.316007Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T19:29:00.085471Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T19:59:00.046416Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T20:29:00.076322Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T20:58:59.985408Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-16T21:13:07.188849Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-16T23:52:04.188299Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T05:50:56.898097Z  INFO herdr::server::headless: client resize client_id=2 cols=327 rows=90 cell_width_px=0 cell_height_px=0
+2026-07-17T05:50:57.105907Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T06:11:03.947579Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T06:24:28.867274Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-17T06:24:33.872282Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:27:42.744878Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:27:47.752530Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:33:09.522521Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=74 rows=58 cols=308 scrollback_limit_bytes=10000000
+2026-07-17T06:33:09.530843Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=74 pid=25161
+2026-07-17T06:33:09.531213Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:33:14.536048Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:33:17.644611Z  INFO herdr::pane: agent changed pane=74 previous_agent=None agent=Some(Claude) process=claude pgid=Some(25270)
+2026-07-17T06:37:05.225796Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:37:10.237591Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:38:32.288221Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:38:33.805035Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=75 rows=58 cols=154 scrollback_limit_bytes=10000000
+2026-07-17T06:38:33.814672Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=75 pid=27326
+2026-07-17T06:38:33.814863Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:38:38.818634Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:39:32.733643Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-17T06:39:33.309252Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:39:38.314091Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:39:39.052487Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:39:44.055588Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:39:46.212879Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-17T06:39:47.242011Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:39:52.246665Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:41:03.957994Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T06:42:12.622393Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:42:17.626008Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T06:42:18.404971Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T06:42:23.416950Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:11:03.942599Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T07:17:02.665319Z  INFO herdr::server::headless: client resize client_id=2 cols=190 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T07:17:05.196679Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T07:17:05.819056Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T07:17:05.894029Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-17T07:17:06.543030Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T07:18:11.781100Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:18:16.787430Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:20:22.799268Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:20:27.806318Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:23:17.551240Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:23:22.569229Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:23:42.316343Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:23:47.323859Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:23:57.268585Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-17T07:26:13.256162Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:26:15.368229Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T07:26:15.368289Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T07:26:20.375483Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:35:30.523523Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tA"
+2026-07-17T07:35:30.868569Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:35:35.878630Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:35:50.813927Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T07:35:50.813977Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:35:53.242609Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T07:35:58.253726Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:38:47.532129Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T07:38:47.532659Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:38:52.542984Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:40:46.259409Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=76 rows=58 cols=308 scrollback_limit_bytes=10000000
+2026-07-17T07:40:46.269225Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=76 pid=39421
+2026-07-17T07:40:46.269440Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:40:51.273673Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:40:52.386397Z  INFO herdr::pane: agent changed pane=76 previous_agent=None agent=Some(Claude) process=claude pgid=Some(39542)
+2026-07-17T07:41:03.981064Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T07:42:23.928712Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:42:28.935519Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:46:19.909981Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=77 rows=58 cols=207 scrollback_limit_bytes=10000000
+2026-07-17T07:46:19.918562Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=77 pid=43227
+2026-07-17T07:46:19.918729Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:46:24.922824Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:46:37.392103Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:46:39.361023Z  INFO herdr::pane: agent changed pane=76 previous_agent=Some(Claude) agent=None pgid=Some(39421)
+2026-07-17T07:46:39.800555Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=76 status="ExitStatus { code: 0, signal: None }"
+2026-07-17T07:46:39.800677Z  INFO herdr::pane: pane session terminated pane=76 pid=39421 signal=Hangup
+2026-07-17T07:46:44.802516Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:46:55.763592Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=77 status="ExitStatus { code: 0, signal: None }"
+2026-07-17T07:46:55.763703Z  INFO herdr::pane: pane session terminated pane=77 pid=43227 signal=Hangup
+2026-07-17T07:46:56.449471Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=78 rows=58 cols=308 scrollback_limit_bytes=10000000
+2026-07-17T07:46:56.456580Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=78 pid=43513
+2026-07-17T07:46:56.456773Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:47:01.461748Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:50:19.449004Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T07:50:21.205721Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:50:26.214401Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:53:16.479229Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:53:21.466781Z  INFO herdr::pane: agent changed pane=78 previous_agent=None agent=Some(Claude) process=claude pgid=Some(45034)
+2026-07-17T07:53:21.485224Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T07:53:54.558275Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T07:53:59.565747Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:04:36.487757Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T08:04:38.606016Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T08:04:38.606068Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T08:04:39.378794Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T08:04:44.384101Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:04:49.778523Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T08:04:49.778570Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T08:04:54.791130Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:04:55.645492Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T08:05:00.663300Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:05:27.084263Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T08:05:32.087633Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:11:04.046334Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T08:23:21.275011Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T08:23:26.279653Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T08:41:03.935104Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T09:11:03.980120Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T09:23:32.383380Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T09:23:32.814141Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-17T09:23:35.111649Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T09:32:08.925675Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T09:32:08.927264Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T09:32:13.935299Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T09:39:36.952601Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T09:39:37.494590Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T09:40:31.062099Z  INFO herdr::server::headless: client resize client_id=2 cols=337 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T09:41:03.991090Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T09:43:39.801993Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T09:43:41.527365Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T09:43:41.527411Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T09:43:46.531527Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T09:43:48.719480Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T09:43:50.061636Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T09:43:55.080121Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T09:43:55.550742Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=79 rows=58 cols=208 scrollback_limit_bytes=10000000
+2026-07-17T09:43:55.559005Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=79 pid=64193
+2026-07-17T09:43:55.559217Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T09:44:00.151853Z  INFO herdr::pane: agent changed pane=79 previous_agent=None agent=Some(Claude) process=claude pgid=Some(64283)
+2026-07-17T09:44:00.574817Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:11:03.991239Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T10:20:38.500724Z  INFO herdr::server::headless: client resize client_id=2 cols=190 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T10:20:39.314516Z  INFO herdr::server::headless: client resize client_id=2 cols=334 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T10:23:22.159306Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:23:55.582565Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T10:23:55.583599Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T10:24:00.589339Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:24:15.985406Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T10:24:15.986535Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:24:20.994637Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:24:42.819039Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:24:46.432156Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T10:24:51.435757Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:26:26.091446Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:26:28.098983Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T10:26:33.103525Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:35:24.041270Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:35:24.658844Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:35:29.669215Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:41:04.003422Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T10:47:49.544774Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T10:47:54.549616Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:47:56.716849Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:47:59.538602Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T10:48:04.542777Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:49:02.405212Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:49:07.418963Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:49:33.230671Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:49:39.819119Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:49:53.019142Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:49:58.031422Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:50:35.432422Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:50:53.812059Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:50:58.822033Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:53:05.076220Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:53:08.945491Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T10:53:08.945532Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-17T10:53:10.997390Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T10:53:16.007375Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:53:16.194088Z  INFO herdr::pane: agent changed pane=74 previous_agent=Some(Claude) agent=None pgid=Some(25161)
+2026-07-17T10:53:16.791192Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=74 status="ExitStatus { code: 0, signal: None }"
+2026-07-17T10:53:16.791297Z  INFO herdr::pane: pane session terminated pane=74 pid=25161 signal=Hangup
+2026-07-17T10:53:21.796174Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:53:22.059283Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=75 status="ExitStatus { code: 0, signal: None }"
+2026-07-17T10:53:22.059390Z  INFO herdr::pane: pane session terminated pane=75 pid=27326 signal=Hangup
+2026-07-17T10:53:24.009846Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T10:53:24.009883Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:tB"
+2026-07-17T10:53:28.018428Z  INFO herdr::pane: agent changed pane=78 previous_agent=Some(Claude) agent=None pgid=Some(43513)
+2026-07-17T10:53:28.687521Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=78 status="ExitStatus { code: 1, signal: None }"
+2026-07-17T10:53:28.687595Z  INFO herdr::pane: pane session terminated pane=78 pid=43513 signal=Hangup
+2026-07-17T10:53:30.692071Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-17T10:53:35.695842Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:53:39.323913Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:53:48.370030Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:55:15.440611Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:55:20.457540Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:55:37.032785Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T10:55:42.044317Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T10:57:14.024956Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T10:57:16.763510Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T10:57:16.763548Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T10:57:21.766846Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T11:11:04.475975Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T11:41:03.950443Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T12:11:04.044822Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T12:30:00.076622Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T12:30:00.947283Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-17T12:30:00.982483Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-17T12:30:44.948045Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-17T12:30:44.948299Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T12:30:45.936552Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T12:30:46.307438Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-17T12:30:51.322502Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T12:34:09.509402Z  INFO herdr::server::headless: client resize client_id=2 cols=338 rows=46 cell_width_px=0 cell_height_px=0
+2026-07-17T12:34:09.631840Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T13:51:28.280052Z  INFO herdr::server::headless: client resize client_id=2 cols=166 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T13:51:28.509766Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T13:56:36.261001Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T14:26:36.301539Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T14:46:50.301366Z  INFO herdr::server::headless: client resize client_id=2 cols=80 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T14:46:51.640584Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-17T15:07:31.525982Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T15:57:04.345161Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T16:25:05.918013Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T16:25:06.559442Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T16:25:11.587478Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T16:25:14.246771Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-17T16:25:19.260529Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T16:27:04.381521Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T16:57:04.358245Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T17:27:04.439782Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T18:00:56.824943Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-17T18:00:56.826467Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-17T18:01:01.833312Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T18:03:15.687864Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T18:33:15.363973Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T19:03:15.377956Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T19:48:54.906962Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=80 rows=44 cols=136 scrollback_limit_bytes=10000000
+2026-07-17T19:48:54.912691Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=80 pid=41681
+2026-07-17T19:48:54.912926Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-17T19:48:54.912939Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-17T19:48:59.916108Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-17T19:49:14.622474Z  INFO herdr::pane: agent changed pane=80 previous_agent=None agent=Some(Claude) process=claude pgid=Some(42000)
+2026-07-17T20:05:54.045482Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T20:35:54.115526Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-17T21:05:54.177281Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T02:49:06.065340Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T06:55:04.921187Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T07:22:07.466452Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-18T07:22:07.602013Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-18T07:22:08.332291Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T07:22:46.941862Z  INFO herdr::server::headless: client resize client_id=2 cols=121 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T07:22:47.872805Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T07:41:03.838192Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T08:11:03.848991Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T08:41:03.839575Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T09:11:03.796741Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T09:17:35.964100Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:17:40.974520Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:19:02.455044Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=29 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.034116Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=28 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.264447Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=27 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.732747Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=26 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.747531Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=24 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.770099Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=22 cell_width_px=0 cell_height_px=0
+2026-07-18T09:19:52.799982Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=21 cell_width_px=0 cell_height_px=0
+2026-07-18T09:31:25.756136Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=81 rows=20 cols=220 scrollback_limit_bytes=10000000
+2026-07-18T09:31:25.762951Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=81 pid=90511
+2026-07-18T09:31:25.763116Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:31:30.770162Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:31:31.359547Z  INFO herdr::pane: agent changed pane=81 previous_agent=None agent=Some(Claude) process=claude pgid=Some(90599)
+2026-07-18T09:34:06.304032Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:34:11.313182Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:34:12.172813Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:34:17.176467Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:35:39.409133Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:35:44.416723Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:36:11.048817Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:36:16.060484Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:37:48.173478Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T09:37:53.178195Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T09:41:03.908614Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T10:11:03.894568Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T10:12:49.145468Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T10:19:05.304659Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=29 cell_width_px=0 cell_height_px=0
+2026-07-18T10:19:09.563456Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=26 cell_width_px=0 cell_height_px=0
+2026-07-18T10:19:09.801135Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=25 cell_width_px=0 cell_height_px=0
+2026-07-18T10:19:10.407147Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=24 cell_width_px=0 cell_height_px=0
+2026-07-18T10:19:10.711058Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=23 cell_width_px=0 cell_height_px=0
+2026-07-18T10:41:03.917388Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T11:11:03.778179Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T11:41:03.814293Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T12:11:03.845960Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T12:41:04.604723Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T13:11:04.004212Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T13:36:25.134284Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T13:36:28.293058Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T13:36:30.474556Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-18T13:36:31.374987Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-18T13:36:33.475795Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T13:36:33.881554Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T13:36:36.810763Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=82 rows=58 cols=110 scrollback_limit_bytes=10000000
+2026-07-18T13:36:36.822872Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=82 pid=33785
+2026-07-18T13:36:36.823067Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T13:36:41.831803Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T13:36:53.477701Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=83 rows=58 cols=110 scrollback_limit_bytes=10000000
+2026-07-18T13:36:53.484831Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=83 pid=34159
+2026-07-18T13:36:53.485066Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T13:36:58.491493Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T13:38:22.016638Z  INFO herdr::server::headless: client resize client_id=2 cols=121 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T13:38:23.570008Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-18T13:41:03.889658Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T14:11:03.925607Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T14:13:59.538743Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-18T14:13:59.643815Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-18T14:14:04.542711Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-18T14:41:04.003422Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T15:11:03.871289Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T15:36:15.876260Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-18T15:41:03.887693Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-18T16:14:03.466222Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T00:14:57.181381Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T08:33:54.880811Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-19T08:33:59.891700Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T08:38:07.355158Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T08:38:49.355067Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-19T08:38:52.004155Z  INFO herdr::pane: agent changed pane=81 previous_agent=Some(Claude) agent=None pgid=Some(90511)
+2026-07-19T08:38:54.364299Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T08:39:42.853448Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-19T08:39:47.859793Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T11:41:03.443271Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T11:49:38.418585Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-19T11:49:43.432250Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T11:50:08.022374Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-19T11:50:13.027839Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T12:11:03.398222Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T12:42:14.400921Z  INFO herdr::server::headless: client resize client_id=2 cols=80 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T12:43:15.271843Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T12:48:27.100185Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-19T12:48:32.109771Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T12:54:59.205326Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T13:35:33.090277Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T13:37:25.645880Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T14:06:33.949373Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-19T14:06:38.957796Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T14:07:25.693294Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T14:08:15.693858Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=29 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:16.730364Z  INFO herdr::server::headless: client resize client_id=2 cols=121 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:21.814581Z  INFO herdr::server::headless: client resize client_id=2 cols=117 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:21.929921Z  INFO herdr::server::headless: client resize client_id=2 cols=105 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:22.430391Z  INFO herdr::server::headless: client resize client_id=2 cols=97 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:22.935706Z  INFO herdr::server::headless: client resize client_id=2 cols=89 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:23.368021Z  INFO herdr::server::headless: client resize client_id=2 cols=84 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:23.809325Z  INFO herdr::server::headless: client resize client_id=2 cols=83 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:31.986987Z  INFO herdr::server::headless: client resize client_id=2 cols=86 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:32.097223Z  INFO herdr::server::headless: client resize client_id=2 cols=90 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:08:32.402206Z  INFO herdr::server::headless: client resize client_id=2 cols=94 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:29:22.705519Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T14:30:07.060690Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T14:37:25.589614Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T15:10:47.016006Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-19T15:10:47.923967Z  INFO herdr::server::headless: client resize client_id=2 cols=246 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-19T15:11:22.385851Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-19T15:11:22.809719Z  INFO herdr::server::headless: client resize client_id=2 cols=182 rows=43 cell_width_px=0 cell_height_px=0
+2026-07-19T15:15:08.567443Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T15:15:12.698036Z  INFO herdr::server::headless: client resize client_id=2 cols=167 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T15:15:13.366512Z  INFO herdr::server::headless: client resize client_id=2 cols=166 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T15:21:04.976362Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T15:51:04.420819Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T16:21:04.524995Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T16:51:04.592974Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T17:11:21.566605Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-19T17:22:43.179936Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-19T17:37:13.092370Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-19T17:37:18.098972Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T17:44:05.373977Z  INFO herdr::pane: agent changed pane=80 previous_agent=Some(Claude) agent=None pgid=Some(41681)
+2026-07-19T17:44:07.102851Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-19T17:44:12.117993Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-19T17:44:13.268981Z  INFO herdr::pane: agent changed pane=9 previous_agent=Some(Claude) agent=None pgid=Some(79248)
+2026-07-19T17:44:13.605946Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-19T17:44:18.618744Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
