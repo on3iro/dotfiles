@@ -6,21 +6,20 @@
       "custom_name": "Main",
       "identity_cwd": "/Users/theo/dotfiles",
       "public_pane_numbers": {
+        "80": 21,
+        "83": 24,
+        "1": 1,
+        "11": 5,
+        "38": 9,
         "39": 10,
         "56": 16,
-        "1": 1,
-        "83": 24,
-        "11": 5,
-        "125": 31,
-        "38": 9,
-        "9": 3,
-        "80": 21,
-        "85": 26,
         "87": 28,
+        "85": 26,
         "82": 23,
+        "9": 3,
         "52": 14
       },
-      "next_public_pane_number": 34,
+      "next_public_pane_number": 35,
       "public_tab_numbers": [
         1,
         2,
@@ -38,16 +37,7 @@
               "direction": "Horizontal",
               "ratio": 0.42307693,
               "first": {
-                "Split": {
-                  "direction": "Vertical",
-                  "ratio": 0.25862068,
-                  "first": {
-                    "Pane": 1
-                  },
-                  "second": {
-                    "Pane": 125
-                  }
-                }
+                "Pane": 1
               },
               "second": {
                 "Pane": 9
@@ -55,17 +45,14 @@
             }
           },
           "panes": {
-            "9": {
+            "1": {
               "cwd": "/Users/theo/dotfiles"
             },
-            "125": {
-              "cwd": "/Users/theo/Pictures"
-            },
-            "1": {
+            "9": {
               "cwd": "/Users/theo/dotfiles"
             }
           },
-          "zoomed": true,
+          "zoomed": false,
           "focused": 1,
           "root_pane": 1
         },
@@ -116,9 +103,6 @@
             }
           },
           "panes": {
-            "82": {
-              "cwd": "/Users/theo/projects/matchering"
-            },
             "39": {
               "cwd": "/Users/theo/projects/AudioMuse-AI"
             },
@@ -127,6 +111,9 @@
             },
             "38": {
               "cwd": "/Users/theo/projects/AudioMuse-AI"
+            },
+            "82": {
+              "cwd": "/Users/theo/projects/matchering"
             }
           },
           "zoomed": false,
@@ -171,13 +158,13 @@
             }
           },
           "panes": {
-            "56": {
+            "87": {
               "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
             },
             "85": {
               "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
             },
-            "87": {
+            "56": {
               "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
             }
           },
@@ -207,19 +194,19 @@
       "custom_name": "Solarwatt",
       "identity_cwd": "/Users/theo/src/solarwatt/swtt-dave",
       "public_pane_numbers": {
-        "60": 43,
-        "5": 3,
         "54": 39,
-        "58": 41,
-        "6": 4,
         "116": 87,
-        "71": 53,
-        "23": 17,
+        "6": 4,
+        "59": 42,
+        "5": 3,
         "117": 88,
-        "8": 6,
-        "19": 13,
         "72": 54,
-        "59": 42
+        "71": 53,
+        "19": 13,
+        "8": 6,
+        "58": 41,
+        "60": 43,
+        "23": 17
       },
       "next_public_pane_number": 97,
       "public_tab_numbers": [
@@ -266,17 +253,17 @@
             }
           },
           "panes": {
-            "54": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
+            "8": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave/laravel-filament"
             },
-            "23": {
+            "54": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave"
             },
             "5": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave/server"
             },
-            "8": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave/laravel-filament"
+            "23": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
             }
           },
           "zoomed": false,
@@ -378,10 +365,10 @@
             }
           },
           "panes": {
-            "71": {
+            "72": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-sso"
             },
-            "72": {
+            "71": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-sso"
             }
           },
@@ -404,7 +391,7 @@
           "root_pane": 117
         }
       ],
-      "active_tab": 1
+      "active_tab": 0
     }
   ],
   "active": 0,

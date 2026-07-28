@@ -27,8 +27,9 @@ return {
 
     ya.err("system-clipboard: before spawn, urls=" .. table.concat(urls, " "))
     local output, err =
-        Command("rg")
-        :arg("--version")
+        Command("/run/current-system/sw/bin/cb")
+        :arg("copy")
+        :arg(urls[1])
         :stdin(Command.NULL)
         :stdout(Command.PIPED)
         :stderr(Command.PIPED)
