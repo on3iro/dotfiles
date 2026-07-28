@@ -6,18 +6,18 @@
       "custom_name": "Main",
       "identity_cwd": "/Users/theo/dotfiles",
       "public_pane_numbers": {
-        "80": 21,
+        "87": 28,
         "83": 24,
-        "1": 1,
+        "85": 26,
+        "52": 14,
         "11": 5,
         "38": 9,
-        "39": 10,
-        "56": 16,
-        "87": 28,
-        "85": 26,
-        "82": 23,
+        "80": 21,
         "9": 3,
-        "52": 14
+        "1": 1,
+        "82": 23,
+        "39": 10,
+        "56": 16
       },
       "next_public_pane_number": 35,
       "public_tab_numbers": [
@@ -106,13 +106,13 @@
             "39": {
               "cwd": "/Users/theo/projects/AudioMuse-AI"
             },
-            "83": {
+            "82": {
               "cwd": "/Users/theo/projects/matchering"
             },
             "38": {
               "cwd": "/Users/theo/projects/AudioMuse-AI"
             },
-            "82": {
+            "83": {
               "cwd": "/Users/theo/projects/matchering"
             }
           },
@@ -158,13 +158,13 @@
             }
           },
           "panes": {
-            "87": {
-              "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
-            },
             "85": {
               "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
             },
             "56": {
+              "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
+            },
+            "87": {
               "cwd": "/Users/theo/Nextcloud/Notes/cloud-docs/ansible-cloud"
             }
           },
@@ -194,19 +194,19 @@
       "custom_name": "Solarwatt",
       "identity_cwd": "/Users/theo/src/solarwatt/swtt-dave",
       "public_pane_numbers": {
-        "54": 39,
         "116": 87,
-        "6": 4,
-        "59": 42,
+        "60": 43,
+        "58": 41,
         "5": 3,
-        "117": 88,
-        "72": 54,
         "71": 53,
         "19": 13,
+        "72": 54,
+        "23": 17,
         "8": 6,
-        "58": 41,
-        "60": 43,
-        "23": 17
+        "117": 88,
+        "59": 42,
+        "54": 39,
+        "6": 4
       },
       "next_public_pane_number": 97,
       "public_tab_numbers": [
@@ -253,16 +253,16 @@
             }
           },
           "panes": {
-            "8": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave/laravel-filament"
-            },
-            "54": {
-              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
-            },
             "5": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave/server"
             },
             "23": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave"
+            },
+            "8": {
+              "cwd": "/Users/theo/src/solarwatt/swtt-dave/laravel-filament"
+            },
+            "54": {
               "cwd": "/Users/theo/src/solarwatt/swtt-dave"
             }
           },
@@ -325,10 +325,10 @@
             }
           },
           "panes": {
-            "19": {
+            "59": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
             },
-            "59": {
+            "19": {
               "cwd": "/Users/theo/src/solarwatt/solarwatt-home-app-flutter"
             }
           },

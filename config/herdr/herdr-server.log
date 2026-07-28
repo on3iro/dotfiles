@@ -7928,3 +7928,10 @@
 2026-07-28T08:06:19.359578Z  INFO herdr::pane: pane session terminated pane=125 pid=89025 signal=Hangup
 2026-07-28T08:06:20.634307Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
 2026-07-28T08:06:25.640603Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-28T08:07:19.770027Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-28T08:07:24.780696Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-28T08:07:36.806410Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-28T08:07:41.811779Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
+2026-07-28T08:07:51.228703Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-28T08:07:54.552806Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-28T08:07:59.563278Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/theo/.config/herdr/session.json workspaces=2
