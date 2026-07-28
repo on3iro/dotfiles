@@ -292,3 +292,12 @@
 
 # 2026-07-08 08:35:57.847139
 +exit
+
+# 2026-07-20 13:46:33.016944
++select * from user_information_cache;
+
+# 2026-07-20 13:47:25.464747
++\T vertical;
+
+# 2026-07-20 13:47:28.500841
++select * from user_information_cache;

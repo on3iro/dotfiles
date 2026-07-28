@@ -75,4 +75,4 @@ bizarre_retry = 5
 preload = []
 
 [log]
-enabled = false
+enabled = true
