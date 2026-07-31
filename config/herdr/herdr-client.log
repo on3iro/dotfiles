@@ -9,3 +9,7 @@
 2026-07-20T11:17:23.942216Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=48332
 2026-07-20T11:17:23.942478Z  INFO herdr::client: connecting to server path=/Users/theo/.config/herdr/herdr-client.sock
 2026-07-20T11:17:24.054456Z  INFO herdr::client: handshake succeeded version=16 encoding=SemanticFrame
+2026-07-31T04:58:24.291044Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=48332
+2026-07-31T06:07:29.655307Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4700
+2026-07-31T06:07:29.655532Z  INFO herdr::client: connecting to server path=/Users/theo/.config/herdr/herdr-client.sock
+2026-07-31T06:07:29.694746Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
