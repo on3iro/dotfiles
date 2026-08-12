@@ -72,6 +72,10 @@ vim.pack.add({
   "https://github.com/mistweaverco/kulala.nvim"
 })
 
+vim.api.nvim_create_user_command("PackUpdate", function(cmd)
+  vim.pack.update(cmd.fargs[1] and cmd.fargs or nil, { force = cmd.bang })
+end, { bang = true, nargs = "*", desc = "Update vim.pack plugins" })
+
 
 -- Load plugin configurations (order matters: colorscheme and icons load first)
 require("plugins.colorschemes")
