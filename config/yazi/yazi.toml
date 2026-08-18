@@ -18,27 +18,27 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = '$EDITOR "$@"', block = true,  for = "unix" },
-	{ run = 'code "%*"',    orphan = true, for = "windows" },
+	{ run = '$EDITOR %s', block = true,  for = "unix" },
+	{ run = 'code %s',    orphan = true, for = "windows" },
 ]
 open = [
-	{ run = 'xdg-open "$@"',             desc = "Open", for = "linux" },
-	{ run = 'open "$@"',                 desc = "Open", for = "macos" },
-	{ run = 'start "%1"', orphan = true, desc = "Open", for = "windows" }
+	{ run = 'xdg-open %s',             desc = "Open", for = "linux" },
+	{ run = 'open %s',                 desc = "Open", for = "macos" },
+	{ run = 'start %s', orphan = true, desc = "Open", for = "windows" }
 ]
 reveal = [
-	{ run = 'open -R "$1"',                       desc = "Reveal", for = "macos" },
-	{ run = 'explorer /select,%1', orphan = true, desc = "Reveal", for = "windows" },
-	{ run = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
+	{ run = 'open -R %s',                       desc = "Reveal", for = "macos" },
+	{ run = 'explorer /select,%s', orphan = true, desc = "Reveal", for = "windows" },
+	{ run = '''exiftool %s; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
 ]
 extract = [
-	{ run = 'unar "$1"', desc = "Extract here", for = "unix" },
-	{ run = 'unar "%1"', desc = "Extract here", for = "windows" },
+	{ run = 'unar %s', desc = "Extract here", for = "unix" },
+	{ run = 'unar %s', desc = "Extract here", for = "windows" },
 ]
 play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
-	{ run = 'mpv "%1"', orphan = true, for = "windows" },
-	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
+	{ run = 'mpv %s', orphan = true, for = "unix" },
+	{ run = 'mpv %s', orphan = true, for = "windows" },
+	{ run = '''mediainfo %s; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
 ]
 
 [open]
@@ -46,7 +46,7 @@ rules = [
 	{ mime = "inode/directory", use = [ "edit", "open", "reveal" ] },
 
 	{ mime = "text/*",  use = [ "edit", "reveal" ] },
-  { url = "*.{json,ts,js,tsx,go,rs,html,csv,css,scss,yaml,yml,md,toml,php,sh,nsp}", use =  "edit" },
+	{ url = "*.{json,ts,js,tsx,go,rs,html,csv,css,scss,yaml,yml,md,toml,php,sh,nsp}", use =  "edit" },
 	{ mime = "image/*", use = [ "open", "reveal" ] },
 	{ mime = "video/*", use = [ "open", "play", "reveal" ] },
 	{ mime = "audio/*", use = [ "open", "play", "reveal" ] },
