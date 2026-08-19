@@ -40,6 +40,9 @@ play = [
 	{ run = 'mpv %s', orphan = true, for = "windows" },
 	{ run = '''mediainfo %s; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
 ]
+preview_app = [
+	{ run = 'open -a "QuickTime Player" %s', orphan = true, desc = "Open in QuickTime Player", for = "macos" },
+]
 
 [open]
 rules = [
@@ -49,7 +52,7 @@ rules = [
 	{ url = "*.{json,ts,js,tsx,go,rs,html,csv,css,scss,yaml,yml,md,toml,php,sh,nsp}", use =  "edit" },
 	{ mime = "image/*", use = [ "open", "reveal" ] },
 	{ mime = "video/*", use = [ "open", "play", "reveal" ] },
-	{ mime = "audio/*", use = [ "open", "play", "reveal" ] },
+	{ mime = "audio/*", use = [ "preview_app", "play", "reveal" ] },
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
 
 	{ mime = "application/json", use = [ "edit", "reveal" ] },
