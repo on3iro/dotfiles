@@ -304,3 +304,24 @@
 
 # 2026-07-28 16:46:47.307087
 +exit
+
+# 2026-08-24 15:03:13.047342
++select * from dynamic_contents;
+
+# 2026-08-24 15:03:26.108100
++\T vertical;
+
+# 2026-08-24 15:03:27.332193
++select * from dynamic_contents;
+
+# 2026-08-26 11:01:22.604751
++exit
+
+# 2026-08-26 11:01:31.318724
++select * from dynamic_content_storage;
+
+# 2026-08-26 11:01:52.569345
++delete from dynamic_contents;
+
+# 2026-08-26 11:01:55.091796
++select * from dynamic_content_storage;
