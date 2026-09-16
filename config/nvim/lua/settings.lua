@@ -17,6 +17,12 @@ o.relativenumber = true
 -- Leader key
 g.mapleader = " "
 
+-- Localleader: dedicated to filetype-local plugin mappings (e.g. kulala.nvim's
+-- .http keymaps) so they never share a namespace with <leader>-prefixed ones.
+-- Set explicitly (matches the implicit default) so it's not silently relying
+-- on Neovim's fallback behavior.
+g.maplocalleader = "\\"
+
 -- Save more than 8 commands
 o.history = 1000
 
