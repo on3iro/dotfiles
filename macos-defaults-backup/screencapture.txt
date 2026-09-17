@@ -1,0 +1,11 @@
+{
+    "last-analytics-stamp" = "810922288.239261";
+    "last-selection" =     {
+        Height = 1395;
+        Width = 2533;
+        X = 18;
+        Y = 39;
+    };
+    "last-selection-display" = 0;
+    location = "~/Pictures/screenshots";
+}

@@ -1,0 +1,3115 @@
+{
+    AppleShowAllExtensions = 1;
+    AppleShowAllFiles = 1;
+    ComputerViewSettings =     {
+        CustomViewStyleVersion = 1;
+        ExtendedListViewSettingsV2 =         {
+            calculateAllSizes = 0;
+            columns =             (
+                                {
+                    ascending = 1;
+                    identifier = name;
+                    visible = 1;
+                    width = 311;
+                },
+                                {
+                    ascending = 0;
+                    identifier = ubiquity;
+                    visible = 0;
+                    width = 35;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateModified;
+                    visible = 1;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateCreated;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = size;
+                    visible = 1;
+                    width = 97;
+                },
+                                {
+                    ascending = 1;
+                    identifier = kind;
+                    visible = 1;
+                    width = 115;
+                },
+                                {
+                    ascending = 1;
+                    identifier = label;
+                    visible = 0;
+                    width = 100;
+                },
+                                {
+                    ascending = 1;
+                    identifier = version;
+                    visible = 0;
+                    width = 75;
+                },
+                                {
+                    ascending = 1;
+                    identifier = comments;
+                    visible = 0;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateLastOpened;
+                    visible = 0;
+                    width = 184;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateAdded;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareOwner;
+                    visible = 0;
+                    width = 210;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareLastEditor;
+                    visible = 0;
+                    width = 210;
+                },
+                                {
+                    ascending = 0;
+                    identifier = invitationStatus;
+                    visible = 0;
+                    width = 210;
+                }
+            );
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        IconViewSettings =         {
+            arrangeBy = name;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            scrollPositionX = "-226";
+            scrollPositionY = 0;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+        ListViewSettings =         {
+            calculateAllSizes = 0;
+            columns =             {
+                comments =                 {
+                    ascending = 1;
+                    index = 7;
+                    visible = 0;
+                    width = 300;
+                };
+                dateCreated =                 {
+                    ascending = 0;
+                    index = 2;
+                    visible = 0;
+                    width = 181;
+                };
+                dateLastOpened =                 {
+                    ascending = 0;
+                    index = 8;
+                    visible = 0;
+                    width = 184;
+                };
+                dateModified =                 {
+                    ascending = 0;
+                    index = 1;
+                    visible = 1;
+                    width = 181;
+                };
+                kind =                 {
+                    ascending = 1;
+                    index = 4;
+                    visible = 1;
+                    width = 115;
+                };
+                label =                 {
+                    ascending = 1;
+                    index = 5;
+                    visible = 0;
+                    width = 100;
+                };
+                name =                 {
+                    ascending = 1;
+                    index = 0;
+                    visible = 1;
+                    width = 311;
+                };
+                size =                 {
+                    ascending = 0;
+                    index = 3;
+                    visible = 1;
+                    width = 97;
+                };
+                version =                 {
+                    ascending = 1;
+                    index = 6;
+                    visible = 0;
+                    width = 75;
+                };
+            };
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 1;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{16, 17}, {1696, 1021}}";
+        };
+    };
+    CopyProgressWindowLocation = "{991, 248}";
+    DataSeparatedDisplayNameCache = "";
+    DesktopViewSettings =     {
+        IconViewSettings =         {
+            arrangeBy = none;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+    };
+    DownloadsFolderListViewSettingsVersion = 1;
+    EmptyTrashProgressWindowLocation = "{664, 292}";
+    "FK_AppCentricShowSidebar" = 1;
+    "FK_ArrangeBy" = Name;
+    "FK_DefaultIconViewSettings" =     {
+        arrangeBy = name;
+        backgroundColorBlue = 1;
+        backgroundColorGreen = 1;
+        backgroundColorRed = 1;
+        backgroundType = 0;
+        gridOffsetX = 0;
+        gridOffsetY = 0;
+        gridSpacing = 54;
+        iconSize = 64;
+        labelOnBottom = 1;
+        showIconPreview = 1;
+        showItemInfo = 1;
+        textSize = 12;
+        viewOptionsVersion = 1;
+    };
+    "FK_DefaultListViewSettingsV2" =     {
+        calculateAllSizes = 0;
+        columns =         (
+                        {
+                ascending = 0;
+                identifier = name;
+                visible = 1;
+                width = 167;
+            },
+                        {
+                ascending = 0;
+                identifier = ubiquity;
+                visible = 0;
+                width = 35;
+            },
+                        {
+                ascending = 0;
+                identifier = dateModified;
+                visible = 1;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = dateCreated;
+                visible = 0;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = size;
+                visible = 1;
+                width = 97;
+            },
+                        {
+                ascending = 0;
+                identifier = kind;
+                visible = 1;
+                width = 115;
+            },
+                        {
+                ascending = 1;
+                identifier = label;
+                visible = 0;
+                width = 100;
+            },
+                        {
+                ascending = 1;
+                identifier = version;
+                visible = 0;
+                width = 75;
+            },
+                        {
+                ascending = 1;
+                identifier = comments;
+                visible = 0;
+                width = 300;
+            },
+                        {
+                ascending = 0;
+                identifier = dateLastOpened;
+                visible = 0;
+                width = 196;
+            },
+                        {
+                ascending = 0;
+                identifier = shareOwner;
+                visible = 0;
+                width = 200;
+            },
+                        {
+                ascending = 0;
+                identifier = shareLastEditor;
+                visible = 0;
+                width = 200;
+            },
+                        {
+                ascending = 1;
+                identifier = dateAdded;
+                visible = 1;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = invitationStatus;
+                visible = 0;
+                width = 210;
+            }
+        );
+        iconSize = 16;
+        showIconPreview = 1;
+        sortColumn = dateModified;
+        textSize = 13;
+        useRelativeDates = 1;
+        viewOptionsVersion = 1;
+    };
+    "FK_SearchIconViewSettings" =     {
+        arrangeBy = dateModified;
+        backgroundColorBlue = 1;
+        backgroundColorGreen = 1;
+        backgroundColorRed = 1;
+        backgroundType = 0;
+        gridOffsetX = 0;
+        gridOffsetY = 0;
+        gridSpacing = 54;
+        iconSize = 64;
+        labelOnBottom = 1;
+        showIconPreview = 1;
+        showItemInfo = 0;
+        textSize = 12;
+        viewOptionsVersion = 1;
+    };
+    "FK_SearchListViewSettingsV2" =     {
+        calculateAllSizes = 0;
+        columns =         (
+                        {
+                ascending = 1;
+                identifier = name;
+                visible = 1;
+                width = 971;
+            },
+                        {
+                ascending = 0;
+                identifier = ubiquity;
+                visible = 0;
+                width = 35;
+            },
+                        {
+                ascending = 0;
+                identifier = dateModified;
+                visible = 1;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = dateCreated;
+                visible = 0;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = size;
+                visible = 1;
+                width = 97;
+            },
+                        {
+                ascending = 1;
+                identifier = kind;
+                visible = 1;
+                width = 115;
+            },
+                        {
+                ascending = 1;
+                identifier = label;
+                visible = 0;
+                width = 100;
+            },
+                        {
+                ascending = 1;
+                identifier = version;
+                visible = 0;
+                width = 75;
+            },
+                        {
+                ascending = 1;
+                identifier = comments;
+                visible = 0;
+                width = 300;
+            },
+                        {
+                ascending = 0;
+                identifier = dateLastOpened;
+                visible = 0;
+                width = 196;
+            },
+                        {
+                ascending = 0;
+                identifier = shareOwner;
+                visible = 0;
+                width = 200;
+            },
+                        {
+                ascending = 0;
+                identifier = shareLastEditor;
+                visible = 0;
+                width = 200;
+            },
+                        {
+                ascending = 0;
+                identifier = dateAdded;
+                visible = 0;
+                width = 181;
+            },
+                        {
+                ascending = 0;
+                identifier = invitationStatus;
+                visible = 0;
+                width = 210;
+            }
+        );
+        iconSize = 16;
+        showIconPreview = 1;
+        sortColumn = dateModified;
+        textSize = 13;
+        useRelativeDates = 1;
+        viewOptionsVersion = 1;
+    };
+    "FK_SidebarWidth" = 143;
+    "FK_SidebarWidth2" = 201;
+    "FK_StandardViewSettings" =     {
+        ExtendedListViewSettingsV2 =         {
+            calculateAllSizes = 0;
+            columns =             (
+                                {
+                    ascending = 1;
+                    identifier = name;
+                    visible = 1;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateModified;
+                    visible = 1;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateCreated;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = size;
+                    visible = 1;
+                    width = 97;
+                },
+                                {
+                    ascending = 1;
+                    identifier = kind;
+                    visible = 1;
+                    width = 115;
+                },
+                                {
+                    ascending = 1;
+                    identifier = label;
+                    visible = 0;
+                    width = 100;
+                },
+                                {
+                    ascending = 1;
+                    identifier = version;
+                    visible = 0;
+                    width = 75;
+                },
+                                {
+                    ascending = 1;
+                    identifier = comments;
+                    visible = 0;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateLastOpened;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareOwner;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareLastEditor;
+                    visible = 0;
+                    width = 200;
+                }
+            );
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        IconViewSettings =         {
+            arrangeBy = none;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+        ListViewSettings =         {
+            calculateAllSizes = 0;
+            columns =             {
+                comments =                 {
+                    ascending = 1;
+                    index = 7;
+                    visible = 0;
+                    width = 300;
+                };
+                dateCreated =                 {
+                    ascending = 0;
+                    index = 2;
+                    visible = 0;
+                    width = 181;
+                };
+                dateLastOpened =                 {
+                    ascending = 0;
+                    index = 8;
+                    visible = 0;
+                    width = 200;
+                };
+                dateModified =                 {
+                    ascending = 0;
+                    index = 1;
+                    visible = 1;
+                    width = 181;
+                };
+                kind =                 {
+                    ascending = 1;
+                    index = 4;
+                    visible = 1;
+                    width = 115;
+                };
+                label =                 {
+                    ascending = 1;
+                    index = 5;
+                    visible = 0;
+                    width = 100;
+                };
+                name =                 {
+                    ascending = 1;
+                    index = 0;
+                    visible = 1;
+                    width = 300;
+                };
+                size =                 {
+                    ascending = 0;
+                    index = 3;
+                    visible = 1;
+                    width = 97;
+                };
+                version =                 {
+                    ascending = 1;
+                    index = 6;
+                    visible = 0;
+                    width = 75;
+                };
+            };
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        SettingsType = "FK_StandardViewSettings";
+    };
+    FXArrangeGroupViewBy = Name;
+    FXConnectToBounds = "{{717, 618}, {486, 231}}";
+    FXConnectToLastURL = "";
+    FXDefaultSearchScope = SCcf;
+    FXDesktopTouchBarUpgradedToTenTwelveOne = 1;
+    FXDesktopVolumePositions =     {
+        "ADE 4.5_0x1.52df47e8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Alacritty 1_0x1.47bc5c3p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Alacritty_0x1.3ceb4a88p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Alacritty_0x1.3e17e9f8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Alacritty_0x1.47bc5c3p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "Alacritty_0x1.4e7347e8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Alacritty_0x1.50d6975p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Alacritty_0x1.565b0c58p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-143";
+        };
+        "Alacritty_0x1.5a629788p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "Amazon Music_0x1.56119d3p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-187";
+            yRelative = 65;
+        };
+        "Android Studio - Dolphin | 2021.3.1 Patch 1_0x1.3af4213p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "Android Studio - Iguana | 2023.2.1 Patch 1_0x1.4fe3db98p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Android Studio - Koala Feature Drop | 2024.1.2_0x1.4fe3db98p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "BIAS_FX_2_App 1_0x1.574989f71134p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "BIAS_FX_2_App_0x1.574989f71134p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "BIAS_FX_2_Plugin_VST_AU_0x1.4679a43fc8f8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 79;
+        };
+        "BIAS_FX_2_Plugin_VST_AU_0x1.5749888d62b3ap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Backup_0x1.386aed4p+28" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-119";
+        };
+        "Beekeeper Studio Ultimate 4.4.1-arm64_0x1.60d2ab92615fcp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-455";
+        };
+        "Contexts_0x1.358c4b9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "Contexts_0x1.453e6e08p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "CrispyTuner_0x1.25a7cbf8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "Cursr 1.4.13-arm64_0x1.4b11cffdd01a3p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Deckset_0x1.3098c28p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 302;
+        };
+        "ESD-USB_-0x1.d27e44p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Elements_0x1.1e824db0d516fp+28" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "Extreme Pro_-0x1.d27e44p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = 302;
+        };
+        "FabFilter Pro-C 2.20 Installer_0x1.604315b3574dep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "FabFilter Pro-DS 1.24 Installer_0x1.60431d08aa03dp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "FabFilter Pro-L 2.24 Installer_0x1.6043198ce8dcfp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "FabFilter Pro-Q 3.21 Installer_0x1.3ddd7188p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-553";
+            yRelative = 190;
+        };
+        "FabFilter Pro-Q 3.26 Installer_0x1.604313df6de5bp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "FabFilter Pro-Q 4.01 Installer_0x1.6881f4516cdb7p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "FabFilter Timeless 3.08 Installer_0x1.6043231c19ed6p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "FabFilter Total Bundle Installer_0x1.68820d2167275p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "Firefox Developer Edition_0x1.4280d62p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "GARMIN_-0x1.d27e44p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-343";
+        };
+        "GIMP 2.10 Install_0x1.54712658p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "GeForce NOW_0x1.53c086d8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "HandBrake-1.6.1_0x1.4bef33d8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Install Focusrite Control - 3.18.0.204_0x1.5cf8cef410bf8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "KT/RC 2_0x1.2d1f71ap+28" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Karabiner-Elements-14.13.0_0x1.59257208p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-367";
+        };
+        "Keymapp 1_0x1.587159dp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-367";
+        };
+        "Keymapp 1_0x1.5d0a31ep+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-367";
+        };
+        "Keymapp 1_0x1.60798c48p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-455";
+        };
+        "Keymapp 1_0x1.620859bp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-455";
+        };
+        "Keymapp 2_0x1.60798c48p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-119";
+        };
+        "Keymapp 3_0x1.60798c48p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-192";
+            yRelative = 454;
+        };
+        "Keymapp_0x1.587159dp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "Keymapp_0x1.5caab04p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Keymapp_0x1.5fa550ap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Keymapp_0x1.60798c48p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Keymapp_0x1.607e4ccp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Keymapp_0x1.620859bp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Keymapp_0x1.62c6605p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "Keymapp_0x1.65e665fp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "Keymapp_0x1.6894451p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Kid3_0x0p+0" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = "-255";
+        };
+        "Kilohearts Installer 1_0x1.42d0eec8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Kilohearts Installer_0x1.42d0eec8p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = "-367";
+        };
+        "LibreOffice_0x1.412d1408p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-255";
+        };
+        "LibreOffice_0x1.4fdf732p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "License Support Installer v5.9.0 edaa5278_0x1.5752a728p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "MAC_Installer_0x1.20a89c5a9738p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-309";
+            yRelative = 190;
+        };
+        "MUSIK UND F_-0x1.3c0914p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-455";
+        };
+        "Macintosh HD_0x1.45b0ffd8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 302;
+        };
+        "Macintosh HD_0x1.5f504acp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Macintosh HD_0x1.644d75a8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Macintosh HD_0x1.65f44028p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Macintosh HD_0x1.6783bd5p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 302;
+        };
+        "Musik und Filme_0x1.2d1f823p+28" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-343";
+        };
+        "My Passport for Mac_0x1.01fc6a68p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "NAUT_0x1.3a1bf51p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "NAUT_0x1.3a1c659p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "Native Access 2.5.0-arm64_0x1.46531c4p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-553";
+            yRelative = 190;
+        };
+        "Naut_bckp_0x1.a3787cdp+28" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-231";
+        };
+        "Nix Store_0x1.4932f564e1186p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "OTT OSX_0x1.415ac8c8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-32";
+        };
+        "Obsidian 1.6.3-universal_0x1.60a655f8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "OpenVPN Connect_0x1.5b9e0dbp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Ozone 10 Elements_0x1.4d6fc6e8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 65;
+        };
+        "Ozone 9 Elements_0x1.50752cap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "PA Installation Manager 1.2.4_0x1.f5e9588p+28" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-32";
+        };
+        "PB632_-0x1.d27e44p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-187";
+            yRelative = "-479";
+        };
+        "PhotoMarks_0x1.079cb7bp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "Pitchproof_0x1.250ce3c8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "Product Portal_0x1.534d8c68p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "REAPER_INSTALL_UNIVERSAL 1_0x1.6977461p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-455";
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.46477e78p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-553";
+            yRelative = 78;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.4839074p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.4c6df31p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.4fadb8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.5e808af8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.5fea4a78p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-119";
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.62816f9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-187";
+            yRelative = 177;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.635e273p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.66a8812p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.6838cfd8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "REAPER_INSTALL_UNIVERSAL_0x1.6937852p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-109";
+            yRelative = 65;
+        };
+        "RustDesk_0x1.429ac848p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "SCARLETT_-0x1.d27e44p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-255";
+        };
+        "SCARLETT_-0x1.d63c8c5p+35" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-255";
+        };
+        "Sanduhr 1.1.0_0x1.373e67d8p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-143";
+        };
+        "Sanduhr 1_0x1.5173748p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517313ep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51731508p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173325p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173337p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.517364b8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.517365ep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51736ea8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173751p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-367";
+        };
+        "Sanduhr_0x1.517377p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173781p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51738ac8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51738bdp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173954p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51739658p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.51739aap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173aabp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5173abc8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.517c19a8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517c1bc8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517de86p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517dea1p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e02dp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e0538p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e33p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e3878p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e39a8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e48dp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.517e4a28p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.518381dp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5257e63p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5257efe8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5257f1f8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.525adef8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.525adff8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52619328p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52619438p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52632278p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52632388p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526afa9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526afb98p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b1038p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b1138p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b47b8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b4dd8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b59fp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526b5af8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526f2ebp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.526f2fcp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5298fd78p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5298fe9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52a4865p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52a48758p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ab778p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ab788p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ab861p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ab8708p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52f8c718p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52f8c82p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ff75dp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.52ff76d8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.531699ep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.53169b38p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.53445f28p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.534461cp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5427e1f8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.5427e358p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Sanduhr_0x1.55981688p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.559817bp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.559832bp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.559833c8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.55e2ebfp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.55e2ecf8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5810c558p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.5810c6ap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.58c4cd9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.58c4ceap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Sanduhr_0x1.61a28c38p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61a28dcp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa3938p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa3a88p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa3f38p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa408p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa43bp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sanduhr_0x1.61aa44ep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Schnitt_0x1.2d1f7b3p+28" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Shottr_0x1.462dfc9p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Signal 5.45.1-universal_0x1.4287715p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 190;
+        };
+        "Signal 7.37.0-universal_0x1.697848e038a17p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "Sitala Install_0x1.2e165ffp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-553";
+            yRelative = "-255";
+        };
+        "Sitala Install_0x1.55cad428p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-367";
+        };
+        "Slack_0x1.5b0e261p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "SphereDelay Installer_0x1.1be2bdc8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-256";
+        };
+        "Splice Installer_0x1.1980fcp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Steam_0x1.3f552f9p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-255";
+        };
+        "Theo M1 Backup 1_0x1.44c0d99f5498p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Theo M1 Backup 1_0x1.518686d716eb7p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "Theo M1 Backup_0x1.44c0d71p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Theo M1 Backup_0x1.44c0d78c379p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Theo M1 Backup_0x1.44c0d99f54973p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "Theo M1 Backup_0x1.44c0d99f5498p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-187";
+            yRelative = "-479";
+        };
+        "Theo M1 Backup_0x1.51867c98p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Theo M1 Backup_0x1.51867cc258977p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Theo M1 Backup_0x1.518686d716eb7p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "Theo M1 Backupplatte 1_0x1.4449756b4a2p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = 414;
+        };
+        "Theo M1 Backupplatte_0x1.444971a8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = 302;
+        };
+        "Theo M1 Backupplatte_0x1.444972f2b49p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = 302;
+        };
+        "Theo M1 Backupplatte_0x1.4449756b4a2p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Thunderbird_0x1.435402c8p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-187";
+            yRelative = "-479";
+        };
+        "Thunderbird_0x1.61fa3ab8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "UHK Agent 2.1.1-universal_0x1.4bae6238p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "VLC media player_0x1.47c57838p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Warp_0x1.4888f13p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "Wireshark 4.2.4_0x1.5da45b28p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "Zen Browser_0x1.63bf7edp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 289;
+        };
+        "calibre-5.43.0_0x1.42034e904798p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 78;
+        };
+        "calibre-6.3.0_0x1.452f570b0648p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-255";
+        };
+        "calibre-7.1.0_0x1.588263b7d0245p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "calibre-7.4.0_0x1.5ad0d4ce2b329p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "macFUSE_0x1.65269278p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "ni-installer1663508136_0x1.2753a35p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-256";
+        };
+        "ni-installer1663508199_0x1.14956b3p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-256";
+        };
+        "ni-installer1663508284_0x1.256ffcc8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-256";
+        };
+        "ni-installer1663508293_0x1.2a5fd648p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-256";
+        };
+        "ni-installer1663508365_0x1.257a0c38p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663509592_0x1.236408ap+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663509617_0x1.1495b8fp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663509843_0x1.3fa5362p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663510336_0x1.1184bb18p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663510505_0x1.35e0c11p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663510726_0x1.26e1b5dp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663510744_0x1.416a1e28p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = "-144";
+        };
+        "ni-installer1663510800_0x1.187f8da8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663516479_0x1.17982ae8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663521594_0x1.39af9478p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663522041_0x1.373f671p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663522067_0x1.1b4326bp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663522285_0x1.149789d8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663522455_0x1.271f6acp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663522469_0x1.39af9e48p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663523038_0x1.11d2a9dp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663523561_0x1.11d2941p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663523580_0x1.2a5fd648p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663525472_0x1.1186a21p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663525577_0x1.416a72b8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663526296_0x1.362a3fe8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663528527_0x1.3c6e70d8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663528576_0x1.273443p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663529209_0x1.18a94ffp+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663529226_0x1.118a8b18p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663530173_0x1.118c2f88p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663531278_0x1.11b777d8p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663531580_0x1.1477da48p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1663531950_0x1.1496d088p+29" =         {
+            AnchorRelativeTo = 0;
+            ScreenID = 0;
+            xRelative = 311;
+            yRelative = 191;
+        };
+        "ni-installer1724510599_0x1.62befb7p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "ni-installer1724511425_0x1.1e3c1cap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 401;
+        };
+        "ni-installer1733175518_0x1.1f8fdbfp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 302;
+        };
+        "pgAdmin 4_0x1.4473c1b8p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-143";
+        };
+        "rustdesk-1.2.3_0x1.56cadc88p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 414;
+        };
+        "sanduhr_0x1.5132f668p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.513b9918p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.514f92b8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.514ffep+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.515162a8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.515176fp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5151a648p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5151bfap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5151c358p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5151d37p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5151d928p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5153a58p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5153b13p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5153b3f8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5153c34p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5153cbe8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5166ec6p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5166f458p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.51690908p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.51690dfp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516eb89p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516ec468p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516ed198p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516ed558p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516ef46p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516f0228p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516f3488p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.516ff7ap+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sanduhr_0x1.5170ece8p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+        "sws-2.12.1.3-Darwin-arm64-98b2dbb9_0x1.2e7a7fdp+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-431";
+            yRelative = "-143";
+        };
+        "sws-2.14.0.1-Darwin-arm64-216638bb_0x1.5be7013p+29" =         {
+            AnchorRelativeTo = 2;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = "-479";
+        };
+        "sws-2.14.0.3-Darwin-arm64-f9ab612d_0x1.64b11bbp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 177;
+        };
+        "tiptoi_0x1.420f91fp+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 513;
+        };
+        "tiptoi_0x1.4210027p+29" =         {
+            AnchorRelativeTo = 1;
+            ScreenID = 0;
+            xRelative = "-65";
+            yRelative = 526;
+        };
+    };
+    FXICloudDriveDeclinedUpgrade = 0;
+    FXICloudDriveDesktop = 0;
+    FXICloudDriveDocuments = 0;
+    FXICloudDriveEnabled = 0;
+    FXICloudDriveFirstSyncDownComplete = 0;
+    FXICloudLoggedIn = 1;
+    FXInfoPanesExpanded =     {
+        Comments = 1;
+        MetaData = 1;
+        Name = 1;
+        Privileges = 1;
+    };
+    FXInfoWindowWidth = 265;
+    FXLastSearchScope = SCcf;
+    "FXPreferencesWindow.Location" = "{{1067, 568}, {377, 329}}";
+    FXPreferredGroupBy = Kind;
+    FXPreferredSearchViewStyle = Nlsv;
+    FXPreferredSearchViewStyleVersion = "%00%00%00%01";
+    FXPreferredViewStyle = icnv;
+    FXQuickActionsConfigUpgradeLevel = 3;
+    FXRecentFolders =     (
+                {
+            "file-bookmark" = {length = 636, bytes = 0x626f6f6b 7c020000 00000510 40000000 ... 04000000 00000000 };
+            name = theo;
+        },
+                {
+            "file-bookmark" = {length = 756, bytes = 0x626f6f6b f4020000 00000510 40000000 ... 04000000 00000000 };
+            name = chezmoi;
+        },
+                {
+            "file-bookmark" = {length = 720, bytes = 0x626f6f6b d0020000 00000510 40000000 ... 04000000 00000000 };
+            name = audio;
+        },
+                {
+            "file-bookmark" = {length = 900, bytes = 0x626f6f6b 84030000 00000510 40000000 ... 04000000 00000000 };
+            name = "Baldurs Gate 3";
+        }
+    );
+    FXSidebarUpgradedSharedSearchToTwelve = 1;
+    FXSidebarUpgradedToSixteen = 1;
+    FXSidebarUpgradedToTenFourteen = 1;
+    FXSidebarUpgradedToTenTen = 1;
+    FXSyncExtensionToolbarItemsPendingAdd =     (
+    );
+    FXSyncExtensionToolbarItemsPendingRemove =     (
+    );
+    FXToolbarUpgradedToTenEight = 1;
+    FXToolbarUpgradedToTenNine = 2;
+    FXToolbarUpgradedToTenSeven = 1;
+    FavoriteTagNames =     (
+        "",
+        Red,
+        Orange,
+        Yellow,
+        Green,
+        Blue,
+        Purple,
+        Grey
+    );
+    GoToField = "/Users/theo/Documents/audio/projects";
+    GoToFieldHistory =     (
+        "/Users/theo/Documents/audio/projects",
+        "/opt/homebrew/share/android-commandlinetools"
+    );
+    "InspectorWindow.Location" = "{10, 48}";
+    LastTrashState = 1;
+    NSNavLastRootDirectory = "/Applications";
+    NSNavPanelExpandedSizeForOpenMode = "{800, 448}";
+    "NSToolbar Configuration Browser" =     {
+        "TB Default Item Identifiers" =         (
+            "com.apple.finder.BACK",
+            "com.apple.finder.SWCH",
+            NSToolbarSpaceItem,
+            "com.apple.finder.ARNG",
+            NSToolbarSpaceItem,
+            "com.apple.finder.SHAR",
+            "com.apple.finder.LABL",
+            "com.apple.finder.ACTN",
+            NSToolbarSpaceItem,
+            "com.apple.finder.SRCH"
+        );
+        "TB Display Mode" = 1;
+        "TB Icon Size Mode" = 1;
+        "TB Is Shown" = 1;
+        "TB Item Identifiers" =         (
+            "com.apple.finder.BACK",
+            "com.apple.finder.PATH",
+            "com.apple.finder.SWCH",
+            NSToolbarSpaceItem,
+            "com.apple.finder.NFLD",
+            NSToolbarSpaceItem,
+            NSToolbarSpaceItem,
+            "com.apple.finder.SRCH"
+        );
+        "TB Size Mode" = 1;
+    };
+    "NSWindow Frame GoToSheet" = "2690 1095 460 183 0 0 3440 1410 ";
+    "NSWindow Frame NSNavPanelAutosaveName" = "560 304 800 363 0 0 1920 1055 ";
+    NetworkViewSettings =     {
+        CustomViewStyleVersion = 1;
+        IconViewSettings =         {
+            arrangeBy = kind;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            scrollPositionX = 0;
+            scrollPositionY = 0;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 1;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{867, 17}, {845, 1046}}";
+        };
+    };
+    NewWindowTarget = PfHm;
+    NewWindowTargetPath = "file:///Users/theo/";
+    PackageViewSettings =     {
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 0;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{2488, 158}, {920, 464}}";
+        };
+    };
+    "PreferencesWindow.LastSelection" = GNRL;
+    PreviewPaneWidth = 240;
+    RecentMoveAndCopyDestinations =     (
+        "file:///Applications/",
+        "file:///Users/theo/Documents/audio/matchering/",
+        "file:///Users/theo/Documents/audio/vocal_coaching/"
+    );
+    RecentsArrangeGroupViewBy = "Date Last Opened";
+    SGTRecentFileSearches =     (
+                {
+            attributes =             (
+                kMDItemDisplayName,
+                "_kMDItemFileName",
+                kMDItemPhotosTitle
+            );
+            enforceStrictMatch = 0;
+            exactMatch = 0;
+            name = ozone;
+            scope = 4;
+            type = "com.apple.finder";
+            values =             (
+                ozone
+            );
+        }
+    );
+    SearchRecentsSavedViewStyleVersion = "%00%00%00%01";
+    SearchRecentsViewSettings =     {
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 0;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{404, 482}, {920, 436}}";
+        };
+    };
+    SearchViewSettings =     {
+        ExtendedListViewSettingsV2 =         {
+            calculateAllSizes = 0;
+            columns =             (
+                                {
+                    ascending = 1;
+                    identifier = name;
+                    visible = 1;
+                    width = 541;
+                },
+                                {
+                    ascending = 0;
+                    identifier = ubiquity;
+                    visible = 0;
+                    width = 35;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateModified;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateCreated;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = size;
+                    visible = 0;
+                    width = 97;
+                },
+                                {
+                    ascending = 1;
+                    identifier = kind;
+                    visible = 1;
+                    width = 115;
+                },
+                                {
+                    ascending = 1;
+                    identifier = label;
+                    visible = 0;
+                    width = 100;
+                },
+                                {
+                    ascending = 1;
+                    identifier = version;
+                    visible = 0;
+                    width = 75;
+                },
+                                {
+                    ascending = 1;
+                    identifier = comments;
+                    visible = 0;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateLastOpened;
+                    visible = 1;
+                    width = 196;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareOwner;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareLastEditor;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateAdded;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = invitationStatus;
+                    visible = 0;
+                    width = 210;
+                }
+            );
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = dateLastOpened;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        ListViewSettings =         {
+            calculateAllSizes = 0;
+            columns =             {
+                comments =                 {
+                    ascending = 1;
+                    index = 7;
+                    visible = 0;
+                    width = 300;
+                };
+                dateCreated =                 {
+                    ascending = 0;
+                    index = 2;
+                    visible = 0;
+                    width = 181;
+                };
+                dateLastOpened =                 {
+                    ascending = 0;
+                    index = 8;
+                    visible = 1;
+                    width = 196;
+                };
+                dateModified =                 {
+                    ascending = 0;
+                    index = 1;
+                    visible = 0;
+                    width = 181;
+                };
+                kind =                 {
+                    ascending = 1;
+                    index = 4;
+                    visible = 1;
+                    width = 115;
+                };
+                label =                 {
+                    ascending = 1;
+                    index = 5;
+                    visible = 0;
+                    width = 100;
+                };
+                name =                 {
+                    ascending = 1;
+                    index = 0;
+                    visible = 1;
+                    width = 541;
+                };
+                size =                 {
+                    ascending = 0;
+                    index = 3;
+                    visible = 0;
+                    width = 97;
+                };
+                version =                 {
+                    ascending = 1;
+                    index = 6;
+                    visible = 0;
+                    width = 75;
+                };
+            };
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = dateLastOpened;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 1;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{16, 17}, {2477, 1347}}";
+        };
+    };
+    ShowExternalHardDrivesOnDesktop = 0;
+    ShowHardDrivesOnDesktop = 0;
+    ShowPathbar = 1;
+    ShowPreviewPane = 0;
+    ShowRecentTags = 0;
+    ShowRemovableMediaOnDesktop = 0;
+    ShowSidebar = 1;
+    ShowStatusBar = 1;
+    SidebarDevicesSectionDisclosedState = 1;
+    SidebarPlacesSectionDisclosedState = 1;
+    SidebarShowingSignedIntoiCloud = 1;
+    SidebarShowingiCloudDesktop = 0;
+    SidebarWidth = 143;
+    SidebarWidth2 = 218;
+    StandardViewSettings =     {
+        ExtendedListViewSettingsV2 =         {
+            calculateAllSizes = 0;
+            columns =             (
+                                {
+                    ascending = 1;
+                    identifier = name;
+                    visible = 1;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateModified;
+                    visible = 1;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateCreated;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = size;
+                    visible = 1;
+                    width = 97;
+                },
+                                {
+                    ascending = 1;
+                    identifier = kind;
+                    visible = 1;
+                    width = 115;
+                },
+                                {
+                    ascending = 1;
+                    identifier = label;
+                    visible = 0;
+                    width = 100;
+                },
+                                {
+                    ascending = 1;
+                    identifier = version;
+                    visible = 0;
+                    width = 75;
+                },
+                                {
+                    ascending = 1;
+                    identifier = comments;
+                    visible = 0;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateLastOpened;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareOwner;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareLastEditor;
+                    visible = 0;
+                    width = 200;
+                }
+            );
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        GalleryViewSettings =         {
+            arrangeBy = name;
+            iconSize = 48;
+            showIconPreview = 1;
+            viewOptionsVersion = 1;
+        };
+        IconViewSettings =         {
+            arrangeBy = none;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            scrollPositionX = 0;
+            scrollPositionY = 379;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+        ListViewSettings =         {
+            calculateAllSizes = 0;
+            columns =             {
+                comments =                 {
+                    ascending = 1;
+                    index = 7;
+                    visible = 0;
+                    width = 300;
+                };
+                dateCreated =                 {
+                    ascending = 0;
+                    index = 2;
+                    visible = 0;
+                    width = 181;
+                };
+                dateLastOpened =                 {
+                    ascending = 0;
+                    index = 8;
+                    visible = 0;
+                    width = 200;
+                };
+                dateModified =                 {
+                    ascending = 0;
+                    index = 1;
+                    visible = 1;
+                    width = 181;
+                };
+                kind =                 {
+                    ascending = 1;
+                    index = 4;
+                    visible = 1;
+                    width = 115;
+                };
+                label =                 {
+                    ascending = 1;
+                    index = 5;
+                    visible = 0;
+                    width = 100;
+                };
+                name =                 {
+                    ascending = 1;
+                    index = 0;
+                    visible = 1;
+                    width = 300;
+                };
+                size =                 {
+                    ascending = 0;
+                    index = 3;
+                    visible = 1;
+                    width = 97;
+                };
+                version =                 {
+                    ascending = 1;
+                    index = 6;
+                    visible = 0;
+                    width = 75;
+                };
+            };
+            iconSize = 16;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        SettingsType = StandardViewSettings;
+    };
+    TagsCloudSerialNumber = 1;
+    TrashViewSettings =     {
+        CustomViewStyleVersion = 1;
+        ExtendedListViewSettingsV2 =         {
+            calculateAllSizes = 0;
+            columns =             (
+                                {
+                    ascending = 1;
+                    identifier = name;
+                    visible = 1;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = ubiquity;
+                    visible = 0;
+                    width = 35;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateModified;
+                    visible = 1;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateCreated;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = size;
+                    visible = 1;
+                    width = 97;
+                },
+                                {
+                    ascending = 1;
+                    identifier = kind;
+                    visible = 1;
+                    width = 115;
+                },
+                                {
+                    ascending = 1;
+                    identifier = label;
+                    visible = 0;
+                    width = 100;
+                },
+                                {
+                    ascending = 1;
+                    identifier = version;
+                    visible = 0;
+                    width = 75;
+                },
+                                {
+                    ascending = 1;
+                    identifier = comments;
+                    visible = 0;
+                    width = 300;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateLastOpened;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareOwner;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = shareLastEditor;
+                    visible = 0;
+                    width = 200;
+                },
+                                {
+                    ascending = 0;
+                    identifier = dateAdded;
+                    visible = 0;
+                    width = 181;
+                },
+                                {
+                    ascending = 0;
+                    identifier = invitationStatus;
+                    visible = 0;
+                    width = 210;
+                }
+            );
+            iconSize = 16;
+            scrollPositionX = 0;
+            scrollPositionY = 1792;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        IconViewSettings =         {
+            arrangeBy = none;
+            backgroundColorBlue = 1;
+            backgroundColorGreen = 1;
+            backgroundColorRed = 1;
+            backgroundType = 0;
+            gridOffsetX = 0;
+            gridOffsetY = 0;
+            gridSpacing = 54;
+            iconSize = 64;
+            labelOnBottom = 1;
+            scrollPositionX = "-226";
+            scrollPositionY = 0;
+            showIconPreview = 1;
+            showItemInfo = 0;
+            textSize = 12;
+            viewOptionsVersion = 1;
+        };
+        ListViewSettings =         {
+            calculateAllSizes = 0;
+            columns =             {
+                comments =                 {
+                    ascending = 1;
+                    index = 7;
+                    visible = 0;
+                    width = 300;
+                };
+                dateCreated =                 {
+                    ascending = 0;
+                    index = 2;
+                    visible = 0;
+                    width = 181;
+                };
+                dateLastOpened =                 {
+                    ascending = 0;
+                    index = 8;
+                    visible = 0;
+                    width = 200;
+                };
+                dateModified =                 {
+                    ascending = 0;
+                    index = 1;
+                    visible = 1;
+                    width = 181;
+                };
+                kind =                 {
+                    ascending = 1;
+                    index = 4;
+                    visible = 1;
+                    width = 115;
+                };
+                label =                 {
+                    ascending = 1;
+                    index = 5;
+                    visible = 0;
+                    width = 100;
+                };
+                name =                 {
+                    ascending = 1;
+                    index = 0;
+                    visible = 1;
+                    width = 300;
+                };
+                size =                 {
+                    ascending = 0;
+                    index = 3;
+                    visible = 1;
+                    width = 97;
+                };
+                version =                 {
+                    ascending = 1;
+                    index = 6;
+                    visible = 0;
+                    width = 75;
+                };
+            };
+            iconSize = 16;
+            scrollPositionX = 0;
+            scrollPositionY = 1792;
+            showIconPreview = 1;
+            sortColumn = name;
+            textSize = 13;
+            useRelativeDates = 1;
+            viewOptionsVersion = 1;
+        };
+        WindowState =         {
+            ContainerShowSidebar = 1;
+            ShowSidebar = 1;
+            ShowStatusBar = 1;
+            ShowTabView = 0;
+            ShowToolbar = 1;
+            WindowBounds = "{{1876, 17}, {616, 1377}}";
+        };
+    };
+    "_FXShowPosixPathInTitle" = 1;
+    "_FXSortFoldersFirst" = 1;
+}

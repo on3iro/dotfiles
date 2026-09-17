@@ -63,6 +63,50 @@ zoxide = "0.10.0"
 # chromium intentionally NOT here: cask disabled by Homebrew since 2026-09-01
 # (fails_gatekeeper_check). Install some other way for now; revisit once re-enabled.
 
+[bootstrap.macos.defaults."com.apple.dock"]
+# --- migrated from nix-darwin system.defaults.dock (Phase 2) ---
+# domain/key mapping verified against nix-darwin's modules/system/defaults-write.nix
+autohide = true
+launchanim = false
+magnification = false
+mineffect = "scale"
+orientation = "right"
+"static-only" = true
+"expose-group-apps" = true
+"mru-spaces" = false
+"wvous-bl-corner" = 1
+"wvous-br-corner" = 1
+"wvous-tl-corner" = 1
+"wvous-tr-corner" = 1
+# persistent-apps/persistent-others intentionally NOT migrated: nix-darwin builds these
+# as nested tile-data plist structures via custom logic, not simple key/value writes.
+# Confirmed current Dock already has no pinned apps, matching persistent-apps = [].
+# If you want the Applications-folder shortcut back, add it manually (drag into Dock).
+
+[bootstrap.macos.defaults."com.apple.finder"]
+FXPreferredViewStyle = "icnv"
+AppleShowAllExtensions = true
+AppleShowAllFiles = true
+ShowPathbar = true
+ShowStatusBar = true
+_FXShowPosixPathInTitle = true
+_FXSortFoldersFirst = true
+
+[bootstrap.macos.defaults."com.apple.screencapture"]
+location = "~/Pictures/screenshots"
+
+[bootstrap.macos.defaults.NSGlobalDomain]
+AppleICUForce24HourTime = true
+AppleInterfaceStyle = "Dark"
+AppleShowAllFiles = true
+AppleShowScrollBars = "Automatic"
+NSAutomaticCapitalizationEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.keyboard.fnState" = false
+"com.apple.swipescrolldirection" = false
+# caps-lock remap (system.keyboard.remapCapsLockToEscape) intentionally NOT migrated -
+# confirmed no replacement needed, will be re-set manually in System Settings if desired.
+
 [tasks.klaus]
 dir = "{{cwd}}"
 run = """

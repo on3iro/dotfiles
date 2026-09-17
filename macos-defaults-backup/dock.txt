@@ -1,0 +1,47 @@
+{
+    autohide = 0;
+    "autohide-delay" = 0;
+    "autohide-time-modifier" = 0;
+    "expose-group-apps" = 1;
+    largesize = 128;
+    "last-analytics-stamp" =     (
+        "811255120.504105"
+    );
+    lastShowIndicatorTime = "676455629.644798";
+    launchanim = 0;
+    loc = "en_GB:(null)";
+    magnification = 0;
+    mineffect = scale;
+    "mod-count" = 615;
+    "mru-spaces" = 0;
+    orientation = right;
+    "persistent-apps" =     (
+    );
+    "persistent-others" =     (
+                {
+            "tile-data" =             {
+                arrangement = 1;
+                displayas = 0;
+                "file-data" =                 {
+                    "_CFURLString" = "file:///Applications";
+                    "_CFURLStringType" = 15;
+                };
+                showas = 0;
+            };
+            "tile-type" = "directory-tile";
+        }
+    );
+    "recent-apps" =     (
+    );
+    region = DE;
+    "show-recents" = 0;
+    "static-only" = 1;
+    tilesize = 31;
+    "trash-full" = 1;
+    version = 1;
+    "wvous-bl-corner" = 1;
+    "wvous-br-corner" = 1;
+    "wvous-br-modifier" = 1048576;
+    "wvous-tl-corner" = 1;
+    "wvous-tr-corner" = 1;
+}
