@@ -1,0 +1,26 @@
+[settings]
+experimental = true
+idiomatic_version_file_enable_tools = ["flutter", "node"]
+jobs = 8
+
+[tools]
+flutter = "latest"
+"go:github.com/jonaslu/ain/cmd/ain" = "latest"
+golangci-lint = "latest"
+gum = "latest"
+htmlq = "latest"
+lnav = "latest"
+node = "latest"
+"npm:httpyac" = "latest"
+python = "3.12"
+ruby = "latest"
+superhtml = "latest"
+yarn = "latest"
+yq = "latest"
+# "ubi:adwinying/php" = "8.4"
+
+[tasks.klaus]
+dir = "{{cwd}}"
+run = """
+claude-safe --add-dirs-ro=/etc/gitconfig:/Users/theo/.gitconfig --allow-localhost=47657 --env-pass=HERDR_ENV,HERDR_PANE_ID,HERDR_SOCKET_PATH --add-dirs="$HOME/Library/Application Support/tuicr"
+"""

@@ -1,0 +1,53 @@
+[settings]
+experimental = true
+idiomatic_version_file_enable_tools = ["flutter", "node"]
+jobs = 8
+
+[tools]
+flutter = "latest"
+"go:github.com/jonaslu/ain/cmd/ain" = "latest"
+golangci-lint = "latest"
+gum = "latest"
+htmlq = "latest"
+lnav = "latest"
+node = "latest"
+"npm:httpyac" = "latest"
+python = "3.12"
+ruby = "latest"
+superhtml = "latest"
+yarn = "latest"
+yq = "latest"
+# "ubi:adwinying/php" = "8.4"
+
+# --- migrated from nix-darwin (Phase 1) ---
+ansible = "latest" # version mismatch: nix reported ansible-core 2.21.3, not the pipx `ansible` package version
+atuin = "18.19.0"
+bat = "0.26.1"
+bottom = "0.14.7"
+dbmate = "2.35.0"
+delta = "0.19.2"
+eza = "0.23.5"
+fd = "10.4.2"
+fzf = "0.74.3"
+git-lfs = "3.7.1"
+imagemagick = "7.1.2-29" # no aqua backend (conda/asdf plugin) - confirm this resolves, else fall back to brew:imagemagick
+just = "1.58.0"
+lazygit = "0.64.1"
+lua = "5.2.4" # no aqua backend (vfox/asdf plugin, builds from source) - confirm this resolves, else fall back to brew:lua
+marksman = "2026-02-08"
+neovim = "0.12.4"
+restic = "0.19.1"
+ripgrep = "15.2.0"
+sd = "1.0.0"
+starship = "1.26.0"
+tree-sitter = "0.26.9"
+usage = "4.0.0"
+yazi = "26.8.15"
+zellij = "0.44.3"
+zoxide = "0.10.0"
+
+[tasks.klaus]
+dir = "{{cwd}}"
+run = """
+claude-safe --add-dirs-ro=/etc/gitconfig:/Users/theo/.gitconfig --allow-localhost=47657 --env-pass=HERDR_ENV,HERDR_PANE_ID,HERDR_SOCKET_PATH --add-dirs="$HOME/Library/Application Support/tuicr"
+"""
