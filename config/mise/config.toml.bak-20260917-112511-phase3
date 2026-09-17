@@ -45,24 +45,6 @@ yazi = "26.8.15"
 zellij = "0.44.3"
 zoxide = "0.10.0"
 
-[bootstrap.packages]
-# --- migrated from nix-darwin environment.systemPackages (Phase 3) ---
-# not in mise's [tools] registry - see Phase 1 registry check
-"brew:ack" = "latest"
-"brew:rusty-ferris-club/tap/shellclear" = "latest" # not in homebrew-core, own tap
-"brew:httpie" = "latest"
-"brew:nmap" = "latest"
-"brew:universal-ctags" = "latest"
-"brew:imagemagick" = "latest" # also failed as a mise [tools] entry (conda backend, no exact version match)
-"brew:clipboard" = "latest" # was nix's clipboard-jh; same binary (cb), confirmed real Homebrew formula
-# aerospace intentionally NOT here: nikitabobko/tap doesn't publish cask API metadata,
-# and mise's cask DSL evaluator errors on `staged_path` in its postflight block.
-# install manually instead: brew install --cask nikitabobko/tap/aerospace
-"brew-cask:pika" = "latest"
-"brew-cask:android-commandlinetools" = "latest"
-# chromium intentionally NOT here: cask disabled by Homebrew since 2026-09-01
-# (fails_gatekeeper_check). Install some other way for now; revisit once re-enabled.
-
 [tasks.klaus]
 dir = "{{cwd}}"
 run = """

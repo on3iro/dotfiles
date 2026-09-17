@@ -6,18 +6,6 @@ if test -d "/nix" && not test -d "$HOME/.nix-profile"
     end
 end
 
-# Add Homebrew to PATH (for Apple Silicon Macs)
-if test -d "/opt/homebrew/bin"
-    fish_add_path --prepend --global "/opt/homebrew/bin"
-    fish_add_path --prepend --global "/opt/homebrew/sbin"
-end
-
-# Add Homebrew to PATH (for Intel Macs)
-if test -d "/usr/local/bin"
-    fish_add_path --prepend --global "/usr/local/bin"
-    fish_add_path --prepend --global "/usr/local/sbin"
-end
-
 # Add user's Nix profile to PATH if it exists
 if test -d "$HOME/.nix-profile/bin"
     fish_add_path --prepend --global "$HOME/.nix-profile/bin"
@@ -28,6 +16,19 @@ if test -d "/run/current-system/sw/bin"
     fish_add_path --prepend --global "/run/current-system/sw/bin"
 end
 
+# Add Homebrew to PATH (for Intel Macs)
+if test -d "/usr/local/bin"
+    fish_add_path --prepend --global "/usr/local/bin"
+    fish_add_path --prepend --global "/usr/local/sbin"
+end
+
+# Add Homebrew to PATH (for Apple Silicon Macs) - added last so it wins over both nix
+# and /usr/local/bin; /opt/homebrew is this machine's actual Homebrew prefix
+if test -d "/opt/homebrew/bin"
+    fish_add_path --prepend --global "/opt/homebrew/bin"
+    fish_add_path --prepend --global "/opt/homebrew/sbin"
+end
+
 if test -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
     source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
 end
@@ -35,3 +36,8 @@ end
 if test -f /nix/var/nix/profiles/default/share/fish/vendor_completions.d/nix.fish
     source /nix/var/nix/profiles/default/share/fish/vendor_completions.d/nix.fish
 end
+
+# Must win over nix/homebrew so conf.d files loading after this one (e.g. mise.fish,
+# which bakes an absolute path into its activation function) resolve standalone-installed
+# binaries instead of nix-provided ones.
+fish_add_path --prepend --global "$HOME/.local/bin"

@@ -29,5 +29,3 @@ set -U fish_exit_on_ctrl_d false
   end
 end
 
-# Created by `pipx` on 2025-09-26 16:02:55
-set PATH $PATH /Users/theo/.local/bin
