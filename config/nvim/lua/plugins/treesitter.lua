@@ -48,9 +48,15 @@ require("nvim-treesitter").install({
 
 -- Enable treesitter highlighting and indentation per filetype
 vim.api.nvim_create_autocmd("FileType", {
-  callback = function()
+  callback = function(args)
     pcall(vim.treesitter.start)
-    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    -- nvim-treesitter's markdown indent query mis-indents lists (2x shiftwidth
+    -- on nested items, see nvim-treesitter/nvim-treesitter#6217), which
+    -- disagrees with prettier's 2-space list indent from conform-nvim.lua.
+    -- Leave markdown on its ftplugin-set indentexpr instead.
+    if args.match ~= "markdown" then
+      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    end
   end,
 })
 
