@@ -887,6 +887,14 @@ version = "3.4.3"
 backend = "core:ruby"
 specifiers = ["latest"]
 
+[tools.ruby."platforms.windows-x64"]
+url = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.3-1/rubyinstaller-3.4.3-1-x64.7z"
+
+[[tools.ruby]]
+version = "3.4.3"
+backend = "core:ruby"
+specifiers = ["latest"]
+
 [tools.ruby.options]
 compile = "false"
 precompiled_url = "jdx/ruby"
@@ -919,14 +927,6 @@ provenance = "github-attestations"
 [tools.ruby."platforms.macos-x64"]
 checksum = "sha256:55a4cd1dcbe5ca27cf65e89a935a482c2bb2284832939266551c0ec68b437f46"
 url = "https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.3.tar.gz"
-
-[[tools.ruby]]
-version = "3.4.3"
-backend = "core:ruby"
-specifiers = ["latest"]
-
-[tools.ruby."platforms.windows-x64"]
-url = "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.3-1/rubyinstaller-3.4.3-1-x64.7z"
 
 [[tools.sd]]
 version = "1.0.0"
