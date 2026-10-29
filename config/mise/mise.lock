@@ -6,7 +6,7 @@ lockfile_version = 3
 version = "14.5.0"
 backend = "pypi:ansible"
 specifiers = ["latest"]
-uv = { path = ".mise/locks/ansible/14.5.0~0672620e", digest = "sha256:f0ed69a8342bc7c3a74c4dd91d98d8b5f2769e0857d9744593bd51902d56cfb6" }
+uv = { path = "locks/ansible/14.5.0~0672620e", digest = "sha256:f0ed69a8342bc7c3a74c4dd91d98d8b5f2769e0857d9744593bd51902d56cfb6" }
 
 [tools.ansible.options]
 expose = '["ansible-core"]'
@@ -783,7 +783,7 @@ url = "https://nodejs.org/dist/v26.12.0/node-v26.12.0-win-x64.zip"
 
 [[tools."npm:httpyac"]]
 version = "6.16.7"
-aube = { path = ".mise/locks/npm-httpyac/6.16.7", digest = "sha256:babbc8f183fb2cb7b6d7cef0e78115f91c092655579de43b3a42f83b487b7259" }
+aube = { path = "locks/npm-httpyac/6.16.7", digest = "sha256:babbc8f183fb2cb7b6d7cef0e78115f91c092655579de43b3a42f83b487b7259" }
 backend = "npm:httpyac"
 specifiers = ["latest"]
 
