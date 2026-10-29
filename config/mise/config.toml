@@ -14,6 +14,7 @@ lnav = "latest"
 node = "latest"
 "npm:httpyac" = "latest"
 python = "3.12"
+uv = "latest"
 ruby = "latest"
 superhtml = "latest"
 yarn = "latest"
@@ -62,6 +63,7 @@ zoxide = "latest"
 # install manually instead: brew install --cask nikitabobko/tap/aerospace
 "brew-cask:pika" = "latest"
 "brew-cask:android-commandlinetools" = "latest"
+"brew:tuicr" = "latest"
 # chromium intentionally NOT here: cask disabled by Homebrew since 2026-09-01
 # (fails_gatekeeper_check). Install some other way for now; revisit once re-enabled.
 
